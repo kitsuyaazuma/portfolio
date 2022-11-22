@@ -6,9 +6,9 @@ import {
   Filler,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Radar } from 'react-chartjs-2';
-import { Center } from '@mantine/core';
+} from "chart.js";
+import { Radar } from "react-chartjs-2";
+import { Center } from "@mantine/core";
 
 ChartJS.register(
   RadialLinearScale,
@@ -19,37 +19,65 @@ ChartJS.register(
   Legend
 );
 
+const skillData = [
+  {
+    label: "Front-end",
+    labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Bootstrap"],
+    data: [3, 3, 3, 4, 4, 3],
+    backgroundColor: "rgba(255, 107, 107, 0.2)",
+    borderColor: "rgba(255, 107, 107, 1)",
+  },
+  {
+    label: "Back-end",
+    labels: ["Python", "JavaScript", "Ruby", "Java", "C++", "C"],
+    data: [5, 4, 2, 2, 2, 2],
+    backgroundColor: "rgba(51, 154, 240, 0.2)",
+    borderColor: "rgba(51, 154, 240, 1)",
+  },
+  {
+    label: "DevOps",
+    labels: ["Linux", "Git/GitHub", "Docker", "GCP", "Vim", "AWS"],
+    data: [4, 4, 3, 4, 3, 2],
+    backgroundColor: "rgba(252, 196, 25, 0.2)",
+    borderColor: "rgba(252, 196, 25, 1)",
+  },
+];
 
-export const SkillsChart = (props: any) => {
-  
+type propsType = {
+  index: number;
+};
+
+export const SkillsChart = (props: propsType) => {
   const data = () => {
-    return({
-      labels: ['Thing 1', 'Thing 2', 'Thing 3', 'Thing 4', 'Thing 5', 'Thing 6'],
+    return {
+      labels: skillData[props.index].labels,
       datasets: [
         {
-          label: props.label,
-          data: [2, 1, 3, 5, 2, 3],
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgba(255, 99, 132, 1)',
+          label: skillData[props.index].label,
+          data: skillData[props.index].data,
+          backgroundColor: skillData[props.index].backgroundColor,
+          borderColor: skillData[props.index].borderColor,
           borderWidth: 1,
         },
       ],
-    })
+    };
   };
 
   const options = {
     scales: {
       r: {
+        min: 0,
+        max: 5,
         ticks: {
-          stepSize: 1
-        }
-      }
-    }
+          stepSize: 1,
+        },
+      },
+    },
   };
 
   return (
     <Center>
       <Radar data={data()} options={options} />
     </Center>
-  )
-}
+  );
+};
