@@ -30,7 +30,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2022年11月 - 現在　インターン
             </Text>
             <Group mt="sm" spacing="xs">
@@ -58,7 +58,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2022年4月 - 現在　インターン
             </Text>
             <Group mt="sm" spacing="xs">
@@ -89,7 +89,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2020年4月 - 現在　工学部電気情報物理工学科
             </Text>
             <Group mt="sm" spacing="xs">
@@ -114,7 +114,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2021年4月 - 2022年11月 インターン（プログラミングTA）
             </Text>
             <Group mt="sm" spacing="xs">
@@ -146,7 +146,7 @@ export const Experience = () => {
             }
             lineVariant="dashed"
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2022年8月 インターン（夏の陣2022 新規プロトタイプ開発コース）
             </Text>
             <Group mt="sm" spacing="xs">
@@ -174,7 +174,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2017年4月 - 2020年3月
             </Text>
           </Timeline.Item>
@@ -191,7 +191,7 @@ export const Experience = () => {
               </Anchor>
             }
           >
-            <Text size={5} color="dimmed">
+            <Text size="xs" color="dimmed">
               2019年7月 オーストラリア科学奨学生
             </Text>
           </Timeline.Item>
