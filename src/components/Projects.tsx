@@ -1,5 +1,4 @@
 import { AspectRatio, Card, Title, Image, Text, createStyles, Container, SimpleGrid, Center } from '@mantine/core'
-import React from 'react'
 
 const mockdata = [
     {
@@ -37,7 +36,6 @@ const useStyles = createStyles((theme) => ({
         boxShadow: theme.shadows.md,
       },
     },
-  
     title: {
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
       fontWeight: 600,
@@ -62,10 +60,10 @@ export const Projects = () => {
       ));
   return (
     <>
-        <Center>
+        <Center my="xl">
             <Title>PROJECTS</Title>
         </Center>
-        <Container py="xl">
+        <Container my="xl">
             <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
                 {cards}
             </SimpleGrid>

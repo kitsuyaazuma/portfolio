@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -9,7 +8,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
-import { Center, useMantineColorScheme } from '@mantine/core';
+import { Center } from '@mantine/core';
 
 ChartJS.register(
   RadialLinearScale,
@@ -22,8 +21,6 @@ ChartJS.register(
 
 
 export const SkillsChart = (props: any) => {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  const dark = colorScheme === 'dark';  
   
   const data = () => {
     return({
