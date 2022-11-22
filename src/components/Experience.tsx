@@ -1,10 +1,7 @@
-import { Center, Timeline, Title, Text, Anchor, Badge, Group, Container, useMantineColorScheme } from '@mantine/core'
-import { IconDevicesPc, IconSchool, IconGitCommit, IconMessageDots } from '@tabler/icons';
-import React from 'react'
+import { Center, Timeline, Title, Text, Anchor, Badge, Group, Container } from '@mantine/core'
+import { IconDevicesPc, IconSchool } from '@tabler/icons';
 
 export const Experience = () => {
-    const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-    const dark = colorScheme === 'dark';
   return (
     <Container py="xl">
         <Center my="xl">
