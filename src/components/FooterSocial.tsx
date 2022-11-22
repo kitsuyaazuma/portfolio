@@ -1,4 +1,4 @@
-import { createStyles, Container, Group, Text, Button, Title } from '@mantine/core';
+import { createStyles, Container, Group, Text, Button } from '@mantine/core';
 import { SiGithub, SiQiita, SiTwitter, SiYoutube } from 'react-icons/si';
 
 const useStyles = createStyles((theme) => ({
