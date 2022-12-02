@@ -29,8 +29,8 @@ const skillData = [
   },
   {
     label: "Back-end",
-    labels: ["Python", "JavaScript", "Ruby", "Java", "C++", "C"],
-    data: [5, 4, 2, 2, 2, 2],
+    labels: ["Python", "JavaScript", "Ruby", "Go", "C++", "C"],
+    data: [5, 4, 2, 3, 2, 2],
     backgroundColor: "rgba(51, 154, 240, 0.2)",
     borderColor: "rgba(51, 154, 240, 1)",
   },
