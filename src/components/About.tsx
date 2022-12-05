@@ -25,16 +25,20 @@ export const About = () => {
         justify="center"
         align="center"
       >
-        <Image p="lg" radius="md" src="https://github.com/Kitsuya0828.png" />
+        <Image p="lg" radius="md" src={require("../imgs/Profile.jpeg")} />
 
         <Stack>
           <Text size="sm">宮城県仙台市在住の大学3年生。</Text>
           <Text size="sm">
-            大学入学と同時に競技プログラミングを始め、次第に個人開発にも興味を持つ。
-            大学では情報工学を専攻し、来年度からは画像情報通信工学研究室に在籍予定。
+            大学入学と同時に始めた競技プログラミングをきっかけに、個人開発に興味を持つ。
           </Text>
           <Text size="sm">
-            学生インターンとしてベンチャー企業2社で新たな学びを得るとともに、
+            大学では情報工学を専攻。来年度からは画像情報通信工学研究室に在籍予定。
+          </Text>
+          <Text size="sm">
+            学生インターンとしてベンチャー企業2社で修行中。
+          </Text>
+          <Text size="sm">       
             Tech系VTuber「あづまる」としても技術発信活動を行なっている。
           </Text>
           <Group spacing="sm" position="center" mt="xs">
