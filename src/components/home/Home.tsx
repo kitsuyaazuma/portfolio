@@ -3,6 +3,7 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { Experience } from "./Experience";
 import { useEffect, useState } from "react";
+import { FooterSocial } from "../common/FooterSocial";
 
 export const Home = () => {
     const [isClient, setIsClient] = useState(false);
@@ -13,6 +14,7 @@ export const Home = () => {
                     <About />
                     <Skills />
                     <Experience />
+                    <FooterSocial />
                 </>
             );
         } else {

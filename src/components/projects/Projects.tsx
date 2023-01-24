@@ -9,6 +9,7 @@ import {
   SimpleGrid,
   Center,
 } from "@mantine/core";
+import { FooterSocial } from "../common/FooterSocial";
 
 const mockdata = [
   {
@@ -85,6 +86,7 @@ export const Projects = () => {
           {cards}
         </SimpleGrid>
       </Container>
+      <FooterSocial />
     </>
   );
 };
