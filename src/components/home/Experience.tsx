@@ -8,7 +8,7 @@ import {
   Group,
   Container,
 } from "@mantine/core";
-import { IconDevicesPc, IconSchool } from "@tabler/icons";
+import { TbDevicesPc, TbSchool } from "react-icons/tb";
 
 export const Experience = () => {
   return (
@@ -19,7 +19,7 @@ export const Experience = () => {
       <Center>
         <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
           <Timeline.Item
-            bullet={<IconDevicesPc size={14} />}
+            bullet={<TbDevicesPc/>}
             title={
               <Anchor
                 href="http://be-doctor.com/"
@@ -47,7 +47,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconDevicesPc size={14} />}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://corp.langsmith.co.jp/"
@@ -78,7 +78,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconSchool size={14} />}
+            bullet={<TbSchool />}
             title={
               <Anchor
                 href="http://www.iic.ecei.tohoku.ac.jp/"
@@ -103,7 +103,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconDevicesPc size={14} />}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://nnn.ed.jp/course/net_commute/"
@@ -134,7 +134,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconDevicesPc size={14} />}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://nnn.ed.jp/course/net_commute/"
@@ -163,7 +163,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconSchool size={14} />}
+            bullet={<TbSchool />}
             title={
               <Anchor
                 href="https://maebashi-hs.gsn.ed.jp/"
@@ -180,7 +180,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<IconSchool size={14} />}
+            bullet={<TbSchool />}
             title={
               <Anchor
                 href="https://www.sydney.edu.au/science/industry-and-community/community-engagement/international-science-school.html"
