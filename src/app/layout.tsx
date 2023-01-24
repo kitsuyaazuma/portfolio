@@ -1,3 +1,6 @@
+"use client";
+import { Suspense } from "react";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      
+        <body>
+          <Suspense fallback={<p>Loading</p>}>
+            {children}
+          </Suspense>
+        </body>
+      
     </html>
   );
 }
