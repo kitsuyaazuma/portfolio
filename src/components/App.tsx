@@ -10,6 +10,7 @@ import {
     NavLink,
     SimpleGrid,
     Center,
+    LoadingOverlay,
 } from "@mantine/core";
 import { useColorScheme } from "@mantine/hooks";
 import { useEffect, useState } from "react";
@@ -21,7 +22,8 @@ import { Projects } from "./projects/Projects";
 
 export const App = () => {
     const preferredColorScheme = useColorScheme();
-    const [colorScheme, setColorScheme] = useState<ColorScheme>(preferredColorScheme);
+    const [colorScheme, setColorScheme] =
+        useState<ColorScheme>(preferredColorScheme);
     const toggleColorScheme = (value?: ColorScheme) =>
         setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
     const [tab, setTab] = useState("home");
@@ -30,63 +32,95 @@ export const App = () => {
         if (isClient) {
             return (
                 <ColorSchemeProvider
-                colorScheme={colorScheme}
-                toggleColorScheme={toggleColorScheme}
-            >
-                <MantineProvider
-                    theme={{ colorScheme }}
-                    withGlobalStyles
-                    withNormalizeCSS
+                    colorScheme={colorScheme}
+                    toggleColorScheme={toggleColorScheme}
                 >
-                    <AppShell
-                        padding="md"
-                        navbarOffsetBreakpoint="sm"
-                        asideOffsetBreakpoint="sm"
-                        header={
-                            <Header height={50}>
-                                <Group position="apart">
-                                    <ActionIcon
-                                        variant="outline"
-                                        color={colorScheme === "dark" ? "green.5" : "green.9"}
-                                        onClick={() => toggleColorScheme()}
-                                        style={{ margin: "10px" }}
-                                    >
-                                        {colorScheme === "dark" ? <TbSun /> : <TbMoonStars />}
-                                    </ActionIcon>
-                                    <SimpleGrid
-                                        cols={2}
-                                        spacing={0}
-                                        style={{
-                                            height: 50,
-                                            marginTop: 0,
-                                            marginBottom: 0,
-                                        }}
-                                    >
-                                        <NavLink
-                                            label={<Center>HOME</Center>}
-                                            color={colorScheme === "dark" ? "green.5" : "green.9"}
-                                            active={tab === "home"}
-                                            onClick={() => setTab("home")}
-                                        />
-                                        <NavLink
-                                            label={<Center>PROJECTS</Center>}
-                                            color={colorScheme === "dark" ? "green.5" : "green.9"}
-                                            active={tab === "projects"}
-                                            onClick={() => setTab("projects")}
-                                        />
-                                    </SimpleGrid>
-                                </Group>
-                            </Header>
-                        }
+                    <MantineProvider
+                        theme={{ colorScheme }}
+                        withGlobalStyles
+                        withNormalizeCSS
                     >
-                        <Hero />
-                        {tab === "home" ? <Home /> : <Projects />}
-                    </AppShell>
-                </MantineProvider>
-            </ColorSchemeProvider>
+                        <AppShell
+                            padding="md"
+                            navbarOffsetBreakpoint="sm"
+                            asideOffsetBreakpoint="sm"
+                            header={
+                                <Header height={50}>
+                                    <Group position="apart">
+                                        <ActionIcon
+                                            variant="outline"
+                                            color={
+                                                colorScheme === "dark"
+                                                    ? "green.5"
+                                                    : "green.9"
+                                            }
+                                            onClick={() => toggleColorScheme()}
+                                            style={{ margin: "10px" }}
+                                        >
+                                            {colorScheme === "dark" ? (
+                                                <TbSun />
+                                            ) : (
+                                                <TbMoonStars />
+                                            )}
+                                        </ActionIcon>
+                                        <SimpleGrid
+                                            cols={2}
+                                            spacing={0}
+                                            style={{
+                                                height: 50,
+                                                marginTop: 0,
+                                                marginBottom: 0,
+                                            }}
+                                        >
+                                            <NavLink
+                                                label={<Center>HOME</Center>}
+                                                color={
+                                                    colorScheme === "dark"
+                                                        ? "green.5"
+                                                        : "green.9"
+                                                }
+                                                active={tab === "home"}
+                                                onClick={() => setTab("home")}
+                                            />
+                                            <NavLink
+                                                label={
+                                                    <Center>PROJECTS</Center>
+                                                }
+                                                color={
+                                                    colorScheme === "dark"
+                                                        ? "green.5"
+                                                        : "green.9"
+                                                }
+                                                active={tab === "projects"}
+                                                onClick={() =>
+                                                    setTab("projects")
+                                                }
+                                            />
+                                        </SimpleGrid>
+                                    </Group>
+                                </Header>
+                            }
+                        >
+                            <Hero />
+                            {tab === "home" ? <Home /> : <Projects />}
+                        </AppShell>
+                    </MantineProvider>
+                </ColorSchemeProvider>
             );
         } else {
-            return null;
+            return (
+                <>
+                    <LoadingOverlay
+                        loaderProps={{
+                            size: "lg",
+                            color:
+                                colorScheme === "dark" ? "green.5" : "green.9",
+                            variant: "dots",
+                        }}
+                        visible={true}
+                    />
+                </>
+            );
         }
     };
     useEffect(() => {

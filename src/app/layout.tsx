@@ -10,9 +10,7 @@ export default function RootLayout({
     <html lang="ja">
       
         <body>
-          <Suspense fallback={<p>Loading</p>}>
             {children}
-          </Suspense>
         </body>
       
     </html>
