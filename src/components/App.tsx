@@ -15,7 +15,6 @@ import {
 import { useColorScheme } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
-import { FooterSocial } from "./common/FooterSocial";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
 import { Projects } from "./projects/Projects";
@@ -26,10 +25,18 @@ export const App = () => {
         useState<ColorScheme>(preferredColorScheme);
     const toggleColorScheme = (value?: ColorScheme) =>
         setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
-    const [tab, setTab] = useState("home");
+
+    const appState = localStorage.getItem("TAB");
+    const initialState = appState ? JSON.parse(appState) : "home";
+    const [tab, setTab] = useState(initialState);
     const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        localStorage.setItem("TAB", JSON.stringify(tab));
+    }, [tab]);
+
     const app = () => {
-        if (isClient) {
+        if (isClient && tab) {
             return (
                 <ColorSchemeProvider
                     colorScheme={colorScheme}
@@ -109,7 +116,7 @@ export const App = () => {
             );
         } else {
             return (
-                <>
+                <div>
                     <LoadingOverlay
                         loaderProps={{
                             size: "lg",
@@ -119,7 +126,7 @@ export const App = () => {
                         }}
                         visible={true}
                     />
-                </>
+                </div>
             );
         }
     };
