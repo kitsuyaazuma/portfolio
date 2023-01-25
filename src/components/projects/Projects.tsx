@@ -14,7 +14,7 @@ import { FooterSocial } from "../common/FooterSocial";
 const mockdata = [
   {
     title: "【JPHACKS 2022】 Innovator認定 & MIRAISE賞",
-    image: "/imgs/JPHACKS2022.jpeg",
+    image: "/imgs/JPHACKS2022_resized.jpeg",
     url: "https://jphacks.com/2022/result/innovator/#:~:text=%E3%81%9F%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A7%E3%81%99%E3%80%82-,VRooM%20(A_2207%3A%E3%81%8F%E3%81%BE%E3%81%95%E3%82%93),-Hacking%20Sprint%20A",
     date: "November 2022",
   },
