@@ -110,7 +110,7 @@ export const App = () => {
             );
         } else {
             return (
-                <div style={{left: "50%", top: "50%", translate: "-50% -50%"}}>
+                <div style={{position:"absolute", left: "50%", top: "50%", translate: "-50% -50%"}}>
                     <LoadingOverlay
                         loaderProps={{
                             size: "lg",
