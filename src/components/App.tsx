@@ -26,14 +26,8 @@ export const App = () => {
     const toggleColorScheme = (value?: ColorScheme) =>
         setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
-    const appState = localStorage.getItem("TAB");
-    const initialState = appState ? JSON.parse(appState) : "home";
-    const [tab, setTab] = useState(initialState);
+    const [tab, setTab] = useState("home");
     const [isClient, setIsClient] = useState(false);
-
-    useEffect(() => {
-        localStorage.setItem("TAB", JSON.stringify(tab));
-    }, [tab]);
 
     const app = () => {
         if (isClient && tab) {
