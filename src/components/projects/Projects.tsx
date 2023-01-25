@@ -8,6 +8,8 @@ import {
   Container,
   SimpleGrid,
   Center,
+  useMantineColorScheme,
+  ColorScheme,
 } from "@mantine/core";
 import { FooterSocial } from "../common/FooterSocial";
 
@@ -38,23 +40,24 @@ const mockdata = [
   },
 ];
 
-const useStyles = createStyles((theme) => ({
-  card: {
-    transition: "transform 150ms ease, box-shadow 150ms ease",
-
-    "&:hover": {
-      transform: "scale(1.01)",
-      boxShadow: theme.shadows.md,
-      backgroundColor: "rgba(235, 251, 238, 1)",
-    },
-  },
-  title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontWeight: 600,
-  },
-}));
-
 export const Projects = () => {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const useStyles = createStyles((theme) => ({
+    card: {
+      transition: "transform 150ms ease, box-shadow 150ms ease",
+  
+      "&:hover": {
+        transform: "scale(1.01)",
+        boxShadow: theme.shadows.md,
+        backgroundColor: colorScheme === "dark" ? "rgba(47, 158, 68, 0.2)" : "rgba(235, 251, 238, 1)",
+      },
+    },
+    title: {
+      fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+      fontWeight: 600,
+    },
+  }));
+
   const { classes } = useStyles();
 
   const cards = mockdata.map((article) => (
