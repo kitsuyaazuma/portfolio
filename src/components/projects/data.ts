@@ -1,4 +1,14 @@
-export const data = [
+export type DataType = {
+    name: string
+    date: string
+    description: string
+    skills: string[]
+    links: any
+    images: string[]
+    impressions: string
+}
+
+export const data: DataType[] = [
     {
         name: "VRooM",
         date: "November 2022",

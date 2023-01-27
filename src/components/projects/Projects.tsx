@@ -9,9 +9,11 @@ import {
   SimpleGrid,
   Center,
   useMantineColorScheme,
+  Modal,
 } from "@mantine/core";
+import { useState } from "react";
 import { FooterSocial } from "../common/FooterSocial";
-import { data } from "./data";
+import { data, DataType } from "./data";
 
 // const mockdata = [
 //   {
@@ -59,6 +61,7 @@ export const Projects = () => {
   }));
 
   const { classes } = useStyles();
+  const [openedData, setOpenedData] = useState<DataType | null>(null);
 
   const cards = data.map((el, idx) => (
     <Card
@@ -66,7 +69,7 @@ export const Projects = () => {
       p="md"
       radius="md"
       component="a"
-      onClick={() => {}}
+      onClick={() => setOpenedData(el)}
       className={classes.card}
     >
       <AspectRatio ratio={1920 / 1080}>
@@ -86,6 +89,14 @@ export const Projects = () => {
 
   return (
     <>
+      <Modal
+        opened={openedData !== null}
+        onClose={() => setOpenedData(null)}
+        title={openedData?.name}
+        centered
+      >
+        {/* Modal content */}
+      </Modal>
       <Center my="xl">
         <Title>PROJECTS</Title>
       </Center>
