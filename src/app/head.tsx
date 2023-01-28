@@ -4,7 +4,7 @@ export default function Head() {
       <title>Kitsuya Azuma&apos;s Portfolio</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="東桔也（あずまきつや）のポートフォリオサイト" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon_io/favicon.ico" />
     </>
   )
 }
