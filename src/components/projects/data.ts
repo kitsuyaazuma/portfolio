@@ -1,9 +1,14 @@
+export type LinkType = {
+    name: string
+    url: string
+}
+
 export type DataType = {
     name: string
     date: string
     description: string
     skills: string[]
-    links: any
+    links: LinkType[]
     images: string[]
     impressions: string
 }
@@ -14,10 +19,10 @@ export const data: DataType[] = [
         date: "November 2022",
         description: "3Dアバターが作業を見守ってくれるアプリ",
         skills: ["React", "TypeScript", "Next.js"],
-        links: {
-            "GitHub": "https://github.com/jphacks/A_2207",
-            "Webアプリ": "https://jphacks-2022-4839e.web.app/"
-        },
+        links: [
+            {name: "GitHub", url: "https://github.com/jphacks/A_2207"},
+            {name: "Webアプリ", url: "https://jphacks-2022-4839e.web.app/"}
+        ],
         images: [
             "/imgs/projects/VRooM_1.jpeg",
         ],
@@ -28,9 +33,9 @@ export const data: DataType[] = [
         date: "November 2022",
         description: "ドットから作った大人気シューティングゲーム",
         skills: ["Python"],
-        links: {
-            "GitHub": "https://github.com/Kitsuya0828/Space-Invaders-Python"
-        },
+        links: [
+            {name: "GitHub", url: "https://github.com/Kitsuya0828/Space-Invaders-Python"}
+        ],
         images: [
             "/imgs/projects/SpaceInvadersPython_1.png",
             "/imgs/projects/SpaceInvadersPython_2.png",
@@ -41,11 +46,11 @@ export const data: DataType[] = [
         name: "Rubik's Cube on Browser",
         date: "November 2022",
         description: "いつでもどこでも遊べるルービックキューブ",
-        skills: ["Python"],
-        links: {
-            "GitHub": "https://github.com/Kitsuya0828/Rubiks-Cube",
-            "Webサイト(PC)": "https://azuma-rubiks-cube.netlify.app/",
-        },
+        skills: ["React", "TypeScript"],
+        links: [
+            {name: "GitHub", url: "https://github.com/Kitsuya0828/Rubiks-Cube"},
+            {name: "Webサイト(PC)", url: "https://azuma-rubiks-cube.netlify.app/"},
+        ],
         images: [
             "/imgs/projects/RubiksCube_1.png",
         ],  
@@ -56,12 +61,12 @@ export const data: DataType[] = [
         date: "October 2021",
         description: "Zoom/Google Meet 自動退出アプリ",
         skills: ["Python"],
-        links: {
-            "GitHub": "https://github.com/Kitsuya0828/SkiMee",
-            "Googleサイト": "https://sites.google.com/view/skimee/home",
-            "YouTube①": "https://www.youtube.com/watch?v=m62d0Yqtca4",
-            "YouTube②": "https://www.youtube.com/watch?v=G6qdD7962H0"
-        },
+        links: [
+            {name: "GitHub", url: "https://github.com/Kitsuya0828/SkiMee"},
+            {name: "Googleサイト", url: "https://sites.google.com/view/skimee/home"},
+            {name: "YouTube①", url: "https://www.youtube.com/watch?v=m62d0Yqtca4"},
+            {name: "YouTube②", url: "https://www.youtube.com/watch?v=G6qdD7962H0"}
+        ],
         images: [
             "/imgs/projects/SkiMee_1.png",
             "/imgs/projects/SkiMee_2.png",
