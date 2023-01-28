@@ -1,6 +1,6 @@
 import { Group, ThemeIcon, useMantineColorScheme } from '@mantine/core';
 import React from 'react'
-import { SiNextdotjs, SiPython, SiReact, SiTypescript } from 'react-icons/si';
+import { SiNextdotjs, SiPython, SiReact, SiTypescript, SiStreamlit, SiFastapi, SiDocker } from 'react-icons/si';
 
 interface SkillIconsProps {
     skills: string[]
@@ -12,10 +12,16 @@ export const SkillIcons = ({ skills }: SkillIconsProps) => {
 
     const toIcon = (skill: string) => {
         switch (skill) {
+            case 'Docker':
+                return <SiDocker />
             case 'React':
                 return <SiReact />
             case 'Python':
                 return <SiPython />
+            case 'Streamlit':
+                return <SiStreamlit />
+            case 'FastAPI':
+                return <SiFastapi />
             case 'TypeScript':
                 return <SiTypescript />
             case 'Next.js':
