@@ -73,6 +73,21 @@ export const data: DataType[] = [
         impressions: "ブラウザ上でも滑らかなスピードキューブ体験を。開発途中なので、乞うご期待。"
     },
     {
+        name: "Netflix Clone",
+        date: "October 2022",
+        description: "一見、ネトフリに見えて、ただ推しを紹介するだけのサイト",
+        skills: ["React", "TypeScript"],
+        links: [
+            {name: "GitHub", url: "https://github.com/Kitsuya0828/React-Netflix-clone"},
+            {name: "Webサイト", url: "https://react-netflix-clone-kitsuya0828.vercel.app/"},
+        ],
+        images: [
+            "/imgs/projects/NetflixClone_1.png",
+            "/imgs/projects/NetflixClone_2.png",
+        ],  
+        impressions: "初めてのReact制作物。友達に今期見てるアニメを紹介するときに重宝しています。"
+    },
+    {
         name: "PoiNe!",
         date: "September 2022",
         description: "新感覚モノマネ採点アプリ",
