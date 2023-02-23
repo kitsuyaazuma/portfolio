@@ -71,13 +71,13 @@ export const SkillsChart = (props) => {
         ticks: {
           stepSize: 1,
         },
-      },
-      pointLabels: {
-        font: {
-          weight: 500,
-          size: 12
+        pointLabels: {
+          font: {
+            weight: 500,
+            size: 12
+          }
         }
-      }
+      },
     },
   };
 
