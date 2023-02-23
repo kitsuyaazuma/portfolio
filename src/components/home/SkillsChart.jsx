@@ -8,7 +8,11 @@ import {
   Legend,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import { defaults } from 'chart.js';
 import { Center } from "@mantine/core";
+
+defaults.font.size = 14;
+// defaults.font.weight = 'bold';
 
 ChartJS.register(
   RadialLinearScale,
@@ -23,7 +27,7 @@ const skillData = [
   {
     label: "Front-end",
     labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Bootstrap"],
-    data: [3, 3, 2, 4, 4, 3],
+    data: [3, 3, 3, 4, 4, 3],
     backgroundColor: "rgba(255, 107, 107, 0.2)",
     borderColor: "rgba(255, 107, 107, 1)",
   },
@@ -36,18 +40,14 @@ const skillData = [
   },
   {
     label: "DevOps",
-    labels: ["Linux", "Git/GitHub", "Docker", "GCP", "Terraform", "AWS"],
-    data: [4, 4, 3, 4, 2, 3],
+    labels: ["Linux", "Kubernetes", "Docker", "GCP", "Terraform", "AWS"],
+    data: [4, 3, 3, 3, 4, 4],
     backgroundColor: "rgba(252, 196, 25, 0.2)",
     borderColor: "rgba(252, 196, 25, 1)",
   },
 ];
 
-type propsType = {
-  index: number;
-};
-
-export const SkillsChart = (props: propsType) => {
+export const SkillsChart = (props) => {
   const data = () => {
     return {
       labels: skillData[props.index].labels,
@@ -72,6 +72,12 @@ export const SkillsChart = (props: propsType) => {
           stepSize: 1,
         },
       },
+      pointLabels: {
+        font: {
+          weight: 500,
+          size: 12
+        }
+      }
     },
   };
 

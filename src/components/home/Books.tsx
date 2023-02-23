@@ -24,7 +24,7 @@ export const Books = () => {
       >
 
         <Stack>
-          <Text size="lg" fw={700}>『ReactではじめるChrome拡張開発入門』</Text>
+          <Text size="xl" fw={700}>『ReactではじめるChrome拡張開発入門』</Text>
           <Text size="sm">
             体系的なドキュメントがなかったReactとTypeScriptによるChrome拡張機能開発を入門書にまとめて公開。
           </Text>
@@ -35,7 +35,7 @@ export const Books = () => {
             ZennのTrending Booksで1位を獲得した。
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button variant="light" color="green.9" size="md">
+            <Button variant="light" color="green.9" size="md" component="a" href="https://zenn.dev/alvinvin/books/chrome_extension">
               Zennで読む（無料）
             </Button>
           </Group>
