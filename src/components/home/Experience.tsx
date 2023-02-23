@@ -43,6 +43,9 @@ export const Experience = () => {
               <Badge variant="light" size="sm" color="green.9">
                 AWS
               </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Terraform
+              </Badge>
             </Group>
           </Timeline.Item>
 
@@ -73,6 +76,9 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 Docker
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Kubernetes
               </Badge>
             </Group>
           </Timeline.Item>
