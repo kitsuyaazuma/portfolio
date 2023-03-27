@@ -1,5 +1,5 @@
 import { createStyles, Group, Text, Button } from "@mantine/core";
-import { SiGithub, SiQiita, SiTwitter, SiYoutube, SiZenn } from "react-icons/si";
+import { SiGithub, SiQiita, SiTwitter, SiYoutube, SiZenn, SiBlogger } from "react-icons/si";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -85,6 +85,15 @@ export function FooterSocial() {
             compact
           >
             <SiZenn size="16" />
+          </Button>
+          <Button
+            variant="subtle"
+            component="a"
+            href="https://azumaprogrammingdiary.blogspot.com/"
+            color="green.9"
+            compact
+          >
+            <SiBlogger size="16" />
           </Button>
         </Group>
       </Group>

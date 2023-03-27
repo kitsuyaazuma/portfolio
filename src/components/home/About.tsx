@@ -8,12 +8,15 @@ import {
   Container,
   Group,
   Button,
-  Highlight,
+  useMantineColorScheme,
 } from "@mantine/core";
 import React from "react";
-import { SiGithub, SiTwitter, SiQiita, SiYoutube, SiZenn } from "react-icons/si";
+import { SiGithub, SiTwitter, SiQiita, SiYoutube, SiZenn, SiBlogger } from "react-icons/si";
+import Highlighter from "react-highlight-words";
+import "./highlight.scss";
 
 export const About = () => {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">
       <Center my="lg">
@@ -29,26 +32,45 @@ export const About = () => {
         <Image p="lg" radius="md" src="imgs/Profile_color_sketch.jpeg" alt="Kitsuya Azuma"/>
 
         <Stack>
-          <Text size="sm"><Highlight highlight="大学3年生" highlightColor="green.1">宮城県仙台市在住の大学3年生。</Highlight></Text>
           <Text size="sm">
-            <Highlight highlight={["個人開発"]} highlightColor="green.1">
-              大学入学と同時に始めた競技プログラミングをきっかけに、個人開発に興味を持つ。
-            </Highlight>
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["大学4年生"]}
+              autoEscape={true}
+              textToHighlight={"宮城県仙台市在住の大学4年生。"}
+            />
           </Text>
           <Text size="sm">
-            <Highlight highlight={["情報工学"]} highlightColor="green.1">
-              大学では情報工学を専攻。来年度からは画像情報通信工学研究室に配属予定。
-            </Highlight>
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["個人開発"]}
+              autoEscape={true}
+              textToHighlight={"大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。"}
+            />
           </Text>
           <Text size="sm">            
-            <Highlight highlight={["ベンチャー企業2社"]} highlightColor="green.1">
-              学生インターンとしてベンチャー企業2社で修行を重ねている。とにかく新しい技術を触るのが好き。
-            </Highlight>
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["画像処理"]}
+              autoEscape={true}
+              textToHighlight={"大学では情報工学を専攻。研究室では画像処理の研究を行なっている。"}
+            />
           </Text>
           <Text size="sm">
-            <Highlight highlight={["技術発信活動"]} highlightColor="green.1">       
-              技術記事ライターやTech系VTuber「あづまる」としても技術発信活動を行なっている。
-            </Highlight>
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["学生インターン"]}
+              autoEscape={true}
+              textToHighlight={"学生インターンとしてベンチャー企業2社で修行を重ねている。とにかく新しい技術を触るのが好き。"}
+            />
+          </Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["積極的なアウトプット"]}
+              autoEscape={true}
+              textToHighlight={"技術記事ライターやTech系VTuber「あづまる」として積極的なアウトプットも行なっている。"}
+            />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
             <Button
@@ -96,6 +118,15 @@ export const About = () => {
             >
               <SiZenn size="20" />
             </Button>
+            <Button
+            variant="subtle"
+            component="a"
+            href="https://azumaprogrammingdiary.blogspot.com/"
+            color="green.9"
+            compact
+          >
+            <SiBlogger size="20" />
+          </Button>
           </Group>
         </Stack>
       </Flex>

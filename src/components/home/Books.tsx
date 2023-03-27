@@ -1,18 +1,19 @@
 import {
-  Title,
   Text,
   Image,
-  Center,
   Flex,
   Stack,
   Container,
   Group,
   Button,
+  useMantineColorScheme,
 } from "@mantine/core";
 import React from "react";
-import { SiGithub, SiTwitter, SiQiita, SiYoutube, SiZenn } from "react-icons/si";
+import Highlighter from "react-highlight-words";
+import "./highlight.scss";
 
 export const Books = () => {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">
 
@@ -26,13 +27,28 @@ export const Books = () => {
         <Stack>
           <Text size="xl" fw={700}>『ReactではじめるChrome拡張開発入門』</Text>
           <Text size="sm">
-            体系的なドキュメントがなかったReactとTypeScriptによるChrome拡張機能開発を入門書にまとめて公開。
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["ReactとTypeScriptによるChrome拡張機能開発"]}
+              autoEscape={true}
+              textToHighlight={"体系的なドキュメントがなかったReactとTypeScriptによるChrome拡張機能開発を入門書にまとめて公開。"}
+            />
           </Text>
           <Text size="sm">
-            ハンズオン形式でDeepLのような実践的な翻訳Chrome拡張機能を開発しながら学ぶ。
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["ハンズオン形式"]}
+              autoEscape={true}
+              textToHighlight={"ハンズオン形式でDeepLのような実践的な翻訳Chrome拡張機能を開発しながら学ぶ。"}
+            />
           </Text>
           <Text size="sm">
-            ZennのTrending Booksで1位を獲得した。
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["1位を獲得"]}
+              autoEscape={true}
+              textToHighlight={"ZennのTrending Books（2023/02）で1位を獲得した。"}
+            />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
             <Button variant="light" color="green.9" size="md" component="a" href="https://zenn.dev/alvinvin/books/chrome_extension">
