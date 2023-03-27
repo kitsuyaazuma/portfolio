@@ -15,8 +15,21 @@ export type DataType = {
 
 export const data: DataType[] = [
     {
+        name: "gommit",
+        date: "March 2023",
+        description: "コミットメッセージでもう迷わないためのCLIツール",
+        skills: ["Go"],
+        links: [
+            {name: "GitHub", url: "https://github.com/Kitsuya0828/gommit"},
+        ],
+        images: [
+            "/imgs/projects/gommit_1.png",
+        ],
+        impressions: "コミットメッセージの種類なんて考えたくない！調べたくない！そんな悩みを解消するコマンドラインツール。"
+    },
+    {
         name: "Image Processing 100",
-        date: "Under Development",
+        date: "March 2023",
         description: "画像処理100本ノックのリアルタイムWebアプリ",
         skills: ["Docker", "Python", "FastAPI", "React", "TypeScript", "Next.js"],
         links: [
