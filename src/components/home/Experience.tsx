@@ -17,71 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
-          <Timeline.Item
-            bullet={<TbDevicesPc/>}
-            title={
-              <Anchor
-                href="http://be-doctor.com/"
-                target="_blank"
-                color="green.9"
-              >
-                Be Doctor Consulting株式会社
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2022年11月 - 現在　インターン
-            </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                React
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                GraphQL
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                AWS
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Terraform
-              </Badge>
-            </Group>
-          </Timeline.Item>
-
-          <Timeline.Item
-            bullet={<TbDevicesPc />}
-            title={
-              <Anchor
-                href="https://corp.langsmith.co.jp/"
-                target="_blank"
-                color="green.9"
-              >
-                Langsmith株式会社
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2022年4月 - 現在　インターン
-            </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                Python
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                React
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                GCP
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Docker
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Kubernetes
-              </Badge>
-            </Group>
-          </Timeline.Item>
+        <Timeline active={0} bulletSize={28} lineWidth={2} color="green.9">
 
           <Timeline.Item
             bullet={<TbSchool />}
@@ -104,6 +40,71 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 画像情報通信工学
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="http://be-doctor.com/"
+                target="_blank"
+                color="dimmed"
+              >
+                Be Doctor Consulting株式会社
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2022年11月 - 2023年4月　インターン
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                React
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                GraphQL
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                AWS
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Terraform
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc />}
+            title={
+              <Anchor
+                href="https://corp.langsmith.co.jp/"
+                target="_blank"
+                color="dimmed"
+              >
+                Langsmith株式会社
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2022年4月 - 2023年4月　インターン
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                Python
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                React
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                GCP
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Docker
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Kubernetes
               </Badge>
             </Group>
           </Timeline.Item>
