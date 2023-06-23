@@ -61,7 +61,7 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["学生インターン"]}
               autoEscape={true}
-              textToHighlight={"学生インターンとしてベンチャー企業2社で修行を重ねている。とにかく新しい技術を触るのが好き。"}
+              textToHighlight={"学生インターンとして様々なベンチャー企業で修行を積んでいる（※ 現在は「税金の壁」のため休止中）。とにかく新しい技術を触るのが好き。"}
             />
           </Text>
           <Text size="sm">
@@ -69,7 +69,7 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["積極的なアウトプット"]}
               autoEscape={true}
-              textToHighlight={"技術記事ライターやTech系VTuber「あづまる」として積極的なアウトプットも行なっている。"}
+              textToHighlight={"技術記事ライターとして積極的なアウトプットも行なっている。以前は Tech系VTuber「あづまる」として動画配信活動も行っていた。"}
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">

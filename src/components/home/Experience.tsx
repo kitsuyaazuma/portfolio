@@ -17,7 +17,37 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={0} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://www.cyberagent.co.jp/"
+                target="_blank"
+                color="green.9"
+              >
+                株式会社サイバーエージェント
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年7月　インターン（CA Tech JOB インフラエンジニア）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                OpenTelemetry
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Graphana
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Kubernetes
+              </Badge>
+            </Group>
+          </Timeline.Item>
 
           <Timeline.Item
             bullet={<TbSchool />}
@@ -45,6 +75,28 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
+            bullet={<TbSchool />}
+            title={
+              <Anchor
+                href="https://toruyoshikawa.org/"
+                target="_blank"
+                color="green.9"
+              >
+                吉川徹財団
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年4月 - 2024年3月　第1期奨学生
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                ITエンジニア
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
             bullet={<TbDevicesPc/>}
             title={
               <Anchor
@@ -57,7 +109,7 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2022年11月 - 2023年4月　インターン
+              2022年11月 - 2023年4月　長期インターン
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -88,7 +140,7 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2022年4月 - 2023年4月　インターン
+              2022年4月 - 2023年4月　長期インターン
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">

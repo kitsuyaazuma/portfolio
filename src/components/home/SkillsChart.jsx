@@ -33,15 +33,15 @@ const skillData = [
   },
   {
     label: "Back-end",
-    labels: ["Python", "TypeScript", "Ruby", "Go", "C++", "C"],
-    data: [5, 4, 2, 3, 2, 2],
+    labels: ["Python", "TypeScript", "MySQL", "Go", "Firebase", "C"],
+    data: [5, 4, 3, 4, 4, 3],
     backgroundColor: "rgba(51, 154, 240, 0.2)",
     borderColor: "rgba(51, 154, 240, 1)",
   },
   {
     label: "DevOps",
     labels: ["Linux", "Kubernetes", "Docker", "GCP", "Terraform", "AWS"],
-    data: [4, 3, 3, 3, 4, 4],
+    data: [4, 4, 4, 3, 4, 4],
     backgroundColor: "rgba(252, 196, 25, 0.2)",
     borderColor: "rgba(252, 196, 25, 1)",
   },

@@ -18,7 +18,7 @@ export const Hero = () => {
         </Center>
         <Center>
           <Text color="dimmed">
-            Software Engineer / Engineering Student / YouTuber
+            Software Engineer / Engineering Student
           </Text>
         </Center>
       </Stack>
