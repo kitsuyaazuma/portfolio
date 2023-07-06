@@ -41,7 +41,7 @@ export const Experience = () => {
                 OpenTelemetry
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                Graphana
+                Grafana
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 Kubernetes
