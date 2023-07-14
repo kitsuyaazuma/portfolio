@@ -41,7 +41,7 @@ const skillData = [
   {
     label: "DevOps",
     labels: ["Linux", "Kubernetes", "Docker", "GCP", "Terraform", "AWS"],
-    data: [4, 4, 4, 3, 4, 4],
+    data: [4, 4, 4, 4, 4, 4],
     backgroundColor: "rgba(252, 196, 25, 0.2)",
     borderColor: "rgba(252, 196, 25, 1)",
   },

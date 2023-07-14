@@ -17,7 +17,34 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={3} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline.Item
+          bullet={<TbDevicesPc/>}
+          title={
+            <Anchor
+              href="https://about.yahoo.co.jp/"
+              target="_blank"
+              color="green.9"
+            >
+              ヤフー株式会社
+            </Anchor>
+          }
+        >
+          <Text size="xs" color="dimmed">
+            2023年8月　インターン（2023 Summer Internship クラウドインフラ開発）
+          </Text>
+          <Group mt="sm" spacing="xs">
+            <Badge variant="light" size="sm" color="green.9">
+              Linux
+            </Badge>
+            <Badge variant="light" size="sm" color="green.9">
+              OpenStack
+            </Badge>
+            <Badge variant="light" size="sm" color="green.9">
+              Kubernetes
+            </Badge>
+          </Group>
+        </Timeline.Item>
         <Timeline.Item
             bullet={<TbDevicesPc/>}
             title={
@@ -31,20 +58,20 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2023年7月　インターン（CA Tech JOB インフラエンジニア）
+              2023年7月　インターン（CA Tech JOB @Abema Cloud Platform）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 Go
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                OpenTelemetry
+                GCP
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                Grafana
+                AWS
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                Kubernetes
+                Azure
               </Badge>
             </Group>
           </Timeline.Item>
