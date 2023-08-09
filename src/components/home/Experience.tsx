@@ -19,6 +19,31 @@ export const Experience = () => {
       <Center>
         <Timeline active={3} bulletSize={28} lineWidth={2} color="green.9">
         <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://www.cyberagent.co.jp/"
+                target="_blank"
+                color="green.9"
+              >
+                株式会社サイバーエージェント
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年9月　次世代トップエンジニア創出インターンシップ ACE
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                AWS
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+        <Timeline.Item
           bullet={<TbDevicesPc/>}
           title={
             <Anchor
@@ -45,36 +70,7 @@ export const Experience = () => {
             </Badge>
           </Group>
         </Timeline.Item>
-        <Timeline.Item
-            bullet={<TbDevicesPc/>}
-            title={
-              <Anchor
-                href="https://www.cyberagent.co.jp/"
-                target="_blank"
-                color="green.9"
-              >
-                株式会社サイバーエージェント
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2023年7月　インターン（CA Tech JOB @Abema Cloud Platform）
-            </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                Go
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                GCP
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                AWS
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Azure
-              </Badge>
-            </Group>
-          </Timeline.Item>
+
 
           <Timeline.Item
             bullet={<TbSchool />}
@@ -119,6 +115,37 @@ export const Experience = () => {
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 ITエンジニア
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://www.cyberagent.co.jp/"
+                target="_blank"
+                color="dimmed"
+              >
+                株式会社サイバーエージェント
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年7月　インターン（CA Tech JOB @Abema Cloud Platform）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                GCP
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                AWS
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Terraform
               </Badge>
             </Group>
           </Timeline.Item>
