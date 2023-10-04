@@ -17,37 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
-        <Timeline.Item
-            bullet={<TbDevicesPc/>}
-            title={
-              <Anchor
-                href="https://www.cyberagent.co.jp/"
-                target="_blank"
-                color="green.9"
-              >
-                株式会社サイバーエージェント
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2023年9月　次世代トップエンジニア創出インターンシップ ACE
-            </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                Go
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                MySQL
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                GraphQL
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                AWS
-              </Badge>
-            </Group>
-          </Timeline.Item>
+        <Timeline active={1} bulletSize={28} lineWidth={2} color="green.9">
 
           <Timeline.Item
             bullet={<TbSchool />}
@@ -92,6 +62,37 @@ export const Experience = () => {
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 ITエンジニア
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://www.cyberagent.co.jp/"
+                target="_blank"
+                color="dimmed"
+              >
+                株式会社サイバーエージェント
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年9月　次世代トップエンジニア創出インターンシップ ACE（最優秀チーム賞）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                TypeScript
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                MySQL
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                GraphQL
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                AWS
               </Badge>
             </Group>
           </Timeline.Item>

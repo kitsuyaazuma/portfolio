@@ -51,9 +51,9 @@ export const About = () => {
           <Text size="sm">            
             <Highlighter
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
-              searchWords={["画像処理"]}
+              searchWords={["画像処理（機械学習）"]}
               autoEscape={true}
-              textToHighlight={"大学では情報工学を専攻。研究室では画像処理の研究を行なっている。"}
+              textToHighlight={"大学では情報工学を専攻。研究室では画像処理（機械学習）の研究を行なっている。"}
             />
           </Text>
           <Text size="sm">
@@ -61,7 +61,7 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["学生インターン"]}
               autoEscape={true}
-              textToHighlight={"学生インターンとして様々なベンチャー企業で修行を積んでいる。とにかく新しい技術を触るのが好き。"}
+              textToHighlight={"学生インターンとして様々なベンチャー企業で修行を積んでいる。とにかく新しい技術を触るのが好きで、インフラ系には特に目がない。"}
             />
           </Text>
           <Text size="sm">
