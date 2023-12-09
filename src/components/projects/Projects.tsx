@@ -49,6 +49,7 @@ export const Projects = () => {
       component="a"
       onClick={() => setOpenedData(el)}
       className={classes.card}
+      style={{ cursor: "pointer" }}
     >
       <AspectRatio ratio={16 / 9}>
         <Image src={el.images[0]} alt={el.name} />

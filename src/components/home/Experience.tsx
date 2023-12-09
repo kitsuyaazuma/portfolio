@@ -17,13 +17,41 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={1} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
+
+        <Timeline.Item
+            bullet={<TbSchool />}
+            title={
+              <Anchor
+                href="http://www.iic.ecei.tohoku.ac.jp/"
+                target="_blank"
+                color="green.9"
+              >
+                東京工業大学
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2024年4月 - 2026年3月　工学院 情報通信系
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                情報通信
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                無線ネットワーク
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                機械学習
+              </Badge>
+            </Group>
+          </Timeline.Item>
 
           <Timeline.Item
             bullet={<TbSchool />}
             title={
               <Anchor
-                href="http://www.iic.ecei.tohoku.ac.jp/"
+                href="https://www.tohoku.ac.jp/japanese/"
                 target="_blank"
                 color="green.9"
               >
@@ -32,14 +60,20 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2020年4月 - 現在　工学部電気情報物理工学科
+              2020年4月 - 2024年3月　工学部電気情報物理工学科
+            </Text>
+            <Text size="xs" color="dimmed">
+              2023年4月 - 2024年3月　<Anchor href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="dimmed">大町研究室</Anchor>
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 情報工学
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                画像情報通信工学
+                機械学習
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                画像処理
               </Badge>
             </Group>
           </Timeline.Item>
@@ -259,7 +293,7 @@ export const Experience = () => {
             bullet={<TbDevicesPc />}
             title={
               <Anchor
-                href="https://nnn.ed.jp/course/net_commute/"
+                href="https://corp.rakuten.co.jp/"
                 target="_blank"
                 color="dimmed"
               >

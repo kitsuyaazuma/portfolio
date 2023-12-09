@@ -11,7 +11,7 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import React from "react";
-import { SiGithub, SiTwitter, SiQiita, SiYoutube, SiZenn, SiBlogger } from "react-icons/si";
+import { SiGithub, SiQiita, SiYoutube, SiZenn, SiBlogger, SiX } from "react-icons/si";
 import Highlighter from "react-highlight-words";
 import "./highlight.scss";
 
@@ -51,9 +51,9 @@ export const About = () => {
           <Text size="sm">            
             <Highlighter
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
-              searchWords={["画像処理（機械学習）"]}
+              searchWords={["画像処理（機械学習）", "連合学習"]}
               autoEscape={true}
-              textToHighlight={"大学では情報工学を専攻。研究室では画像処理（機械学習）の研究を行なっている。"}
+              textToHighlight={"大学では情報工学を専攻。画像処理（機械学習）の研究室に所属し、連合学習の研究を行なっている。"}
             />
           </Text>
           <Text size="sm">
@@ -69,7 +69,7 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["積極的なアウトプット"]}
               autoEscape={true}
-              textToHighlight={"技術記事ライターとして積極的なアウトプットも行なっている。以前は Tech系VTuber「あづまる」として動画配信活動も行っていた。"}
+              textToHighlight={"技術記事ライターとして積極的なアウトプットも行なっている。かつて Tech系VTuber「あづまる」として動画配信活動も行っていた。"}
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
@@ -85,11 +85,11 @@ export const About = () => {
             <Button
               variant="subtle"
               component="a"
-              href="https://twitter.com/azuma_alvin"
+              href="https://x.com/azuma_alvin"
               color="green.9"
               compact
             >
-              <SiTwitter size="20" />
+              <SiX size="20" />
             </Button>
             <Button
               variant="subtle"
