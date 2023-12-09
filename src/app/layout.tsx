@@ -1,4 +1,5 @@
 "use client";
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function RootLayout({
   children,
@@ -7,6 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <GoogleAnalytics />
+      </head>
         <body>
             {children}
         </body>
