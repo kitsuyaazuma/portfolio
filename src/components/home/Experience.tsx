@@ -17,7 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={3} bulletSize={28} lineWidth={2} color="green.9">
 
         <Timeline.Item
             bullet={<TbSchool />}
@@ -32,7 +32,7 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2024年4月 - 2026年3月　工学院 情報通信系
+              2024年4月 -　工学院 情報通信系
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
@@ -74,6 +74,31 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 画像処理
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://www.mirrativ.co.jp/"
+                target="_blank"
+                color="green.9"
+              >
+                株式会社ミラティブ
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2024年2月 - 　インターン（インフラエンジニア）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Linux
               </Badge>
             </Group>
           </Timeline.Item>

@@ -40,7 +40,7 @@ export const data: DataType[] = [
             "https://github.com/Kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/calendar-properties-sync.jpeg",
             "https://github.com/Kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/notion-google-calendar-sync.jpeg",
         ],
-        impressions: "Notion便利だけどスマホでカレンダーが見にくい！小さな動機から生まれた同期。クラウドデプロイのIaCまで完備。"
+        impressions: "Notion便利だけどスマホでカレンダーが見にくい！小さな動機から生まれた同期。クラウドデプロイのIaCまで完備。（※ 2024年1月にNotion Calendarがリリースされたため利用は非推奨）"
     },
     {
         name: "gommit",
