@@ -17,7 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={3} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={4} bulletSize={28} lineWidth={2} color="green.9">
 
         <Timeline.Item
             bullet={<TbSchool />}
@@ -74,6 +74,30 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 画像処理
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://corporate.m3.com/"
+                color="green.9"
+              >
+                エムスリー株式会社
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2024年3月　インターン（MLOpsエンジニア）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Python
               </Badge>
             </Group>
           </Timeline.Item>
