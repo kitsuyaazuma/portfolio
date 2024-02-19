@@ -29,7 +29,7 @@ export const About = () => {
         justify="center"
         align="center"
       >
-        <Image p="lg" radius="md" src="imgs/Profile_color_sketch.jpeg" alt="Kitsuya Azuma"/>
+        <Image p="lg" radius="md" src="imgs/Profile_color_sketch_new.jpeg" alt="Kitsuya Azuma"/>
 
         <Stack>
           <Text size="sm">
