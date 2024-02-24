@@ -14,6 +14,7 @@ import React from "react";
 import { SiGithub, SiQiita, SiYoutube, SiZenn, SiBlogger, SiX } from "react-icons/si";
 import Highlighter from "react-highlight-words";
 import "./highlight.scss";
+import SvgComponent from "../assets/SizumeIcon";
 
 export const About = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -126,6 +127,15 @@ export const About = () => {
             compact
           >
             <SiBlogger size="20" />
+          </Button>
+          <Button
+            variant="subtle"
+            component="a"
+            href="https://sizu.me/azuma_alvin"
+            color="green.9"
+            compact
+          >
+            <SvgComponent size="20" />
           </Button>
           </Group>
         </Stack>

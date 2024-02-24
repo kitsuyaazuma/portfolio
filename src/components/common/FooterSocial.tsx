@@ -1,5 +1,6 @@
 import { createStyles, Group, Text, Button } from "@mantine/core";
 import { SiGithub, SiQiita, SiX, SiYoutube, SiZenn, SiBlogger } from "react-icons/si";
+import SvgComponent from "../assets/SizumeIcon";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -94,6 +95,15 @@ export function FooterSocial() {
             compact
           >
             <SiBlogger size="16" />
+          </Button>
+          <Button
+            variant="subtle"
+            component="a"
+            href="https://sizu.me/azuma_alvin"
+            color="green.9"
+            compact
+          >
+            <SvgComponent size="20" />
           </Button>
         </Group>
       </Group>
