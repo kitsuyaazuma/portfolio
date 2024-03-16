@@ -116,7 +116,7 @@ export const PickUp = () => {
         align="center"
       >
         <div style={{ width: "360px" }}>
-          <Image p="lg" radius="md" src="imgs/IEICEPoster.png" alt="IEICEPoster"/>
+          <Image p="lg" radius="md" src="imgs/IEICECertificate.webp" alt="IEICECertificate"/>
         </div>
         <Stack>
           <Text size="xl" fw={700}>『連合学習の通信量を削減するためのEnergyスコアを利用した知識蒸留手法の検討』</Text>
