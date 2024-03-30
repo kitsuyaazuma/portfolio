@@ -141,7 +141,7 @@ export const PickUp = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["卒業論文"]}
               autoEscape={true}
-              textToHighlight={"発表内容をさらに発展させ、卒業論文として執筆中。"}
+              textToHighlight={"発表内容をさらに発展させ、卒業論文として執筆した。"}
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">

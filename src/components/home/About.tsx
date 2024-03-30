@@ -36,9 +36,9 @@ export const About = () => {
           <Text size="sm">
             <Highlighter
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
-              searchWords={["大学4年生"]}
+              searchWords={["大学院1年生"]}
               autoEscape={true}
-              textToHighlight={"宮城県仙台市在住の大学4年生。"}
+              textToHighlight={"都内在住の大学院1年生。"}
             />
           </Text>
           <Text size="sm">
@@ -54,23 +54,23 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["画像処理（機械学習）", "連合学習"]}
               autoEscape={true}
-              textToHighlight={"大学では情報工学を専攻。画像処理（機械学習）の研究室に所属し、連合学習の研究を行なっている。"}
+              textToHighlight={"大学では画像処理（機械学習）の研究室に所属し、蒸留ベースの連合学習の研究を行なった。"}
             />
           </Text>
           <Text size="sm">
             <Highlighter
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
-              searchWords={["学生インターン"]}
+              searchWords={["インターン生", "知る＆触る"]}
               autoEscape={true}
-              textToHighlight={"学生インターンとして様々なベンチャー企業で修行を積んでいる。とにかく新しい技術を触るのが好きで、インフラ系には特に目がない。"}
+              textToHighlight={"インターン生として様々な企業で修行を積んでいる。とにかく新しい技術を知る＆触るのが好きで、インフラ系には特に目がない。"}
             />
           </Text>
           <Text size="sm">
             <Highlighter
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
-              searchWords={["積極的なアウトプット"]}
+              searchWords={["おうちKubernetes"]}
               autoEscape={true}
-              textToHighlight={"技術記事ライターとして積極的なアウトプットも行なっている。かつて Tech系VTuber「あづまる」として動画配信活動も行っていた。"}
+              textToHighlight={"2024年の目標はおうちKubernetesを誇れるレベルまで進化させること。"}
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">

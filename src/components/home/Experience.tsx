@@ -17,7 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={4} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
 
         <Timeline.Item
             bullet={<TbSchool />}
@@ -48,37 +48,6 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<TbSchool />}
-            title={
-              <Anchor
-                href="https://www.tohoku.ac.jp/japanese/"
-                target="_blank"
-                color="green.9"
-              >
-                東北大学
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2020年4月 - 2024年3月　工学部電気情報物理工学科
-            </Text>
-            <Text size="xs" color="dimmed">
-              2023年4月 - 2024年3月　<Anchor href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="dimmed">大町研究室</Anchor>
-            </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                情報工学
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                機械学習
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                画像処理
-              </Badge>
-            </Group>
-          </Timeline.Item>
-
-          <Timeline.Item
             bullet={<TbDevicesPc/>}
             title={
               <Anchor
@@ -90,14 +59,17 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2024年3月　インターン（MLOpsエンジニア）
+              2024年3月　インターン（MLOpsエンジニア @AI・機械学習チーム）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 Go
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                Python
+                Kubernetes
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Google Cloud
               </Badge>
             </Group>
           </Timeline.Item>
@@ -131,9 +103,40 @@ export const Experience = () => {
             bullet={<TbSchool />}
             title={
               <Anchor
+                href="https://www.tohoku.ac.jp/japanese/"
+                target="_blank"
+                color="dimmed"
+              >
+                東北大学
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2020年4月 - 2024年3月　工学部電気情報物理工学科
+            </Text>
+            <Text size="xs" color="dimmed">
+              2023年4月 - 2024年3月　<Anchor href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="dimmed">大町研究室</Anchor>
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                情報工学
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                機械学習
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                画像処理
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbSchool />}
+            title={
+              <Anchor
                 href="https://toruyoshikawa.org/"
                 target="_blank"
-                color="green.9"
+                color="dimmed"
               >
                 吉川徹財団
               </Anchor>
@@ -142,11 +145,6 @@ export const Experience = () => {
             <Text size="xs" color="dimmed">
               2023年4月 - 2024年3月　第1期奨学生
             </Text>
-            <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
-                ITエンジニア
-              </Badge>
-            </Group>
           </Timeline.Item>
 
           <Timeline.Item
@@ -231,7 +229,7 @@ export const Experience = () => {
                 Go
               </Badge>
               <Badge variant="light" size="sm" color="gray.7">
-                GCP
+                Google Cloud
               </Badge>
               <Badge variant="light" size="sm" color="gray.7">
                 AWS
