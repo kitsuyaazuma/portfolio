@@ -115,7 +115,7 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "360px" }}>
+        <div style={{ width: "240px" }}>
           <Image p="lg" radius="md" src="imgs/IEICECertificate.webp" alt="IEICECertificate"/>
         </div>
         <Stack>
@@ -160,7 +160,7 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "480px" }}>
+        <div style={{ width: "240px" }}>
           <Image p="lg" radius="md" src="imgs/M3TechBlog.png" alt="M3TechBlog"/>
         </div>
         <Stack>
