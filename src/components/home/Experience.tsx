@@ -17,7 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={2} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={1} bulletSize={28} lineWidth={2} color="green.9">
 
         <Timeline.Item
             bullet={<TbSchool />}
@@ -34,42 +34,18 @@ export const Experience = () => {
             <Text size="xs" color="dimmed">
               2024年4月 -　工学院 情報通信系
             </Text>
+            <Text size="xs" color="dimmed">
+              2024年4月 -　<Anchor href="https://nishio-laboratory.github.io/" target="_blank" color="dimmed">西尾研究室</Anchor>
+            </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
                 情報通信
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
-                無線ネットワーク
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
                 機械学習
               </Badge>
-            </Group>
-          </Timeline.Item>
-
-          <Timeline.Item
-            bullet={<TbDevicesPc/>}
-            title={
-              <Anchor
-                href="https://corporate.m3.com/"
-                color="green.9"
-              >
-                エムスリー株式会社
-              </Anchor>
-            }
-          >
-            <Text size="xs" color="dimmed">
-              2024年3月　インターン（MLOpsエンジニア @AI・機械学習チーム）
-            </Text>
-            <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
-                Go
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Kubernetes
-              </Badge>
-              <Badge variant="light" size="sm" color="green.9">
-                Google Cloud
+                連合学習
               </Badge>
             </Group>
           </Timeline.Item>
@@ -95,6 +71,34 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="green.9">
                 Linux
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+
+          <Timeline.Item
+            bullet={<TbDevicesPc/>}
+            title={
+              <Anchor
+                href="https://corporate.m3.com/"
+                color="green.9"
+              >
+                エムスリー株式会社
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2024年3月　インターン（MLOpsエンジニア @AI・機械学習チーム）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="green.9">
+                Go
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Kubernetes
+              </Badge>
+              <Badge variant="light" size="sm" color="green.9">
+                Google Cloud
               </Badge>
             </Group>
           </Timeline.Item>

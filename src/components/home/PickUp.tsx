@@ -24,7 +24,7 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "360px" }}>
+        <div style={{ width: "240px" }}>
           <Image p="lg" radius="md" src="imgs/Book.png" alt="Book"/>
         </div>
         <Stack>
@@ -69,7 +69,7 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "360px" }}>
+        <div style={{ width: "240px" }}>
           <Image p="lg" radius="md" src="imgs/CyberAgentTechBlog.png" alt="CyberAgentTechBlog"/>
         </div>
         <Stack>
@@ -147,6 +147,51 @@ export const PickUp = () => {
           <Group spacing="sm" position="center" mt="xs">
             <Button variant="light" color="green.9" size="md" component="a" href="https://kitsuya0828.github.io/DSFLplus/">
               プロジェクトページへ
+            </Button>
+          </Group>
+        </Stack>
+      </Flex>
+
+      <Space h="xl" />
+
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        gap="lg"
+        justify="center"
+        align="center"
+      >
+        <div style={{ width: "480px" }}>
+          <Image p="lg" radius="md" src="imgs/M3TechBlog.png" alt="M3TechBlog"/>
+        </div>
+        <Stack>
+          <Text size="xl" fw={700}>『OOMしたCronJobのメモリ制限を「いい感じ」に増やし、不必要な課金・障害対応を減らす』</Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["エムスリー"]}
+              autoEscape={true}
+              textToHighlight={"エムスリーでのインターンとしての取り組みがテックブログで紹介された。"}
+            />
+          </Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["CronJobでOOMが発生", "broom"]}
+              autoEscape={true}
+              textToHighlight={"KubernetesのCronJobでOOMが発生した時に「いい感じ」にメモリ制限を増加させてくれるCustom Controllerであるbroomを開発し、クラウド課金と障害対応の両側面から課題解決を目指した。"}
+            />
+          </Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["OSSとしてGitHubで公開"]}
+              autoEscape={true}
+              textToHighlight={"broomはOSSとしてGitHubで公開し、現在も継続して開発中。"}
+            />
+          </Text>
+          <Group spacing="sm" position="center" mt="xs">
+            <Button variant="light" color="green.9" size="md" component="a" href="https://www.m3tech.blog/entry/2024/04/12/110000">
+              【New!】ブログを読む
             </Button>
           </Group>
         </Stack>
