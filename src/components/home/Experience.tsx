@@ -81,7 +81,7 @@ export const Experience = () => {
             title={
               <Anchor
                 href="https://corporate.m3.com/"
-                color="green.9"
+                color="dimmed"
               >
                 エムスリー株式会社
               </Anchor>
@@ -91,13 +91,13 @@ export const Experience = () => {
               2024年3月　インターン（MLOpsエンジニア @AI・機械学習チーム）
             </Text>
             <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
+              <Badge variant="light" size="sm" color="gray.7">
                 Go
               </Badge>
-              <Badge variant="light" size="sm" color="green.9">
+              <Badge variant="light" size="sm" color="gray.7">
                 Kubernetes
               </Badge>
-              <Badge variant="light" size="sm" color="green.9">
+              <Badge variant="light" size="sm" color="gray.7">
                 Google Cloud
               </Badge>
             </Group>

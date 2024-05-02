@@ -54,7 +54,7 @@ export const About = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["画像処理（機械学習）", "連合学習"]}
               autoEscape={true}
-              textToHighlight={"大学では画像処理（機械学習）の研究室に所属し、蒸留ベースの連合学習の研究を行なった。"}
+              textToHighlight={"大学では画像処理（機械学習）の研究室に所属し、蒸留ベースの連合学習の研究を行なった。大学院では連合学習に更にフォーカスして研究を行っている。"}
             />
           </Text>
           <Text size="sm">

@@ -27,14 +27,14 @@ const skillData = [
   {
     label: "Front-end",
     labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Bootstrap"],
-    data: [3, 3, 3, 4, 4, 3],
+    data: [3, 3, 3, 3, 4, 3],
     backgroundColor: "rgba(255, 107, 107, 0.2)",
     borderColor: "rgba(255, 107, 107, 1)",
   },
   {
     label: "Back-end",
     labels: ["Python", "TypeScript", "MySQL", "Go", "Firebase", "C"],
-    data: [5, 4, 3, 4, 4, 3],
+    data: [4, 3, 3, 4, 3, 2],
     backgroundColor: "rgba(51, 154, 240, 0.2)",
     borderColor: "rgba(51, 154, 240, 1)",
   },
