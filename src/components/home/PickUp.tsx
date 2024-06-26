@@ -191,7 +191,7 @@ export const PickUp = () => {
           </Text>
           <Group spacing="sm" position="center" mt="xs">
             <Button variant="light" color="green.9" size="md" component="a" href="https://www.m3tech.blog/entry/2024/04/12/110000">
-              【New!】ブログを読む
+              ブログを読む
             </Button>
           </Group>
         </Stack>

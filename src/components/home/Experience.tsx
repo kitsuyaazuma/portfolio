@@ -17,7 +17,7 @@ export const Experience = () => {
         <Title>EXPERIENCE</Title>
       </Center>
       <Center>
-        <Timeline active={1} bulletSize={28} lineWidth={2} color="green.9">
+        <Timeline active={0} bulletSize={28} lineWidth={2} color="green.9">
 
         <Timeline.Item
             bullet={<TbSchool />}
@@ -56,21 +56,27 @@ export const Experience = () => {
               <Anchor
                 href="https://www.mirrativ.co.jp/"
                 target="_blank"
-                color="green.9"
+                color="dimmed"
               >
                 株式会社ミラティブ
               </Anchor>
             }
           >
             <Text size="xs" color="dimmed">
-              2024年2月 - 　インターン（インフラエンジニア）
+              2024年2月 - 2024年6月　インターン（インフラエンジニア）
             </Text>
             <Group mt="sm" spacing="xs">
-              <Badge variant="light" size="sm" color="green.9">
+              <Badge variant="light" size="sm" color="gray.7">
                 Go
               </Badge>
-              <Badge variant="light" size="sm" color="green.9">
+              <Badge variant="light" size="sm" color="gray.7">
                 Linux
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Fluentd
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Fluent Bit
               </Badge>
             </Group>
           </Timeline.Item>
