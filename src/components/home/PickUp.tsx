@@ -54,8 +54,8 @@ export const PickUp = () => {
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button variant="light" color="green.9" size="md" component="a" href="https://zenn.dev/alvinvin/books/chrome_extension">
-              Zennで読む（無料）
+            <Button variant="light" color="green.9" size="md" component="a" href="https://zenn.dev/alvinvin/books/chrome_extension"  target="_blank">
+              Zennで本を読む
             </Button>
           </Group>
         </Stack>
@@ -79,7 +79,7 @@ export const PickUp = () => {
               highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
               searchWords={["サイバーエージェント"]}
               autoEscape={true}
-              textToHighlight={"サイバーエージェントでのインターンシップ生としての取り組みが技術ブログで紹介された。"}
+              textToHighlight={"サイバーエージェントでのインターンシップ生としての取り組みがDevelopers Blogで紹介された。"}
             />
           </Text>
           <Text size="sm">
@@ -99,7 +99,7 @@ export const PickUp = () => {
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button variant="light" color="green.9" size="md" component="a" href="https://developers.cyberagent.co.jp/blog/archives/43627/">
+            <Button variant="light" color="green.9" size="md" component="a" href="https://developers.cyberagent.co.jp/blog/archives/43627/"  target="_blank">
               ブログを読む
             </Button>
           </Group>
@@ -115,8 +115,8 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "240px" }}>
-          <Image p="lg" radius="md" src="imgs/IEICECertificate.webp" alt="IEICECertificate"/>
+        <div style={{ width: "240px", minWidth: "240px" }}>
+          <Image p="lg" radius="md" src="imgs/IEICEPoster.png" alt="IEICEPoster"/>
         </div>
         <Stack>
           <Text size="xl" fw={700}>『連合学習の通信量を削減するためのEnergyスコアを利用した知識蒸留手法の検討』</Text>
@@ -145,7 +145,7 @@ export const PickUp = () => {
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button variant="light" color="green.9" size="md" component="a" href="https://kitsuya0828.github.io/DSFLplus/">
+            <Button variant="light" color="green.9" size="md" component="a" href="https://kitsuya0828.github.io/DSFLplus/" target="_blank">
               プロジェクトページへ
             </Button>
           </Group>
@@ -160,7 +160,7 @@ export const PickUp = () => {
         justify="center"
         align="center"
       >
-        <div style={{ width: "240px" }}>
+        <div style={{ width: "240px", minWidth: "240px" }}>
           <Image p="lg" radius="md" src="imgs/M3TechBlog.png" alt="M3TechBlog"/>
         </div>
         <Stack>
@@ -190,13 +190,57 @@ export const PickUp = () => {
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button variant="light" color="green.9" size="md" component="a" href="https://www.m3tech.blog/entry/2024/04/12/110000">
-              ブログを読む
+            <Button variant="light" color="green.9" size="md" component="a" href="https://www.m3tech.blog/entry/2024/04/12/110000" target="_blank">
+              テックブログを読む
             </Button>
           </Group>
         </Stack>
       </Flex>
 
+      <Space h="xl" />
+
+      <Flex
+        direction={{ base: "column", sm: "row" }}
+        gap="lg"
+        justify="center"
+        align="center"
+      >
+        <div style={{ width: "240px", minWidth: "240px" }}>
+          <Image p="lg" radius="md" src="imgs/MirrativTechBlog.png" alt="MirrativTechBlog"/>
+        </div>
+        <Stack>
+          <Text size="xl" fw={700}>『ログ基盤のFluentdをFluent Bitに移行して監視ツールを実装した話』</Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["ミラティブ"]}
+              autoEscape={true}
+              textToHighlight={"ミラティブでのインターンとしての取り組みがテックブログで紹介された。"}
+            />
+          </Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["ログ欠損の原因解明", "Fluent Bitへの移行"]}
+              autoEscape={true}
+              textToHighlight={"既存の基盤のログ欠損の原因解明、FluentdからFluent Bitへの移行、Fluent Bit監視ツールの実装などを丁寧にまとめた。"}
+            />
+          </Text>
+          <Text size="sm">
+            <Highlighter
+              highlightClassName={colorScheme === "dark" ? "highlight-dark" : "highlight-light"}
+              searchWords={["2位を獲得"]}
+              autoEscape={true}
+              textToHighlight={"はてなブックマーク（テクノロジー）のホットエントリーで2位を獲得した。"}
+            />
+          </Text>
+          <Group spacing="sm" position="center" mt="xs">
+            <Button variant="light" color="green.9" size="md" component="a" href="https://tech.mirrativ.stream/entry/log-fluent-bit-monitor" target="_blank">
+              テックブログを読む
+            </Button>
+          </Group>
+        </Stack>
+      </Flex>
     </Container>
   );
 };
