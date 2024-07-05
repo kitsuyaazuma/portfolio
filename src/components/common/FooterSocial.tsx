@@ -48,7 +48,7 @@ export function FooterSocial() {
         >
           Kitsuya Azuma
         </Text>
-        <Group spacing="sm">
+        <Group spacing="xs">
           <Button
             variant="subtle"
             component="a"
