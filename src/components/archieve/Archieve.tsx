@@ -15,14 +15,27 @@ import {
 import { useState } from "react";
 import { FooterSocial } from "../common/FooterSocial";
 import { Popup } from "./Popup";
-import { data, DataType } from "./data";
+import { data, ReadingListItem, Status } from "./data";
 
-export const Books = () => {
+const getAnchorColor = (status: Status) => {
+  switch (status) {
+    case "Finished":
+      return "green.5";
+    case "Reading":
+      return "blue.5";
+    case "Almost Finished":
+      return "lime.5";
+    case "Partially Read":
+      return "yellow.5";
+    case "Not Started":
+      return "gray.5";
+  }
+};
+
+export const Archieve = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const useStyles = createStyles((theme) => ({
     card: {
-      transition: "transform 150ms ease, box-shadow 150ms ease",
-
       "&:hover": {
         transform: "scale(1.01)",
         boxShadow: theme.shadows.md,
@@ -39,7 +52,7 @@ export const Books = () => {
   }));
 
   const { classes } = useStyles();
-  const [openedData, setOpenedData] = useState<DataType | null>(null);
+  const [openedData, setOpenedData] = useState<ReadingListItem | null>(null);
 
   const cards = data.map((el, idx) => (
     <Card
@@ -52,9 +65,9 @@ export const Books = () => {
       style={{ cursor: "pointer" }}
     >
       <AspectRatio ratio={1 / 1.4}>
-        <Image src={el.images[0]} alt={el.name} />
+        <Image src={el.imageUrl} alt={el.name} />
       </AspectRatio>
-      <Badge size="sm" radius="sm">
+      <Badge size="sm" radius="sm" color={getAnchorColor(el.status)}>
         {el.status}
       </Badge>
     </Card>
@@ -70,7 +83,7 @@ export const Books = () => {
         {openedData !== null && <Popup data={openedData} />}
       </Modal>
       <Center my="xl">
-        <Title>BOOKS</Title>
+        <Title>READING LIST</Title>
       </Center>
       <Container my="xl">
         <SimpleGrid cols={4} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>

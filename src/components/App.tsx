@@ -15,7 +15,7 @@ import {
 import { useColorScheme } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
-import { Books } from "./books/Books";
+import { Archieve } from "./archieve/Archieve";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
 import { Projects } from "./projects/Projects";
@@ -79,10 +79,10 @@ export const App = () => {
                         onClick={() => setTab("projects")}
                       />
                       <NavLink
-                        label={<Center>BOOKS</Center>}
+                        label={<Center>ARCHIVE</Center>}
                         color={colorScheme === "dark" ? "green.5" : "green.9"}
-                        active={tab === "books"}
-                        onClick={() => setTab("books")}
+                        active={tab === "archive"}
+                        onClick={() => setTab("archive")}
                       />
                     </SimpleGrid>
                   </Group>
@@ -95,7 +95,7 @@ export const App = () => {
               ) : tab === "projects" ? (
                 <Projects />
               ) : (
-                <Books />
+                <Archieve />
               )}
             </AppShell>
           </MantineProvider>

@@ -7,7 +7,8 @@ import {
   Filler,
   Tooltip,
   Legend,
- defaults } from "chart.js";
+  defaults,
+} from "chart.js";
 import { Radar } from "react-chartjs-2";
 
 defaults.font.size = 14;

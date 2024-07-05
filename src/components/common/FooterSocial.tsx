@@ -7,7 +7,7 @@ import {
   SiZenn,
   SiBlogger,
 } from "react-icons/si";
-import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SizumeIcon";
+import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SvgIcon";
 
 const useStyles = createStyles((theme) => ({
   footer: {

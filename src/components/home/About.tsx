@@ -21,7 +21,7 @@ import {
   SiX,
 } from "react-icons/si";
 import "./highlight.scss";
-import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SizumeIcon";
+import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SvgIcon";
 
 export const About = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
