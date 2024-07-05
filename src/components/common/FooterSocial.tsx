@@ -3,7 +3,6 @@ import {
   SiGithub,
   SiQiita,
   SiX,
-  SiYoutube,
   SiZenn,
   SiBlogger,
 } from "react-icons/si";
@@ -75,15 +74,6 @@ export function FooterSocial() {
             compact
           >
             <SiQiita size="16" />
-          </Button>
-          <Button
-            variant="subtle"
-            component="a"
-            href="https://www.youtube.com/channel/UC00vvtUdtiche9vz_S4UjhQ"
-            color="green.9"
-            compact
-          >
-            <SiYoutube size="16" />
           </Button>
           <Button
             variant="subtle"
