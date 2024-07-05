@@ -1,7 +1,6 @@
 "use client";
 import {
   AppShell,
-  ColorScheme,
   ColorSchemeProvider,
   Header,
   MantineProvider,
@@ -12,6 +11,7 @@ import {
   Center,
   LoadingOverlay,
 } from "@mantine/core";
+import type { ColorScheme } from "@mantine/core";
 import { useColorScheme } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
