@@ -1,3 +1,4 @@
+import { Center } from "@mantine/core";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -6,10 +7,8 @@ import {
   Filler,
   Tooltip,
   Legend,
-} from "chart.js";
+ defaults } from "chart.js";
 import { Radar } from "react-chartjs-2";
-import { defaults } from 'chart.js';
-import { Center } from "@mantine/core";
 
 defaults.font.size = 14;
 // defaults.font.weight = 'bold';
@@ -20,7 +19,7 @@ ChartJS.register(
   LineElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
 );
 
 const skillData = [
@@ -74,9 +73,9 @@ export const SkillsChart = (props) => {
         pointLabels: {
           font: {
             weight: 500,
-            size: 12
-          }
-        }
+            size: 12,
+          },
+        },
       },
     },
   };

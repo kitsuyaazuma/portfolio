@@ -10,13 +10,14 @@ import {
   Center,
   useMantineColorScheme,
   Modal,
+  Badge,
 } from "@mantine/core";
 import { useState } from "react";
 import { FooterSocial } from "../common/FooterSocial";
 import { Popup } from "./Popup";
 import { data, DataType } from "./data";
 
-export const Projects = () => {
+export const Books = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const useStyles = createStyles((theme) => ({
     card: {
@@ -50,18 +51,12 @@ export const Projects = () => {
       className={classes.card}
       style={{ cursor: "pointer" }}
     >
-      <AspectRatio ratio={16 / 9}>
+      <AspectRatio ratio={1 / 1.4}>
         <Image src={el.images[0]} alt={el.name} />
       </AspectRatio>
-      <Text color="dimmed" size="xs" weight={700} mt="md">
-        {el.date}
-      </Text>
-      <Text className={classes.title} mt={5}>
-        {el.name}
-      </Text>
-      <Text color="dimmed" size="xs">
-        {el.description}
-      </Text>
+      <Badge size="sm" radius="sm">
+        {el.status}
+      </Badge>
     </Card>
   ));
 
@@ -75,10 +70,10 @@ export const Projects = () => {
         {openedData !== null && <Popup data={openedData} />}
       </Modal>
       <Center my="xl">
-        <Title>PROJECTS</Title>
+        <Title>BOOKS</Title>
       </Center>
       <Container my="xl">
-        <SimpleGrid cols={2} breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
+        <SimpleGrid cols={4} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
           {cards}
         </SimpleGrid>
       </Container>

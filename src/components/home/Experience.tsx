@@ -18,8 +18,7 @@ export const Experience = () => {
       </Center>
       <Center>
         <Timeline active={0} bulletSize={28} lineWidth={2} color="green.9">
-
-        <Timeline.Item
+          <Timeline.Item
             bullet={<TbSchool />}
             title={
               <Anchor
@@ -35,7 +34,14 @@ export const Experience = () => {
               2024年4月 -　工学院 情報通信系
             </Text>
             <Text size="xs" color="dimmed">
-              2024年4月 -　<Anchor href="https://nishio-laboratory.github.io/" target="_blank" color="dimmed">西尾研究室</Anchor>
+              2024年4月 -　
+              <Anchor
+                href="https://nishio-laboratory.github.io/"
+                target="_blank"
+                color="dimmed"
+              >
+                西尾研究室
+              </Anchor>
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="green.9">
@@ -51,7 +57,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<TbDevicesPc/>}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://www.mirrativ.co.jp/"
@@ -81,14 +87,10 @@ export const Experience = () => {
             </Group>
           </Timeline.Item>
 
-
           <Timeline.Item
-            bullet={<TbDevicesPc/>}
+            bullet={<TbDevicesPc />}
             title={
-              <Anchor
-                href="https://corporate.m3.com/"
-                color="dimmed"
-              >
+              <Anchor href="https://corporate.m3.com/" color="dimmed">
                 エムスリー株式会社
               </Anchor>
             }
@@ -125,7 +127,14 @@ export const Experience = () => {
               2020年4月 - 2024年3月　工学部電気情報物理工学科
             </Text>
             <Text size="xs" color="dimmed">
-              2023年4月 - 2024年3月　<Anchor href="http://www.iic.ecei.tohoku.ac.jp/" target="_blank" color="dimmed">大町研究室</Anchor>
+              2023年4月 - 2024年3月　
+              <Anchor
+                href="http://www.iic.ecei.tohoku.ac.jp/"
+                target="_blank"
+                color="dimmed"
+              >
+                大町研究室
+              </Anchor>
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -158,7 +167,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<TbDevicesPc/>}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://www.cyberagent.co.jp/"
@@ -170,7 +179,8 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2023年9月　次世代トップエンジニア創出インターンシップ ACE（最優秀チーム賞）
+              2023年9月　次世代トップエンジニア創出インターンシップ
+              ACE（最優秀チーム賞）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -189,38 +199,39 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-          bullet={<TbDevicesPc/>}
-          title={
-            <Anchor
-              href="https://about.yahoo.co.jp/"
-              target="_blank"
-              color="dimmed"
-            >
-              ヤフー株式会社
-            </Anchor>
-          }
-        >
-          <Text size="xs" color="dimmed">
-            2023年8月　インターン（2023 Summer Internship クラウドインフラ開発 @クラウドプラットフォーム本部 ）
-          </Text>
-          <Group mt="sm" spacing="xs">
-            <Badge variant="light" size="sm" color="gray.7">
-              Linux
-            </Badge>
-            <Badge variant="light" size="sm" color="gray.7">
-              OpenStack
-            </Badge>
-            <Badge variant="light" size="sm" color="gray.7">
-              Observability
-            </Badge>
-            <Badge variant="light" size="sm" color="gray.7">
-              OpenObserve
-            </Badge>
-          </Group>
-        </Timeline.Item>
+            bullet={<TbDevicesPc />}
+            title={
+              <Anchor
+                href="https://about.yahoo.co.jp/"
+                target="_blank"
+                color="dimmed"
+              >
+                ヤフー株式会社
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2023年8月　インターン（2023 Summer Internship クラウドインフラ開発
+              @クラウドプラットフォーム本部 ）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                Linux
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                OpenStack
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Observability
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                OpenObserve
+              </Badge>
+            </Group>
+          </Timeline.Item>
 
           <Timeline.Item
-            bullet={<TbDevicesPc/>}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="https://www.cyberagent.co.jp/"
@@ -251,7 +262,7 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
-            bullet={<TbDevicesPc/>}
+            bullet={<TbDevicesPc />}
             title={
               <Anchor
                 href="http://be-doctor.com/"

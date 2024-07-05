@@ -12,7 +12,6 @@ import {
 import { TbLink } from "react-icons/tb";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { SkillIcons } from "./SkillIcons";
 import { DataType, LinkType } from "./data";
 
 interface PopupProps {
@@ -44,7 +43,6 @@ export const Popup = ({ data }: PopupProps) => {
           <Text weight={500} size="xl">
             {data.name}
           </Text>
-          <SkillIcons skills={data.skills} />
         </Group>
 
         <Text size="sm" color="dimmed" mt="sm">
