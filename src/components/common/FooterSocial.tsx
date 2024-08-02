@@ -1,11 +1,5 @@
 import { createStyles, Group, Text, Button } from "@mantine/core";
-import {
-  SiGithub,
-  SiQiita,
-  SiX,
-  SiZenn,
-  SiBlogger,
-} from "react-icons/si";
+import { SiGithub, SiQiita, SiX, SiZenn, SiBlogger } from "react-icons/si";
 import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SvgIcon";
 
 const useStyles = createStyles((theme) => ({

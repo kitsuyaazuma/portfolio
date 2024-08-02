@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const data: ReadingListItem[] = [
   {
+    name: "効率的なGo ーデータ指向によるGoアプリケーションの性能最適化",
+    status: "Reading",
+    url: "https://www.oreilly.co.jp//books/9784814400539/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784814400539.jpg",
+  },
+  {
     name: "大規模言語モデル入門",
     status: "Reading",
     url: "https://gihyo.jp/book/2023/978-4-297-13633-8",
@@ -21,7 +27,7 @@ export const data: ReadingListItem[] = [
   },
   {
     name: "マスタリングTCP/IP　入門編（第6版）",
-    status: "Reading",
+    status: "Partially Read",
     url: "https://www.ohmsha.co.jp/book/9784274224478/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784274224478.jpg",
   },
