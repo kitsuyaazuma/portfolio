@@ -11,6 +11,7 @@ import {
   useMantineColorScheme,
   Modal,
   Badge,
+  Space,
 } from "@mantine/core";
 import { useState } from "react";
 import { FooterSocial } from "../common/FooterSocial";
@@ -54,6 +55,33 @@ export const Archieve = () => {
   const { classes } = useStyles();
   const [openedData, setOpenedData] = useState<ReadingListItem | null>(null);
 
+  const blogs = (num: number) => {
+    return (
+      <>
+        {[...Array(num)].map((_, idx) => (
+          <Card
+            key={idx}
+            p="md"
+            radius="md"
+            component="a"
+            href={`https://alvinvin.hatenablog.jp/entry/${idx + 1}`}
+            target="_blank"
+            rel="noreferrer"
+            style={{ cursor: "pointer" }}
+            className={classes.card}
+          >
+            <AspectRatio ratio={1 / 1}>
+              <Image
+                src={`/imgs/blog/${idx + 1}.png`}
+                alt={`blog_${idx + 1}`}
+              />
+            </AspectRatio>
+          </Card>
+        ))}
+      </>
+    );
+  };
+
   const cards = data.map((el, idx) => (
     <Card
       key={idx}
@@ -82,8 +110,24 @@ export const Archieve = () => {
       >
         {openedData !== null && <Popup data={openedData} />}
       </Modal>
-      <Center my="xl">
+
+      <Center mt="xl">
+        <Title>TECH BLOG</Title>
+      </Center>
+      <Center mb="xl">
+        <Text color="dimmed">てっく・ざ・ぶろぐ</Text>
+      </Center>
+      <Container my="xl">
+        <SimpleGrid cols={5} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
+          {blogs(5)}
+        </SimpleGrid>
+      </Container>
+      <Space h="xl" />
+      <Center mt="xl">
         <Title>READING LIST</Title>
+      </Center>
+      <Center mb="xl">
+        <Text color="dimmed">読書記録</Text>
       </Center>
       <Container my="xl">
         <SimpleGrid cols={4} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>

@@ -60,10 +60,10 @@ export const About = () => {
               highlightClassName={
                 colorScheme === "dark" ? "highlight-dark" : "highlight-light"
               }
-              searchWords={["個人開発"]}
+              searchWords={["個人開発", "大規模サービス開発"]}
               autoEscape={true}
               textToHighlight={
-                "大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。"
+                "大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。次第に興味は大規模サービス開発に移っていった。"
               }
             />
           </Text>
@@ -72,10 +72,10 @@ export const About = () => {
               highlightClassName={
                 colorScheme === "dark" ? "highlight-dark" : "highlight-light"
               }
-              searchWords={["画像処理（機械学習）", "連合学習"]}
+              searchWords={["Computer Vision", "Federated Learning"]}
               autoEscape={true}
               textToHighlight={
-                "大学では画像処理（機械学習）の研究室に所属し、蒸留ベースの連合学習の研究を行なった。大学院では連合学習に更にフォーカスして研究を行っている。"
+                "大学ではComputer Visionの研究室に所属し、蒸留ベースのFederated Learning（連合学習）の研究を行なった。大学院ではFLに更にフォーカスして研究を行っている。"
               }
             />
           </Text>
@@ -84,10 +84,10 @@ export const About = () => {
               highlightClassName={
                 colorScheme === "dark" ? "highlight-dark" : "highlight-light"
               }
-              searchWords={["インターン生", "知る＆触る"]}
+              searchWords={["学生インターン", "Platform Engineering", "MLOps"]}
               autoEscape={true}
               textToHighlight={
-                "インターン生として様々な企業で修行を積んでいる。とにかく新しい技術を知る＆触るのが好きで、インフラ系には特に目がない。"
+                "学生インターンとして大小様々な企業で修行を積んでいる。最近はPlatform EngineeringとMLOpsに興味がある。"
               }
             />
           </Text>
@@ -96,11 +96,9 @@ export const About = () => {
               highlightClassName={
                 colorScheme === "dark" ? "highlight-dark" : "highlight-light"
               }
-              searchWords={["おうちKubernetes"]}
+              searchWords={["ジャーナル投稿", "LT登壇"]}
               autoEscape={true}
-              textToHighlight={
-                "2024年の目標はおうちKubernetesを誇れるレベルまで進化させること。"
-              }
+              textToHighlight={"2024年はジャーナル投稿とLT登壇が目標。"}
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">

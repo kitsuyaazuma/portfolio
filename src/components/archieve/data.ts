@@ -100,6 +100,18 @@ export const data: ReadingListItem[] = [
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297135737.jpg",
   },
   {
+    name: "AWSではじめるクラウドセキュリティ: クラウドで学ぶセキュリティ設計/実装",
+    status: "Almost Finished",
+    url: "https://techiemedia.co.jp/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784910313030.jpg",
+  },
+  {
+    name: "AWSの基本・仕組み・重要用語が全部わかる教科書",
+    status: "Partially Read",
+    url: "https://www.sbcr.jp/product/4815607852/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784815607852.jpg",
+  },
+  {
     name: "Goならわかるシステムプログラミング 第2版",
     status: "Partially Read",
     url: "https://www.lambdanote.com/products/go-2",
