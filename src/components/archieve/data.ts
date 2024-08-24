@@ -21,7 +21,7 @@ export const data: ReadingListItem[] = [
   },
   {
     name: "大規模言語モデル入門",
-    status: "Reading",
+    status: "Finished",
     url: "https://gihyo.jp/book/2023/978-4-297-13633-8",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297136338.jpg",
   },

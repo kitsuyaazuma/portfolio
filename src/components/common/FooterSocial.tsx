@@ -45,7 +45,7 @@ export function FooterSocial() {
           <Button
             variant="subtle"
             component="a"
-            href="https://github.com/Kitsuya0828"
+            href="https://github.com/kitsuya0828"
             color="green.9"
             compact
           >

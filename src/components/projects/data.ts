@@ -22,7 +22,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/nvidia_gpu_exporter_index",
+        url: "https://github.com/kitsuya0828/nvidia_gpu_exporter_index",
       },
     ],
     images: [
@@ -40,12 +40,12 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/notion-google-calendar-sync",
+        url: "https://github.com/kitsuya0828/notion-google-calendar-sync",
       },
     ],
     images: [
-      "https://github.com/Kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/calendar-properties-sync.jpeg",
-      "https://github.com/Kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/notion-google-calendar-sync.jpeg",
+      "https://github.com/kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/calendar-properties-sync.jpeg",
+      "https://github.com/kitsuya0828/notion-google-calendar-sync/raw/main/docs/imgs/notion-google-calendar-sync.jpeg",
     ],
     impressions:
       "Notion便利だけどスマホでカレンダーが見にくい！小さな動機から生まれた同期。クラウドデプロイのIaCまで完備。（※ 2024年1月にNotion Calendarがリリースされたため利用は非推奨）",
@@ -55,7 +55,7 @@ export const data: DataType[] = [
     date: "March 2023",
     description: "コミットメッセージでもう迷わないためのCLIツール",
     skills: ["Go"],
-    links: [{ name: "GitHub", url: "https://github.com/Kitsuya0828/gommit" }],
+    links: [{ name: "GitHub", url: "https://github.com/kitsuya0828/gommit" }],
     images: ["/imgs/projects/gommit_1.png"],
     impressions:
       "コミットメッセージの種類なんて考えたくない！調べたくない！そんな悩みを解消するコマンドラインツール。",
@@ -68,7 +68,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/Image-Processing-100",
+        url: "https://github.com/kitsuya0828/Image-Processing-100",
       },
       { name: "Webアプリ", url: "image-processing-100.vercel.app/" },
     ],
@@ -104,7 +104,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/Space-Invaders-Python",
+        url: "https://github.com/kitsuya0828/Space-Invaders-Python",
       },
     ],
     images: [
@@ -120,7 +120,7 @@ export const data: DataType[] = [
     description: "いつでもどこでも遊べるルービックキューブ",
     skills: ["React", "TypeScript"],
     links: [
-      { name: "GitHub", url: "https://github.com/Kitsuya0828/Rubiks-Cube" },
+      { name: "GitHub", url: "https://github.com/kitsuya0828/Rubiks-Cube" },
       { name: "Webサイト(PC)", url: "https://azuma-rubiks-cube.netlify.app/" },
     ],
     images: ["/imgs/projects/RubiksCube_1.png"],
@@ -135,7 +135,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/React-Netflix-clone",
+        url: "https://github.com/kitsuya0828/React-Netflix-clone",
       },
       {
         name: "Webサイト",
@@ -157,7 +157,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/Inpersonation-App",
+        url: "https://github.com/kitsuya0828/Inpersonation-App",
       },
       { name: "YouTube", url: "https://youtu.be/9TJqbuCcNpg" },
       {
@@ -178,7 +178,7 @@ export const data: DataType[] = [
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/Kitsuya0828/Lecture-Capture-PDF",
+        url: "https://github.com/kitsuya0828/Lecture-Capture-PDF",
       },
       {
         name: "Qiita",
@@ -222,7 +222,7 @@ export const data: DataType[] = [
     description: "Zoom/Google Meet 自動退出アプリ",
     skills: ["Python"],
     links: [
-      { name: "GitHub", url: "https://github.com/Kitsuya0828/SkiMee" },
+      { name: "GitHub", url: "https://github.com/kitsuya0828/SkiMee" },
       {
         name: "Googleサイト",
         url: "https://sites.google.com/view/skimee/home",
