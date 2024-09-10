@@ -14,8 +14,20 @@ export type ReadingListItem = {
 
 export const data: ReadingListItem[] = [
   {
-    name: "効率的なGo ーデータ指向によるGoアプリケーションの性能最適化",
+    name: "SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版",
     status: "Reading",
+    url: "https://bookplus.nikkei.com/atcl/catalog/22/S00500/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784296000500.jpg",
+  },
+  {
+    name: "Podmanイン・アクション",
+    status: "Reading",
+    url: "https://www.shuwasystem.co.jp/book/9784798070209.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784798070209.jpg",
+  },
+  {
+    name: "効率的なGo ーデータ指向によるGoアプリケーションの性能最適化",
+    status: "Finished",
     url: "https://www.oreilly.co.jp//books/9784814400539/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784814400539.jpg",
   },
