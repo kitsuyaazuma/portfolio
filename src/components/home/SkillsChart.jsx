@@ -26,21 +26,21 @@ ChartJS.register(
 const skillData = [
   {
     label: "Front-end",
-    labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Bootstrap"],
-    data: [3, 3, 3, 3, 4, 3],
+    labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Figma"],
+    data: [3, 3, 3, 4, 4, 3],
     backgroundColor: "rgba(255, 107, 107, 0.2)",
     borderColor: "rgba(255, 107, 107, 1)",
   },
   {
     label: "Back-end",
-    labels: ["Python", "TypeScript", "MySQL", "Go", "Firebase", "C"],
-    data: [4, 3, 3, 4, 3, 2],
+    labels: ["Python", "TypeScript", "MySQL", "Go", "Rust", "C"],
+    data: [5, 3, 3, 4, 2, 2],
     backgroundColor: "rgba(51, 154, 240, 0.2)",
     borderColor: "rgba(51, 154, 240, 1)",
   },
   {
     label: "DevOps",
-    labels: ["Linux", "Kubernetes", "Docker", "GCP", "Terraform", "AWS"],
+    labels: ["Linux", "Kubernetes", "Docker", "Google Cloud", "Terraform", "AWS"],
     data: [4, 4, 4, 4, 4, 4],
     backgroundColor: "rgba(252, 196, 25, 0.2)",
     borderColor: "rgba(252, 196, 25, 1)",

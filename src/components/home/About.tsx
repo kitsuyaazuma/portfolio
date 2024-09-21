@@ -15,7 +15,7 @@ import Highlighter from "react-highlight-words";
 import {
   SiGithub,
   SiQiita,
-  SiYoutube,
+  // SiYoutube,
   SiZenn,
   SiBlogger,
   SiX,
@@ -75,7 +75,7 @@ export const About = () => {
               searchWords={["Computer Vision", "Federated Learning"]}
               autoEscape={true}
               textToHighlight={
-                "大学ではComputer Visionの研究室に所属し、蒸留ベースのFederated Learning（連合学習）の研究を行なった。大学院ではFLに更にフォーカスして研究を行っている。"
+                "大学ではComputer Visionの研究室に所属し、知識蒸留ベースのFederated Learning（連合学習）の研究を行なった。大学院ではFLに更にフォーカスして研究を行っている。"
               }
             />
           </Text>
@@ -129,7 +129,7 @@ export const About = () => {
             >
               <SiQiita size="20" />
             </Button>
-            <Button
+            {/* <Button
               variant="subtle"
               component="a"
               href="https://www.youtube.com/channel/UC00vvtUdtiche9vz_S4UjhQ"
@@ -137,7 +137,7 @@ export const About = () => {
               compact
             >
               <SiYoutube size="20" />
-            </Button>
+            </Button> */}
             <Button
               variant="subtle"
               component="a"

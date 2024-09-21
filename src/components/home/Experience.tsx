@@ -8,7 +8,7 @@ import {
   Group,
   Container,
 } from "@mantine/core";
-import { TbDevicesPc, TbSchool } from "react-icons/tb";
+import { TbDevicesPc, TbSchool, TbTrophyFilled } from "react-icons/tb";
 
 export const Experience = () => {
   return (
@@ -274,7 +274,7 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2022年11月 - 2023年4月　長期インターン
+              2022年11月 - 2023年4月　インターン（業務委託）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -293,6 +293,34 @@ export const Experience = () => {
           </Timeline.Item>
 
           <Timeline.Item
+            bullet={<TbTrophyFilled />}
+            title={
+              <Anchor
+                href="https://jphacks.com/2022/result/"
+                target="_blank"
+                color="dimmed"
+              >
+                JPHACKS 2022
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2022年10月 - 2022年11月 ハッカソン（イノベーター認定、スポンサー賞×3）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                React
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                TypeScript
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                Firebase
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
             bullet={<TbDevicesPc />}
             title={
               <Anchor
@@ -305,7 +333,7 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2022年4月 - 2023年4月　長期インターン
+              2022年4月 - 2023年4月　インターン
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -315,7 +343,7 @@ export const Experience = () => {
                 React
               </Badge>
               <Badge variant="light" size="sm" color="gray.7">
-                GCP
+                Google Cloud
               </Badge>
               <Badge variant="light" size="sm" color="gray.7">
                 Docker
@@ -353,6 +381,31 @@ export const Experience = () => {
               </Badge>
               <Badge variant="light" size="sm" color="gray.7">
                 JavaScript
+              </Badge>
+            </Group>
+          </Timeline.Item>
+
+          <Timeline.Item
+            bullet={<TbTrophyFilled />}
+            title={
+              <Anchor
+                href="https://jphacks.com/2021/result/"
+                target="_blank"
+                color="dimmed"
+              >
+                JPHACKS 2021
+              </Anchor>
+            }
+          >
+            <Text size="xs" color="dimmed">
+              2021年10月 - 2021年11月 ハッカソン（審査員特別賞、イノベーター認定、スポンサー賞×5）
+            </Text>
+            <Group mt="sm" spacing="xs">
+              <Badge variant="light" size="sm" color="gray.7">
+                Python
+              </Badge>
+              <Badge variant="light" size="sm" color="gray.7">
+                機械学習
               </Badge>
             </Group>
           </Timeline.Item>
