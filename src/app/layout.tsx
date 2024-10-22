@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from "react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export default function RootLayout({
@@ -9,7 +10,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        <GoogleAnalytics />
+        <Suspense>
+          <GoogleAnalytics />
+        </Suspense>
       </head>
       <body>{children}</body>
     </html>

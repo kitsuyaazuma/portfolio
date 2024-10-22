@@ -83,11 +83,7 @@ export const App = () => {
               }
             >
               <Hero />
-              {tab === "home" ? (
-                <Home />
-              ) : (
-                <Archieve />
-              )}
+              {tab === "home" ? <Home /> : <Archieve />}
             </AppShell>
           </MantineProvider>
         </ColorSchemeProvider>
