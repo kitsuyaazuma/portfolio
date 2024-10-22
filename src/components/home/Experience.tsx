@@ -305,7 +305,8 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2022年10月 - 2022年11月 ハッカソン（イノベーター認定、スポンサー賞×3）
+              2022年10月 - 2022年11月
+              ハッカソン（イノベーター認定、スポンサー賞×3）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">
@@ -398,7 +399,8 @@ export const Experience = () => {
             }
           >
             <Text size="xs" color="dimmed">
-              2021年10月 - 2021年11月 ハッカソン（審査員特別賞、イノベーター認定、スポンサー賞×5）
+              2021年10月 - 2021年11月
+              ハッカソン（審査員特別賞、イノベーター認定、スポンサー賞×5）
             </Text>
             <Group mt="sm" spacing="xs">
               <Badge variant="light" size="sm" color="gray.7">

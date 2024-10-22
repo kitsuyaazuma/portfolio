@@ -18,7 +18,6 @@ import { TbSun, TbMoonStars } from "react-icons/tb";
 import { Archieve } from "./archieve/Archieve";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
-import { Projects } from "./projects/Projects";
 
 export const App = () => {
   const preferredColorScheme = useColorScheme();
@@ -58,7 +57,7 @@ export const App = () => {
                       {colorScheme === "dark" ? <TbSun /> : <TbMoonStars />}
                     </ActionIcon>
                     <SimpleGrid
-                      cols={3}
+                      cols={2}
                       spacing={0}
                       style={{
                         height: 50,
@@ -71,12 +70,6 @@ export const App = () => {
                         color={colorScheme === "dark" ? "green.5" : "green.9"}
                         active={tab === "home"}
                         onClick={() => setTab("home")}
-                      />
-                      <NavLink
-                        label={<Center>PROJECTS</Center>}
-                        color={colorScheme === "dark" ? "green.5" : "green.9"}
-                        active={tab === "projects"}
-                        onClick={() => setTab("projects")}
                       />
                       <NavLink
                         label={<Center>ARCHIVE</Center>}
@@ -92,8 +85,6 @@ export const App = () => {
               <Hero />
               {tab === "home" ? (
                 <Home />
-              ) : tab === "projects" ? (
-                <Projects />
               ) : (
                 <Archieve />
               )}
