@@ -14,16 +14,23 @@ export type ReadingListItem = {
 
 export const data: ReadingListItem[] = [
   {
+    name: "ゼロから学ぶRust　システムプログラミングの基礎から線形型システムまで",
+    status: "Almost Finished",
+    url: "https://www.kspub.co.jp/book/detail/5301951.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784065301951.jpg",
+  },
+  {
     name: "SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版",
-    status: "Reading",
+    status: "Finished",
     url: "https://bookplus.nikkei.com/atcl/catalog/22/S00500/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784296000500.jpg",
   },
   {
-    name: "Podmanイン・アクション",
-    status: "Reading",
-    url: "https://www.shuwasystem.co.jp/book/9784798070209.html",
-    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784798070209.jpg",
+    name: "Podman in Action",
+    status: "Partially Read",
+    url: "https://developers.redhat.com/e-books/podman-action",
+    imageUrl:
+      "https://developers.redhat.com/sites/default/files/styles/cheat_sheet_feature/public/Podman%20in%20Action.png.webp",
   },
   {
     name: "効率的なGo ーデータ指向によるGoアプリケーションの性能最適化",

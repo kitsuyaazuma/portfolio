@@ -1,6 +1,6 @@
 import { createStyles, Group, Text, Button } from "@mantine/core";
-import { SiGithub, SiQiita, SiX, SiZenn, SiBlogger } from "react-icons/si";
-import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SvgIcon";
+import { SiGithub, SiX, SiZenn, SiBlogger } from "react-icons/si";
+import { HatenaSvgComponent } from "../assets/SvgIcon";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -63,15 +63,6 @@ export function FooterSocial() {
           <Button
             variant="subtle"
             component="a"
-            href="https://qiita.com/adumaru0828"
-            color="green.9"
-            compact
-          >
-            <SiQiita size="16" />
-          </Button>
-          <Button
-            variant="subtle"
-            component="a"
             href="https://zenn.dev/alvinvin"
             color="green.9"
             compact
@@ -86,15 +77,6 @@ export function FooterSocial() {
             compact
           >
             <SiBlogger size="16" />
-          </Button>
-          <Button
-            variant="subtle"
-            component="a"
-            href="https://sizu.me/azuma_alvin"
-            color="green.9"
-            compact
-          >
-            <SizumeSvgComponent size="20" />
           </Button>
           <Button
             variant="subtle"

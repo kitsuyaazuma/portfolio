@@ -12,16 +12,9 @@ import {
 } from "@mantine/core";
 import React from "react";
 import Highlighter from "react-highlight-words";
-import {
-  SiGithub,
-  SiQiita,
-  // SiYoutube,
-  SiZenn,
-  SiBlogger,
-  SiX,
-} from "react-icons/si";
+import { SiGithub, SiZenn, SiBlogger, SiX } from "react-icons/si";
 import "./highlight.scss";
-import { SizumeSvgComponent, HatenaSvgComponent } from "../assets/SvgIcon";
+import { HatenaSvgComponent } from "../assets/SvgIcon";
 
 export const About = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -123,24 +116,6 @@ export const About = () => {
             <Button
               variant="subtle"
               component="a"
-              href="https://qiita.com/adumaru0828"
-              color="green.9"
-              compact
-            >
-              <SiQiita size="20" />
-            </Button>
-            {/* <Button
-              variant="subtle"
-              component="a"
-              href="https://www.youtube.com/channel/UC00vvtUdtiche9vz_S4UjhQ"
-              color="green.9"
-              compact
-            >
-              <SiYoutube size="20" />
-            </Button> */}
-            <Button
-              variant="subtle"
-              component="a"
               href="https://zenn.dev/alvinvin"
               color="green.9"
               compact
@@ -155,15 +130,6 @@ export const About = () => {
               compact
             >
               <SiBlogger size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://sizu.me/azuma_alvin"
-              color="green.9"
-              compact
-            >
-              <SizumeSvgComponent size="20" />
             </Button>
             <Button
               variant="subtle"

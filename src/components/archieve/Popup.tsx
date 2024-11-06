@@ -5,8 +5,6 @@ import {
   Group,
   Anchor,
   useMantineColorScheme,
-  Flex,
-  Stack,
   Box,
   Space,
 } from "@mantine/core";

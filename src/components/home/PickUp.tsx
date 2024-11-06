@@ -223,6 +223,16 @@ export const PickUp = () => {
             >
               プロジェクトページへ
             </Button>
+            <Button
+              variant="light"
+              color="green.9"
+              size="md"
+              component="a"
+              href="https://www.ieice.org/jpn_r/junior/poster_session_awards_2024.html"
+              target="_blank"
+            >
+              受賞ページへ
+            </Button>
           </Group>
         </Stack>
       </Flex>
