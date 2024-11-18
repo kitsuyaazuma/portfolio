@@ -12,12 +12,18 @@ import {
 } from "@mantine/core";
 import React from "react";
 import Highlighter from "react-highlight-words";
-import { SiGithub, SiZenn, SiBlogger, SiX } from "react-icons/si";
+import {
+  SiGithub,
+  SiZenn,
+  SiBlogger,
+  SiX,
+  SiSpeakerdeck,
+} from "react-icons/si";
 import "./highlight.scss";
 import { HatenaSvgComponent } from "../assets/SvgIcon";
 
 export const About = () => {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">
       <Center my="lg">
@@ -130,6 +136,15 @@ export const About = () => {
               compact
             >
               <SiBlogger size="20" />
+            </Button>
+            <Button
+              variant="subtle"
+              component="a"
+              href="https://speakerdeck.com/kitsuya0828"
+              color="green.9"
+              compact
+            >
+              <SiSpeakerdeck size="20" />
             </Button>
             <Button
               variant="subtle"

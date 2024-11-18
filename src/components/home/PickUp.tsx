@@ -14,7 +14,7 @@ import Highlighter from "react-highlight-words";
 import "./highlight.scss";
 
 export const PickUp = () => {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">
       <Flex

@@ -1,5 +1,11 @@
 import { createStyles, Group, Text, Button } from "@mantine/core";
-import { SiGithub, SiX, SiZenn, SiBlogger } from "react-icons/si";
+import {
+  SiGithub,
+  SiX,
+  SiZenn,
+  SiBlogger,
+  SiSpeakerdeck,
+} from "react-icons/si";
 import { HatenaSvgComponent } from "../assets/SvgIcon";
 
 const useStyles = createStyles((theme) => ({
@@ -77,6 +83,15 @@ export function FooterSocial() {
             compact
           >
             <SiBlogger size="16" />
+          </Button>
+          <Button
+            variant="subtle"
+            component="a"
+            href="https://speakerdeck.com/kitsuya0828"
+            color="green.9"
+            compact
+          >
+            <SiSpeakerdeck size="16" />
           </Button>
           <Button
             variant="subtle"

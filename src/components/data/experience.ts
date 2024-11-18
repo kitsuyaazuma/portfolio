@@ -57,7 +57,7 @@ export const experiences: ExperienceItem[] = [
   },
   {
     title: "ヤフー株式会社",
-    titleUrl: "https://about.yahoo.co.jp/",
+    titleUrl: "https://www.lycorp.co.jp",
     details: [
       "2023年8月　インターン（2023 Summer Internship クラウドインフラ開発 @クラウドプラットフォーム本部 ）",
     ],
