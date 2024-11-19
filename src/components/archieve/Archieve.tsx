@@ -120,7 +120,7 @@ export const Archieve = () => {
       </Center>
       <Container my="xl">
         <SimpleGrid cols={5} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
-          {blogs(8)}
+          {blogs(9)}
         </SimpleGrid>
       </Container>
       <Space h="xl" />

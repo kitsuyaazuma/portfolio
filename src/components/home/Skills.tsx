@@ -9,15 +9,11 @@ export const Skills = () => {
         <Title>SKILLS</Title>
       </Center>
       <Grid justify="center" align="center">
-        <Grid.Col md={4} xs={6}>
-          <SkillsChart index={0} />
-        </Grid.Col>
-        <Grid.Col md={4} xs={6}>
-          <SkillsChart index={1} />
-        </Grid.Col>
-        <Grid.Col md={4} xs={6}>
-          <SkillsChart index={2} />
-        </Grid.Col>
+        {[0, 1, 2].map((index) => (
+          <Grid.Col key={index} md={4} xs={6}>
+            <SkillsChart index={index} />
+          </Grid.Col>
+        ))}
       </Grid>
     </Container>
   );
