@@ -18,6 +18,7 @@ import {
   SiBlogger,
   SiX,
   SiSpeakerdeck,
+  SiLinkedin,
 } from "react-icons/si";
 import "./highlight.scss";
 import { HatenaSvgComponent } from "../assets/SvgIcon";
@@ -131,20 +132,20 @@ export const About = () => {
             <Button
               variant="subtle"
               component="a"
-              href="https://azumaprogrammingdiary.blogspot.com/"
-              color="green.9"
-              compact
-            >
-              <SiBlogger size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
               href="https://speakerdeck.com/kitsuya0828"
               color="green.9"
               compact
             >
               <SiSpeakerdeck size="20" />
+            </Button>
+            <Button
+              variant="subtle"
+              component="a"
+              href="https://www.linkedin.com/in/kitsuya-azuma"
+              color="green.9"
+              compact
+            >
+              <SiLinkedin size="20" />
             </Button>
             <Button
               variant="subtle"
