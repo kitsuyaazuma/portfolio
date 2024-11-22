@@ -11,6 +11,14 @@ export type ExperienceCategory = "Internship" | "Education" | "Award";
 
 export const experiences: ExperienceItem[] = [
   {
+    title: "株式会社メルカリ",
+    titleUrl: "https://about.mercari.com/",
+    details: ["2025年1月 -　Internship (Software Engineer, Web Platform)"],
+    skills: ["TypeScript", "Kubernetes", "Google Cloud"],
+    isCurrent: true,
+    category: "Internship",
+  },
+  {
     title: "東京科学大学（旧：東京工業大学）",
     titleUrl: "https://www.isct.ac.jp/ja",
     details: ["2024年4月 -　工学院 情報通信系", "2024年4月 -　西尾研究室"],

@@ -15,8 +15,8 @@ import {
 } from "@mantine/core";
 import { useState } from "react";
 import { FooterSocial } from "../common/FooterSocial";
+import { readingList, ReadingListItem, Status } from "../data/reading";
 import { Popup } from "./Popup";
-import { data, ReadingListItem, Status } from "./data";
 
 const getAnchorColor = (status: Status) => {
   switch (status) {
@@ -83,7 +83,7 @@ export const Archieve = () => {
     );
   };
 
-  const cards = data.map((el, idx) => (
+  const cards = readingList.map((el, idx) => (
     <Card
       key={idx}
       p="md"

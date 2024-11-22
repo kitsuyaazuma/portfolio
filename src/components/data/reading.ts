@@ -12,7 +12,7 @@ export type ReadingListItem = {
   imageUrl: string;
 };
 
-export const data: ReadingListItem[] = [
+export const readingList: ReadingListItem[] = [
   {
     name: "Building Microservices, 2nd Edition",
     status: "Reading",

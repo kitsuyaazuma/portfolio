@@ -9,7 +9,7 @@ import {
   Space,
 } from "@mantine/core";
 import { TbLink } from "react-icons/tb";
-import { ReadingListItem } from "./data";
+import { ReadingListItem } from "../data/reading";
 
 interface PopupProps {
   data: ReadingListItem;
