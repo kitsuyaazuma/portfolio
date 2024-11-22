@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const data: ReadingListItem[] = [
   {
+    name: "Building Microservices, 2nd Edition",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781492034018/250w/",
+  },
+  {
     name: "ゼロから学ぶRust　システムプログラミングの基礎から線形型システムまで",
     status: "Almost Finished",
     url: "https://www.kspub.co.jp/book/detail/5301951.html",

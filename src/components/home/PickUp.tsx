@@ -24,7 +24,7 @@ export const PickUp = () => {
         align="center"
       >
         <div style={{ width: "240px" }}>
-          <Image p="lg" radius="md" src="imgs/Book.png" alt="Book" />
+          <Image p="lg" radius="md" src="images/home/zenn.webp" alt="Book" />
         </div>
         <Stack>
           <Text size="xl" fw={700}>
@@ -93,7 +93,7 @@ export const PickUp = () => {
           <Image
             p="lg"
             radius="md"
-            src="imgs/CyberAgentTechBlog.png"
+            src="images/home/cyberagent.webp"
             alt="CyberAgentTechBlog"
           />
         </div>
@@ -164,7 +164,7 @@ export const PickUp = () => {
           <Image
             p="lg"
             radius="md"
-            src="imgs/IEICEPoster.png"
+            src="images/home/ieice.webp"
             alt="IEICEPoster"
           />
         </div>
@@ -249,7 +249,7 @@ export const PickUp = () => {
           <Image
             p="lg"
             radius="md"
-            src="imgs/M3TechBlog.png"
+            src="images/home/m3.webp"
             alt="M3TechBlog"
           />
         </div>
@@ -320,7 +320,7 @@ export const PickUp = () => {
           <Image
             p="lg"
             radius="md"
-            src="imgs/MirrativTechBlog.png"
+            src="images/home/mirrativ.webp"
             alt="MirrativTechBlog"
           />
         </div>

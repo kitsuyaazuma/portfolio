@@ -73,7 +73,7 @@ export const Archieve = () => {
             <AspectRatio ratio={1 / 1}>
               <Image
                 width="100%"
-                src={`/imgs/blog/${idx + 1}.png`}
+                src={`/images/blog/${idx + 1}.webp`}
                 alt={`blog_${idx + 1}`}
               />
             </AspectRatio>

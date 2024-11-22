@@ -15,7 +15,6 @@ import Highlighter from "react-highlight-words";
 import {
   SiGithub,
   SiZenn,
-  SiBlogger,
   SiX,
   SiSpeakerdeck,
   SiLinkedin,
@@ -40,7 +39,7 @@ export const About = () => {
         <Image
           p="lg"
           radius="md"
-          src="imgs/Profile_color_sketch_new.jpeg"
+          src="images/home/profile.webp"
           alt="Kitsuya Azuma"
         />
 
