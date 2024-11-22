@@ -12,15 +12,9 @@ import {
 } from "@mantine/core";
 import React from "react";
 import Highlighter from "react-highlight-words";
-import {
-  SiGithub,
-  SiZenn,
-  SiX,
-  SiSpeakerdeck,
-  SiLinkedin,
-} from "react-icons/si";
 import "./highlight.scss";
-import { HatenaSvgComponent } from "../assets/SvgIcon";
+import { SocialButton } from "../common/Social";
+import { socials } from "../data/social";
 
 export const About = () => {
   const { colorScheme } = useMantineColorScheme();
@@ -101,60 +95,13 @@ export const About = () => {
             />
           </Text>
           <Group spacing="sm" position="center" mt="xs">
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://github.com/kitsuya0828"
-              color="green.9"
-              compact
-            >
-              <SiGithub size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://x.com/azuma_alvin"
-              color="green.9"
-              compact
-            >
-              <SiX size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://zenn.dev/alvinvin"
-              color="green.9"
-              compact
-            >
-              <SiZenn size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://speakerdeck.com/kitsuya0828"
-              color="green.9"
-              compact
-            >
-              <SiSpeakerdeck size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://www.linkedin.com/in/kitsuya-azuma"
-              color="green.9"
-              compact
-            >
-              <SiLinkedin size="20" />
-            </Button>
-            <Button
-              variant="subtle"
-              component="a"
-              href="https://alvinvin.hatenablog.jp"
-              color="green.9"
-              compact
-            >
-              <HatenaSvgComponent size="20" />
-            </Button>
+            {socials.map((social) => (
+              <SocialButton
+                key={social.name}
+                name={social.name}
+                url={social.url}
+              />
+            ))}
           </Group>
         </Stack>
       </Flex>

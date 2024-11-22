@@ -14,7 +14,7 @@ import {
   Space,
 } from "@mantine/core";
 import { useState } from "react";
-import { FooterSocial } from "../common/FooterSocial";
+import { Footer } from "../common/Footer";
 import { readingList, ReadingListItem, Status } from "../data/reading";
 import { Popup } from "./Popup";
 
@@ -116,7 +116,7 @@ export const Archieve = () => {
         <Title>TECH BLOG</Title>
       </Center>
       <Center mb="xl">
-        <Text color="dimmed">てっく・ざ・ぶろぐ</Text>
+        <Text color="dimmed">『てっく・ざ・ぶろぐ』</Text>
       </Center>
       <Container my="xl">
         <SimpleGrid cols={5} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
@@ -135,7 +135,7 @@ export const Archieve = () => {
           {cards}
         </SimpleGrid>
       </Container>
-      <FooterSocial />
+      <Footer />
     </>
   );
 };
