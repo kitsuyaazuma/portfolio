@@ -33,7 +33,7 @@ const getAnchorColor = (status: Status) => {
   }
 };
 
-export const Archieve = () => {
+export const Archive = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const useStyles = createStyles((theme) => ({
     card: {

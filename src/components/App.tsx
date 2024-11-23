@@ -15,7 +15,7 @@ import type { ColorScheme } from "@mantine/core";
 import { useColorScheme } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
-import { Archieve } from "./archieve/Archieve";
+import { Archive } from "./archive/Archive";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
 
@@ -83,7 +83,7 @@ export const App = () => {
               }
             >
               <Hero />
-              {tab === "home" ? <Home /> : <Archieve />}
+              {tab === "home" ? <Home /> : <Archive />}
             </AppShell>
           </MantineProvider>
         </ColorSchemeProvider>

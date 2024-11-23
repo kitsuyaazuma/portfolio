@@ -23,7 +23,15 @@ ChartJS.register(
   Legend,
 );
 
-const skillData = [
+type skillDataItem = {
+  label: string;
+  labels: string[];
+  data: number[];
+  backgroundColor: string;
+  borderColor: string;
+};
+
+const skillData: skillDataItem[] = [
   {
     label: "Front-end",
     labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Figma"],
@@ -54,16 +62,16 @@ const skillData = [
   },
 ];
 
-export const SkillsChart = (props) => {
+export const SkillsChart = ({ index }: { index: number }) => {
   const data = () => {
     return {
-      labels: skillData[props.index].labels,
+      labels: skillData[index].labels,
       datasets: [
         {
-          label: skillData[props.index].label,
-          data: skillData[props.index].data,
-          backgroundColor: skillData[props.index].backgroundColor,
-          borderColor: skillData[props.index].borderColor,
+          label: skillData[index].label,
+          data: skillData[index].data,
+          backgroundColor: skillData[index].backgroundColor,
+          borderColor: skillData[index].borderColor,
           borderWidth: 1,
         },
       ],
@@ -90,7 +98,7 @@ export const SkillsChart = (props) => {
 
   return (
     <Center>
-      <Radar data={data()} options={options} />
+      <Radar data={data()} options={options as any} />
     </Center>
   );
 };

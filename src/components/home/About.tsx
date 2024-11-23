@@ -1,20 +1,20 @@
 import {
   Title,
-  Text,
   Image,
   Center,
   Flex,
+  Highlight,
   Stack,
   Container,
   Group,
-  Button,
   useMantineColorScheme,
 } from "@mantine/core";
 import React from "react";
-import Highlighter from "react-highlight-words";
-import "./highlight.scss";
 import { SocialButton } from "../common/Social";
+import { abouts } from "../data/about";
 import { socials } from "../data/social";
+
+export const darkHighlightColor = "rgba(47, 158, 68, 0.2)";
 
 export const About = () => {
   const { colorScheme } = useMantineColorScheme();
@@ -36,64 +36,24 @@ export const About = () => {
           src="images/home/profile.webp"
           alt="Kitsuya Azuma"
         />
-
         <Stack>
-          <Text size="sm">
-            <Highlighter
-              highlightClassName={
-                colorScheme === "dark" ? "highlight-dark" : "highlight-light"
-              }
-              searchWords={["大学院1年生"]}
-              autoEscape={true}
-              textToHighlight={"都内在住の大学院1年生。"}
-            />
-          </Text>
-          <Text size="sm">
-            <Highlighter
-              highlightClassName={
-                colorScheme === "dark" ? "highlight-dark" : "highlight-light"
-              }
-              searchWords={["個人開発", "大規模サービス開発"]}
-              autoEscape={true}
-              textToHighlight={
-                "大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。次第に興味は大規模サービス開発に移っていった。"
-              }
-            />
-          </Text>
-          <Text size="sm">
-            <Highlighter
-              highlightClassName={
-                colorScheme === "dark" ? "highlight-dark" : "highlight-light"
-              }
-              searchWords={["Computer Vision", "Federated Learning"]}
-              autoEscape={true}
-              textToHighlight={
-                "大学ではComputer Visionの研究室に所属し、知識蒸留ベースのFederated Learning（連合学習）の研究を行なった。大学院ではFLに更にフォーカスして研究を行っている。"
-              }
-            />
-          </Text>
-          <Text size="sm">
-            <Highlighter
-              highlightClassName={
-                colorScheme === "dark" ? "highlight-dark" : "highlight-light"
-              }
-              searchWords={["学生インターン", "Platform Engineering", "MLOps"]}
-              autoEscape={true}
-              textToHighlight={
-                "学生インターンとして大小様々な企業で修行を積んでいる。最近はPlatform EngineeringとMLOpsに興味がある。"
-              }
-            />
-          </Text>
-          <Text size="sm">
-            <Highlighter
-              highlightClassName={
-                colorScheme === "dark" ? "highlight-dark" : "highlight-light"
-              }
-              searchWords={["ジャーナル投稿", "LT登壇"]}
-              autoEscape={true}
-              textToHighlight={"2024年はジャーナル投稿とLT登壇が目標。"}
-            />
-          </Text>
+          {abouts.map((about) => (
+            <Highlight
+              size="sm"
+              key={about.text}
+              highlightStyles={(theme) => ({
+                backgroundColor:
+                  colorScheme === "dark"
+                    ? darkHighlightColor
+                    : theme.colors.green[0],
+                color: colorScheme === "dark" ? "white" : "black",
+                fontWeight: "bolder",
+              })}
+              highlight={about.searchWords}
+            >
+              {about.text}
+            </Highlight>
+          ))}
           <Group spacing="sm" position="center" mt="xs">
             {socials.map((social) => (
               <SocialButton
