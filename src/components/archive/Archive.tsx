@@ -4,7 +4,6 @@ import {
   Title,
   Image,
   Text,
-  createStyles,
   Container,
   SimpleGrid,
   Center,
@@ -13,6 +12,7 @@ import {
   Badge,
   Space,
 } from "@mantine/core";
+import { createStyles } from "@mantine/emotion";
 import { useState } from "react";
 import { Footer } from "../common/Footer";
 import { readingList, ReadingListItem, Status } from "../data/reading";
@@ -34,7 +34,7 @@ const getAnchorColor = (status: Status) => {
 };
 
 export const Archive = () => {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const useStyles = createStyles((theme) => ({
     card: {
       "&:hover": {
@@ -116,24 +116,20 @@ export const Archive = () => {
         <Title>TECH BLOG</Title>
       </Center>
       <Center mb="xl">
-        <Text color="dimmed">『てっく・ざ・ぶろぐ』</Text>
+        <Text c="dimmed">『てっく・ざ・ぶろぐ』</Text>
       </Center>
       <Container my="xl">
-        <SimpleGrid cols={5} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
-          {blogs(9)}
-        </SimpleGrid>
+        <SimpleGrid cols={{ md: 5, sm: 2 }}>{blogs(9)}</SimpleGrid>
       </Container>
       <Space h="xl" />
       <Center mt="xl">
         <Title>READING LIST</Title>
       </Center>
       <Center mb="xl">
-        <Text color="dimmed">読書記録</Text>
+        <Text c="dimmed">読書記録</Text>
       </Center>
       <Container my="xl">
-        <SimpleGrid cols={4} breakpoints={[{ maxWidth: "sm", cols: 2 }]}>
-          {cards}
-        </SimpleGrid>
+        <SimpleGrid cols={{ md: 4, sm: 2 }}>{cards}</SimpleGrid>
       </Container>
       <Footer />
     </>

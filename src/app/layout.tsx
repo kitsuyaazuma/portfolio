@@ -1,6 +1,11 @@
-"use client";
+import "@mantine/core/styles.css";
+import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import { Suspense } from "react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+const theme = createTheme({
+  primaryColor: "green",
+});
 
 export default function RootLayout({
   children,
@@ -8,13 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <head>
         <Suspense>
           <GoogleAnalytics />
         </Suspense>
+        <ColorSchemeScript />
       </head>
-      <body>{children}</body>
+      <body>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
+      </body>
     </html>
   );
 }

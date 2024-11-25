@@ -54,7 +54,7 @@ export const About = () => {
               {about.text}
             </Highlight>
           ))}
-          <Group spacing="sm" position="center" mt="xs">
+          <Group gap="sm" align="center" mt="xs">
             {socials.map((social) => (
               <SocialButton
                 key={social.name}

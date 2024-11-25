@@ -10,7 +10,7 @@ export const Skills = () => {
       </Center>
       <Grid justify="center" align="center">
         {[0, 1, 2].map((index) => (
-          <Grid.Col key={index} md={4} xs={6}>
+          <Grid.Col key={index} span={{ md: 4, xs: 6 }}>
             <SkillsChart index={index} />
           </Grid.Col>
         ))}

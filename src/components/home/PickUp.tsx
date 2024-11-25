@@ -56,7 +56,7 @@ export const PickUp = () => {
                 {text}
               </Highlight>
             ))}
-            <Group spacing="sm" position="center" mt="xs">
+            <Group gap="sm" justify="center" mt="xs">
               {pickup.buttons.map((button, index) => (
                 <Button
                   key={index}
