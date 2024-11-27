@@ -30,7 +30,7 @@ export const pickups: pickupItem[] = [
         url: "https://zenn.dev/alvinvin/books/chrome_extension",
       },
     ],
-    imageUrl: "images/home/zenn.webp",
+    imageUrl: "/images/home/zenn.webp",
   },
   {
     title:
@@ -51,7 +51,7 @@ export const pickups: pickupItem[] = [
         url: "https://developers.cyberagent.co.jp/blog/archives/43627/",
       },
     ],
-    imageUrl: "images/home/cyberagent.webp",
+    imageUrl: "/images/home/cyberagent.webp",
   },
   {
     title:
@@ -76,7 +76,7 @@ export const pickups: pickupItem[] = [
         url: "https://www.ieice.org/jpn_r/junior/poster_session_awards_2024.html",
       },
     ],
-    imageUrl: "images/home/ieice.webp",
+    imageUrl: "/images/home/ieice.webp",
   },
   {
     title:
@@ -97,7 +97,7 @@ export const pickups: pickupItem[] = [
         url: "https://www.m3tech.blog/entry/2024/04/12/110000",
       },
     ],
-    imageUrl: "images/home/m3.webp",
+    imageUrl: "/images/home/m3.webp",
   },
   {
     title: "『ログ基盤のFluentdをFluent Bitに移行して監視ツールを実装した話』",
@@ -117,6 +117,6 @@ export const pickups: pickupItem[] = [
         url: "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor",
       },
     ],
-    imageUrl: "images/home/mirrativ.webp",
+    imageUrl: "/images/home/mirrativ.webp",
   },
 ];

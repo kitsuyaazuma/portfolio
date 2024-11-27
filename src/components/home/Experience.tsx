@@ -46,7 +46,7 @@ export const Experience = () => {
                 <Anchor
                   href={exp.titleUrl}
                   target="_blank"
-                  color={exp.isCurrent ? "green.9" : "dimmed"}
+                  c={exp.isCurrent ? "green.9" : "dimmed"}
                 >
                   {exp.title}
                 </Anchor>
@@ -58,7 +58,7 @@ export const Experience = () => {
                   {detail}
                 </Text>
               ))}
-              <Group mt="sm" spacing="xs">
+              <Group mt="sm" gap="xs">
                 {exp.skills.map((skill) => (
                   <Badge variant="light" size="sm" color="gray.7" key={skill}>
                     {skill}

@@ -2,7 +2,7 @@ import {
   Image,
   Card,
   Text,
-  Group,
+  Flex,
   Anchor,
   useMantineColorScheme,
   Box,
@@ -27,11 +27,11 @@ export const Popup = ({ data }: PopupProps) => {
       <Space h="xs" />
 
       <Card.Section mt="md" mx="1px">
-        <Group position="apart">
-          <Text weight={500} size="xl">
+        <Flex justify="space-between">
+          <Text fw={500} size="xl">
             {data.name}
           </Text>
-        </Group>
+        </Flex>
 
         <Anchor
           size="xs"

@@ -1,6 +1,5 @@
 import {
   Title,
-  Image,
   Center,
   Flex,
   Highlight,
@@ -9,6 +8,7 @@ import {
   Group,
   useMantineColorScheme,
 } from "@mantine/core";
+import Image from "next/image";
 import React from "react";
 import { SocialButton } from "../common/Social";
 import { abouts } from "../data/about";
@@ -31,10 +31,11 @@ export const About = () => {
         align="center"
       >
         <Image
-          p="lg"
-          radius="md"
-          src="images/home/profile.webp"
+          width={300}
+          height={300}
+          src="/images/home/profile.webp"
           alt="Kitsuya Azuma"
+          style={{ borderRadius: "3%" }}
         />
         <Stack>
           {abouts.map((about) => (
@@ -54,7 +55,7 @@ export const About = () => {
               {about.text}
             </Highlight>
           ))}
-          <Group spacing="sm" position="center" mt="xs">
+          <Group gap="sm" align="center" justify="center" mt="xs">
             {socials.map((social) => (
               <SocialButton
                 key={social.name}

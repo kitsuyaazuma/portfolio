@@ -27,8 +27,8 @@ export const SocialButton = (social: SocialItem) => {
       component="a"
       href={social.url}
       key={social.name}
-      color="green.9"
-      compact
+      c="green.9"
+      size="compact-md"
     >
       <Icon size="16" />
     </Button>

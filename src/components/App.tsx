@@ -1,118 +1,77 @@
 "use client";
 import {
   AppShell,
-  ColorSchemeProvider,
-  Header,
-  MantineProvider,
   ActionIcon,
-  Group,
+  Flex,
   NavLink,
   SimpleGrid,
   Center,
-  LoadingOverlay,
+  useMantineColorScheme,
+  useComputedColorScheme,
 } from "@mantine/core";
-import type { ColorScheme } from "@mantine/core";
-import { useColorScheme } from "@mantine/hooks";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
 import { Archive } from "./archive/Archive";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
 
 export const App = () => {
-  const preferredColorScheme = useColorScheme();
-  const [colorScheme, setColorScheme] =
-    useState<ColorScheme>(preferredColorScheme);
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  const { colorScheme, setColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme("light");
+  const toggleColorScheme = () => {
+    setColorScheme(computedColorScheme === "dark" ? "light" : "dark");
+  };
 
   const [tab, setTab] = useState("home");
-  const [isClient, setIsClient] = useState(false);
 
-  const app = () => {
-    if (isClient && tab) {
-      return (
-        <ColorSchemeProvider
-          colorScheme={colorScheme}
-          toggleColorScheme={toggleColorScheme}
-        >
-          <MantineProvider
-            theme={{ colorScheme }}
-            withGlobalStyles
-            withNormalizeCSS
+  return (
+    <AppShell
+      padding="md"
+      navbar={{
+        breakpoint: "sm",
+        width: "xl",
+      }}
+      header={{ height: 50 }}
+    >
+      <AppShell.Header>
+        <Flex justify="space-between">
+          <ActionIcon
+            variant="outline"
+            color={colorScheme === "dark" ? "green.5" : "green.9"}
+            onClick={() => toggleColorScheme()}
+            style={{ margin: "10px" }}
           >
-            <AppShell
-              padding="md"
-              navbarOffsetBreakpoint="sm"
-              asideOffsetBreakpoint="sm"
-              header={
-                <Header height={50}>
-                  <Group position="apart">
-                    <ActionIcon
-                      variant="outline"
-                      color={colorScheme === "dark" ? "green.5" : "green.9"}
-                      onClick={() => toggleColorScheme()}
-                      style={{ margin: "10px" }}
-                    >
-                      {colorScheme === "dark" ? <TbSun /> : <TbMoonStars />}
-                    </ActionIcon>
-                    <SimpleGrid
-                      cols={2}
-                      spacing={0}
-                      style={{
-                        height: 50,
-                        marginTop: 0,
-                        marginBottom: 0,
-                      }}
-                    >
-                      <NavLink
-                        label={<Center>HOME</Center>}
-                        color={colorScheme === "dark" ? "green.5" : "green.9"}
-                        active={tab === "home"}
-                        onClick={() => setTab("home")}
-                      />
-                      <NavLink
-                        label={<Center>ARCHIVE</Center>}
-                        color={colorScheme === "dark" ? "green.5" : "green.9"}
-                        active={tab === "archive"}
-                        onClick={() => setTab("archive")}
-                      />
-                    </SimpleGrid>
-                  </Group>
-                </Header>
-              }
-            >
-              <Hero />
-              {tab === "home" ? <Home /> : <Archive />}
-            </AppShell>
-          </MantineProvider>
-        </ColorSchemeProvider>
-      );
-    } else {
-      return (
-        <div
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            translate: "-50% -50%",
-          }}
-        >
-          <LoadingOverlay
-            loaderProps={{
-              size: "lg",
-              color: colorScheme === "dark" ? "green.5" : "green.9",
-              variant: "dots",
+            {colorScheme === "dark" ? <TbSun /> : <TbMoonStars />}
+          </ActionIcon>
+          <SimpleGrid
+            cols={2}
+            spacing={0}
+            style={{
+              height: 50,
+              marginTop: 0,
+              marginBottom: 0,
             }}
-            visible={true}
-          />
-        </div>
-      );
-    }
-  };
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+          >
+            <NavLink
+              label={<Center>HOME</Center>}
+              color={colorScheme === "dark" ? "green.5" : "green.9"}
+              active={tab === "home"}
+              onClick={() => setTab("home")}
+            />
+            <NavLink
+              label={<Center>ARCHIVE</Center>}
+              color={colorScheme === "dark" ? "green.5" : "green.9"}
+              active={tab === "archive"}
+              onClick={() => setTab("archive")}
+            />
+          </SimpleGrid>
+        </Flex>
+      </AppShell.Header>
 
-  return <>{app()}</>;
+      <AppShell.Main>
+        <Hero />
+        {tab === "home" ? <Home /> : <Archive />}
+      </AppShell.Main>
+    </AppShell>
+  );
 };

@@ -1,0 +1,12 @@
+.card {
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: var(--mantine-shadows-md);
+    @mixin dark {
+        background-color: rgba(47, 158, 68, 0.2);
+    }
+    @mixin light {
+        background-color: rgba(235, 251, 238, 1);
+    }
+  }
+}
