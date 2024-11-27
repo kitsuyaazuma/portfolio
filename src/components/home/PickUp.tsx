@@ -31,7 +31,7 @@ export const PickUp = () => {
             alt={pickup.title}
             width={240}
             height={0}
-            layout="intrinsic"
+            style={{ height: "auto" }}
           />
           <Stack>
             <Text size="xl" fw={700}>
