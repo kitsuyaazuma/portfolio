@@ -1,15 +1,14 @@
 import {
   Text,
-  Image,
   Flex,
   Stack,
   Container,
   Group,
   Button,
   useMantineColorScheme,
-  Space,
   Highlight,
 } from "@mantine/core";
+import Image from "next/image";
 import React from "react";
 import { pickups } from "../data/pickup";
 import { darkHighlightColor } from "./About";
@@ -21,20 +20,19 @@ export const PickUp = () => {
       {pickups.map((pickup) => (
         <Flex
           direction={{ base: "column", sm: "row" }}
-          gap="lg"
+          gap={{ base: "xl", sm: "lg" }}
           justify="center"
           align="center"
           key={pickup.title}
-          my="xl"
+          py="lg"
         >
-          <div style={{ width: "240px" }}>
-            <Image
-              p="lg"
-              radius="md"
-              src={pickup.imageUrl}
-              alt={pickup.title}
-            />
-          </div>
+          <Image
+            src={pickup.imageUrl}
+            alt={pickup.title}
+            width={240}
+            height={0}
+            layout="intrinsic"
+          />
           <Stack>
             <Text size="xl" fw={700}>
               {pickup.title}
