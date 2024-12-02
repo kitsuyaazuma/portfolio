@@ -1,4 +1,11 @@
-import { AspectRatio, Badge, Card, Modal, SimpleGrid } from "@mantine/core";
+import {
+  AspectRatio,
+  Text,
+  Badge,
+  Card,
+  Modal,
+  SimpleGrid,
+} from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
 import { readingList, ReadingListItem, Status } from "../data/reading";
@@ -43,13 +50,20 @@ export const ReadingList = () => {
             className={classes.card}
             style={{ cursor: "pointer", aspectRatio: "1 / 1.4" }}
           >
-            <Image
-              fill
-              src={el.imageUrl}
-              alt={el.name}
-              style={{ objectFit: "cover" }}
-            />
-            <Badge size="sm" radius="sm" color={getAnchorColor(el.status)}>
+            <Card.Section>
+              <Image fill src={el.imageUrl} alt={el.name} />
+            </Card.Section>
+            <Badge
+              size="sm"
+              radius="sm"
+              color={getAnchorColor(el.status)}
+              style={{
+                position: "absolute",
+                left: "8px",
+                bottom: "8px",
+                zIndex: 2,
+              }}
+            >
               {el.status}
             </Badge>
           </Card>

@@ -1,5 +1,4 @@
 import {
-  Image,
   Card,
   Text,
   Flex,
@@ -8,6 +7,7 @@ import {
   Box,
   Space,
 } from "@mantine/core";
+import Image from "next/image";
 import { TbLink } from "react-icons/tb";
 import { ReadingListItem } from "../data/reading";
 
@@ -19,31 +19,36 @@ export const Popup = ({ data }: PopupProps) => {
   const { colorScheme } = useMantineColorScheme();
 
   return (
-    <Box p="xs" m="xs">
-      <Card.Section withBorder>
-        <Image src={data.imageUrl} alt={data.imageUrl} />
-      </Card.Section>
+    <Box m="xs">
+      <Card>
+        <Card.Section style={{ textAlign: "center" }}>
+          <Image
+            width={300}
+            height={0}
+            src={data.imageUrl}
+            alt={data.imageUrl}
+            style={{ height: "auto" }}
+          />
+        </Card.Section>
 
-      <Space h="xs" />
-
-      <Card.Section mt="md" mx="1px">
-        <Flex justify="space-between">
-          <Text fw={500} size="xl">
+        <Card.Section style={{ textAlign: "center" }} pt="xs">
+          <Text fw={700} size="lg" truncate>
             {data.name}
           </Text>
-        </Flex>
 
-        <Anchor
-          size="xs"
-          href={data.url}
-          target="_blank"
-          color={colorScheme === "dark" ? "green.5" : "green.9"}
-          key={data.url}
-        >
-          <TbLink />
-          {data.url}
-        </Anchor>
-      </Card.Section>
+          <Anchor
+            size="xs"
+            href={data.url}
+            target="_blank"
+            c={colorScheme === "dark" ? "green.5" : "green.9"}
+            key={data.url}
+            lineClamp={1}
+          >
+            <TbLink />
+            {data.url}
+          </Anchor>
+        </Card.Section>
+      </Card>
     </Box>
   );
 };

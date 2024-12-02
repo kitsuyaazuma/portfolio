@@ -14,6 +14,18 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "イシューからはじめよ［改訂版］――知的生産の「シンプルな本質」",
+    status: "Reading",
+    url: "https://eijipress.co.jp/products/2356",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784862763563.jpg",
+  },
+  {
+    name: "チームを動かすIT英語実践マニュアル ",
+    status: "Finished",
+    url: "https://book.alc.co.jp/book/b10030714.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784757439917.jpg",
+  },
+  {
     name: "Building Microservices, 2nd Edition",
     status: "Reading",
     url: "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/",
