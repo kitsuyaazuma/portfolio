@@ -13,7 +13,9 @@ export const experiences: ExperienceItem[] = [
   {
     title: "株式会社メルカリ",
     titleUrl: "https://about.mercari.com/",
-    details: ["2025年1月 - 2025年3月　Internship (Software Engineer @Web Platform team)"],
+    details: [
+      "2025年1月 - 2025年3月　Internship (Software Engineer @Web Platform team)",
+    ],
     skills: ["Kubernetes", "Google Cloud", "TypeScript"],
     isCurrent: true,
     category: "Internship",
