@@ -14,8 +14,14 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
-    name: "イシューからはじめよ［改訂版］――知的生産の「シンプルな本質」",
+    name: "バイリンガルITエンジニアの英語",
     status: "Reading",
+    url: "https://www.kadokawa.co.jp/product/322102001035/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784046052520.jpg",
+  },
+  {
+    name: "イシューからはじめよ［改訂版］――知的生産の「シンプルな本質」",
+    status: "Finished",
     url: "https://eijipress.co.jp/products/2356",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784862763563.jpg",
   },
