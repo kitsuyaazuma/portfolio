@@ -17,7 +17,7 @@ export const pickups: pickupItem[] = [
     textList: [
       "体系的なドキュメントがなかったReactとTypeScriptによるChrome拡張機能開発を入門書にまとめて公開。",
       "ハンズオン形式でDeepLのような実践的な翻訳Chrome拡張機能を開発しながら学ぶ。",
-      "ZennのTrending Books（2023年2月）で1位を獲得した。2024年2月に改訂版を公開。",
+      "ZennのTrending Books（2023年2月）で1位を獲得した。2024年2月に改訂版、2025年3月に第2版を公開。",
     ],
     searchWordsList: [
       ["ReactとTypeScriptによるChrome拡張機能開発"],
