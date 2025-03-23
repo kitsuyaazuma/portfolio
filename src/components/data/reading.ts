@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "研究発表ですぐに使える 理系の英語プレゼンテーション",
+    status: "Finished",
+    url: "https://pub.nikkan.co.jp/book/b10021393.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784526077609.jpg",
+  },
+  {
     name: "バイリンガルITエンジニアの英語",
     status: "Reading",
     url: "https://www.kadokawa.co.jp/product/322102001035/",
