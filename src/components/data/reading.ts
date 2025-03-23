@@ -17,7 +17,7 @@ export const readingList: ReadingListItem[] = [
     name: "研究発表ですぐに使える 理系の英語プレゼンテーション",
     status: "Finished",
     url: "https://pub.nikkan.co.jp/book/b10021393.html",
-    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784526077609.jpg",
+    imageUrl: "https://hondana-image.s3.amazonaws.com/book/image/10021393/d30e3b3e-ecfe-4827-8fa4-3ea9d06f46b1.jpg",
   },
   {
     name: "バイリンガルITエンジニアの英語",
