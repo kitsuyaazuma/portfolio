@@ -5,8 +5,8 @@ type AboutItem = {
 
 export const abouts: AboutItem[] = [
   {
-    text: "都内在住の修士1年生。",
-    searchWords: ["修士1年生"],
+    text: "都内在住の修士2年生。",
+    searchWords: ["修士2年生"],
   },
   {
     text: "大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。次第に興味は大規模サービス開発に移っていった。",
@@ -21,7 +21,7 @@ export const abouts: AboutItem[] = [
     searchWords: ["学生インターン", "Platform Engineering", "MLOps"],
   },
   {
-    text: "2025年はジャーナル採択と自作OSS（32 GitHub Stars以上）が目標。",
-    searchWords: ["ジャーナル採択", "自作OSS"],
+    text: "趣味は研究室の鯖缶。2025年の目標はカンファレンスに多く貢献＆登壇すること。",
+    searchWords: ["鯖缶", "貢献＆登壇"],
   },
 ];
