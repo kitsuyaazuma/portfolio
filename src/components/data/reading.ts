@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "ゼロから作るDeep Learning ❹ ―強化学習編",
+    status: "Reading",
+    url: "https://www.oreilly.co.jp/books/9784873119755/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784873119755.jpg",
+  },
+  {
     name: "研究発表ですぐに使える 理系の英語プレゼンテーション",
     status: "Finished",
     url: "https://pub.nikkan.co.jp/book/b10021393.html",
@@ -81,7 +87,7 @@ export const readingList: ReadingListItem[] = [
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784274224478.jpg",
   },
   {
-    name: "ゼロから作るDeep Learning ❷",
+    name: "ゼロから作るDeep Learning ❷ ―自然言語処理編",
     status: "Finished",
     url: "https://www.oreilly.co.jp/books/9784873118369/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784873118369.jpg",
