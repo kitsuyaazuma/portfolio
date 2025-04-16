@@ -27,7 +27,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "バイリンガルITエンジニアの英語",
-    status: "Reading",
+    status: "Finished",
     url: "https://www.kadokawa.co.jp/product/322102001035/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784046052520.jpg",
   },
