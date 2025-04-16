@@ -69,7 +69,7 @@ export const pickups: pickupItem[] = [
     buttons: [
       {
         text: "プロジェクトページへ",
-        url: "https://kitsuya0828.github.io/DSFLplus/",
+        url: "https://kitsuyaazuma.github.io/DSFLplus/",
       },
       {
         text: "受賞ページへ",

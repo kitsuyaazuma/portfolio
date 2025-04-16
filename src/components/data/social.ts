@@ -6,7 +6,7 @@ export type SocialItem = {
 export const socials: SocialItem[] = [
   {
     name: "GitHub",
-    url: "https://github.com/kitsuya0828",
+    url: "https://github.com/kitsuyaazuma",
   },
   {
     name: "X",
