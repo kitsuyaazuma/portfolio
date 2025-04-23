@@ -21,7 +21,7 @@ export const abouts: AboutItem[] = [
     searchWords: ["学生インターン", "Platform Engineering", "MLOps"],
   },
   {
-    text: "趣味は研究室の鯖缶。2025年の目標はカンファレンスに多く貢献＆登壇すること。",
-    searchWords: ["鯖缶", "貢献＆登壇"],
+    text: "趣味は研究室の鯖缶。2025年の目標はジャーナルに採択されることと、カンファレンスに多く貢献＆登壇すること。",
+    searchWords: ["鯖缶", "採択", "貢献＆登壇"],
   },
 ];
