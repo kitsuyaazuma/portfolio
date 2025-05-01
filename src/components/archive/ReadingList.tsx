@@ -1,11 +1,4 @@
-import {
-  AspectRatio,
-  Text,
-  Badge,
-  Card,
-  Modal,
-  SimpleGrid,
-} from "@mantine/core";
+import { Badge, Card, Modal, SimpleGrid } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
 import { readingList, ReadingListItem, Status } from "../data/reading";

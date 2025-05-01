@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {},
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  experimental: {
+    optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
+  },
   images: {
     remotePatterns: [
       {
@@ -43,10 +46,9 @@ const nextConfig = {
         protocol: "https",
         hostname: "c.media-amazon.com",
         port: "",
-        pathname: "/images/**",
       },
     ],
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -12,7 +12,6 @@ import {
 import { Radar } from "react-chartjs-2";
 
 defaults.font.size = 14;
-// defaults.font.weight = 'bold';
 
 ChartJS.register(
   RadialLinearScale,
@@ -105,7 +104,7 @@ export const SkillsChart = ({ index }: { index: number }) => {
 
   return (
     <Center>
-      <Radar data={data()} options={options as any} />
+      <Radar data={data()} options={options} />
     </Center>
   );
 };

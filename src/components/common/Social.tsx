@@ -10,7 +10,7 @@ import {
 import { HatenaSvgComponent } from "../assets/SvgIcon";
 import { SocialItem } from "../data/social";
 
-const iconMap: { [key: string]: IconType | React.FC<any> } = {
+const iconMap: { [key: string]: IconType | React.FC } = {
   GitHub: SiGithub,
   X: SiX,
   Zenn: SiZenn,

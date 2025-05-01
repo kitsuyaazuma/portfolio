@@ -1,12 +1,7 @@
-import {
-  getThemeColor,
-  useMantineTheme,
-  useMantineColorScheme,
-} from "@mantine/core";
+import { getThemeColor, useMantineTheme } from "@mantine/core";
 
-export const HatenaSvgComponent = (props: any) => {
+export const HatenaSvgComponent = () => {
   const theme = useMantineTheme();
-  const { colorScheme } = useMantineColorScheme();
 
   return (
     <svg
@@ -14,7 +9,6 @@ export const HatenaSvgComponent = (props: any) => {
       width="2em"
       height="2em"
       viewBox="0 0 300 300"
-      {...props}
     >
       <path
         fill={getThemeColor("green.9", theme)}
