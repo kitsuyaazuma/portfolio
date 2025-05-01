@@ -33,16 +33,23 @@ type skillDataItem = {
 
 const skillData: skillDataItem[] = [
   {
-    label: "Front-end",
-    labels: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Figma"],
-    data: [3, 3, 3, 4, 4, 3],
+    label: "Frontend",
+    labels: [
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Figma",
+    ],
+    data: [3, 3, 4, 4, 4, 3],
     backgroundColor: "rgba(255, 107, 107, 0.2)",
     borderColor: "rgba(255, 107, 107, 1)",
   },
   {
-    label: "Back-end",
-    labels: ["Python", "TypeScript", "MySQL", "Go", "Rust", "C"],
-    data: [5, 3, 3, 4, 2, 2],
+    label: "Backend",
+    labels: ["Python", "TypeScript", "MySQL", "Go", "Rust", "GraphQL"],
+    data: [5, 4, 3, 4, 2, 3],
     backgroundColor: "rgba(51, 154, 240, 0.2)",
     borderColor: "rgba(51, 154, 240, 1)",
   },

@@ -41,9 +41,9 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "hondana-image.s3.amazonaws.com",
+        hostname: "c.media-amazon.com",
         port: "",
-        pathname: "/book/image/**",
+        pathname: "/images/**",
       },
     ],
   },

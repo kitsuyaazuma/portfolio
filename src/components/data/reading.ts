@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Effective TypeScript, 2nd Edition",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098155056/250w/",
+  },
+  {
     name: "ゼロから作るDeep Learning ❹ ―強化学習編",
     status: "Reading",
     url: "https://www.oreilly.co.jp/books/9784873119755/",
@@ -23,7 +29,7 @@ export const readingList: ReadingListItem[] = [
     name: "研究発表ですぐに使える 理系の英語プレゼンテーション",
     status: "Finished",
     url: "https://pub.nikkan.co.jp/book/b10021393.html",
-    imageUrl: "https://hondana-image.s3.amazonaws.com/book/image/10021393/d30e3b3e-ecfe-4827-8fa4-3ea9d06f46b1.jpg",
+    imageUrl: "https://c.media-amazon.com/images/I/81FVbBxHQ-L._SY522_.jpg",
   },
   {
     name: "バイリンガルITエンジニアの英語",
