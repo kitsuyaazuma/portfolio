@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "休養学: あなたを疲れから救う",
+    status: "Finished",
+    url: "https://str.toyokeizai.net/books/9784492047484/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784492047484.jpg",
+  },
+  {
     name: "「何回説明しても伝わらない」はなぜ起こるのか？　認知科学が教えるコミュニケーションの本質と解決策",
     status: "Finished",
     url: "https://bookplus.nikkei.com/atcl/catalog/24/04/22/01363/",
