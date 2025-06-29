@@ -14,6 +14,18 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "「何回説明しても伝わらない」はなぜ起こるのか？　認知科学が教えるコミュニケーションの本質と解決策",
+    status: "Finished",
+    url: "https://bookplus.nikkei.com/atcl/catalog/24/04/22/01363/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784296000951.jpg",
+  },
+  {
+    name: "Platform Engineering",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/platform-engineering/9781098153632/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098153632/250w/",
+  },
+  {
     name: "Effective TypeScript, 2nd Edition",
     status: "Reading",
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/",
@@ -21,7 +33,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "ゼロから作るDeep Learning ❹ ―強化学習編",
-    status: "Reading",
+    status: "Almost Finished",
     url: "https://www.oreilly.co.jp/books/9784873119755/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784873119755.jpg",
   },
