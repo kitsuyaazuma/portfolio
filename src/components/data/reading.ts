@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "エッセンシャル思考　最少の時間で成果を最大にする",
+    status: "Finished",
+    url: "https://kanki-pub.co.jp/pub/book/9784761270438/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784761270438.jpg",
+  },
+  {
     name: "休養学: あなたを疲れから救う",
     status: "Finished",
     url: "https://str.toyokeizai.net/books/9784492047484/",
