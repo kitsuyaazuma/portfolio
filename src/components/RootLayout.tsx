@@ -9,22 +9,19 @@ import {
   useMantineColorScheme,
   useComputedColorScheme,
 } from "@mantine/core";
-import { useState } from "react";
 import { TbSun, TbMoonStars } from "react-icons/tb";
-import { Archive } from "./archive/Archive";
-import { Hero } from "./common/Hero";
-import { Home } from "./home/Home";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
-export const App = () => {
+export function RootLayout({ children }: { children: React.ReactNode }) {
   const { colorScheme, setColorScheme } = useMantineColorScheme();
   const computedColorScheme = useComputedColorScheme("light");
   const toggleColorScheme = () => {
     setColorScheme(computedColorScheme === "dark" ? "light" : "dark");
   };
   const t = useTranslations("Navigation");
-
-  const [tab, setTab] = useState("home");
+  const pathname = usePathname();
 
   return (
     <AppShell
@@ -56,22 +53,21 @@ export const App = () => {
           >
             <NavLink
               label={<Center>{t("home")}</Center>}
-              active={tab === "home"}
-              onClick={() => setTab("home")}
+              active={pathname === "/"}
+              component={Link}
+              href="/"
             />
             <NavLink
               label={<Center>{t("archive")}</Center>}
-              active={tab === "archive"}
-              onClick={() => setTab("archive")}
+              component={Link}
+              href="/archive"
+              active={pathname === "archive"}
             />
           </SimpleGrid>
         </Flex>
       </AppShell.Header>
 
-      <AppShell.Main>
-        <Hero />
-        {tab === "home" ? <Home /> : <Archive />}
-      </AppShell.Main>
+      <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
   );
-};
+}

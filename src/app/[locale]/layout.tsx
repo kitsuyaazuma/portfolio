@@ -1,15 +1,26 @@
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import { Suspense } from "react";
+import { RootLayout } from "@/components/RootLayout";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 // eslint-disable-next-line
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Metadata } from "next";
 
 const theme = createTheme({
   primaryColor: "green",
 });
+
+export const metadata: Metadata = {
+  title: "Kitsuya Azuma's Portfolio",
+  description: "東桔也（あずまきつや）のポートフォリオサイト",
+  icons: {
+    icon: "/favicon_io/favicon.ico",
+    apple: "/favicon_io/apple-touch-icon.png",
+  },
+};
 
 export default async function LocaleLayout({
   children,
@@ -34,7 +45,9 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider>
-          <MantineProvider theme={theme}>{children}</MantineProvider>
+          <MantineProvider theme={theme}>
+            <RootLayout>{children}</RootLayout>
+          </MantineProvider>
         </NextIntlClientProvider>
       </body>
     </html>

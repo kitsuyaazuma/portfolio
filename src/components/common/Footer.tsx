@@ -1,3 +1,4 @@
+"use client";
 import {
   Group,
   Text,
@@ -10,8 +11,6 @@ import classes from "./Footer.module.css";
 import { SocialButton } from "./Social";
 
 import { useTranslations } from "next-intl";
-
-// ... (imports)
 
 export function Footer() {
   const t = useTranslations("Footer");

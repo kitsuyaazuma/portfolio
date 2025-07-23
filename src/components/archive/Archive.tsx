@@ -5,8 +5,6 @@ import { ReadingList } from "./ReadingList";
 
 import { useTranslations } from "next-intl";
 
-// ... (imports)
-
 export const Archive = () => {
   const t = useTranslations("Archive");
   return (

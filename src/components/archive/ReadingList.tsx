@@ -1,3 +1,4 @@
+"use client";
 import { Badge, Card, Modal, SimpleGrid } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
