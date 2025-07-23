@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import { TbDevicesPc, TbSchool, TbTrophyFilled } from "react-icons/tb";
 import { experiences, ExperienceCategory } from "../data/experience";
+import { useTranslations } from "next-intl";
 
 const currentCount = experiences.filter((exp) => exp.isCurrent).length;
 
@@ -27,10 +28,12 @@ const getBullet = (category: ExperienceCategory) => {
 };
 
 export const Experience = () => {
+  const t = useTranslations("Experience");
+
   return (
     <Container py="xl">
       <Center my="xl">
-        <Title>EXPERIENCE</Title>
+        <Title>{t("title")}</Title>
       </Center>
       <Center>
         <Timeline

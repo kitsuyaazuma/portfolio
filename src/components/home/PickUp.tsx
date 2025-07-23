@@ -12,8 +12,10 @@ import Image from "next/image";
 import React from "react";
 import { pickups } from "../data/pickup";
 import { darkHighlightColor } from "./About";
+// import { useTranslations } from "next-intl";
 
 export const PickUp = () => {
+  // const t = useTranslations("PickUp");
   const { colorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">

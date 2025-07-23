@@ -11,17 +11,18 @@ import {
 import Image from "next/image";
 import React from "react";
 import { SocialButton } from "../common/Social";
-import { abouts } from "../data/about";
 import { socials } from "../data/social";
+import { useTranslations } from "next-intl";
 
 export const darkHighlightColor = "rgba(47, 158, 68, 0.2)";
 
 export const About = () => {
+  const t = useTranslations("About");
   const { colorScheme } = useMantineColorScheme();
   return (
     <Container py="xl">
       <Center my="lg">
-        <Title>ABOUT ME</Title>
+        <Title>{t("title")}</Title>
       </Center>
 
       <Flex
@@ -38,7 +39,8 @@ export const About = () => {
           style={{ borderRadius: "3%" }}
         />
         <Stack>
-          {abouts.map((about) => (
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+          {t.raw("items").map((about: any) => (
             <Highlight
               size="sm"
               key={about.text}

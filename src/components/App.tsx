@@ -14,6 +14,7 @@ import { TbSun, TbMoonStars } from "react-icons/tb";
 import { Archive } from "./archive/Archive";
 import { Hero } from "./common/Hero";
 import { Home } from "./home/Home";
+import { useTranslations } from "next-intl";
 
 export const App = () => {
   const { colorScheme, setColorScheme } = useMantineColorScheme();
@@ -21,6 +22,7 @@ export const App = () => {
   const toggleColorScheme = () => {
     setColorScheme(computedColorScheme === "dark" ? "light" : "dark");
   };
+  const t = useTranslations("Navigation");
 
   const [tab, setTab] = useState("home");
 
@@ -53,14 +55,12 @@ export const App = () => {
             }}
           >
             <NavLink
-              label={<Center>HOME</Center>}
-              color={colorScheme === "dark" ? "green.5" : "green.9"}
+              label={<Center>{t("home")}</Center>}
               active={tab === "home"}
               onClick={() => setTab("home")}
             />
             <NavLink
-              label={<Center>ARCHIVE</Center>}
-              color={colorScheme === "dark" ? "green.5" : "green.9"}
+              label={<Center>{t("archive")}</Center>}
               active={tab === "archive"}
               onClick={() => setTab("archive")}
             />

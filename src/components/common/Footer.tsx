@@ -9,7 +9,12 @@ import { socials } from "../data/social";
 import classes from "./Footer.module.css";
 import { SocialButton } from "./Social";
 
+import { useTranslations } from "next-intl";
+
+// ... (imports)
+
 export function Footer() {
+  const t = useTranslations("Footer");
   const theme = useMantineTheme();
   const { colorScheme } = useMantineColorScheme();
   return (
@@ -28,7 +33,7 @@ export function Footer() {
           variant="gradient"
           gradient={{ from: "green.9", to: "green.7", deg: 45 }}
         >
-          Kitsuya Azuma
+          {t("name")}
         </Text>
         <Group gap="xs">
           {socials.map((social) => (

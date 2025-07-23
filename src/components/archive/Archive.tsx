@@ -3,24 +3,29 @@ import { Footer } from "../common/Footer";
 import { BlogList } from "./BlogList";
 import { ReadingList } from "./ReadingList";
 
+import { useTranslations } from "next-intl";
+
+// ... (imports)
+
 export const Archive = () => {
+  const t = useTranslations("Archive");
   return (
     <>
       <Center mt="xl">
-        <Title>TECH BLOG</Title>
+        <Title>{t("blogTitle")}</Title>
       </Center>
       <Center mb="xl">
-        <Text c="dimmed">『てっく・ざ・ぶろぐ』</Text>
+        <Text c="dimmed">{t("blogDescription")}</Text>
       </Center>
       <Container my="xl">
         <BlogList />
       </Container>
       <Space h="xl" />
       <Center mt="xl">
-        <Title>READING LIST</Title>
+        <Title>{t("readingListTitle")}</Title>
       </Center>
       <Center mb="xl">
-        <Text c="dimmed">読書記録</Text>
+        <Text c="dimmed">{t("readingListDescription")}</Text>
       </Center>
       <Container my="xl">
         <ReadingList />
