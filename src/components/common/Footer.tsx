@@ -5,6 +5,7 @@ import {
   useMantineColorScheme,
   useMantineTheme,
   getThemeColor,
+  Container,
 } from "@mantine/core";
 import { socials } from "../data/social";
 import classes from "./Footer.module.css";
@@ -27,23 +28,25 @@ export function Footer() {
         }`,
       }}
     >
-      <Group align="apart" className={classes.inner} px="sm">
-        <Text
-          variant="gradient"
-          gradient={{ from: "green.9", to: "green.7", deg: 45 }}
-        >
-          {t("name")}
-        </Text>
-        <Group gap="xs">
-          {socials.map((social) => (
-            <SocialButton
-              key={social.name}
-              name={social.name}
-              url={social.url}
-            />
-          ))}
+      <Container>
+        <Group align="apart" className={classes.inner}>
+          <Text
+            variant="gradient"
+            gradient={{ from: "green.9", to: "green.7", deg: 45 }}
+          >
+            {t("name")}
+          </Text>
+          <Group gap="xs">
+            {socials.map((social) => (
+              <SocialButton
+                key={social.name}
+                name={social.name}
+                url={social.url}
+              />
+            ))}
+          </Group>
         </Group>
-      </Group>
+      </Container>
     </div>
   );
 }
