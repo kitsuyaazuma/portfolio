@@ -11,8 +11,7 @@ import {
 } from "@mantine/core";
 import { TbSun, TbMoonStars } from "react-icons/tb";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/navigation";
 
 export function RootLayout({ children }: { children: React.ReactNode }) {
   const { colorScheme, setColorScheme } = useMantineColorScheme();
@@ -61,7 +60,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
               label={<Center>{t("archive")}</Center>}
               component={Link}
               href="/archive"
-              active={pathname === "archive"}
+              active={pathname === "/archive"}
             />
           </SimpleGrid>
         </Flex>
