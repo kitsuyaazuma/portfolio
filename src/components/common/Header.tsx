@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <>
-      <Container>
+      <Container size="lg">
         <Flex justify="space-between" align="center" h={50}>
           <ActionIcon
             variant="outline"

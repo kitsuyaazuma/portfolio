@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 export const Skills = () => {
   const t = useTranslations("Skills");
   return (
-    <Container py="xl">
+    <Container py="xl" size="lg">
       <Center my="xl">
         <Title>{t("title")}</Title>
       </Center>

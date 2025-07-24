@@ -28,7 +28,7 @@ export function Footer() {
         }`,
       }}
     >
-      <Container>
+      <Container size="lg">
         <Group align="apart" className={classes.inner}>
           <Text
             variant="gradient"

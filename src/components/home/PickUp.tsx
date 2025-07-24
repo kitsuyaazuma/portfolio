@@ -18,7 +18,7 @@ export const PickUp = () => {
   // const t = useTranslations("PickUp");
   const { colorScheme } = useMantineColorScheme();
   return (
-    <Container py="xl">
+    <Container py="lg" size="md">
       {pickups.map((pickup) => (
         <Flex
           direction={{ base: "column", sm: "row" }}

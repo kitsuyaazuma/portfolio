@@ -20,7 +20,7 @@ export const About = () => {
   const t = useTranslations("About");
   const { colorScheme } = useMantineColorScheme();
   return (
-    <Container py="xl">
+    <Container py="xl" size="lg">
       <Center my="lg">
         <Title>{t("title")}</Title>
       </Center>
