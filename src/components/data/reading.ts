@@ -14,6 +14,12 @@ export type ReadingListItem = {
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Building Applications with AI Agents",
+    status: "Reading",
+    url: "https://learning.oreilly.com/library/view/building-applications-with/9781098176495/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098176495/250w/",
+  },
+  {
     name: "エッセンシャル思考　最少の時間で成果を最大にする",
     status: "Finished",
     url: "https://kanki-pub.co.jp/pub/book/9784761270438/",
