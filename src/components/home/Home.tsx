@@ -1,5 +1,4 @@
 "use client";
-import { Footer } from "../common/Footer";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { PickUp } from "./PickUp";
@@ -12,7 +11,6 @@ export const Home = () => {
       <PickUp />
       <Skills />
       <Experience />
-      <Footer />
     </>
   );
 };

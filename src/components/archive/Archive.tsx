@@ -1,5 +1,4 @@
 import { Title, Container, Center, Space } from "@mantine/core";
-import { Footer } from "../common/Footer";
 import { BlogList } from "./BlogList";
 import { ReadingList } from "./ReadingList";
 
@@ -12,17 +11,16 @@ export const Archive = () => {
       <Center mt="xl">
         <Title>{t("blogTitle")}</Title>
       </Center>
-      <Container my="xl" size="lg">
+      <Container my="xl">
         <BlogList />
       </Container>
       <Space h="xl" />
       <Center mt="xl">
         <Title>{t("readingListTitle")}</Title>
       </Center>
-      <Container my="xl" size="lg">
+      <Container my="xl">
         <ReadingList />
       </Container>
-      <Footer />
     </>
   );
 };
