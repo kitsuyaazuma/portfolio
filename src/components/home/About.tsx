@@ -36,7 +36,7 @@ export const About = () => {
         direction={{ base: "column", sm: "row" }}
         gap="xl"
         justify="center"
-        align="center"
+        align="start"
       >
         <Image
           width={300}
