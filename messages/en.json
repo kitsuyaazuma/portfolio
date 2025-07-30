@@ -19,27 +19,24 @@
         "searchWords": ["second-year master's student"]
       },
       {
-        "text": "I started competitive programming when I entered university, which sparked my interest in personal development. Gradually, my interest shifted to large-scale service development.",
-        "searchWords": [
-          "personal development",
-          "large-scale service development"
-        ]
+        "text": "Inspired by competitive programming, I became interested in personal development and was gradually drawn to the appeal of software engineering.",
+        "searchWords": ["personal development", "software engineering"]
       },
       {
-        "text": "In university, I belonged to a Computer Vision lab and conducted research on knowledge distillation-based Federated Learning. In graduate school, I am focusing further on FL.",
+        "text": "In university, I majored in Computer Vision and conducted research on knowledge distillation-based Federated Learning. In graduate school, I am focusing further on FL.",
         "searchWords": ["Computer Vision", "Federated Learning"]
       },
       {
-        "text": "I am gaining experience as a student intern at various companies, large and small. Recently, I have been interested in Platform Engineering and MLOps.",
-        "searchWords": ["student intern", "Platform Engineering", "MLOps"]
+        "text": "I have gained experience as a student intern at various companies and plan to start my career as a platform engineer next year. In recent years, I have been interested in Platform Engineering and MLOps.",
+        "searchWords": ["student intern", "platform engineer"]
       },
       {
-        "text": "My hobby is server maintenance in the lab. My goals for 2025 are to have a paper accepted in a journal and to contribute to and present at many conferences.",
-        "searchWords": [
-          "server maintenance",
-          "accepted",
-          "contribute and present"
-        ]
+        "text": "My hobbies are reading technical books and managing the lab's servers.",
+        "searchWords": ["technical books", "lab's servers"]
+      },
+      {
+        "text": "My goals for 2025 are to have a paper accepted in a journal and to contribute and present a lot in the tech community.",
+        "searchWords": ["journal", "tech community"]
       }
     ]
   },
