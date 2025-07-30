@@ -9,10 +9,11 @@ import {
   Container,
 } from "@mantine/core";
 import { TbDevicesPc, TbSchool, TbTrophyFilled } from "react-icons/tb";
-import { experiences, ExperienceCategory } from "../data/experience";
+import { experienceItems } from "@/data/experience";
+import { ExperienceCategory } from "@/types/data";
 import { useTranslations } from "next-intl";
 
-const currentCount = experiences.filter((exp) => exp.isCurrent).length;
+const currentCount = experienceItems.filter((item) => item.isCurrent).length;
 
 const getBullet = (category: ExperienceCategory) => {
   switch (category) {
@@ -42,27 +43,26 @@ export const Experience = () => {
           lineWidth={2}
           color="green.9"
         >
-          {experiences.map((exp, idx) => (
+          {experienceItems.map((item, idx) => (
             <Timeline.Item
-              bullet={getBullet(exp.category)}
+              bullet={getBullet(item.category)}
               title={
                 <Anchor
-                  href={exp.titleUrl}
                   target="_blank"
-                  c={exp.isCurrent ? "green.9" : "dimmed"}
+                  c={item.isCurrent ? "green.9" : "dimmed"}
                 >
-                  {exp.title}
+                  {item.title}
                 </Anchor>
               }
               key={idx}
             >
-              {exp.details.map((detail) => (
+              {item.details.map((detail) => (
                 <Text size="xs" color="dimmed" key={detail}>
                   {detail}
                 </Text>
               ))}
               <Group mt="sm" gap="xs">
-                {exp.skills.map((skill) => (
+                {item.skills.map((skill) => (
                   <Badge variant="light" size="sm" color="gray.7" key={skill}>
                     {skill}
                   </Badge>

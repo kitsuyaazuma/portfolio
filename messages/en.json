@@ -102,22 +102,17 @@
     "title": "EXPERIENCE",
     "items": [
       {
-        "title": "Tokyo Institute of Technology",
+        "title": "Institute of Science Tokyo (former Tokyo Institute of Technology)",
         "details": [
-          "Apr 2024 - Present, School of Engineering, Department of Information and Communications",
+          "Apr 2024 - Present, School of Engineering, Department of Information and Communications Engineering",
           "Apr 2024 - Present, Nishio Laboratory"
         ],
-        "skills": [
-          "Information and Communications",
-          "Machine Learning",
-          "Federated Learning"
-        ]
+        "skills": ["Machine Learning", "Federated Learning"],
+        "isCurrent": true
       },
       {
         "title": "Mercari, Inc.",
-        "details": [
-          "Jan 2025 - Mar 2025, Internship (Software Engineer @Web Platform team)"
-        ],
+        "details": ["Jan 2025 - Mar 2025, Intern (Platform Engineer)"],
         "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"]
       },
       {
@@ -127,9 +122,7 @@
       },
       {
         "title": "M3, Inc.",
-        "details": [
-          "Mar 2024, Intern (MLOps Engineer @AI/Machine Learning Team)"
-        ],
+        "details": ["Mar 2024, Intern (MLOps Engineer)"],
         "skills": ["Go", "Kubernetes", "Google Cloud"]
       },
       {
@@ -138,34 +131,26 @@
           "Apr 2020 - Mar 2024, Faculty of Engineering, Department of Electrical, Information and Physics Engineering",
           "Apr 2023 - Mar 2024, Omachi Laboratory"
         ],
-        "skills": [
-          "Information Engineering",
-          "Machine Learning",
-          "Image Processing"
-        ]
+        "skills": ["Machine Learning", "Computer Vision"]
       },
       {
         "title": "CyberAgent, Inc.",
-        "details": [
-          "Sep 2023, Next Generation Top Engineer Creation Internship ACE (Best Team Award)"
-        ],
+        "details": ["Sep 2023, Intern (Hackathon)"],
         "skills": ["TypeScript", "MySQL", "GraphQL", "AWS"]
       },
       {
         "title": "Yahoo Japan Corporation",
-        "details": [
-          "Aug 2023, Intern (2023 Summer Internship Cloud Infrastructure Development @Cloud Platform Division)"
-        ],
-        "skills": ["Linux", "OpenStack", "Observability", "OpenObserve"]
+        "details": ["Aug 2023, Intern (Infrastructure Engineer)"],
+        "skills": ["Linux", "OpenStack", "Observability"]
       },
       {
         "title": "CyberAgent, Inc.",
-        "details": ["Jul 2023, Intern (CA Tech JOB @Abema Cloud Platform)"],
+        "details": ["Jul 2023, Intern (Platform Engineer)"],
         "skills": ["Go", "Google Cloud", "AWS", "Terraform"]
       },
       {
         "title": "Be Doctor Consulting Inc.",
-        "details": ["Nov 2022 - Apr 2023, Intern (Subcontractor)"],
+        "details": ["Nov 2022 - Apr 2023, Intern (Software Engineer)"],
         "skills": ["React", "GraphQL", "AWS", "Terraform"]
       },
       {
@@ -177,7 +162,7 @@
       },
       {
         "title": "Langsmith Inc.",
-        "details": ["Apr 2022 - Apr 2023, Intern (Frontend Engineer)"],
+        "details": ["Apr 2022 - Apr 2023, Intern (Software Engineer)"],
         "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
       },
       {
@@ -206,16 +191,14 @@
       },
       {
         "title": "International Science School 2019 - The University of Sydney",
-        "details": ["Jul 2019, Australian Science Scholar"],
+        "details": ["Jul 2019, Scholarship Student"],
         "skills": []
       }
     ]
   },
   "Archive": {
     "blogTitle": "TECH BLOG",
-    "blogDescription": "'Tech the Blog'",
-    "readingListTitle": "READING LIST",
-    "readingListDescription": "Reading Log"
+    "readingListTitle": "READING LIST"
   },
   "Footer": {
     "name": "Kitsuya Azuma"

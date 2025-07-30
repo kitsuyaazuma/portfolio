@@ -13,12 +13,19 @@ import React from "react";
 import { SocialButton } from "../common/Social";
 import { socials } from "../data/social";
 import { useTranslations } from "next-intl";
+import { AboutItem, AboutItemsSchema } from "@/types/messages";
 
 export const darkHighlightColor = "rgba(47, 158, 68, 0.2)";
 
 export const About = () => {
-  const t = useTranslations("About");
   const { colorScheme } = useMantineColorScheme();
+  const t = useTranslations("About");
+  let items: AboutItem[] = [];
+  const result = AboutItemsSchema.safeParse(t.raw("items"));
+  if (result.success) {
+    items = result.data;
+  }
+
   return (
     <Container py="xl">
       <Center my="lg">
@@ -39,11 +46,10 @@ export const About = () => {
           style={{ borderRadius: "3%" }}
         />
         <Stack>
-          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-          {t.raw("items").map((about: any) => (
+          {items.map((about: AboutItem, index: number) => (
             <Highlight
               size="sm"
-              key={about.text}
+              key={index.toString()}
               highlightStyles={(theme) => ({
                 backgroundColor:
                   colorScheme === "dark"

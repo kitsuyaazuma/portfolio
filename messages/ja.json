@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Kitsuya Azuma&gt;s Portfolio",
-    "description": "東桔也（あずまきつや）のポートフォリオサイト"
+    "description": "東桔也のポートフォリオ"
   },
   "Navigation": {
     "home": "HOME",
@@ -15,24 +15,28 @@
     "title": "ABOUT ME",
     "items": [
       {
-        "text": "都内在住の修士2年生。",
+        "text": "東京都内在住の修士2年生。",
         "searchWords": ["修士2年生"]
       },
       {
-        "text": "大学入学と同時に競技プログラミングを始めたことをきっかけに、個人開発にも興味を持つ。次第に興味は大規模サービス開発に移っていった。",
-        "searchWords": ["個人開発", "大規模サービス開発"]
+        "text": "競技プログラミングをきっかけに個人開発にも興味を持ち、次第にソフトウェアエンジニアリングの魅力に引き込まれていった。",
+        "searchWords": ["個人開発", "ソフトウェアエンジニアリング"]
       },
       {
-        "text": "大学ではComputer Visionの研究室に所属し、知識蒸留ベースのFederated Learning（連合学習）の研究を行なった。大学院ではFLに更にフォーカスして研究を行っている。",
+        "text": "大学ではComputer Visionを専攻し、知識蒸留ベースのFederated Learningの研究を行なった。大学院では更にFLにフォーカスして研究を行っている。",
         "searchWords": ["Computer Vision", "Federated Learning"]
       },
       {
-        "text": "学生インターンとして大小様々な企業で修行を積んでいる。最近はPlatform EngineeringとMLOpsに興味がある。",
-        "searchWords": ["学生インターン", "Platform Engineering", "MLOps"]
+        "text": "学生インターンとして様々な企業で経験を積み、来年度からプラットフォームエンジニアとしてキャリアをスタートさせる予定。近年はPlatform EngineeringとMLOpsに興味がある。",
+        "searchWords": ["学生インターン", "プラットフォームエンジニア"]
       },
       {
-        "text": "趣味は研究室の鯖缶。2025年の目標はジャーナルに採択されることと、カンファレンスに多く貢献＆登壇すること。",
-        "searchWords": ["鯖缶", "採択", "貢献＆登壇"]
+        "text": "技術書を読むことと研究室のサーバー管理が趣味。",
+        "searchWords": ["技術書", "サーバー管理"]
+      },
+      {
+        "text": "2025年の目標はジャーナルに採択されることと、技術コミュニティで多く登壇＆貢献すること。",
+        "searchWords": ["ジャーナル", "技術コミュニティ"]
       }
     ]
   },
@@ -92,119 +96,11 @@
     "title": "SKILLS"
   },
   "Experience": {
-    "title": "EXPERIENCE",
-    "items": [
-      {
-        "title": "東京科学大学（旧：東京工業大学）",
-        "details": [
-          "2024年4月 -　工学院 情報通信系",
-          "2024年4月 -　西尾研究室"
-        ],
-        "skills": ["情報通信", "機械学習", "連合学習"]
-      },
-      {
-        "title": "株式会社メルカリ",
-        "details": [
-          "2025年1月 - 2025年3月　インターン（プラットフォームエンジニア @Webプラットフォームチーム）"
-        ],
-        "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"]
-      },
-      {
-        "title": "株式会社ミラティブ",
-        "details": ["2024年2月 - 2024年6月　インターン（インフラエンジニア）"],
-        "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"]
-      },
-      {
-        "title": "エムスリー株式会社",
-        "details": [
-          "2024年3月　インターン（MLOpsエンジニア @AI・機械学習チーム）"
-        ],
-        "skills": ["Go", "Kubernetes", "Google Cloud"]
-      },
-      {
-        "title": "東北大学",
-        "details": [
-          "2020年4月 - 2024年3月　工学部電気情報物理工学科",
-          "2023年4月 - 2024年3月　大町研究室"
-        ],
-        "skills": ["情報工学", "機械学習", "画像処理"]
-      },
-      {
-        "title": "株式会社サイバーエージェント",
-        "details": [
-          "2023年9月　次世代トップエンジニア創出インターンシップ ACE（最優秀チーム賞）"
-        ],
-        "skills": ["TypeScript", "MySQL", "GraphQL", "AWS"]
-      },
-      {
-        "title": "ヤフー株式会社",
-        "details": [
-          "2023年8月　インターン（2023 Summer Internship クラウドインフラ開発 @クラウドプラットフォーム本部 ）"
-        ],
-        "skills": ["Linux", "OpenStack", "Observability", "OpenObserve"]
-      },
-      {
-        "title": "株式会社サイバーエージェント",
-        "details": [
-          "2023年7月　インターン（CA Tech JOB @Abema Cloud Platform）"
-        ],
-        "skills": ["Go", "Google Cloud", "AWS", "Terraform"]
-      },
-      {
-        "title": "Be Doctor Consulting株式会社",
-        "details": ["2022年11月 - 2023年4月　インターン（業務委託）"],
-        "skills": ["React", "GraphQL", "AWS", "Terraform"]
-      },
-      {
-        "title": "JPHACKS 2022",
-        "details": [
-          "2022年10月 - 2022年11月　ハッカソン（イノベーター認定、スポンサー賞×3）"
-        ],
-        "skills": ["React", "TypeScript", "Firebase"]
-      },
-      {
-        "title": "株式会社Langsmith",
-        "details": [
-          "2022年4月 - 2023年4月　インターン（フロントエンドエンジニア）"
-        ],
-        "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
-      },
-      {
-        "title": "学校法人角川ドワンゴ学園",
-        "details": ["2021年4月 - 2022年11月　インターン（プログラミングTA）"],
-        "skills": ["Premiere Pro", "Photoshop", "Illustrator", "JavaScript"]
-      },
-      {
-        "title": "JPHACKS 2021",
-        "details": [
-          "2021年10月 - 2021年11月　ハッカソン（審査員特別賞、イノベーター認定、スポンサー賞×5）"
-        ],
-        "skills": ["Python", "機械学習"]
-      },
-      {
-        "title": "楽天株式会社",
-        "details": [
-          "2022年8月　インターン（夏の陣2022 新規プロトタイプ開発コース）"
-        ],
-        "skills": ["Ruby on Rails", "Ruby", "Docker"]
-      },
-      {
-        "title": "群馬県立前橋高等学校",
-        "details": ["2017年4月 - 2020年3月"],
-        "skills": []
-      },
-      {
-        "title": "International Science School 2019 - The University of Sydney",
-        "details": ["2019年7月　オーストラリア科学奨学生"],
-        "skills": []
-      }
-    ]
+    "title": "EXPERIENCE"
   },
   "Archive": {
     "blogTitle": "TECH BLOG",
-    "blogDescription": "『てっく・ざ・ぶろぐ』",
-    "readingListTitle": "READING LIST",
-    "readingListDescription": "読書記録"
+    "readingListTitle": "READING LIST"
   },
   "Footer": {
     "name": "Kitsuya Azuma"
