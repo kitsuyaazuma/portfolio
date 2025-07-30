@@ -8,12 +8,19 @@ import {
   Group,
   Container,
 } from "@mantine/core";
-import { TbDevicesPc, TbSchool, TbTrophyFilled } from "react-icons/tb";
-import { experienceItems } from "@/data/experience";
-import { ExperienceCategory } from "@/types/data";
+import {
+  TbBuildings,
+  TbDevicesPc,
+  TbSchool,
+  TbTrophyFilled,
+} from "react-icons/tb";
 import { useTranslations } from "next-intl";
-
-const currentCount = experienceItems.filter((item) => item.isCurrent).length;
+import {
+  ExperienceCategory,
+  ExperienceItem,
+  ExperienceItemSchema,
+} from "@/types/messages";
+import { z } from "zod";
 
 const getBullet = (category: ExperienceCategory) => {
   switch (category) {
@@ -23,13 +30,19 @@ const getBullet = (category: ExperienceCategory) => {
       return <TbSchool />;
     case "Award":
       return <TbTrophyFilled />;
-    default:
-      return <TbDevicesPc />;
+    case "Job":
+      return <TbBuildings />;
   }
 };
 
 export const Experience = () => {
   const t = useTranslations("Experience");
+  let items: ExperienceItem[] = [];
+  const result = z.array(ExperienceItemSchema).safeParse(t.raw("items"));
+  if (result.success) {
+    items = result.data;
+  }
+  const currentCount = items.filter((item) => item.isCurrent).length;
 
   return (
     <Container py="xl">
@@ -43,7 +56,7 @@ export const Experience = () => {
           lineWidth={2}
           color="green.9"
         >
-          {experienceItems.map((item, idx) => (
+          {items.map((item, index) => (
             <Timeline.Item
               bullet={getBullet(item.category)}
               title={
@@ -54,10 +67,10 @@ export const Experience = () => {
                   {item.title}
                 </Anchor>
               }
-              key={idx}
+              key={index}
             >
               {item.details.map((detail) => (
-                <Text size="xs" color="dimmed" key={detail}>
+                <Text size="xs" c="dimmed" key={detail}>
                   {detail}
                 </Text>
               ))}

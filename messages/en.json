@@ -105,22 +105,26 @@
           "Apr 2024 - Present, Nishio Laboratory"
         ],
         "skills": ["Machine Learning", "Federated Learning"],
+        "category": "Education",
         "isCurrent": true
       },
       {
         "title": "Mercari, Inc.",
         "details": ["Jan 2025 - Mar 2025, Intern (Platform Engineer)"],
-        "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"]
+        "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"],
+        "category": "Internship"
       },
       {
         "title": "Mirrativ, Inc.",
         "details": ["Feb 2024 - Jun 2024, Intern (Infrastructure Engineer)"],
-        "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"]
+        "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"],
+        "category": "Internship"
       },
       {
         "title": "M3, Inc.",
         "details": ["Mar 2024, Intern (MLOps Engineer)"],
-        "skills": ["Go", "Kubernetes", "Google Cloud"]
+        "skills": ["Go", "Kubernetes", "Google Cloud"],
+        "category": "Internship"
       },
       {
         "title": "Tohoku University",
@@ -128,68 +132,80 @@
           "Apr 2020 - Mar 2024, Faculty of Engineering, Department of Electrical, Information and Physics Engineering",
           "Apr 2023 - Mar 2024, Omachi Laboratory"
         ],
-        "skills": ["Machine Learning", "Computer Vision"]
+        "skills": ["Machine Learning", "Computer Vision"],
+        "category": "Education"
       },
       {
         "title": "CyberAgent, Inc.",
         "details": ["Sep 2023, Intern (Hackathon)"],
-        "skills": ["TypeScript", "MySQL", "GraphQL", "AWS"]
+        "skills": ["TypeScript", "MySQL", "GraphQL", "AWS"],
+        "category": "Internship"
       },
       {
         "title": "Yahoo Japan Corporation",
         "details": ["Aug 2023, Intern (Infrastructure Engineer)"],
-        "skills": ["Linux", "OpenStack", "Observability"]
+        "skills": ["Linux", "OpenStack", "Observability"],
+        "category": "Internship"
       },
       {
         "title": "CyberAgent, Inc.",
         "details": ["Jul 2023, Intern (Platform Engineer)"],
-        "skills": ["Go", "Google Cloud", "AWS", "Terraform"]
+        "skills": ["Go", "Google Cloud", "AWS", "Terraform"],
+        "category": "Internship"
       },
       {
         "title": "Be Doctor Consulting Inc.",
         "details": ["Nov 2022 - Apr 2023, Intern (Software Engineer)"],
-        "skills": ["React", "GraphQL", "AWS", "Terraform"]
+        "skills": ["React", "GraphQL", "AWS", "Terraform"],
+        "category": "Internship"
       },
       {
         "title": "JPHACKS 2022",
         "details": [
           "Oct 2022 - Nov 2022, Hackathon (Innovator Certification, 3 Sponsor Awards)"
         ],
-        "skills": ["React", "TypeScript", "Firebase"]
+        "skills": ["React", "TypeScript", "Firebase"],
+        "category": "Award"
       },
       {
         "title": "Langsmith Inc.",
         "details": ["Apr 2022 - Apr 2023, Intern (Software Engineer)"],
-        "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+        "category": "Internship"
       },
       {
         "title": "Kadokawa Dwango Gakuen",
         "details": ["Apr 2021 - Nov 2022, Intern (Programming TA)"],
-        "skills": ["Premiere Pro", "Photoshop", "Illustrator", "JavaScript"]
+        "skills": ["Premiere Pro", "Photoshop", "Illustrator", "JavaScript"],
+        "category": "Internship"
       },
       {
         "title": "JPHACKS 2021",
         "details": [
           "Oct 2021 - Nov 2021, Hackathon (Judge's Special Award, Innovator Certification, 5 Sponsor Awards)"
         ],
-        "skills": ["Python", "Machine Learning"]
+        "skills": ["Python", "Machine Learning"],
+        "category": "Award"
       },
       {
         "title": "Rakuten, Inc.",
         "details": [
           "Aug 2022, Intern (Summer Camp 2022 New Prototype Development Course)"
         ],
-        "skills": ["Ruby on Rails", "Ruby", "Docker"]
+        "skills": ["Ruby on Rails", "Ruby", "Docker"],
+        "category": "Internship"
       },
       {
         "title": "Maebashi High School",
         "details": ["Apr 2017 - Mar 2020"],
-        "skills": []
+        "skills": [],
+        "category": "Education"
       },
       {
         "title": "International Science School 2019 - The University of Sydney",
         "details": ["Jul 2019, Scholarship Student"],
-        "skills": []
+        "skills": [],
+        "category": "Education"
       }
     ]
   },
