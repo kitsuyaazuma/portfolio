@@ -1,10 +1,9 @@
+"use client";
 import { Center, Container, Grid, Title } from "@mantine/core";
 import React from "react";
 import { SkillsChart } from "./SkillsChart";
 
 import { useTranslations } from "next-intl";
-
-// ... (imports)
 
 export const Skills = () => {
   const t = useTranslations("Skills");
@@ -14,9 +13,9 @@ export const Skills = () => {
         <Title>{t("title")}</Title>
       </Center>
       <Grid justify="center" align="center">
-        {[0, 1, 2].map((index) => (
-          <Grid.Col key={index} span={{ md: 4, xs: 6 }}>
-            <SkillsChart index={index} />
+        {[0, 1, 2].map((key) => (
+          <Grid.Col key={key} span={{ md: 4, xs: 6 }}>
+            <SkillsChart index={key} />
           </Grid.Col>
         ))}
       </Grid>

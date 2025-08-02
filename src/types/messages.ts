@@ -26,3 +26,18 @@ export const ExperienceItemSchema = z.object({
 
 export type ExperienceItem = z.infer<typeof ExperienceItemSchema>;
 export type ExperienceCategory = z.infer<typeof ExperienceCategorySchema>;
+
+export const PickupItemButtonSchema = z.object({
+  text: z.string(),
+  url: z.string(),
+});
+
+export const PickupItemSchema = z.object({
+  title: z.string(),
+  textList: z.array(z.string()),
+  searchWordsList: z.array(z.array(z.string())),
+  buttons: z.array(PickupItemButtonSchema),
+  imageUrl: z.string(),
+});
+
+export type PickupItem = z.infer<typeof PickupItemSchema>;

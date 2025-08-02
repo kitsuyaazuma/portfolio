@@ -1,6 +1,8 @@
+"use client";
 import {
   Text,
   Flex,
+  Image,
   Stack,
   Container,
   Group,
@@ -8,38 +10,49 @@ import {
   useMantineColorScheme,
   Highlight,
 } from "@mantine/core";
-import Image from "next/image";
+import NextImage from "next/image";
 import React from "react";
-import { pickups } from "../data/pickup";
 import { darkHighlightColor } from "./About";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { PickupItem, PickupItemSchema } from "@/types/messages";
+import { z } from "zod";
 
 export const PickUp = () => {
-  // const t = useTranslations("PickUp");
+  const t = useTranslations("PickUp");
+  let items: PickupItem[] = [];
+  const result = z.array(PickupItemSchema).safeParse(t.raw("items"));
+  if (result.success) {
+    items = result.data;
+  } else {
+    console.error(result.error.message);
+  }
   const { colorScheme } = useMantineColorScheme();
+
   return (
     <Container py="lg" size="md">
-      {pickups.map((pickup) => (
+      {items.map((item: PickupItem) => (
         <Flex
           direction={{ base: "column", sm: "row" }}
           gap={{ base: "xl", sm: "lg" }}
           justify="center"
           align="center"
-          key={pickup.title}
+          key={item.title}
           py="lg"
         >
           <Image
-            src={pickup.imageUrl}
-            alt={pickup.title}
+            component={NextImage}
+            src={item.imageUrl}
+            alt={item.title}
             width={240}
             height={0}
-            style={{ height: "auto" }}
+            w={240}
+            h="auto"
           />
           <Stack>
             <Text size="xl" fw={700}>
-              {pickup.title}
+              {item.title}
             </Text>
-            {pickup.textList.map((text, index) => (
+            {item.textList.map((text, index) => (
               <Highlight
                 size="sm"
                 key={index}
@@ -51,13 +64,13 @@ export const PickUp = () => {
                   color: colorScheme === "dark" ? "white" : "black",
                   fontWeight: "bolder",
                 })}
-                highlight={pickup.searchWordsList[index]}
+                highlight={item.searchWordsList[index]}
               >
                 {text}
               </Highlight>
             ))}
             <Group gap="sm" justify="center" mt="xs">
-              {pickup.buttons.map((button, index) => (
+              {item.buttons.map((button, index) => (
                 <Button
                   key={index}
                   variant="light"

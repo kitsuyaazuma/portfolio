@@ -28,7 +28,7 @@
       },
       {
         "text": "I have gained experience as a student intern at various companies and plan to start my career as a platform engineer next year. In recent years, I have been interested in Platform Engineering and MLOps.",
-        "searchWords": ["student intern", "platform engineer"]
+        "searchWords": ["student intern", "Platform Engineering"]
       },
       {
         "text": "My hobbies are reading technical books and managing the lab's servers.",
@@ -49,46 +49,80 @@
           "Learn by developing a practical translation Chrome extension like DeepL in a hands-on format.",
           "Ranked #1 on Zenn's Trending Books (February 2023). A revised edition was released in February 2024, and the second edition in March 2025."
         ],
-        "buttons": [{ "text": "Read on Zenn" }]
+        "searchWordsList": [
+          ["developing Chrome extensions with React and TypeScript"],
+          ["hands-on format"],
+          ["Ranked #1", "second edition in March 2025"]
+        ],
+        "buttons": [
+          {
+            "text": "Read on Zenn",
+            "url": "https://zenn.dev/alvinvin/books/chrome_extension"
+          }
+        ],
+        "imageUrl": "/images/home/zenn.webp"
       },
       {
         "title": "Development of a Resource Label Monitoring Tool for Cost Management in the Cloud",
         "textList": [
-          "My work as an intern at CyberAgent was featured on the Developers Blog.",
+          "My work as an intern at CyberAgent, Inc. was featured on the Developers Blog.",
           "I developed a tool to monitor resource labels to facilitate cost management in ABEMA's large-scale cloud environment.",
           "The source code and Terraform for deployment are available on GitHub."
         ],
-        "buttons": [{ "text": "Read the blog" }]
-      },
-      {
-        "title": "A Study on a Knowledge Distillation Method Using Energy Score to Reduce Communication Volume in Federated Learning",
-        "textList": [
-          "Received the Best Poster Award (top 7%) at the student poster session of the IEICE General Conference 2024 held at Hiroshima University.",
-          "In a distillation-based federated learning method, we introduced an out-of-distribution detection score for the first time to aggregate only predictions for well-learned data, successfully reducing communication volume and improving learning efficiency.",
-          "I further developed the presentation content and wrote it as my graduation thesis."
+        "searchWordsList": [
+          ["CyberAgent, Inc."],
+          ["monitor resource labels", "large-scale cloud environment"],
+          []
         ],
         "buttons": [
-          { "text": "To the project page" },
-          { "text": "To the award page" }
-        ]
+          {
+            "text": "Read the blog",
+            "url": "https://developers.cyberagent.co.jp/blog/archives/43627/"
+          }
+        ],
+        "imageUrl": "/images/home/cyberagent.webp"
       },
       {
         "title": "Increasing the Memory Limit of OOMed CronJobs 'Just Right' to Reduce Unnecessary Billing and Incident Response",
         "textList": [
-          "My work as an intern at M3 was featured on the tech blog.",
+          "My work as an intern at M3, Inc. was featured on the tech blog.",
           "I developed 'broom', a Custom Controller that increases the memory limit 'just right' when an OOM occurs in a Kubernetes CronJob, aiming to solve problems from both cloud billing and incident response aspects.",
           "Broom is open-sourced on GitHub and is still under active development."
         ],
-        "buttons": [{ "text": "Read the tech blog" }]
+        "searchWordsList": [
+          ["M3, Inc."],
+          [
+            "increases the memory limit 'just right' when an OOM occurs in a Kubernetes CronJob"
+          ],
+          ["open-sourced on GitHub"]
+        ],
+        "buttons": [
+          {
+            "text": "Read the blog",
+            "url": "https://www.m3tech.blog/entry/2024/04/12/110000"
+          }
+        ],
+        "imageUrl": "/images/home/m3.webp"
       },
       {
         "title": "Migrating the Log Infrastructure from Fluentd to Fluent Bit and Implementing a Monitoring Tool",
         "textList": [
-          "My work as an intern at Mirrativ was featured on the tech blog.",
+          "My work as an intern at Mirrativ, Inc. was featured on the tech blog.",
           "I carefully documented the investigation of the cause of log loss in the existing infrastructure, the migration from Fluentd to Fluent Bit, and the implementation of a Fluent Bit monitoring tool.",
           "It ranked #2 on Hatena Bookmark's hot entries (Technology)."
         ],
-        "buttons": [{ "text": "Read the tech blog" }]
+        "searchWordsList": [
+          ["Mirrativ, Inc."],
+          ["cause of log loss", "migration from Fluentd to Fluent Bit"],
+          ["ranked #2 on Hatena Bookmark's hot entries"]
+        ],
+        "buttons": [
+          {
+            "text": "Read the blog",
+            "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor"
+          }
+        ],
+        "imageUrl": "/images/home/mirrativ.webp"
       }
     ]
   },

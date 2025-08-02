@@ -1,3 +1,4 @@
+"use client";
 import {
   Title,
   Center,
@@ -36,7 +37,7 @@ export const About = () => {
         direction={{ base: "column", sm: "row" }}
         gap="xl"
         justify="center"
-        align="start"
+        align="center"
       >
         <Image
           width={300}
