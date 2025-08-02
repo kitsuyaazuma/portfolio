@@ -1,11 +1,11 @@
 "use client";
-import { Badge, Card, Modal, SimpleGrid } from "@mantine/core";
+import { Badge, Card, Text, Overlay, SimpleGrid, Stack } from "@mantine/core";
 import Image from "next/image";
-import { useState } from "react";
 import { readingList } from "@/data/reading";
 import { ReadingListItem, ReadingListStatus } from "@/types/data";
 import classes from "./Card.module.css";
-import { Popup } from "./Popup";
+import { useState } from "react";
+import { TbExternalLink } from "react-icons/tb";
 
 const getAnchorColor = (status: ReadingListStatus) => {
   switch (status) {
@@ -23,47 +23,65 @@ const getAnchorColor = (status: ReadingListStatus) => {
 };
 
 export const ReadingList = () => {
-  const [openedData, setOpenedData] = useState<ReadingListItem | null>(null);
+  return (
+    <SimpleGrid cols={{ base: 2, sm: 3, md: 4, lg: 5 }}>
+      {readingList.map((item: ReadingListItem, idx: number) => (
+        <ReadingListCard key={idx} item={item} />
+      ))}
+    </SimpleGrid>
+  );
+};
+
+interface ReadingListCardProps {
+  item: ReadingListItem;
+}
+
+const ReadingListCard = ({ item }: ReadingListCardProps) => {
+  const [focused, setFocused] = useState(false);
 
   return (
-    <>
-      <Modal
-        opened={openedData !== null}
-        onClose={() => setOpenedData(null)}
-        centered
-      >
-        {openedData !== null && <Popup data={openedData} />}
-      </Modal>
-
-      <SimpleGrid cols={{ base: 2, sm: 3, md: 4, lg: 5 }}>
-        {readingList.map((el, idx) => (
-          <Card
-            key={idx}
-            p="md"
-            component="a"
-            onClick={() => setOpenedData(el)}
-            className={classes.card}
-            style={{ cursor: "pointer", aspectRatio: "1 / 1.4" }}
+    <Card
+      p="md"
+      component="a"
+      onMouseOver={() => setFocused(true)}
+      onMouseOut={() => setFocused(false)}
+      href={item.url}
+      className={classes.card}
+      style={{ cursor: "pointer", aspectRatio: "1 / 1.4" }}
+    >
+      <Card.Section>
+        <Image fill src={item.imageUrl} alt={item.name} />
+        <Overlay className="overlay" backgroundOpacity={0.5} hidden={!focused}>
+          <Stack
+            justify="center"
+            align="center"
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              padding: "1rem",
+            }}
           >
-            <Card.Section>
-              <Image fill src={el.imageUrl} alt={el.name} />
-            </Card.Section>
-            <Badge
-              size="sm"
-              radius="sm"
-              color={getAnchorColor(el.status)}
-              style={{
-                position: "absolute",
-                left: "8px",
-                bottom: "8px",
-                zIndex: 2,
-              }}
-            >
-              {el.status}
-            </Badge>
-          </Card>
-        ))}
-      </SimpleGrid>
-    </>
+            <TbExternalLink size={24} color="white" />
+            <Text size="sm" c="white" fw={500}>
+              {item.name}
+            </Text>
+          </Stack>
+        </Overlay>
+      </Card.Section>
+      <Badge
+        size="sm"
+        radius="sm"
+        color={getAnchorColor(item.status)}
+        style={{
+          position: "absolute",
+          left: "8px",
+          bottom: "8px",
+          zIndex: 2,
+        }}
+      >
+        {item.status}
+      </Badge>
+    </Card>
   );
 };
