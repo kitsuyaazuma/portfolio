@@ -8,7 +8,7 @@ import {
   SiLinkedin,
 } from "react-icons/si";
 import { HatenaSvgComponent } from "../assets/SvgIcon";
-import { SocialItem } from "../data/social";
+import type { SocialItem } from "@/types/data";
 
 const iconMap: { [key: string]: IconType | React.FC } = {
   GitHub: SiGithub,

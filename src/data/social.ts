@@ -1,7 +1,4 @@
-export type SocialItem = {
-  name: string;
-  url: string;
-};
+import { SocialItem } from "@/types/data";
 
 export const socials: SocialItem[] = [
   {

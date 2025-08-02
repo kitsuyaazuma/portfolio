@@ -7,7 +7,7 @@ import {
   getThemeColor,
   Container,
 } from "@mantine/core";
-import { socials } from "../data/social";
+import { socials } from "@/data/social";
 import classes from "./Footer.module.css";
 import { SocialButton } from "./Social";
 

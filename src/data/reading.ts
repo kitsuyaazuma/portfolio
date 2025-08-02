@@ -1,16 +1,4 @@
-export type Status =
-  | "Finished"
-  | "Reading"
-  | "Partially Read"
-  | "Almost Finished"
-  | "Not Started";
-
-export type ReadingListItem = {
-  name: string;
-  status: Status;
-  url: string;
-  imageUrl: string;
-};
+import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {

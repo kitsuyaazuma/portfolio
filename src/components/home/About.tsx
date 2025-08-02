@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import { SocialButton } from "../common/Social";
-import { socials } from "../data/social";
+import { socials } from "@/data/social";
 import { useTranslations } from "next-intl";
 import { AboutItem, AboutItemsSchema } from "@/types/messages";
 

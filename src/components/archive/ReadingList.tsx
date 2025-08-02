@@ -2,11 +2,12 @@
 import { Badge, Card, Modal, SimpleGrid } from "@mantine/core";
 import Image from "next/image";
 import { useState } from "react";
-import { readingList, ReadingListItem, Status } from "../data/reading";
+import { readingList } from "@/data/reading";
+import { ReadingListItem, ReadingListStatus } from "@/types/data";
 import classes from "./Card.module.css";
 import { Popup } from "./Popup";
 
-const getAnchorColor = (status: Status) => {
+const getAnchorColor = (status: ReadingListStatus) => {
   switch (status) {
     case "Finished":
       return "green.5";

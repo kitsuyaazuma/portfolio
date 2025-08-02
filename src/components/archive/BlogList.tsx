@@ -1,6 +1,6 @@
 import { Card, SimpleGrid } from "@mantine/core";
 import Image from "next/image";
-import { blogCount } from "../data/blog";
+import { blogCount } from "@/data/blog";
 import classes from "./Card.module.css";
 
 export const BlogList = () => {
