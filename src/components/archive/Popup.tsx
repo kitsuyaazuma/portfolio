@@ -1,7 +1,7 @@
 import { Card, Text, Anchor, useMantineColorScheme, Box } from "@mantine/core";
 import Image from "next/image";
 import { TbLink } from "react-icons/tb";
-import { ReadingListItem } from "../data/reading";
+import { ReadingListItem } from "@/types/data";
 
 interface PopupProps {
   data: ReadingListItem;
