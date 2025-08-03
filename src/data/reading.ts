@@ -27,7 +27,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "Platform Engineering",
-    status: "Reading",
+    status: "Finished",
     url: "https://www.oreilly.com/library/view/platform-engineering/9781098153632/",
     imageUrl: "https://learning.oreilly.com/library/cover/9781098153632/250w/",
   },
