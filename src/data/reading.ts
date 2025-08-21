@@ -3,7 +3,7 @@ import { ReadingListItem } from "@/types/data";
 export const readingList: ReadingListItem[] = [
   {
     name: "Building Applications with AI Agents",
-    status: "Reading",
+    status: "Finished",
     url: "https://learning.oreilly.com/library/view/building-applications-with/9781098176495/",
     imageUrl: "https://learning.oreilly.com/library/cover/9781098176495/250w/",
   },
