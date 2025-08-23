@@ -2,6 +2,18 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
+    status: "Not Started",
+    url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297143930.jpg",
+  },
+  {
+    name: "原論文から解き明かす生成AI",
+    status: "Reading",
+    url: "https://gihyo.jp/book/2025/978-4-297-15078-5",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297150785.jpg",
+  },
+  {
     name: "Building Applications with AI Agents",
     status: "Finished",
     url: "https://learning.oreilly.com/library/view/building-applications-with/9781098176495/",
