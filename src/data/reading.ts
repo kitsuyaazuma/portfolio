@@ -2,6 +2,18 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+    status: "Reading",
+    url: "https://teamtopologies.com/books",
+    imageUrl: "https://covers.openlibrary.org/b/isbn/9781942788812-M.jpg",
+  },
+  {
+    name: "技術者のための伝わる！プレゼンテーション実践術",
+    status: "Finished",
+    url: "https://pub.jmam.co.jp/book/b626919.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784800591265.jpg",
+  },
+  {
     name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
     status: "Not Started",
     url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
