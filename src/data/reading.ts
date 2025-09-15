@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント",
+    status: "Reading",
+    url: "https://pub.jmam.co.jp/book/b480049.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784820727507.jpg",
+  },
+  {
     name: "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
     status: "Reading",
     url: "https://teamtopologies.com/books",
@@ -15,7 +21,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
-    status: "Not Started",
+    status: "Reading",
     url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297143930.jpg",
   },
@@ -57,7 +63,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "Effective TypeScript, 2nd Edition",
-    status: "Reading",
+    status: "Partially Read",
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/",
     imageUrl: "https://learning.oreilly.com/library/cover/9781098155056/250w/",
   },
