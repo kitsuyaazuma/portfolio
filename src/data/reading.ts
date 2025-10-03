@@ -116,6 +116,12 @@ export const readingList: ReadingListItem[] = [
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784296000500.jpg",
   },
   {
+    name: "事例でわかるMLOps 機械学習の成果をスケールさせる処方箋",
+    status: "Finished",
+    url: "https://www.kspub.co.jp/book/detail/5369562.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784065369562.jpg",
+  },
+  {
     name: "Podman in Action",
     status: "Partially Read",
     url: "https://developers.redhat.com/e-books/podman-action",
