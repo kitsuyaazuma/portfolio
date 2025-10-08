@@ -19,6 +19,7 @@ import { useDisclosure } from "@mantine/hooks";
 // eslint-disable-next-line import/named
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { AnimatedHeaderLogo } from "./AnimatedHeaderLogo";
 
 export function Header() {
   const [opened, { toggle }] = useDisclosure();
@@ -40,7 +41,39 @@ export function Header() {
     <>
       <Container size="lg">
         <Flex justify="space-between" align="center" h={50}>
-          <Flex align="center" gap="md">
+          {/*
+           */}
+          <AnimatedHeaderLogo />
+
+          <Group>
+            <Group gap="lg" visibleFrom="sm">
+              <SimpleGrid cols={2} spacing={0} h={50} my={0} visibleFrom="sm">
+                <NavLink
+                  label={<Center>{t("home")}</Center>}
+                  active={pathname === "/"}
+                  component={Link}
+                  href="/"
+                />
+                <NavLink
+                  label={<Center>{t("archive")}</Center>}
+                  component={Link}
+                  href="/archive"
+                  active={pathname === "/archive"}
+                />
+              </SimpleGrid>
+              <Flex h={25} align="center">
+                <Divider orientation="vertical" />
+              </Flex>
+              <SegmentedControl
+                value={locale}
+                onChange={handleLocaleChange}
+                data={[
+                  { label: "EN", value: "en" },
+                  { label: "JA", value: "ja" },
+                ]}
+                color={colorScheme === "dark" ? "green.5" : "green.9"}
+              />
+            </Group>
             <ActionIcon
               variant="outline"
               color={colorScheme === "dark" ? "green.5" : "green.9"}
@@ -48,43 +81,14 @@ export function Header() {
             >
               {colorScheme === "dark" ? <TbSun /> : <TbMoonStars />}
             </ActionIcon>
-          </Flex>
-
-          <Group gap="lg" visibleFrom="sm">
-            <SimpleGrid cols={2} spacing={0} h={50} my={0} visibleFrom="sm">
-              <NavLink
-                label={<Center>{t("home")}</Center>}
-                active={pathname === "/"}
-                component={Link}
-                href="/"
-              />
-              <NavLink
-                label={<Center>{t("archive")}</Center>}
-                component={Link}
-                href="/archive"
-                active={pathname === "/archive"}
-              />
-            </SimpleGrid>
-            <Flex h={25} align="center">
-              <Divider orientation="vertical" />
-            </Flex>
-            <SegmentedControl
-              value={locale}
-              onChange={handleLocaleChange}
-              data={[
-                { label: "EN", value: "en" },
-                { label: "JA", value: "ja" },
-              ]}
-              color={colorScheme === "dark" ? "green.5" : "green.9"}
+            <Burger
+              opened={opened}
+              onClick={toggle}
+              hiddenFrom="sm"
+              size="sm"
+              color={colorScheme == "dark" ? "green.5" : "green.9"}
             />
           </Group>
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            hiddenFrom="sm"
-            size="sm"
-            color={colorScheme == "dark" ? "green.5" : "green.9"}
-          />
         </Flex>
       </Container>
       {opened && (
