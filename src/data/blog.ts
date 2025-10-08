@@ -1,1 +1,1 @@
-export const blogCount = 17;
+export const blogCount = 18;

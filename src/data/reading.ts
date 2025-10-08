@@ -9,7 +9,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
-    status: "Reading",
+    status: "Finished",
     url: "https://teamtopologies.com/books",
     imageUrl: "https://covers.openlibrary.org/b/isbn/9781942788812-M.jpg",
   },
