@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "入門 OpenTelemetry ―現代的なオブザーバビリティシステムの構築と運用",
+    status: "Reading",
+    url: "https://www.oreilly.co.jp/books/9784814401024/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784814401024.jpg",
+  },
+  {
     name: "INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント",
     status: "Reading",
     url: "https://pub.jmam.co.jp/book/b480049.html",
