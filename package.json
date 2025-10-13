@@ -12,7 +12,7 @@
     "imagemin": "node imagemin.mjs"
   },
   "dependencies": {
-    "@mantine/core": "^8.3.3",
+    "@mantine/core": "^8.3.4",
     "@mantine/hooks": "^8.0.1",
     "chart.js": "^4.4.9",
     "motion": "^12.23.22",
