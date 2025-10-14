@@ -2,6 +2,18 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Designing Data-Intensive Applications, 2nd Edition",
+    status: "Reading",
+    url: "https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098119058/250w/",
+  },
+  {
+    name: "AI Engineering",
+    status: "Reading",
+    url: "https://learning.oreilly.com/library/view/ai-engineering/9781098166298/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098166298/250w/",
+  },
+  {
     name: "入門 OpenTelemetry ―現代的なオブザーバビリティシステムの構築と運用",
     status: "Reading",
     url: "https://www.oreilly.co.jp/books/9784814401024/",
