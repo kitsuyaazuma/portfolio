@@ -21,7 +21,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "INSPIRED 熱狂させる製品を生み出すプロダクトマネジメント",
-    status: "Reading",
+    status: "Finished",
     url: "https://pub.jmam.co.jp/book/b480049.html",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784820727507.jpg",
   },
