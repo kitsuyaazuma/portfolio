@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Docker&Kubernetesネットワークのしくみ――クラウドネイティブに求められる情報通信の知識",
+    status: "Reading",
+    url: "https://gihyo.jp/book/2025/978-4-297-14899-7",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297148997.jpg",
+  },
+  {
     name: "Designing Data-Intensive Applications, 2nd Edition",
     status: "Reading",
     url: "https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
