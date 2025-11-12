@@ -1,9 +1,10 @@
 import "@mantine/core/styles.css";
+import "@mantine/charts/styles.css";
 import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import { Suspense } from "react";
 import { RootLayout } from "@/components/RootLayout";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-// eslint-disable-next-line
+
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";

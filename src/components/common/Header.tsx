@@ -16,7 +16,7 @@ import {
 } from "@mantine/core";
 import { TbSun, TbMoonStars } from "react-icons/tb";
 import { useDisclosure } from "@mantine/hooks";
-// eslint-disable-next-line import/named
+
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { AnimatedHeaderLogo } from "./AnimatedHeaderLogo";

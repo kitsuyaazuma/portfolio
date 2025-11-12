@@ -1,110 +1,44 @@
-import { Center } from "@mantine/core";
-import {
-  Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend,
-  defaults,
-} from "chart.js";
-import { Radar } from "react-chartjs-2";
+import { RadarChart } from "@mantine/charts";
 
-defaults.font.size = 14;
-
-ChartJS.register(
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend,
-);
-
-type skillDataItem = {
-  label: string;
-  labels: string[];
-  data: number[];
-  backgroundColor: string;
-  borderColor: string;
+type ChartSeries = {
+  name: string;
+  color: string;
+  opacity: number;
+};
+type ChartData = {
+  skill: string;
+  [key: string]: any;
+};
+type SkillsChartProps = {
+  series: ChartSeries[];
+  data: ChartData[];
 };
 
-const skillData: skillDataItem[] = [
-  {
-    label: "Frontend",
-    labels: [
-      "HTML/CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Figma",
-    ],
-    data: [3, 3, 4, 4, 4, 3],
-    backgroundColor: "rgba(255, 107, 107, 0.2)",
-    borderColor: "rgba(255, 107, 107, 1)",
-  },
-  {
-    label: "Backend",
-    labels: ["Python", "TypeScript", "MySQL", "Go", "Rust", "GraphQL"],
-    data: [5, 4, 3, 4, 2, 3],
-    backgroundColor: "rgba(51, 154, 240, 0.2)",
-    borderColor: "rgba(51, 154, 240, 1)",
-  },
-  {
-    label: "DevOps",
-    labels: [
-      "Linux",
-      "Kubernetes",
-      "Docker",
-      "Google Cloud",
-      "Terraform",
-      "AWS",
-    ],
-    data: [4, 4, 4, 4, 4, 4],
-    backgroundColor: "rgba(252, 196, 25, 0.2)",
-    borderColor: "rgba(252, 196, 25, 1)",
-  },
-];
-
-export const SkillsChart = ({ index }: { index: number }) => {
-  const data = () => {
-    return {
-      labels: skillData[index].labels,
-      datasets: [
-        {
-          label: skillData[index].label,
-          data: skillData[index].data,
-          backgroundColor: skillData[index].backgroundColor,
-          borderColor: skillData[index].borderColor,
-          borderWidth: 1,
-        },
-      ],
-    };
-  };
-
-  const options = {
-    scales: {
-      r: {
-        min: 0,
-        max: 5,
-        ticks: {
-          stepSize: 1,
-        },
-        pointLabels: {
-          font: {
-            weight: 500,
-            size: 12,
-          },
-        },
-      },
-    },
-  };
-
+export const SkillsChart = ({ data, series }: SkillsChartProps) => {
   return (
-    <Center>
-      <Radar data={data()} options={options} />
-    </Center>
+    <RadarChart
+      h={250}
+      w="100%"
+      data={data}
+      dataKey="skill"
+      withDots
+      withPolarAngleAxis
+      withPolarRadiusAxis
+      withPolarGrid
+      radarProps={{
+        isAnimationActive: true,
+        animationDuration: 1000,
+      }}
+      radarChartProps={{
+        margin: { top: 20, right: 20, bottom: 20, left: 20 },
+      }}
+      polarRadiusAxisProps={{
+        type: "number",
+        domain: [0, 5],
+        tick: { fontWeight: 100 },
+        tickCount: 6,
+      }}
+      series={series}
+    />
   );
 };

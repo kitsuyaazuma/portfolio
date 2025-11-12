@@ -1,10 +1,10 @@
 "use client";
-// eslint-disable-next-line import/named
+
 import { motion, MotionValue, useTransform, useScroll } from "motion/react";
 import { Flex, Text, UnstyledButton } from "@mantine/core";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 
 const AnimatedCharacter = ({
   char,
@@ -13,13 +13,13 @@ const AnimatedCharacter = ({
   char: string;
   progress: MotionValue<number>;
 }) => {
-  const { initialX, initialY, initialRotate } = useMemo(() => {
+  const [{ initialX, initialY, initialRotate }] = useState(() => {
     return {
       initialX: (Math.random() - 0.5) * 200,
       initialY: (Math.random() - 0.5) * 60,
       initialRotate: (Math.random() - 0.5) * 180,
     };
-  }, []);
+  });
 
   const x = useTransform(progress, [0, 1], [initialX, 0]);
   const y = useTransform(progress, [0, 1], [initialY, 0]);
@@ -41,6 +41,7 @@ export const AnimatedHeaderLogo = () => {
 
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
   }, []);
 
