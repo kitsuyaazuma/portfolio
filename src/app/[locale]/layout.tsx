@@ -23,14 +23,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
-}) {
-  // Ensure that the incoming `locale` is valid
+};
+
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
