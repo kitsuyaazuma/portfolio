@@ -9,6 +9,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "imagemin": "node imagemin.mjs"
   },
   "dependencies": {
