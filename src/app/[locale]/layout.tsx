@@ -49,11 +49,13 @@ export default async function LocaleLayout({ children, params }: Props) {
         <ColorSchemeScript />
       </head>
       <body>
-        <NextIntlClientProvider>
-          <MantineProvider theme={theme}>
-            <RootLayout>{children}</RootLayout>
-          </MantineProvider>
-        </NextIntlClientProvider>
+        <Suspense>
+          <NextIntlClientProvider>
+            <MantineProvider theme={theme}>
+              <RootLayout>{children}</RootLayout>
+            </MantineProvider>
+          </NextIntlClientProvider>
+        </Suspense>
       </body>
     </html>
   );
