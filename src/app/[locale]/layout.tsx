@@ -9,20 +9,31 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 const theme = createTheme({
   primaryColor: "green",
 });
 
-export const metadata: Metadata = {
-  title: "Kitsuya Azuma's Portfolio",
-  description: "東桔也（あずまきつや）のポートフォリオサイト",
-  icons: {
-    icon: "/favicon_io/favicon.ico",
-    apple: "/favicon_io/apple-touch-icon.png",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    return {};
+  }
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    icons: {
+      icon: "/favicon_io/favicon.ico",
+      apple: "/favicon_io/apple-touch-icon.png",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
