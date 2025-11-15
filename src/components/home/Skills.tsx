@@ -1,7 +1,6 @@
 "use client";
 import { Center, Container, Grid, Stack, Text, Title } from "@mantine/core";
 import { SkillsChart } from "./SkillsChart";
-
 import { useTranslations } from "next-intl";
 
 const skillsConfig = [

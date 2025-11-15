@@ -1,3 +1,4 @@
+"use client";
 import { RadarChart } from "@mantine/charts";
 
 type ChartSeries = {

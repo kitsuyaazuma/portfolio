@@ -15,13 +15,13 @@ import {
   TbSchool,
   TbTrophyFilled,
 } from "react-icons/tb";
-import { useTranslations } from "next-intl";
 import {
   ExperienceCategory,
   ExperienceItem,
   ExperienceItemSchema,
 } from "@/types/messages";
 import { z } from "zod";
+import { useTranslations } from "next-intl";
 
 const getBullet = (category: ExperienceCategory) => {
   switch (category) {

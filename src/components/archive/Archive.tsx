@@ -2,10 +2,10 @@ import { Title, Container, Center, Space } from "@mantine/core";
 import { BlogList } from "./BlogList";
 import { ReadingList } from "./ReadingList";
 
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const Archive = () => {
-  const t = useTranslations("Archive");
+export const Archive = async () => {
+  const t = await getTranslations("Archive");
   return (
     <>
       <Center mt="xl">
