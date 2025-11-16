@@ -47,7 +47,7 @@ export function Header() {
 
           <Group>
             <Group gap="lg" visibleFrom="sm">
-              <SimpleGrid cols={2} spacing={0} h={50} my={0} visibleFrom="sm">
+              <SimpleGrid cols={3} spacing={0} h={50} my={0} visibleFrom="sm">
                 <NavLink
                   label={<Center>{t("home")}</Center>}
                   active={pathname === "/"}
@@ -55,10 +55,16 @@ export function Header() {
                   href="/"
                 />
                 <NavLink
-                  label={<Center>{t("archive")}</Center>}
+                  label={<Center>PUBLICATIONS</Center>}
                   component={Link}
-                  href="/archive"
-                  active={pathname === "/archive"}
+                  href="/publications"
+                  active={pathname === "/publications"}
+                />
+                <NavLink
+                  label={<Center>{t("bookshelf")}</Center>}
+                  component={Link}
+                  href="/bookshelf"
+                  active={pathname === "/bookshelf"}
                 />
               </SimpleGrid>
               <Flex h={25} align="center">
@@ -111,10 +117,20 @@ export function Header() {
             }}
           />
           <NavLink
-            label={<Center>{t("archive")}</Center>}
+            label={<Center>PUBLICATIONS</Center>}
             component={Link}
-            href="/archive"
-            active={pathname === "/archive"}
+            href="/publications"
+            active={pathname === "/publications"}
+            onClick={toggle}
+            styles={{
+              label: { fontSize: "1.2rem" },
+            }}
+          />
+          <NavLink
+            label={<Center>{t("bookshelf")}</Center>}
+            component={Link}
+            href="/bookshelf"
+            active={pathname === "/bookshelf"}
             onClick={toggle}
             styles={{
               label: { fontSize: "1.2rem" },

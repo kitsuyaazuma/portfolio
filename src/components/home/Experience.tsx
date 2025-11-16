@@ -46,7 +46,7 @@ export const Experience = () => {
   const currentCount = items.filter((item) => item.isCurrent).length;
 
   return (
-    <Container py="xl">
+    <Container pt="xl">
       <Center my="xl">
         <Title>{t("title")}</Title>
       </Center>

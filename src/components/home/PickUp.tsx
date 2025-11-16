@@ -11,7 +11,6 @@ import {
   Highlight,
 } from "@mantine/core";
 import NextImage from "next/image";
-import React from "react";
 import { darkHighlightColor } from "./About";
 import { useTranslations } from "next-intl";
 import { PickupItem, PickupItemSchema } from "@/types/messages";
@@ -49,7 +48,7 @@ export const PickUp = () => {
             h="auto"
           />
           <Stack>
-            <Text size="xl" fw={700}>
+            <Text size="xl" fw={700} style={{ lineHeight: 1.2 }}>
               {item.title}
             </Text>
             {item.textList.map((text, index) => (

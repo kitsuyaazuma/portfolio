@@ -5,7 +5,7 @@
   },
   "Navigation": {
     "home": "HOME",
-    "archive": "ARCHIVE"
+    "bookshelf": "BOOKSHELF"
   },
   "Hero": {
     "name": "Kitsuya Azuma",
@@ -243,8 +243,11 @@
       }
     ]
   },
-  "Archive": {
+  "Publications": {
     "blogTitle": "TECH BLOG",
+    "talkTitle": "TALKS"
+  },
+  "Bookshelf": {
     "readingListTitle": "READING LIST"
   },
   "Footer": {
