@@ -15,7 +15,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "AI Engineering",
-    status: "Reading",
+    status: "Finished",
     url: "https://learning.oreilly.com/library/view/ai-engineering/9781098166298/",
     imageUrl: "https://learning.oreilly.com/library/cover/9781098166298/250w/",
   },
