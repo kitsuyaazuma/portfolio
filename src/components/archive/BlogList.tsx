@@ -14,7 +14,11 @@ export const BlogList = () => {
           href={`https://alvinvin.hatenablog.jp/entry/${idx + 1}`}
           target="_blank"
           rel="noreferrer"
-          style={{ cursor: "pointer", aspectRatio: "1 / 1" }}
+          style={{
+            cursor: "pointer",
+            aspectRatio: "1 / 1",
+            boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
+          }}
           className={classes.card}
         >
           <Image

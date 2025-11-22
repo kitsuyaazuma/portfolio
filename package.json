@@ -10,7 +10,7 @@
     "lint:fix": "eslint src --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
-    "imagemin": "node imagemin.mjs"
+    "imagemin": "bash image2webp.sh"
   },
   "dependencies": {
     "@mantine/charts": "^8.3.7",
