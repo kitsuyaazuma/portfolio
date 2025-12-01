@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Kubernetesで実践する Platform Engineering",
+    status: "Not Started",
+    url: "https://www.shoeisha.co.jp/book/detail/9784798188379",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784798188379.jpg",
+  },
+  {
     name: "Docker&Kubernetesネットワークのしくみ――クラウドネイティブに求められる情報通信の知識",
     status: "Reading",
     url: "https://gihyo.jp/book/2025/978-4-297-14899-7",
