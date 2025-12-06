@@ -245,7 +245,17 @@
   },
   "Publications": {
     "blogTitle": "TECH BLOG",
-    "talkTitle": "TALKS"
+    "talkTitle": "TALKS",
+    "paperTitle": "PAPERS",
+    "items": [
+      {
+        "title": "Soft-Label Caching and Sharpening for Communication-Efficient Federated Distillation",
+        "text": "We propose SCARLET, a communication-efficient distillation-based Federated Learning framework. By caching soft-labels to minimize redundant transmission and utilizing an enhanced Entropy Reduction Aggregation, it achieves up to 50% communication cost reduction while maintaining competitive accuracy.",
+        "url": "https://arxiv.org/abs/2504.19602",
+        "conference": "arXiv (Preprint)",
+        "year": "2025"
+      }
+    ]
   },
   "Bookshelf": {
     "readingListTitle": "READING LIST"

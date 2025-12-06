@@ -11,7 +11,7 @@ import {
 } from "@mantine/core";
 import { BlogList } from "../archive/BlogList";
 import { getTranslations } from "next-intl/server";
-import { TbMapPin } from "react-icons/tb";
+import { TbBook, TbMapPin } from "react-icons/tb";
 
 export const Publications = async () => {
   const t = await getTranslations("Publications");
@@ -27,10 +27,46 @@ export const Publications = async () => {
       <Space h="xl" />
 
       <Center mt="xl">
+        <Title>{t("paperTitle")}</Title>
+      </Center>
+      <Container mt="xl">
+        {(t.raw("items") as any[]).map((paper, index) => (
+          <div key={index}>
+            <Anchor
+              href={paper.url}
+              target="_blank"
+              underline="hover"
+              c="var(--mantine-color-text)"
+            >
+              <Text size="xl" fw={700} style={{ lineHeight: 1.2 }}>
+                {paper.title}
+              </Text>
+            </Anchor>
+            <Group mb="xs" gap={0}>
+              <ThemeIcon variant="transparent" c="dimmed">
+                <TbBook />
+              </ThemeIcon>
+              <Text c="dimmed" size="sm">
+                {paper.conference}
+              </Text>
+              <Badge variant="light" size="sm" ml="xs">
+                {paper.year}
+              </Badge>
+            </Group>
+            <Text size="md" mt="sm">
+              {paper.text}
+            </Text>
+          </div>
+        ))}
+      </Container>
+
+      <Space h="xl" />
+
+      <Center mt="xl">
         <Title>{t("talkTitle")}</Title>
       </Center>
       <Container mt="xl">
-        <Text size="xl" fw={700} style={{ lineHeight: 1.2 }}>
+        <Text size="xl" mt="lg" fw={700} style={{ lineHeight: 1.2 }}>
           Beyond Multiprocessing: A Real-World ML Workload Speedup with Python
           3.13+ Free-Threading
         </Text>

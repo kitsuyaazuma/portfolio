@@ -245,7 +245,17 @@
   },
   "Publications": {
     "blogTitle": "TECH BLOG",
-    "talkTitle": "TALKS"
+    "talkTitle": "TALKS",
+    "paperTitle": "PAPERS",
+    "items": [
+      {
+        "title": "Soft-Label Caching and Sharpening for Communication-Efficient Federated Distillation",
+        "text": "通信効率に優れた蒸留ベースの連合学習フレームワークであるSCARLETを提案。ソフトラベルのキャッシュによる冗長な通信の削減と、集約時のエントロピー削減を改善することで、精度を維持しながら通信コストを最大50%削減",
+        "url": "https://arxiv.org/abs/2504.19602",
+        "conference": "arXiv (Preprint)",
+        "year": "2025"
+      }
+    ]
   },
   "Bookshelf": {
     "readingListTitle": "READING LIST"
