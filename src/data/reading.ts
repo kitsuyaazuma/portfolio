@@ -105,7 +105,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "ゼロから作るDeep Learning ❹ ―強化学習編",
-    status: "Almost Finished",
+    status: "Finished",
     url: "https://www.oreilly.co.jp/books/9784873119755/",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784873119755.jpg",
   },
