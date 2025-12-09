@@ -55,15 +55,15 @@ export const readingList: ReadingListItem[] = [
     url: "https://pub.jmam.co.jp/book/b626919.html",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784800591265.jpg",
   },
-  {
-    name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
-    status: "Reading",
-    url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
-    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297143930.jpg",
-  },
+  // {
+  //   name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
+  //   status: "Reading",
+  //   url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
+  //   imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297143930.jpg",
+  // },
   {
     name: "原論文から解き明かす生成AI",
-    status: "Reading",
+    status: "Almost Finished",
     url: "https://gihyo.jp/book/2025/978-4-297-15078-5",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297150785.jpg",
   },
