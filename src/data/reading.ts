@@ -8,8 +8,14 @@ export const readingList: ReadingListItem[] = [
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784798188379.jpg",
   },
   {
-    name: "Docker&Kubernetesネットワークのしくみ――クラウドネイティブに求められる情報通信の知識",
+    name: "Generative AI on Kubernetes",
     status: "Reading",
+    url: "https://learning.oreilly.com/library/view/generative-ai-on/9781098171919/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098171919/250w/",
+  },
+  {
+    name: "Docker&Kubernetesネットワークのしくみ――クラウドネイティブに求められる情報通信の知識",
+    status: "Finished",
     url: "https://gihyo.jp/book/2025/978-4-297-14899-7",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784297148997.jpg",
   },
