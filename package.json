@@ -13,33 +13,33 @@
     "imagemin": "bash image2webp.sh"
   },
   "dependencies": {
-    "@mantine/charts": "^8.3.9",
-    "@mantine/core": "^8.3.9",
-    "@mantine/hooks": "^8.3.9",
-    "motion": "^12.23.25",
-    "next": "^16.0.9",
-    "next-intl": "^4.5.8",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "@mantine/charts": "^8.3.10",
+    "@mantine/core": "^8.3.10",
+    "@mantine/hooks": "^8.3.10",
+    "motion": "^12.23.26",
+    "next": "^16.0.10",
+    "next-intl": "^4.6.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-icons": "^5.5.0",
-    "recharts": "^3.5.1",
-    "zod": "^4.1.13"
+    "recharts": "^3.6.0",
+    "zod": "^4.2.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^16.0.7",
+    "@next/eslint-plugin-next": "^16.0.10",
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "babel-plugin-react-compiler": "^1.0.0",
     "depcheck": "^1.4.7",
-    "eslint": "^9.39.1",
-    "eslint-config-next": "^16.0.7",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.0.10",
     "eslint-config-prettier": "^10.1.2",
     "postcss-preset-mantine": "^1.17.0",
     "prettier": "^3.7.4",
-    "sass": "^1.95.0",
+    "sass": "^1.96.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.49.0"
+    "typescript-eslint": "^8.50.0"
   },
   "packageManager": "pnpm@10.21.0"
 }
