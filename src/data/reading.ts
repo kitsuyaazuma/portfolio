@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",
+    status: "Reading",
+    url: "https://pub.jmam.co.jp/book/b646574.html",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784800592415.jpg",
+  },
+  {
     name: "Kubernetesで実践する Platform Engineering",
     status: "Not Started",
     url: "https://www.shoeisha.co.jp/book/detail/9784798188379",
