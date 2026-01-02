@@ -13,7 +13,7 @@ export const ExperienceCategorySchema = z.enum([
   "Job",
   "Internship",
   "Education",
-  "Award",
+  "Community",
 ]);
 
 export const ExperienceItemSchema = z.object({

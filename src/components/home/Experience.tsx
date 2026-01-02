@@ -13,7 +13,8 @@ import {
   TbBuildings,
   TbDevicesPc,
   TbSchool,
-  TbTrophyFilled,
+  TbHeartHandshake,
+  TbCircle,
 } from "react-icons/tb";
 import {
   ExperienceCategory,
@@ -25,14 +26,16 @@ import { useTranslations } from "next-intl";
 
 const getBullet = (category: ExperienceCategory) => {
   switch (category) {
+    case "Job":
+      return <TbBuildings />;
     case "Internship":
       return <TbDevicesPc />;
     case "Education":
       return <TbSchool />;
-    case "Award":
-      return <TbTrophyFilled />;
-    case "Job":
-      return <TbBuildings />;
+    case "Community":
+      return <TbHeartHandshake />;
+    default:
+      return <TbCircle />;
   }
 };
 

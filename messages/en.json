@@ -140,6 +140,13 @@
         "isCurrent": true
       },
       {
+        "title": "CloudNative Kaigi",
+        "details": ["Dec 2025 - Present, Core Member (Website and CFP)"],
+        "skills": ["Astro", "GitHub Actions"],
+        "category": "Community",
+        "isCurrent": true
+      },
+      {
         "title": "Institute of Science Tokyo (former Tokyo Institute of Technology)",
         "details": [
           "Apr 2024 - Present, School of Engineering, Department of Information and Communications Engineering",
@@ -148,6 +155,14 @@
         "skills": ["Machine Learning", "Federated Learning"],
         "category": "Education",
         "isCurrent": true
+      },
+      {
+        "title": "Platform Engineering Kaigi 2025",
+        "details": [
+          "May 2025 - Oct 2025, Core Member (CFP, Website, and Catering)"
+        ],
+        "skills": ["Astro", "Cloudflare"],
+        "category": "Community"
       },
       {
         "title": "Mercari, Inc.",
@@ -201,14 +216,6 @@
         "category": "Internship"
       },
       {
-        "title": "JPHACKS 2022",
-        "details": [
-          "Oct 2022 - Nov 2022, Hackathon (Innovator Certification, 3 Sponsor Awards)"
-        ],
-        "skills": ["React", "TypeScript", "Firebase"],
-        "category": "Award"
-      },
-      {
         "title": "Langsmith Inc.",
         "details": ["Apr 2022 - Apr 2023, Intern (Software Engineer)"],
         "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
@@ -219,14 +226,6 @@
         "details": ["Apr 2021 - Nov 2022, Intern (Programming TA)"],
         "skills": ["Premiere Pro", "Photoshop", "Illustrator", "JavaScript"],
         "category": "Internship"
-      },
-      {
-        "title": "JPHACKS 2021",
-        "details": [
-          "Oct 2021 - Nov 2021, Hackathon (Judge's Special Award, Innovator Certification, 5 Sponsor Awards)"
-        ],
-        "skills": ["Python", "Machine Learning"],
-        "category": "Award"
       },
       {
         "title": "Rakuten, Inc.",
