@@ -15,28 +15,28 @@
     "title": "ABOUT ME",
     "items": [
       {
-        "text": "I am a second-year master's student living in Tokyo.",
+        "text": "I am a second-year master's student based in the Tokyo metropolitan area.",
         "searchWords": ["second-year master's student"]
       },
       {
-        "text": "Inspired by competitive programming, I became interested in personal development and was gradually drawn to the appeal of software engineering.",
-        "searchWords": ["personal development", "software engineering"]
+        "text": "Inspired by competitive programming, I became interested in personal projects and was gradually drawn to the field of software engineering.",
+        "searchWords": ["personal projects", "software engineering"]
       },
       {
-        "text": "In university, I majored in Computer Vision and conducted research on knowledge distillation-based Federated Learning. In graduate school, I am focusing further on FL.",
+        "text": "At university and in graduate school, I developed a background in Computer Vision and conducted research primarily on knowledge distillation-based Federated Learning.",
         "searchWords": ["Computer Vision", "Federated Learning"]
       },
       {
-        "text": "I have gained experience as a student intern at various companies and plan to start my career as a platform engineer next year. In recent years, I have been interested in Platform Engineering and MLOps.",
-        "searchWords": ["student intern", "Platform Engineering"]
+        "text": "Through my experience as a student intern at multiple companies, I plan to begin my career as a platform engineer.",
+        "searchWords": ["student intern", "platform engineer"]
       },
       {
         "text": "My hobbies are reading technical books and managing the lab's servers.",
         "searchWords": ["technical books", "lab's servers"]
       },
       {
-        "text": "My goals for 2025 are to have a paper accepted in a journal and to contribute and present a lot in the tech community.",
-        "searchWords": ["journal", "tech community"]
+        "text": "My goals for 2026 are to contribute and present in multiple technical communities and to develop a habit of exercise.",
+        "searchWords": ["contribute and present", "habit of exercise"]
       }
     ]
   },
