@@ -23,6 +23,15 @@ export const ExperienceItemSchema = z.object({
   isCurrent: z.boolean().optional(),
   category: ExperienceCategorySchema,
   url: z.url().optional(),
+  blogs: z
+    .array(
+      z.object({
+        title: z.string(),
+        url: z.string(),
+        thumbnail: z.string().optional(),
+      }),
+    )
+    .optional(),
 });
 
 export type ExperienceItem = z.infer<typeof ExperienceItemSchema>;

@@ -1,0 +1,6 @@
+.card {
+  &:hover {
+    transform: scale(1.01);
+    background-color: var(--mantine-primary-color-light-hover);
+  }
+}

@@ -10,7 +10,8 @@
     "lint:fix": "eslint src --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
-    "imagemin": "bash image2webp.sh"
+    "imagemin": "bash image2webp.sh",
+    "update:ogp": "tsx scripts/update-blog-ogp.ts && npm run format"
   },
   "dependencies": {
     "@mantine/charts": "^8.3.10",
@@ -35,9 +36,11 @@
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",
     "eslint-config-prettier": "^10.1.2",
+    "open-graph-scraper": "^6.11.0",
     "postcss-preset-mantine": "^1.17.0",
     "prettier": "^3.7.4",
     "sass": "^1.97.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.50.1"
   },

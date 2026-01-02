@@ -61,68 +61,6 @@
           }
         ],
         "imageUrl": "/images/home/zenn.webp"
-      },
-      {
-        "title": "Development of a Resource Label Monitoring Tool for Cost Management in the Cloud",
-        "textList": [
-          "My work as an intern at CyberAgent, Inc. was featured on the Developers Blog.",
-          "I developed a tool to monitor resource labels to facilitate cost management in ABEMA's large-scale cloud environment.",
-          "The source code and Terraform for deployment are available on GitHub."
-        ],
-        "searchWordsList": [
-          ["CyberAgent, Inc."],
-          ["monitor resource labels", "large-scale cloud environment"],
-          []
-        ],
-        "buttons": [
-          {
-            "text": "Read the blog",
-            "url": "https://developers.cyberagent.co.jp/blog/archives/43627/"
-          }
-        ],
-        "imageUrl": "/images/home/cyberagent.webp"
-      },
-      {
-        "title": "Increasing the Memory Limit of OOMed CronJobs 'Just Right' to Reduce Unnecessary Billing and Incident Response",
-        "textList": [
-          "My work as an intern at M3, Inc. was featured on the tech blog.",
-          "I developed 'broom', a Custom Controller that increases the memory limit 'just right' when an OOM occurs in a Kubernetes CronJob, aiming to solve problems from both cloud billing and incident response aspects.",
-          "Broom is open-sourced on GitHub and is still under active development."
-        ],
-        "searchWordsList": [
-          ["M3, Inc."],
-          [
-            "increases the memory limit 'just right' when an OOM occurs in a Kubernetes CronJob"
-          ],
-          ["open-sourced on GitHub"]
-        ],
-        "buttons": [
-          {
-            "text": "Read the blog",
-            "url": "https://www.m3tech.blog/entry/2024/04/12/110000"
-          }
-        ],
-        "imageUrl": "/images/home/m3.webp"
-      },
-      {
-        "title": "Migrating the Log Infrastructure from Fluentd to Fluent Bit and Implementing a Monitoring Tool",
-        "textList": [
-          "My work as an intern at Mirrativ, Inc. was featured on the tech blog.",
-          "I carefully documented the investigation of the cause of log loss in the existing infrastructure, the migration from Fluentd to Fluent Bit, and the implementation of a Fluent Bit monitoring tool.",
-          "It ranked #2 on Hatena Bookmark's hot entries (Technology)."
-        ],
-        "searchWordsList": [
-          ["Mirrativ, Inc."],
-          ["cause of log loss", "migration from Fluentd to Fluent Bit"],
-          ["ranked #2 on Hatena Bookmark's hot entries"]
-        ],
-        "buttons": [
-          {
-            "text": "Read the blog",
-            "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor"
-          }
-        ],
-        "imageUrl": "/images/home/mirrativ.webp"
       }
     ]
   },
@@ -180,14 +118,28 @@
         "details": ["Feb 2024 - Jun 2024, Intern (Infrastructure Engineer)"],
         "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"],
         "category": "Internship",
-        "url": "https://mirrativ.co.jp/"
+        "url": "https://mirrativ.co.jp/",
+        "blogs": [
+          {
+            "title": "Migrating the Log Infrastructure from Fluentd to Fluent Bit and Implementing a Monitoring Tool",
+            "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor",
+            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/b5e27700a548080f558161c103830c1c0b8f83f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Falvinvin%2F20240626%2F20240626190209.png"
+          }
+        ]
       },
       {
         "title": "M3, Inc.",
         "details": ["Mar 2024, Intern (MLOps Engineer)"],
         "skills": ["Go", "Kubernetes", "Google Cloud"],
         "category": "Internship",
-        "url": "https://corporate.m3.com/"
+        "url": "https://corporate.m3.com/",
+        "blogs": [
+          {
+            "title": "Increasing the Memory Limit of OOMed CronJobs 'Just Right' to Reduce Unnecessary Billing and Incident Response",
+            "url": "https://www.m3tech.blog/entry/2024/04/12/110000",
+            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/ea1a9653b097a4be977bd40626673853e20d17fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fm3tech%2F20240412%2F20240412110020.jpg"
+          }
+        ]
       },
       {
         "title": "Tohoku University",
@@ -218,7 +170,14 @@
         "details": ["Jul 2023, Intern (Platform Engineer)"],
         "skills": ["Go", "Google Cloud", "AWS", "Terraform"],
         "category": "Internship",
-        "url": "https://www.cyberagent.co.jp"
+        "url": "https://www.cyberagent.co.jp",
+        "blogs": [
+          {
+            "title": "Development of a Resource Label Monitoring Tool for Cost Management in the Cloud",
+            "url": "https://developers.cyberagent.co.jp/blog/archives/43627/",
+            "thumbnail": "https://developers.cyberagent.co.jp/blog/wp-content/uploads/2023/08/azuma_KV.jpg"
+          }
+        ]
       },
       {
         "title": "Be Doctor Consulting Inc.",

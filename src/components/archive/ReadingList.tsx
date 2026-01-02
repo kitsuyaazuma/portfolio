@@ -3,7 +3,7 @@ import { Badge, Card, Text, Overlay, SimpleGrid, Stack } from "@mantine/core";
 import Image from "next/image";
 import { readingList } from "@/data/reading";
 import { ReadingListItem, ReadingListStatus } from "@/types/data";
-import classes from "./Card.module.css";
+import classes from "../Card.module.css";
 import { useState } from "react";
 import { TbExternalLink } from "react-icons/tb";
 

@@ -4,12 +4,14 @@ import {
   Timeline,
   Title,
   Text,
-  Anchor,
   Badge,
   Group,
   Container,
   useMantineColorScheme,
   ActionIcon,
+  Stack,
+  Image,
+  Card,
 } from "@mantine/core";
 import {
   TbBuildings,
@@ -26,6 +28,8 @@ import {
 } from "@/types/messages";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
+import classes from "../Card.module.css";
+import { useMediaQuery } from "@mantine/hooks";
 
 const getBullet = (category: ExperienceCategory) => {
   switch (category) {
@@ -55,6 +59,8 @@ export const Experience = () => {
   const matcha = colorScheme === "dark" ? "green.7" : "green.9";
   const gray = colorScheme === "dark" ? "gray.5" : "gray.7";
 
+  const matches = useMediaQuery("(max-width: 768px)");
+
   return (
     <Container pt="xl">
       <Center my="xl">
@@ -81,7 +87,7 @@ export const Experience = () => {
                     variant="transparent"
                     size="xs"
                     target="_blank"
-                    c={gray}
+                    c="dimmed"
                   >
                     <TbExternalLink />
                   </ActionIcon>
@@ -106,6 +112,50 @@ export const Experience = () => {
                   </Badge>
                 ))}
               </Group>
+              {item.blogs && (
+                <Stack mt="sm" gap="xs">
+                  {item.blogs.map((blog, index) => (
+                    <Card
+                      shadow="sm"
+                      padding="xs"
+                      component="a"
+                      href={blog.url}
+                      target="_blank"
+                      key={index}
+                      radius="md"
+                      withBorder
+                      style={{
+                        boxShadow: "none",
+                        borderColor: gray,
+                      }}
+                      className={classes.card}
+                    >
+                      <Group gap="md" wrap={matches ? "wrap" : "nowrap"}>
+                        {blog.thumbnail && (
+                          <Image
+                            src={blog.thumbnail}
+                            h={100}
+                            w="auto"
+                            fit="contain"
+                            radius="sm"
+                            alt={blog.title}
+                          />
+                        )}
+                        <Stack>
+                          <Text size="sm" fw={500} c={gray} lineClamp={2}>
+                            {blog.title}
+                          </Text>
+                          {!matches && (
+                            <Text size="xs" c="dimmed">
+                              {blog.url}
+                            </Text>
+                          )}
+                        </Stack>
+                      </Group>
+                    </Card>
+                  ))}
+                </Stack>
+              )}
             </Timeline.Item>
           ))}
         </Timeline>

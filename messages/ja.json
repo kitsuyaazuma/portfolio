@@ -61,66 +61,6 @@
           }
         ],
         "imageUrl": "/images/home/zenn.webp"
-      },
-      {
-        "title": "『クラウドにおけるコスト管理のためのリソースラベル監視ツールの開発』",
-        "textList": [
-          "サイバーエージェントでのインターンシップ生としての取り組みがDevelopers Blogで公開された。",
-          "ABEMAの大規模なクラウド環境のコスト管理を楽にするため、リソースラベルを監視するツールを開発した。",
-          "ソースコードとデプロイ用のTerraformをGitHubで公開中。"
-        ],
-        "searchWordsList": [
-          ["サイバーエージェント"],
-          ["大規模なクラウド環境", "リソースラベルを監視"],
-          []
-        ],
-        "buttons": [
-          {
-            "text": "ブログを読む",
-            "url": "https://developers.cyberagent.co.jp/blog/archives/43627/"
-          }
-        ],
-        "imageUrl": "/images/home/cyberagent.webp"
-      },
-      {
-        "title": "『OOMしたCronJobのメモリ制限を「いい感じ」に増やし、不必要な課金・障害対応を減らす』",
-        "textList": [
-          "エムスリーでのインターンとしての取り組みがテックブログで公開された。",
-          "KubernetesのCronJobでOOMが発生した時に「いい感じ」にメモリ制限を増加させてくれるCustom Controllerであるbroomを開発し、クラウド課金と障害対応の両側面から課題解決を目指した。",
-          "broomはOSSとしてGitHubで公開し、現在も継続して開発中。"
-        ],
-        "searchWordsList": [
-          ["エムスリー"],
-          ["CronJobでOOMが発生した時に「いい感じ」にメモリ制限を増加"],
-          ["OSSとしてGitHubで公開"]
-        ],
-        "buttons": [
-          {
-            "text": "ブログを読む",
-            "url": "https://www.m3tech.blog/entry/2024/04/12/110000"
-          }
-        ],
-        "imageUrl": "/images/home/m3.webp"
-      },
-      {
-        "title": "『ログ基盤のFluentdをFluent Bitに移行して監視ツールを実装した話』",
-        "textList": [
-          "ミラティブでのインターンとしての取り組みがテックブログで公開された。",
-          "既存の基盤のログ欠損の原因解明、FluentdからFluent Bitへの移行、Fluent Bit監視ツールの実装などを丁寧にまとめた。",
-          "はてなブックマーク（テクノロジー）のホットエントリーで2位を獲得した。"
-        ],
-        "searchWordsList": [
-          ["ミラティブ"],
-          ["ログ欠損の原因解明", "Fluent Bitへの移行"],
-          ["ホットエントリーで2位を獲得"]
-        ],
-        "buttons": [
-          {
-            "text": "ブログを読む",
-            "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor"
-          }
-        ],
-        "imageUrl": "/images/home/mirrativ.webp"
       }
     ]
   },
@@ -175,21 +115,41 @@
         ],
         "category": "Internship",
         "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"],
-        "url": "https://about.mercari.com/"
+        "url": "https://about.mercari.com/",
+        "blogs": [
+          {
+            "title": "近日公開予定",
+            "url": "https://engineering.mercari.com/blog/"
+          }
+        ]
       },
       {
         "title": "株式会社ミラティブ",
         "details": ["2024年2月 - 2024年6月　インターン（インフラエンジニア）"],
         "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"],
         "category": "Internship",
-        "url": "https://mirrativ.co.jp/"
+        "url": "https://mirrativ.co.jp/",
+        "blogs": [
+          {
+            "title": "ログ基盤のFluentdをFluent Bitに移行して監視ツールを実装した話",
+            "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor",
+            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/b5e27700a548080f558161c103830c1c0b8f83f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Falvinvin%2F20240626%2F20240626190209.png"
+          }
+        ]
       },
       {
         "title": "エムスリー株式会社",
         "details": ["2024年3月　インターン（MLOpsエンジニア）"],
         "skills": ["Go", "Kubernetes", "Google Cloud"],
         "category": "Internship",
-        "url": "https://corporate.m3.com/"
+        "url": "https://corporate.m3.com/",
+        "blogs": [
+          {
+            "title": "OOMしたCronJobのメモリ制限を「いい感じ」に増やし、不必要な課金・障害対応を減らす",
+            "url": "https://www.m3tech.blog/entry/2024/04/12/110000",
+            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/ea1a9653b097a4be977bd40626673853e20d17fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fm3tech%2F20240412%2F20240412110020.jpg"
+          }
+        ]
       },
       {
         "title": "東北大学",
@@ -220,7 +180,14 @@
         "details": ["2023年7月　インターン（プラットフォームエンジニア）"],
         "skills": ["Go", "Google Cloud", "AWS", "Terraform"],
         "category": "Internship",
-        "url": "https://www.cyberagent.co.jp/"
+        "url": "https://www.cyberagent.co.jp/",
+        "blogs": [
+          {
+            "title": "クラウドにおけるコスト管理のためのリソースラベル監視ツールの開発",
+            "url": "https://developers.cyberagent.co.jp/blog/archives/43627/",
+            "thumbnail": "https://developers.cyberagent.co.jp/blog/wp-content/uploads/2023/08/azuma_KV.jpg"
+          }
+        ]
       },
       {
         "title": "Be Doctor Consulting株式会社",
