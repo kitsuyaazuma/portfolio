@@ -131,6 +131,15 @@
     "title": "EXPERIENCE",
     "items": [
       {
+        "title": "株式会社メルカリ",
+        "details": [
+          "2026年2月 - 2026年3月　インターン（プラットフォームエンジニア）"
+        ],
+        "category": "Internship",
+        "skills": [],
+        "isCurrent": true
+      },
+      {
         "title": "東京科学大学（旧：東京工業大学）",
         "details": [
           "2024年4月 - 現在　工学院 情報通信系",

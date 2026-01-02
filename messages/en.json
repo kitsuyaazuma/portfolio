@@ -133,6 +133,13 @@
     "title": "EXPERIENCE",
     "items": [
       {
+        "title": "Mercari, Inc.",
+        "details": ["Feb 2026 - Mar 2026, Intern (Platform Engineer)"],
+        "skills": [],
+        "category": "Internship",
+        "isCurrent": true
+      },
+      {
         "title": "Institute of Science Tokyo (former Tokyo Institute of Technology)",
         "details": [
           "Apr 2024 - Present, School of Engineering, Department of Information and Communications Engineering",

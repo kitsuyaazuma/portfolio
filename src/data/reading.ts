@@ -9,7 +9,7 @@ export const readingList: ReadingListItem[] = [
   },
   {
     name: "Kubernetesで実践する Platform Engineering",
-    status: "Not Started",
+    status: "Reading",
     url: "https://www.shoeisha.co.jp/book/detail/9784798188379",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784798188379.jpg",
   },
