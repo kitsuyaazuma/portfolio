@@ -65,10 +65,11 @@ export const Experience = () => {
               bullet={getBullet(item.category)}
               title={
                 <Anchor
+                  href={item.url}
                   target="_blank"
                   c={item.isCurrent ? "green.9" : "dimmed"}
                 >
-                  {item.title}
+                  <Title order={5}>{item.title}</Title>
                 </Anchor>
               }
               key={index}

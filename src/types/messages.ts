@@ -22,6 +22,7 @@ export const ExperienceItemSchema = z.object({
   skills: z.array(z.string()),
   isCurrent: z.boolean().optional(),
   category: ExperienceCategorySchema,
+  url: z.url().optional(),
 });
 
 export type ExperienceItem = z.infer<typeof ExperienceItemSchema>;

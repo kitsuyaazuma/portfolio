@@ -137,14 +137,16 @@
         "details": ["Feb 2026 - Mar 2026, Intern (Platform Engineer)"],
         "skills": [],
         "category": "Internship",
-        "isCurrent": true
+        "isCurrent": true,
+        "url": "https://about.mercari.com/"
       },
       {
         "title": "CloudNative Kaigi",
         "details": ["Dec 2025 - Present, Core Member (Website and CFP)"],
         "skills": ["Astro", "GitHub Actions"],
         "category": "Community",
-        "isCurrent": true
+        "isCurrent": true,
+        "url": "https://kaigi.cloudnativedays.jp/"
       },
       {
         "title": "Institute of Science Tokyo (former Tokyo Institute of Technology)",
@@ -154,7 +156,8 @@
         ],
         "skills": ["Machine Learning", "Federated Learning"],
         "category": "Education",
-        "isCurrent": true
+        "isCurrent": true,
+        "url": "https://www.isct.ac.jp"
       },
       {
         "title": "Platform Engineering Kaigi 2025",
@@ -162,25 +165,29 @@
           "May 2025 - Oct 2025, Core Member (CFP, Website, and Catering)"
         ],
         "skills": ["Astro", "Cloudflare"],
-        "category": "Community"
+        "category": "Community",
+        "url": "https://www.cnia.io/pek2025/"
       },
       {
         "title": "Mercari, Inc.",
         "details": ["Jan 2025 - Mar 2025, Intern (Platform Engineer)"],
         "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://about.mercari.com/"
       },
       {
         "title": "Mirrativ, Inc.",
         "details": ["Feb 2024 - Jun 2024, Intern (Infrastructure Engineer)"],
         "skills": ["Go", "Linux", "Fluentd", "Fluent Bit"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://mirrativ.co.jp/"
       },
       {
         "title": "M3, Inc.",
         "details": ["Mar 2024, Intern (MLOps Engineer)"],
         "skills": ["Go", "Kubernetes", "Google Cloud"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://corporate.m3.com/"
       },
       {
         "title": "Tohoku University",
@@ -189,43 +196,50 @@
           "Apr 2023 - Mar 2024, Omachi Laboratory"
         ],
         "skills": ["Machine Learning", "Computer Vision"],
-        "category": "Education"
+        "category": "Education",
+        "url": "https://www.tohoku.ac.jp"
       },
       {
         "title": "CyberAgent, Inc.",
         "details": ["Sep 2023, Intern (Hackathon)"],
         "skills": ["TypeScript", "MySQL", "GraphQL", "AWS"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://www.cyberagent.co.jp"
       },
       {
         "title": "Yahoo Japan Corporation",
         "details": ["Aug 2023, Intern (Infrastructure Engineer)"],
         "skills": ["Linux", "OpenStack", "Observability"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://www.lycorp.co.jp/"
       },
       {
         "title": "CyberAgent, Inc.",
         "details": ["Jul 2023, Intern (Platform Engineer)"],
         "skills": ["Go", "Google Cloud", "AWS", "Terraform"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://www.cyberagent.co.jp"
       },
       {
         "title": "Be Doctor Consulting Inc.",
         "details": ["Nov 2022 - Apr 2023, Intern (Software Engineer)"],
         "skills": ["React", "GraphQL", "AWS", "Terraform"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://be-doctor-2.sakura.ne.jp/"
       },
       {
         "title": "Langsmith Inc.",
         "details": ["Apr 2022 - Apr 2023, Intern (Software Engineer)"],
         "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://corp.langsmith.co.jp/"
       },
       {
         "title": "Kadokawa Dwango Gakuen",
         "details": ["Apr 2021 - Nov 2022, Intern (Programming TA)"],
         "skills": ["Premiere Pro", "Photoshop", "Illustrator", "JavaScript"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://nnn.ed.jp/"
       },
       {
         "title": "Rakuten, Inc.",
@@ -233,19 +247,22 @@
           "Aug 2022, Intern (Summer Camp 2022 New Prototype Development Course)"
         ],
         "skills": ["Ruby on Rails", "Ruby", "Docker"],
-        "category": "Internship"
+        "category": "Internship",
+        "url": "https://corp.rakuten.co.jp/"
       },
       {
         "title": "Maebashi High School",
         "details": ["Apr 2017 - Mar 2020"],
         "skills": [],
-        "category": "Education"
+        "category": "Education",
+        "url": "https://maebashi-hs.gsn.ed.jp/"
       },
       {
         "title": "International Science School 2019 - The University of Sydney",
         "details": ["Jul 2019, Scholarship Student"],
         "skills": [],
-        "category": "Education"
+        "category": "Education",
+        "url": "https://www.sydney.edu.au/science/industry-and-community/community-engagement/international-science-school.html"
       }
     ]
   },
