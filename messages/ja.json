@@ -154,7 +154,7 @@
           "2024年4月 - 現在　工学院 情報通信系",
           "2024年4月 - 現在　西尾研究室"
         ],
-        "skills": ["情報通信", "機械学習", "Federated Learning"],
+        "skills": ["機械学習", "Federated Learning"],
         "category": "Education",
         "isCurrent": true,
         "url": "https://www.isct.ac.jp/"

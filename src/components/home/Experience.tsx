@@ -8,6 +8,8 @@ import {
   Badge,
   Group,
   Container,
+  useMantineColorScheme,
+  ActionIcon,
 } from "@mantine/core";
 import {
   TbBuildings,
@@ -15,6 +17,7 @@ import {
   TbSchool,
   TbHeartHandshake,
   TbCircle,
+  TbExternalLink,
 } from "react-icons/tb";
 import {
   ExperienceCategory,
@@ -48,6 +51,10 @@ export const Experience = () => {
   }
   const currentCount = items.filter((item) => item.isCurrent).length;
 
+  const { colorScheme } = useMantineColorScheme();
+  const matcha = colorScheme === "dark" ? "green.7" : "green.9";
+  const gray = colorScheme === "dark" ? "gray.5" : "gray.7";
+
   return (
     <Container pt="xl">
       <Center my="xl">
@@ -58,30 +65,43 @@ export const Experience = () => {
           active={currentCount - 1}
           bulletSize={28}
           lineWidth={2}
-          color="green.9"
+          color={matcha}
         >
           {items.map((item, index) => (
             <Timeline.Item
               bullet={getBullet(item.category)}
               title={
-                <Anchor
-                  href={item.url}
-                  target="_blank"
-                  c={item.isCurrent ? "green.9" : "dimmed"}
-                >
-                  <Title order={5}>{item.title}</Title>
-                </Anchor>
+                <Group gap="xs">
+                  <Text fw={600} c={item.isCurrent ? matcha : gray}>
+                    {item.title}
+                  </Text>
+                  <ActionIcon
+                    component="a"
+                    href={item.url}
+                    variant="transparent"
+                    size="xs"
+                    target="_blank"
+                    c={gray}
+                  >
+                    <TbExternalLink />
+                  </ActionIcon>
+                </Group>
               }
               key={index}
             >
               {item.details.map((detail) => (
-                <Text size="xs" c="dimmed" key={detail}>
+                <Text size="xs" c={gray} key={detail}>
                   {detail}
                 </Text>
               ))}
               <Group mt="sm" gap="xs">
                 {item.skills.map((skill) => (
-                  <Badge variant="light" size="sm" color="gray.7" key={skill}>
+                  <Badge
+                    variant="light"
+                    size="xs"
+                    color={item.isCurrent ? matcha : gray}
+                    key={skill}
+                  >
                     {skill}
                   </Badge>
                 ))}
