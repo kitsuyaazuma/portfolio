@@ -41,6 +41,7 @@
     ]
   },
   "PickUp": {
+    "title": "PICKUP",
     "items": [
       {
         "title": "『ReactではじめるChrome拡張開発入門』",

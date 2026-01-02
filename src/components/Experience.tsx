@@ -28,7 +28,7 @@ import {
 } from "@/types/messages";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
-import classes from "../Card.module.css";
+import classes from "./Card.module.css";
 import { useMediaQuery } from "@mantine/hooks";
 
 const getBullet = (category: ExperienceCategory) => {
@@ -62,8 +62,8 @@ export const Experience = () => {
   const matches = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Container pt="xl">
-      <Center my="xl">
+    <Container pt="xl" id="experience">
+      <Center my="lg">
         <Title>{t("title")}</Title>
       </Center>
       <Center>

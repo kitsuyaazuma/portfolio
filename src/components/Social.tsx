@@ -7,7 +7,7 @@ import {
   SiSpeakerdeck,
   SiLinkedin,
 } from "react-icons/si";
-import { HatenaSvgComponent } from "../assets/SvgIcon";
+import { HatenaSvgComponent } from "@/assets/SvgIcon";
 import type { SocialItem } from "@/types/data";
 
 const iconMap: { [key: string]: IconType | React.FC } = {

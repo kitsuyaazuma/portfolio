@@ -1,11 +1,40 @@
 "use client";
-import { Badge, Card, Text, Overlay, SimpleGrid, Stack } from "@mantine/core";
+import {
+  Title,
+  Container,
+  Center,
+  Badge,
+  Card,
+  Text,
+  Overlay,
+  SimpleGrid,
+  Stack,
+} from "@mantine/core";
 import Image from "next/image";
 import { readingList } from "@/data/reading";
 import { ReadingListItem, ReadingListStatus } from "@/types/data";
-import classes from "../Card.module.css";
+import classes from "./Card.module.css";
 import { useState } from "react";
 import { TbExternalLink } from "react-icons/tb";
+import { useTranslations } from "next-intl";
+
+export const ReadingList = () => {
+  const t = useTranslations("Bookshelf");
+  return (
+    <>
+      <Container pt="xl" id="reading-list">
+        <Center my="lg">
+          <Title>{t("readingListTitle")}</Title>
+        </Center>
+        <SimpleGrid cols={{ base: 2, sm: 3, md: 4, lg: 5 }}>
+          {readingList.map((item: ReadingListItem, idx: number) => (
+            <ReadingListCard key={idx} item={item} />
+          ))}
+        </SimpleGrid>
+      </Container>
+    </>
+  );
+};
 
 const getAnchorColor = (status: ReadingListStatus) => {
   switch (status) {
@@ -20,16 +49,6 @@ const getAnchorColor = (status: ReadingListStatus) => {
     case "Not Started":
       return "gray.5";
   }
-};
-
-export const ReadingList = () => {
-  return (
-    <SimpleGrid cols={{ base: 2, sm: 3, md: 4, lg: 5 }}>
-      {readingList.map((item: ReadingListItem, idx: number) => (
-        <ReadingListCard key={idx} item={item} />
-      ))}
-    </SimpleGrid>
-  );
 };
 
 interface ReadingListCardProps {

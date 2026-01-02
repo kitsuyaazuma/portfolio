@@ -1,7 +1,7 @@
 "use client";
 import { AppShell } from "@mantine/core";
-import { Header } from "./common/Header";
-import { Footer } from "./common/Footer";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 export function RootLayout({ children }: { children: React.ReactNode }) {
   return (

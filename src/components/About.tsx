@@ -10,7 +10,7 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import Image from "next/image";
-import { SocialButton } from "../common/Social";
+import { SocialButton } from "./Social";
 import { socials } from "@/data/social";
 import { useTranslations } from "next-intl";
 import { AboutItem, AboutItemsSchema } from "@/types/messages";
@@ -27,7 +27,7 @@ export const About = () => {
   }
 
   return (
-    <Container py="xl">
+    <Container pt="xl" id="about">
       <Center my="lg">
         <Title>{t("title")}</Title>
       </Center>

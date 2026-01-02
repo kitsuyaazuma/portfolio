@@ -41,6 +41,7 @@
     ]
   },
   "PickUp": {
+    "title": "PICKUP",
     "items": [
       {
         "title": "Getting Started with Chrome Extension Development in React",

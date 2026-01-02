@@ -1,11 +1,11 @@
-import { Hero } from "@/components/common/Hero";
-import { Bookshelf } from "@/components/archive/Bookshelf";
+import { ReadingList } from "@/components/ReadingList";
+import { Hero } from "@/components/Hero";
 
-export default function ArchivePage() {
+export default function BookshelfPage() {
   return (
     <main>
       <Hero />
-      <Bookshelf />
+      <ReadingList />
     </main>
   );
 }

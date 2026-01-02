@@ -3,7 +3,7 @@ import "@mantine/charts/styles.css";
 import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import { Suspense } from "react";
 import { RootLayout } from "@/components/RootLayout";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleAnalytics from "@/lib/GoogleAnalytics";
 
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";

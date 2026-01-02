@@ -9,6 +9,8 @@ import {
   Button,
   useMantineColorScheme,
   Highlight,
+  Center,
+  Title,
 } from "@mantine/core";
 import NextImage from "next/image";
 import { darkHighlightColor } from "./About";
@@ -28,7 +30,10 @@ export const PickUp = () => {
   const { colorScheme } = useMantineColorScheme();
 
   return (
-    <Container py="lg" size="md">
+    <Container pt="xl" id="pickup">
+      <Center my="lg">
+        <Title>{t("title")}</Title>
+      </Center>
       {items.map((item: PickupItem) => (
         <Flex
           direction={{ base: "column", sm: "row" }}
@@ -36,7 +41,6 @@ export const PickUp = () => {
           justify="center"
           align="center"
           key={item.title}
-          py="lg"
         >
           <Image
             component={NextImage}

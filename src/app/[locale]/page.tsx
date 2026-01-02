@@ -1,8 +1,8 @@
-import { Hero } from "@/components/common/Hero";
-import { About } from "@/components/home/About";
-import { Experience } from "@/components/home/Experience";
-import { PickUp } from "@/components/home/PickUp";
-import { Skills } from "@/components/home/Skills";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Experience } from "@/components/Experience";
+import { PickUp } from "@/components/PickUp";
+import { Skills } from "@/components/Skills";
 
 export default function HomePage() {
   return (
