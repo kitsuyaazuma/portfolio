@@ -51,3 +51,18 @@ export const PickupItemSchema = z.object({
 });
 
 export type PickupItem = z.infer<typeof PickupItemSchema>;
+
+export const ChatInitialMessageSchema = z.object({
+  role: z.enum(["user", "assistant"]),
+  text: z.string(),
+});
+
+export const ChatSchema = z.object({
+  title: z.string(),
+  placeholder: z.string(),
+  disclaimer: z.string(),
+  thinking: z.string(),
+  initialMessages: z.array(ChatInitialMessageSchema),
+});
+
+export type ChatInitialMessage = z.infer<typeof ChatInitialMessageSchema>;

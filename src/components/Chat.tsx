@@ -18,42 +18,34 @@ import {
   Title,
 } from "@mantine/core";
 import { TbSend2 } from "react-icons/tb";
+import { useTranslations } from "next-intl";
+import { ChatInitialMessageSchema } from "@/types/messages";
+import { z } from "zod";
 
-export default function ChatInterface() {
+export function Chat() {
   const [input, setInput] = useState("");
   const viewport = useRef<HTMLDivElement>(null);
+
+  const t = useTranslations("Chat");
+  const result = z
+    .array(ChatInitialMessageSchema)
+    .safeParse(t.raw("initialMessages"));
+  const initialMessages = result.success ? result.data : [];
 
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
       api: "https://portfolio-ai-chat.kitsuyaazuma.workers.dev",
     }),
-    messages: [
-      {
-        id: "assistant0",
-        role: "assistant",
-        parts: [
-          {
-            type: "text",
-            text: "Hi! I'm AI Azuma. I can answer questions about Kitsuya's background, research, and skills. How can I help you?",
-          },
-        ],
-      },
-      {
-        id: "user0",
-        role: "user",
-        parts: [{ type: "text", text: "Who is Kitsuya Azuma?" }],
-      },
-      {
-        id: "assistant1",
-        role: "assistant",
-        parts: [
-          {
-            type: "text",
-            text: "Kitsuya is a Master's student at Institute of Science Tokyo researching Federated Learning. He is aspiring to be a Platform Engineer.",
-          },
-        ],
-      },
-    ],
+    messages: initialMessages.map((message, i) => ({
+      id: `initial-message-${i}`,
+      role: message.role,
+      parts: [
+        {
+          type: "text",
+          text: message.text,
+        },
+      ],
+    })),
   });
 
   useEffect(() => {
@@ -78,10 +70,10 @@ export default function ChatInterface() {
   return (
     <Container pt="xl" id="chat" size="sm">
       <Center my="lg">
-        <Title>ASK ME ANYTHING</Title>
+        <Title>{t("title")}</Title>
       </Center>
       <ScrollArea.Autosize viewportRef={viewport} mah="60vh" type="auto">
-        <Stack gap="md" px="sm">
+        <Stack gap="md" p="sm">
           {messages.map((message, index) => {
             const isUser = message.role === "user";
             return (
@@ -129,7 +121,7 @@ export default function ChatInterface() {
             <Group justify="flex-start" align="center" gap="xs">
               <Avatar src="/images/home/icon.webp" radius="xl" color="gray" />
               <Text size="sm" c="dimmed">
-                Thinking...
+                {t("thinking")}
               </Text>
             </Group>
           )}
@@ -137,34 +129,36 @@ export default function ChatInterface() {
       </ScrollArea.Autosize>
 
       <Box p="sm">
-        <Group gap="xs">
-          <TextInput
-            placeholder="Ask AI Azuma"
-            value={input}
-            size="md"
-            onChange={(event) => setInput(event.target.value)}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" && !event.shiftKey) {
-                event.preventDefault();
-                handleSend();
-              }
-            }}
-            style={{ flex: 1 }}
-            disabled={isBusy}
-            rightSection={
-              <ActionIcon
-                variant="transparent"
-                onClick={handleSend}
-                disabled={!input.trim() || isBusy}
-              >
-                <TbSend2 />
-              </ActionIcon>
+        <TextInput
+          placeholder={t("placeholder")}
+          value={input}
+          size="md"
+          onChange={(event) => setInput(event.target.value)}
+          onKeyDown={(event) => {
+            if (
+              event.key === "Enter" &&
+              !event.shiftKey &&
+              !event.nativeEvent.isComposing
+            ) {
+              event.preventDefault();
+              handleSend();
             }
-          />
-        </Group>
-        <Center>
+          }}
+          style={{ flex: 1 }}
+          disabled={isBusy}
+          rightSection={
+            <ActionIcon
+              variant="transparent"
+              onClick={handleSend}
+              disabled={!input.trim() || isBusy}
+            >
+              <TbSend2 />
+            </ActionIcon>
+          }
+        />
+        <Center pt="xs">
           <Text size="xs" c="dimmed">
-            AI Azuma can make mistakes, so double-check it.
+            {t("disclaimer")}
           </Text>
         </Center>
       </Box>

@@ -65,6 +65,26 @@
       }
     ]
   },
+  "Chat": {
+    "title": "ASK ME ANYTHING",
+    "placeholder": "Ask AI Azuma",
+    "disclaimer": "AI Azuma can make mistakes, so double-check it.",
+    "thinking": "Thinking...",
+    "initialMessages": [
+      {
+        "role": "assistant",
+        "text": "Hi! I'm AI Azuma. I can answer questions about Kitsuya's background, research, and skills. How can I help you?"
+      },
+      {
+        "role": "user",
+        "text": "Who is Kitsuya Azuma?"
+      },
+      {
+        "role": "assistant",
+        "text": "Kitsuya is a Master's student at Institute of Science Tokyo researching Federated Learning. He is aspiring to be a Platform Engineer."
+      }
+    ]
+  },
   "Skills": {
     "title": "SKILLS"
   },

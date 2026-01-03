@@ -65,6 +65,26 @@
       }
     ]
   },
+  "Chat": {
+    "title": "ASK ME ANYTHING",
+    "placeholder": "AI Azumaへのプロンプトを入力",
+    "disclaimer": "AI Azumaは不正確な情報を表示することがあるため、生成された回答を再確認するようにしてください。",
+    "thinking": "Thinking...",
+    "initialMessages": [
+      {
+        "role": "assistant",
+        "text": "こんにちは！AI Azumaです。Kitsuyaの経歴、研究、スキルについてお答えします。何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "text": "Kitsuya Azumaって誰？"
+      },
+      {
+        "role": "assistant",
+        "text": "Kitsuya Azumaは、東京科学大学（旧：東京工業大学）の修士課程で連合学習を研究している学生です。プラットフォームエンジニアを目指しています。"
+      }
+    ]
+  },
   "Skills": {
     "title": "SKILLS"
   },
