@@ -141,6 +141,7 @@ export default function ChatInterface() {
           <TextInput
             placeholder="Ask AI Azuma"
             value={input}
+            size="md"
             onChange={(event) => setInput(event.target.value)}
             onKeyDown={(event) => {
               if (event.key === "Enter" && !event.shiftKey) {
