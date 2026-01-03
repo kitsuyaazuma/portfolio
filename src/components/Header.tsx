@@ -41,8 +41,6 @@ export function Header() {
     <>
       <Container size="lg">
         <Flex justify="space-between" align="center" h={50}>
-          {/*
-           */}
           <AnimatedHeaderLogo />
 
           <Group>

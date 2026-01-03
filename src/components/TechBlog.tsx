@@ -7,7 +7,7 @@ import { getTranslations } from "next-intl/server";
 export const TechBlog = async () => {
   const t = await getTranslations("Publications");
   return (
-    <Container pt="xl">
+    <Container pt="xl" id="tech-blog">
       <Center my="lg">
         <Title>{t("blogTitle")}</Title>
       </Center>
