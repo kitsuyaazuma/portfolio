@@ -2,8 +2,14 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
-    name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",
+    name: "Learning Git",
     status: "Reading",
+    url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098133900/250w/",
+  },
+  {
+    name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",
+    status: "Finished",
     url: "https://pub.jmam.co.jp/book/b646574.html",
     imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784800592415.jpg",
   },
