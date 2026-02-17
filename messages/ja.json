@@ -139,8 +139,8 @@
         "url": "https://about.mercari.com/",
         "blogs": [
           {
-            "title": "近日公開予定",
-            "url": "https://engineering.mercari.com/blog/"
+            "title": "Turborepo Remote Cache でCIを高速化してMove Fastを実現する",
+            "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/"
           }
         ]
       },

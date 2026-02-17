@@ -97,7 +97,13 @@
         "skills": [],
         "category": "Internship",
         "isCurrent": true,
-        "url": "https://about.mercari.com/"
+        "url": "https://about.mercari.com/",
+        "blogs": [
+          {
+            "title": "Turborepo Remote Cache: Accelerating CI to Move Fast",
+            "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/"
+          }
+        ]
       },
       {
         "title": "CloudNative Kaigi",
