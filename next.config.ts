@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "m.media-amazon.com",
+        port: "",
+        pathname: "/images/I/**",
+      },
+      {
+        protocol: "https",
         hostname: "developers.redhat.com",
         port: "",
         pathname: "/sites/default/files/**",

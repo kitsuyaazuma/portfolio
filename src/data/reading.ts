@@ -2,10 +2,22 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
-    name: "Learning Git",
-    status: "Reading",
-    url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",
-    imageUrl: "https://learning.oreilly.com/library/cover/9781098133900/250w/",
+    name: "エフォートレス思考　努力を最小化して成果を最大化する",
+    status: "Finished",
+    url: "https://kanki-pub.co.jp/pub/book/9784761275815/",
+    imageUrl: "https://ndlsearch.ndl.go.jp/thumbnail/9784761275815.jpg",
+  },
+  // {
+  //   name: "Learning Git",
+  //   status: "Reading",
+  //   url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",
+  //   imageUrl: "https://learning.oreilly.com/library/cover/9781098133900/250w/",
+  // },
+  {
+    name: "ゼロから作るDeep Learning ❻ ―LLM編",
+    status: "Finished",
+    url: "https://amzn.asia/d/00QQNmXy",
+    imageUrl: "https://m.media-amazon.com/images/I/81wrYC544AL._SY522_.jpg",
   },
   {
     name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",
@@ -34,7 +46,7 @@ export const readingList: ReadingListItem[] = [
   {
     name: "Designing Data-Intensive Applications, 2nd Edition",
     status: "Reading",
-    url: "https://learning.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
     imageUrl: "https://learning.oreilly.com/library/cover/9781098119058/250w/",
   },
   {
