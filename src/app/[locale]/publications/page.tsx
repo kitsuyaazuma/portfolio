@@ -78,9 +78,7 @@ async function Publications() {
               >
                 PyCon JP 2025
               </a>
-              <span className="badge badge-sm badge-primary badge-outline">
-                Talk
-              </span>
+              <span className="badge badge-primary badge-soft">Talk</span>
             </div>
             <iframe
               className="speakerdeck-iframe"
@@ -106,9 +104,7 @@ async function Publications() {
               >
                 CloudNative Days Summer 2025
               </a>
-              <span className="badge badge-sm badge-primary badge-outline">
-                LT
-              </span>
+              <span className="badge badge-primary badge-soft">LT</span>
             </div>
             <iframe
               className="speakerdeck-iframe"
@@ -135,9 +131,7 @@ async function Publications() {
               >
                 学生と社会人LT会 #2
               </a>
-              <span className="badge badge-sm badge-primary badge-outline">
-                LT
-              </span>
+              <span className="badge badge-primary badge-soft">LT</span>
             </div>
             <iframe
               className="speakerdeck-iframe"

@@ -4,6 +4,12 @@
   themes: lemonade --default;
 }
 
+/* Override lemonade primary to meet WCAG AA contrast ratio (4.5:1) */
+[data-theme="lemonade"] {
+  --color-primary: oklch(47% 0.19 131);
+  --color-primary-content: oklch(100% 0 0);
+}
+
 .speakerdeck-iframe {
   border: 0;
   background: padding-box padding-box rgba(0, 0, 0, 0.1);

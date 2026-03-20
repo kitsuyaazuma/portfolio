@@ -66,6 +66,7 @@ export async function Experience() {
                     target="_blank"
                     rel="noreferrer"
                     className="opacity-40 hover:opacity-70 transition-opacity"
+                    aria-label={`${item.title} website`}
                   >
                     <TbExternalLink className="h-3.5 w-3.5" />
                   </a>
@@ -83,7 +84,7 @@ export async function Experience() {
                   {item.skills.map((skill) => (
                     <span
                       key={skill}
-                      className={`badge badge-sm ${item.isCurrent ? "badge-primary text-white" : "badge-ghost"}`}
+                      className={`badge badge-sm ${item.isCurrent ? "badge-soft badge-primary" : "badge-ghost"}`}
                     >
                       {skill}
                     </span>
@@ -116,7 +117,7 @@ export async function Experience() {
                           <p className="text-sm font-medium opacity-70 line-clamp-2">
                             {blog.title}
                           </p>
-                          <p className="text-xs opacity-40 truncate hidden sm:block">
+                          <p className="text-xs text-base-content/85 truncate hidden sm:block">
                             {blog.url}
                           </p>
                         </div>

@@ -19,7 +19,7 @@ export async function News() {
         <ul className="list overflow-y-auto max-h-52">
           {items.map((item, i) => (
             <li key={i} className="list-row items-center">
-              <time className="text-xs opacity-50 whitespace-nowrap">
+              <time className="text-xs text-base-content/85 whitespace-nowrap">
                 {item.date}
               </time>
               <p className="text-sm">{item.text}</p>
