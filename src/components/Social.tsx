@@ -1,12 +1,7 @@
 import { Button } from "@mantine/core";
 import type { IconType } from "react-icons";
-import {
-  SiGithub,
-  SiX,
-  SiZenn,
-  SiSpeakerdeck,
-  SiLinkedin,
-} from "react-icons/si";
+import { SiGithub, SiX, SiZenn, SiSpeakerdeck } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 import { HatenaSvgComponent } from "@/assets/SvgIcon";
 import type { SocialItem } from "@/types/data";
 
@@ -15,7 +10,7 @@ const iconMap: { [key: string]: IconType | React.FC } = {
   X: SiX,
   Zenn: SiZenn,
   "Speaker Deck": SiSpeakerdeck,
-  LinkedIn: SiLinkedin,
+  LinkedIn: FaLinkedin,
   "Hatena Blog": HatenaSvgComponent,
 };
 
