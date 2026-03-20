@@ -43,6 +43,7 @@ export const About = () => {
           height={300}
           src="/images/home/profile.webp"
           alt="Kitsuya Azuma"
+          loading="eager"
           style={{ borderRadius: "3%" }}
         />
         <Stack>

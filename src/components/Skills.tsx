@@ -2,6 +2,23 @@
 import { Center, Container, Grid, Stack, Text, Title } from "@mantine/core";
 import { useTranslations } from "next-intl";
 import { RadarChart } from "@mantine/charts";
+import styles from "./Skills.module.css";
+
+// Suppress recharts ResponsiveContainer initial-render warning.
+// ResponsiveContainer always starts with containerWidth/Height = -1 before
+// ResizeObserver fires; there is no public API to override initialDimension
+// through Mantine's RadarChart wrapper.
+if (typeof window !== "undefined") {
+  const _warn = console.warn.bind(console);
+  console.warn = (...args: unknown[]) => {
+    if (
+      typeof args[0] === "string" &&
+      args[0].includes("The width(-1) and height(-1)")
+    )
+      return;
+    _warn(...args);
+  };
+}
 
 const skillsConfig = [
   {
@@ -96,13 +113,18 @@ export const SkillsChart = ({ data, series }: SkillsChartProps) => {
   return (
     <RadarChart
       h={250}
-      w="100%"
+      w={250}
       data={data}
       dataKey="skill"
       withDots
       withPolarAngleAxis
       withPolarRadiusAxis
       withPolarGrid
+      classNames={{ root: styles.chart }}
+      styles={{
+        root: { overflow: "visible" },
+        container: { overflow: "visible" },
+      }}
       radarProps={{
         isAnimationActive: true,
         animationDuration: 1000,

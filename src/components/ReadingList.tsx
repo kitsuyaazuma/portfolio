@@ -68,8 +68,13 @@ const ReadingListCard = ({ item }: ReadingListCardProps) => {
       className={classes.card}
       style={{ cursor: "pointer", aspectRatio: "1 / 1.4" }}
     >
-      <Card.Section>
-        <Image fill src={item.imageUrl} alt={item.name} />
+      <Card.Section style={{ position: "relative", height: "100%" }}>
+        <Image
+          fill
+          src={item.imageUrl}
+          alt={item.name}
+          sizes="(max-width: 576px) 50vw, (max-width: 768px) 33vw, (max-width: 992px) 25vw, 20vw"
+        />
         <Overlay className="overlay" backgroundOpacity={0.5} hidden={!focused}>
           <Stack
             justify="center"

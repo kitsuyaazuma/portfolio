@@ -47,9 +47,10 @@ export const PickUp = () => {
             src={item.imageUrl}
             alt={item.title}
             width={240}
-            height={0}
-            w={240}
-            h="auto"
+            height={160}
+            loading="eager"
+            w={{ base: "60%", sm: "30%" }}
+            style={{ height: "auto" }}
           />
           <Stack>
             <Text size="xl" fw={700} style={{ lineHeight: 1.2 }}>

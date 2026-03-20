@@ -24,6 +24,7 @@ export const TechBlog = async () => {
               cursor: "pointer",
               aspectRatio: "1 / 1",
               boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
+              position: "relative",
             }}
             className={classes.card}
           >
@@ -32,6 +33,7 @@ export const TechBlog = async () => {
               key={idx}
               src={`/images/blog/${idx + 1}.webp`}
               alt={`blog_${idx + 1}`}
+              sizes="(max-width: 576px) 50vw, (max-width: 768px) 33vw, (max-width: 992px) 25vw, 20vw"
               style={{ objectFit: "cover" }}
             />
           </Card>
