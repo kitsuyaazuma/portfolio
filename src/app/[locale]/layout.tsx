@@ -35,9 +35,12 @@ export async function generateMetadata({
     robots: { index: true, follow: true },
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `${SITE_URL}/${l}`]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [l, `${SITE_URL}/${l}`]),
+        ),
+        "x-default": SITE_URL,
+      },
     },
     openGraph: {
       title,
@@ -83,6 +86,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Preload LCP image so it's discoverable immediately from the HTML */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/home/profile.webp"
+          fetchPriority="high"
+        />
         {/* Preconnect to external origins used across all pages */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
