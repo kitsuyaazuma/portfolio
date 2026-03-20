@@ -1,10 +1,12 @@
 {
   "Metadata": {
-    "title": "東桔也 | ソフトウェアエンジニア",
-    "description": "東桔也のポートフォリオ"
+    "title": "東桔也のポートフォリオ",
+    "description": "東桔也のポートフォリオ — プラットフォームエンジニアリング・機械学習・フルスタック開発を専門とするソフトウェアエンジニア・工学系学生。",
+    "keywords": "東桔也, Kitsuya Azuma, ソフトウェアエンジニア, ポートフォリオ, プラットフォームエンジニアリング, 機械学習, Federated Learning, Next.js, React, Python, Go, Kubernetes, Terraform"
   },
   "Navigation": {
     "home": "HOME",
+    "publication": "PUBLICATION",
     "bookshelf": "BOOKSHELF"
   },
   "Hero": {
@@ -40,28 +42,12 @@
       }
     ]
   },
-  "PickUp": {
-    "title": "PICKUP",
+  "News": {
+    "title": "NEWS",
     "items": [
       {
-        "title": "『ReactではじめるChrome拡張開発入門』",
-        "textList": [
-          "体系的なドキュメントがなかったReactとTypeScriptによるChrome拡張機能開発を入門書にまとめて公開。",
-          "DeepLのような実践的な翻訳Chrome拡張機能を開発しながらハンズオン形式で学べる。",
-          "ZennのTrending Books（2023年2月）で1位を獲得した。2024年2月に改訂版、2025年3月に第2版を公開。"
-        ],
-        "searchWordsList": [
-          ["ReactとTypeScriptによるChrome拡張機能開発"],
-          ["ハンズオン形式"],
-          ["1位を獲得", "第2版を公開"]
-        ],
-        "buttons": [
-          {
-            "text": "Zennで本を読む",
-            "url": "https://zenn.dev/alvinvin/books/chrome_extension"
-          }
-        ],
-        "imageUrl": "/images/home/zenn.webp"
+        "date": "2026.02",
+        "text": "メルカリにてプラットフォームエンジニアとしてインターンシップを開始しました。とても楽しみです！"
       }
     ]
   },
@@ -77,14 +63,14 @@
           "2026年2月 - 2026年3月　インターン（プラットフォームエンジニア）"
         ],
         "category": "Internship",
-        "skills": [],
+        "skills": ["TypeScript", "Terraform", "Kubernetes"],
         "isCurrent": true,
         "url": "https://about.mercari.com/"
       },
       {
         "title": "CloudNative Kaigi",
         "details": ["2025年12月 - 現在　コアスタッフ（Webサイト、CFP）"],
-        "skills": ["Astro", "GitHub Actions"],
+        "skills": ["Astro", "GitHub Actions", "AWS"],
         "category": "Community",
         "isCurrent": true,
         "url": "https://kaigi.cloudnativedays.jp/"

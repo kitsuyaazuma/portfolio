@@ -1,11 +1,12 @@
-import { ReadingList } from "@/components/ReadingList";
-import { Hero } from "@/components/Hero";
+import { Suspense } from "react";
+import { ReadingList } from "@/components/sections/ReadingList";
 
 export default function BookshelfPage() {
   return (
     <main>
-      <Hero />
-      <ReadingList />
+      <Suspense fallback={null}>
+        <ReadingList />
+      </Suspense>
     </main>
   );
 }

@@ -1,5 +1,12 @@
 import { z } from "zod";
 
+export const NewsItemSchema = z.object({
+  date: z.string(),
+  text: z.string(),
+});
+
+export type NewsItem = z.infer<typeof NewsItemSchema>;
+
 export const AboutItemSchema = z.object({
   text: z.string(),
   searchWords: z.array(z.string()),
@@ -37,17 +44,12 @@ export const ExperienceItemSchema = z.object({
 export type ExperienceItem = z.infer<typeof ExperienceItemSchema>;
 export type ExperienceCategory = z.infer<typeof ExperienceCategorySchema>;
 
-export const PickupItemButtonSchema = z.object({
+export const PublicationPaperSchema = z.object({
+  title: z.string(),
   text: z.string(),
   url: z.string(),
+  conference: z.string(),
+  year: z.string(),
 });
 
-export const PickupItemSchema = z.object({
-  title: z.string(),
-  textList: z.array(z.string()),
-  searchWordsList: z.array(z.array(z.string())),
-  buttons: z.array(PickupItemButtonSchema),
-  imageUrl: z.string(),
-});
-
-export type PickupItem = z.infer<typeof PickupItemSchema>;
+export type PublicationPaper = z.infer<typeof PublicationPaperSchema>;

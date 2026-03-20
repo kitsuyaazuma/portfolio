@@ -1,10 +1,12 @@
 {
   "Metadata": {
-    "title": "Kitsuya Azuma | Software Engineer",
-    "description": "Kitsuya Azuma's Portfolio"
+    "title": "Kitsuya Azuma's Portfolio",
+    "description": "Portfolio of Kitsuya Azuma — Software Engineer and Engineering Student specializing in platform engineering, machine learning, and full-stack development.",
+    "keywords": "Kitsuya Azuma, Software Engineer, Portfolio, Platform Engineering, Machine Learning, Federated Learning, Next.js, React, Python, Go, Kubernetes, Terraform"
   },
   "Navigation": {
     "home": "HOME",
+    "publication": "PUBLICATION",
     "bookshelf": "BOOKSHELF"
   },
   "Hero": {
@@ -40,28 +42,12 @@
       }
     ]
   },
-  "PickUp": {
-    "title": "PICKUP",
+  "News": {
+    "title": "NEWS",
     "items": [
       {
-        "title": "Getting Started with Chrome Extension Development in React",
-        "textList": [
-          "Published a beginner's guide to developing Chrome extensions with React and TypeScript, as there were no systematic documents available.",
-          "Learn by developing a practical translation Chrome extension like DeepL in a hands-on format.",
-          "Ranked #1 on Zenn's Trending Books (February 2023). A revised edition was released in February 2024, and the second edition in March 2025."
-        ],
-        "searchWordsList": [
-          ["developing Chrome extensions with React and TypeScript"],
-          ["hands-on format"],
-          ["Ranked #1", "second edition in March 2025"]
-        ],
-        "buttons": [
-          {
-            "text": "Read on Zenn",
-            "url": "https://zenn.dev/alvinvin/books/chrome_extension"
-          }
-        ],
-        "imageUrl": "/images/home/zenn.webp"
+        "date": "2026.02",
+        "text": "Started internship at Mercari as Platform Engineer. So excited!"
       }
     ]
   },
@@ -74,7 +60,7 @@
       {
         "title": "Mercari, Inc.",
         "details": ["Feb 2026 - Mar 2026, Intern (Platform Engineer)"],
-        "skills": [],
+        "skills": ["TypeScript", "Terraform", "Kubernetes"],
         "category": "Internship",
         "isCurrent": true,
         "url": "https://about.mercari.com/"
@@ -82,7 +68,7 @@
       {
         "title": "CloudNative Kaigi",
         "details": ["Dec 2025 - Present, Core Member (Website and CFP)"],
-        "skills": ["Astro", "GitHub Actions"],
+        "skills": ["Astro", "GitHub Actions", "AWS"],
         "category": "Community",
         "isCurrent": true,
         "url": "https://kaigi.cloudnativedays.jp/"
