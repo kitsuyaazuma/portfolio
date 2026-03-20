@@ -14,11 +14,9 @@
     "update:ogp": "tsx scripts/update-blog-ogp.ts && npm run format"
   },
   "dependencies": {
-    "@ai-sdk/react": "^3.0.118",
     "@mantine/charts": "^8.3.18",
     "@mantine/core": "^8.3.18",
     "@mantine/hooks": "^8.3.18",
-    "ai": "^6.0.116",
     "motion": "^12.38.0",
     "next": "^16.2.0",
     "next-intl": "^4.8.3",
