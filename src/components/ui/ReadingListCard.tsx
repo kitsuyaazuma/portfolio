@@ -12,9 +12,9 @@ const getStatusBadgeClass = (status: ReadingListStatus) => {
     case "Reading":
       return "badge-info";
     case "Almost Finished":
-      return "badge-primary";
-    case "Partially Read":
       return "badge-warning";
+    case "Partially Read":
+      return "badge-error";
     case "Not Started":
       return "badge-ghost";
   }
@@ -33,7 +33,7 @@ export function ReadingListCard({ item }: { item: ReadingListItem }) {
       className="card overflow-hidden cursor-pointer hover:scale-[1.01] transition-transform"
       style={{ aspectRatio: "1 / 1.4" }}
     >
-      <figure className="h-full">
+      <figure className="relative h-full">
         <Image
           fill
           src={item.imageUrl}
