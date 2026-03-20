@@ -97,14 +97,7 @@
         "skills": [],
         "category": "Internship",
         "isCurrent": true,
-        "url": "https://about.mercari.com/",
-        "blogs": [
-          {
-            "title": "Turborepo Remote Cache: Accelerating CI to \"Move Fast\"",
-            "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/",
-            "thumbnail": "https://storage.googleapis.com/prd-engineering-asset/2026/02/760bc731-remote-cache-featured-image.jpg"
-          }
-        ]
+        "url": "https://about.mercari.com/"
       },
       {
         "title": "CloudNative Kaigi",
@@ -139,7 +132,14 @@
         "details": ["Jan 2025 - Mar 2025, Intern (Platform Engineer)"],
         "skills": ["Google Cloud", "Terraform", "TypeScript", "GitHub Actions"],
         "category": "Internship",
-        "url": "https://about.mercari.com/"
+        "url": "https://about.mercari.com/",
+        "blogs": [
+          {
+            "title": "Turborepo Remote Cache: Accelerating CI to \"Move Fast\"",
+            "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/",
+            "thumbnail": "https://storage.googleapis.com/prd-engineering-asset/2026/02/760bc731-remote-cache-featured-image.jpg"
+          }
+        ]
       },
       {
         "title": "Mirrativ, Inc.",
