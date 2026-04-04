@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "東桔也のポートフォリオ",
-    "description": "東桔也のポートフォリオ — プラットフォームエンジニアリング・機械学習・フルスタック開発を専門とするソフトウェアエンジニア・工学系学生。",
-    "keywords": "東桔也, Kitsuya Azuma, ソフトウェアエンジニア, ポートフォリオ, プラットフォームエンジニアリング, 機械学習, Federated Learning, Next.js, React, Python, Go, Kubernetes, Terraform"
+    "description": "東桔也のポートフォリオ — プラットフォームエンジニアリング・機械学習・フルスタック開発を専門とするソフトウェアエンジニア。",
+    "keywords": "東桔也, Kitsuya Azuma, ソフトウェアエンジニア, ポートフォリオ, プラットフォームエンジニアリング, 機械学習, Federated Learning"
   },
   "Navigation": {
     "home": "HOME",
@@ -11,14 +11,18 @@
   },
   "Hero": {
     "name": "Kitsuya Azuma",
-    "description": "Software Engineer / Engineering Student"
+    "description": "Software Engineer"
   },
   "About": {
     "title": "ABOUT ME",
     "items": [
       {
-        "text": "首都圏在住の修士2年生。",
-        "searchWords": ["修士2年生"]
+        "text": "首都圏在住のソフトウェアエンジニア。メルカリにてプラットフォームエンジニアとして働いている。",
+        "searchWords": [
+          "ソフトウェアエンジニア",
+          "メルカリ",
+          "プラットフォームエンジニア"
+        ]
       },
       {
         "text": "競技プログラミングをきっかけに個人開発に興味を持ち、次第にソフトウェアエンジニアリングの魅力に惹かれていった。",
@@ -29,16 +33,12 @@
         "searchWords": ["Computer Vision", "Federated Learning"]
       },
       {
-        "text": "様々な企業で学生インターンとして積んだ経験を活かして、プラットフォームエンジニアとしてキャリアをスタートさせる予定。",
+        "text": "様々な企業で学生インターンとして積んだ経験を活かして、プラットフォームエンジニアとしてキャリアをスタートさせた。",
         "searchWords": ["学生インターン", "プラットフォームエンジニア"]
       },
       {
-        "text": "技術書を読むことと研究室のサーバー管理が趣味。",
-        "searchWords": ["技術書", "サーバー管理"]
-      },
-      {
-        "text": "2026年の目標は、複数の技術コミュニティで登壇＆貢献することと、運動習慣を付けること。",
-        "searchWords": ["登壇＆貢献", "運動習慣"]
+        "text": "2026年の目標は、複数の技術コミュニティで登壇・貢献することと、運動習慣を付けること。",
+        "searchWords": ["登壇・貢献", "運動習慣"]
       }
     ]
   },
@@ -46,8 +46,24 @@
     "title": "NEWS",
     "items": [
       {
+        "date": "2026.04",
+        "text": "株式会社メルカリにプラットフォームエンジニアとして入社しました。"
+      },
+      {
+        "date": "2026.03",
+        "text": "YouTubeチャンネル TECH WORLDにカンファレンス運営者として出演しました。"
+      },
+      {
+        "date": "2026.03",
+        "text": "CVPR 2026 Workshop FedVisionに論文が採択されました。"
+      },
+      {
+        "date": "2026.03",
+        "text": "東京科学大学大学院 工学院を修了しました。"
+      },
+      {
         "date": "2026.02",
-        "text": "メルカリにてプラットフォームエンジニアとしてインターンシップを開始しました。とても楽しみです！"
+        "text": "メルカリにてプラットフォームエンジニアとしてインターンシップを開始しました。"
       }
     ]
   },
@@ -59,10 +75,8 @@
     "items": [
       {
         "title": "株式会社メルカリ",
-        "details": [
-          "2026年2月 - 2026年3月　インターン（プラットフォームエンジニア）"
-        ],
-        "category": "Internship",
+        "details": ["2026年4月 - 現在　プラットフォームエンジニア"],
+        "category": "Job",
         "skills": ["TypeScript", "Terraform", "Kubernetes"],
         "isCurrent": true,
         "url": "https://about.mercari.com/"
@@ -76,14 +90,22 @@
         "url": "https://kaigi.cloudnativedays.jp/"
       },
       {
+        "title": "株式会社メルカリ",
+        "details": [
+          "2026年2月 - 2026年3月　インターン（プラットフォームエンジニア）"
+        ],
+        "category": "Internship",
+        "skills": ["TypeScript", "Terraform", "Kubernetes"],
+        "url": "https://about.mercari.com/"
+      },
+      {
         "title": "東京科学大学（旧：東京工業大学）",
         "details": [
-          "2024年4月 - 現在　工学院 情報通信系",
-          "2024年4月 - 現在　西尾研究室"
+          "2024年4月 - 2026年3月　工学院 情報通信系",
+          "2024年4月 - 2026年3月　西尾研究室"
         ],
         "skills": ["機械学習", "Federated Learning"],
         "category": "Education",
-        "isCurrent": true,
         "url": "https://www.isct.ac.jp/"
       },
       {

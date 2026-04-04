@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Aligned",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/aligned/9781098134419/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098134419/250w/",
+  },
+  {
     name: "エフォートレス思考　努力を最小化して成果を最大化する",
     status: "Finished",
     url: "https://kanki-pub.co.jp/pub/book/9784761275815/",

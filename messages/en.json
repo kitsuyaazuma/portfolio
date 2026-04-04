@@ -1,8 +1,8 @@
 {
   "Metadata": {
     "title": "Kitsuya Azuma's Portfolio",
-    "description": "Portfolio of Kitsuya Azuma — Software Engineer and Engineering Student specializing in platform engineering, machine learning, and full-stack development.",
-    "keywords": "Kitsuya Azuma, Software Engineer, Portfolio, Platform Engineering, Machine Learning, Federated Learning, Next.js, React, Python, Go, Kubernetes, Terraform"
+    "description": "Portfolio of Kitsuya Azuma — Software Engineer specializing in Platform Engineering, Machine Learning, and Full-Stack Development.",
+    "keywords": "Kitsuya Azuma, Software Engineer, Portfolio, Platform Engineering, Machine Learning, Federated Learning"
   },
   "Navigation": {
     "home": "HOME",
@@ -11,14 +11,14 @@
   },
   "Hero": {
     "name": "Kitsuya Azuma",
-    "description": "Software Engineer / Engineering Student"
+    "description": "Software Engineer"
   },
   "About": {
     "title": "ABOUT ME",
     "items": [
       {
-        "text": "I am a second-year master's student based in the Tokyo metropolitan area.",
-        "searchWords": ["second-year master's student"]
+        "text": "I am a software engineer based in the Tokyo metropolitan area, working at Mercari as a Platform Engineer.",
+        "searchWords": ["software engineer", "Mercari", "Platform Engineer"]
       },
       {
         "text": "Inspired by competitive programming, I became interested in personal projects and was gradually drawn to the field of software engineering.",
@@ -29,12 +29,8 @@
         "searchWords": ["Computer Vision", "Federated Learning"]
       },
       {
-        "text": "Through my experience as a student intern at multiple companies, I plan to begin my career as a platform engineer.",
-        "searchWords": ["student intern", "platform engineer"]
-      },
-      {
-        "text": "My hobbies are reading technical books and managing the lab's servers.",
-        "searchWords": ["technical books", "lab's servers"]
+        "text": "Through my experience as a student intern at multiple companies, I started my career as a Platform Engineer.",
+        "searchWords": ["student intern", "Platform Engineer"]
       },
       {
         "text": "My goals for 2026 are to contribute and present in multiple technical communities and to develop a habit of exercise.",
@@ -46,8 +42,24 @@
     "title": "NEWS",
     "items": [
       {
+        "date": "2026.04",
+        "text": "Joined Mercari as a full-time Platform Engineer."
+      },
+      {
+        "date": "2026.03",
+        "text": "Featured on YouTube channel TECH WORLD as a conference organizer."
+      },
+      {
+        "date": "2026.03",
+        "text": "Paper accepted at CVPR 2026 Workshop on FedVision."
+      },
+      {
+        "date": "2026.03",
+        "text": "Graduated from Institute of Science Tokyo with a Master's degree in Engineering."
+      },
+      {
         "date": "2026.02",
-        "text": "Started internship at Mercari as Platform Engineer. So excited!"
+        "text": "Started internship at Mercari as a Platform Engineer."
       }
     ]
   },
@@ -59,9 +71,9 @@
     "items": [
       {
         "title": "Mercari, Inc.",
-        "details": ["Feb 2026 - Mar 2026, Intern (Platform Engineer)"],
+        "details": ["Apr 2026 - Present, Platform Engineer"],
         "skills": ["TypeScript", "Terraform", "Kubernetes"],
-        "category": "Internship",
+        "category": "Job",
         "isCurrent": true,
         "url": "https://about.mercari.com/"
       },
@@ -74,14 +86,20 @@
         "url": "https://kaigi.cloudnativedays.jp/"
       },
       {
+        "title": "Mercari, Inc.",
+        "details": ["Feb 2026 - Mar 2026, Intern (Platform Engineer)"],
+        "skills": ["TypeScript", "Terraform", "Kubernetes"],
+        "category": "Internship",
+        "url": "https://about.mercari.com/"
+      },
+      {
         "title": "Institute of Science Tokyo (former Tokyo Institute of Technology)",
         "details": [
-          "Apr 2024 - Present, School of Engineering, Department of Information and Communications Engineering",
-          "Apr 2024 - Present, Nishio Laboratory"
+          "Apr 2024 - Mar 2026, School of Engineering, Department of Information and Communications Engineering",
+          "Apr 2024 - Mar 2026, Nishio Laboratory"
         ],
         "skills": ["Machine Learning", "Federated Learning"],
         "category": "Education",
-        "isCurrent": true,
         "url": "https://www.isct.ac.jp"
       },
       {
