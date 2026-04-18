@@ -248,6 +248,7 @@
   "Publications": {
     "blogTitle": "TECH BLOG",
     "talkTitle": "TALKS",
+    "videoTitle": "VIDEOS",
     "paperTitle": "PAPERS",
     "papers": [
       {
@@ -272,6 +273,7 @@
         "title": "Beyond Multiprocessing: A Real-World ML Workload Speedup with Python 3.13+ Free-Threading",
         "event": "PyCon JP 2025",
         "eventUrl": "https://2025.pycon.jp",
+        "year": "2025",
         "talkType": "Talk",
         "slideUrl": "https://speakerdeck.com/player/3927e6a7a7c842f3b0a8387459c359d6"
       },
@@ -279,6 +281,7 @@
         "title": "研究室サーバーとKubeflowで実践するNotebook as a Service",
         "event": "CloudNative Days Summer 2025",
         "eventUrl": "https://cloudnativedays.jp/cnds2025",
+        "year": "2025",
         "talkType": "LT",
         "slideUrl": "https://speakerdeck.com/player/e73ecf1f537a4175b173ed4ec5638a92"
       },
@@ -286,8 +289,25 @@
         "title": "rootlessコンテナのすゝめ - 研究室サーバーでもできる安全なコンテナ管理",
         "event": "学生と社会人LT会 #2",
         "eventUrl": "https://gijutsu-club.connpass.com/event/334645/",
+        "year": "2024",
         "talkType": "LT",
         "slideUrl": "https://speakerdeck.com/player/91f0b01b3794493b80ec663da267e432"
+      }
+    ],
+    "videos": [
+      {
+        "title": "なぜエンジニアは絶対に技術カンファレンスに行くべきなのか。",
+        "channel": "TECH WORLD",
+        "year": "2026",
+        "url": "https://youtu.be/bifQwjbdb1A?si=YISqBBb31zzzuSkz",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/bifQwjbdb1A?si=YISqBBb31zzzuSkz"
+      },
+      {
+        "title": "Day1 Ran 5 Beyond Multiprocessing A Real World ML Workload Speedup with Python 3 13+ Free Threading",
+        "channel": "PyCon JP",
+        "year": "2025",
+        "url": "https://www.youtube.com/watch?v=8KZ3HazkxGQ",
+        "thumbnailUrl": "https://i.ytimg.com/vi/8KZ3HazkxGQ/maxresdefault.jpg"
       }
     ]
   },

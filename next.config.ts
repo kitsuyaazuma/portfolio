@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/html/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+        port: "",
+        pathname: "/vi/**",
+      },
     ],
   },
   reactCompiler: true,

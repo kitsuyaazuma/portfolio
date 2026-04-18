@@ -59,8 +59,24 @@ export const PublicationTalkSchema = z.object({
   title: z.string(),
   event: z.string(),
   eventUrl: z.string(),
+  year: z.string(),
   talkType: z.string(),
   slideUrl: z.string(),
 });
 
 export type PublicationTalk = z.infer<typeof PublicationTalkSchema>;
+
+export const PublicationVideoSchema = z
+  .object({
+    title: z.string(),
+    channel: z.string(),
+    year: z.string(),
+    url: z.string(),
+    embedUrl: z.string().optional(),
+    thumbnailUrl: z.string().optional(),
+  })
+  .refine((video) => video.embedUrl || video.thumbnailUrl, {
+    message: "Publication video requires embedUrl or thumbnailUrl",
+  });
+
+export type PublicationVideo = z.infer<typeof PublicationVideoSchema>;
