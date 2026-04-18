@@ -37,7 +37,7 @@ export default function Image() {
           margin: 0,
         }}
       >
-        Software Engineer / Engineering Student
+        Software Engineer
       </p>
     </div>,
     { ...size },
