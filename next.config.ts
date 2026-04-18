@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/library/cover/**",
       },
+      {
+        protocol: "https",
+        hostname: "arxiv.org",
+        port: "",
+        pathname: "/html/**",
+      },
     ],
   },
   reactCompiler: true,

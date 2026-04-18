@@ -53,7 +53,7 @@ export async function Experience() {
               {getCategoryIcon(item.category)}
             </div>
 
-            <div className="timeline-end timeline-box mb-6 w-full">
+            <div className="timeline-end timeline-box mb-6 w-full shadow-sm">
               <div className="flex items-center gap-1 mb-1">
                 <span
                   className={`text-lg font-semibold ${item.isCurrent ? "text-primary" : ""}`}

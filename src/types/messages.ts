@@ -50,6 +50,17 @@ export const PublicationPaperSchema = z.object({
   url: z.string(),
   conference: z.string(),
   year: z.string(),
+  imageUrl: z.string(),
 });
 
 export type PublicationPaper = z.infer<typeof PublicationPaperSchema>;
+
+export const PublicationTalkSchema = z.object({
+  title: z.string(),
+  event: z.string(),
+  eventUrl: z.string(),
+  talkType: z.string(),
+  slideUrl: z.string(),
+});
+
+export type PublicationTalk = z.infer<typeof PublicationTalkSchema>;

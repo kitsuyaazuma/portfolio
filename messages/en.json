@@ -241,13 +241,45 @@
     "blogTitle": "TECH BLOG",
     "talkTitle": "TALKS",
     "paperTitle": "PAPERS",
-    "items": [
+    "papers": [
+      {
+        "title": "BlazeFL: Fast and Deterministic Federated Learning Simulation",
+        "text": "We propose BlazeFL, a lightweight framework for fast and reproducible single-node federated learning simulation. By leveraging free-threaded shared-memory execution and client-isolated random number generators, it achieves up to 3.1× speedup while ensuring bitwise-identical results across repeated runs.",
+        "url": "https://arxiv.org/abs/2604.03606",
+        "conference": "FedVision at CVPR 2026 (CVPRW)",
+        "year": "2026",
+        "imageUrl": "https://arxiv.org/html/2604.03606v1/fig/blazefl.png"
+      },
       {
         "title": "Soft-Label Caching and Sharpening for Communication-Efficient Federated Distillation",
         "text": "We propose SCARLET, a communication-efficient distillation-based Federated Learning framework. By caching soft-labels to minimize redundant transmission and utilizing an enhanced Entropy Reduction Aggregation, it achieves up to 50% communication cost reduction while maintaining competitive accuracy.",
         "url": "https://ieeexplore.ieee.org/document/11344746",
         "conference": "IEEE Transactions on Mobile Computing",
-        "year": "2026"
+        "year": "2026",
+        "imageUrl": "https://arxiv.org/html/2504.19602v4/figures/scarlet_detail_cached.png"
+      }
+    ],
+    "talks": [
+      {
+        "title": "Beyond Multiprocessing: A Real-World ML Workload Speedup with Python 3.13+ Free-Threading",
+        "event": "PyCon JP 2025",
+        "eventUrl": "https://2025.pycon.jp",
+        "talkType": "Talk",
+        "slideUrl": "https://speakerdeck.com/player/3927e6a7a7c842f3b0a8387459c359d6"
+      },
+      {
+        "title": "Notebook as a Service in Practice with a Lab Server and Kubeflow",
+        "event": "CloudNative Days Summer 2025",
+        "eventUrl": "https://cloudnativedays.jp/cnds2025",
+        "talkType": "LT",
+        "slideUrl": "https://speakerdeck.com/player/e73ecf1f537a4175b173ed4ec5638a92"
+      },
+      {
+        "title": "Rootless Containers for Everyone: Safe Container Management Even on Lab Servers",
+        "event": "Students and Working Adults Lightning Talk Meetup #2",
+        "eventUrl": "https://gijutsu-club.connpass.com/event/334645/",
+        "talkType": "LT",
+        "slideUrl": "https://speakerdeck.com/player/91f0b01b3794493b80ec663da267e432"
       }
     ]
   },
