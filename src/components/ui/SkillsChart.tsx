@@ -65,7 +65,14 @@ export function SkillsChart() {
               margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
             >
               <PolarGrid />
-              <PolarAngleAxis dataKey="skill" tick={{ fontSize: 11 }} />
+              <PolarAngleAxis
+                dataKey="skill"
+                tick={{
+                  fontSize: 11,
+                  fill: "currentColor",
+                  fillOpacity: 0.9,
+                }}
+              />
               <PolarRadiusAxis
                 domain={[0, 5]}
                 tickCount={6}
@@ -79,7 +86,7 @@ export function SkillsChart() {
                   stroke={s.color}
                   strokeOpacity={1}
                   fill={s.color}
-                  fillOpacity={0.5}
+                  fillOpacity={0.85}
                   dot
                   isAnimationActive
                   animationDuration={1000}
