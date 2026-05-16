@@ -14,18 +14,12 @@ export const readingList: ReadingListItem[] = [
     imageUrl:
       "https://books.google.com/books/content?vid=isbn:9784761275815&printsec=frontcover&img=1&zoom=1",
   },
-  // {
-  //   name: "Learning Git",
-  //   status: "Reading",
-  //   url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",
-  //   imageUrl: "https://learning.oreilly.com/library/cover/9781098133900/128w/",
-  // },
   {
     name: "ゼロから作るDeep Learning ❻ ―LLM編",
     status: "Finished",
-    url: "https://amzn.asia/d/00QQNmXy",
+    url: "https://www.oreilly.co.jp/books/9784814401611/",
     imageUrl:
-      "https://books.google.com/books/content?vid=isbn:9784814401611&printsec=frontcover&img=1&zoom=1",
+      "https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0161-1.jpeg",
   },
   {
     name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",
@@ -94,12 +88,6 @@ export const readingList: ReadingListItem[] = [
     imageUrl:
       "https://books.google.com/books/content?vid=isbn:9784800591265&printsec=frontcover&img=1&zoom=1",
   },
-  // {
-  //   name: "大規模言語モデル入門Ⅱ 〜生成型LLMの実装と評価",
-  //   status: "Reading",
-  //   url: "https://gihyo.jp/book/2024/978-4-297-14393-0",
-  //   imageUrl: "https://books.google.com/books/content?vid=isbn:9784297143930&printsec=frontcover&img=1&zoom=1",
-  // },
   {
     name: "原論文から解き明かす生成AI",
     status: "Almost Finished",

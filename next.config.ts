@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.oreilly.co.jp",
+        port: "",
+        pathname: "/books/images/**",
+      },
+      {
+        protocol: "https",
         hostname: "arxiv.org",
         port: "",
         pathname: "/html/**",

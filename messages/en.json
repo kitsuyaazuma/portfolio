@@ -42,6 +42,10 @@
     "title": "NEWS",
     "items": [
       {
+        "date": "2026.05",
+        "text": "Participated in CloudNative Kaigi as an organizer."
+      },
+      {
         "date": "2026.04",
         "text": "Joined Mercari as a full-time Platform Engineer."
       },
@@ -79,8 +83,8 @@
       },
       {
         "title": "CloudNative Kaigi",
-        "details": ["Dec 2025 - Present, Core Member (Website and CFP)"],
-        "skills": ["Astro", "GitHub Actions", "AWS"],
+        "details": ["Dec 2025 - Mar 2026, Core Member (Website and CFP)"],
+        "skills": ["Astro", "Tailwind CSS", "GitHub Actions", "AWS"],
         "category": "Community",
         "isCurrent": true,
         "url": "https://kaigi.cloudnativedays.jp/"
