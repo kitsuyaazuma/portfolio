@@ -1,5 +1,6 @@
 import "../globals.css";
 import { Suspense } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { RootLayout } from "@/components/layout/RootLayout";
 import GoogleAnalytics from "@/lib/GoogleAnalytics";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
@@ -112,6 +113,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </NextIntlClientProvider>
           </Suspense>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
