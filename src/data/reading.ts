@@ -18,8 +18,7 @@ export const readingList: ReadingListItem[] = [
     name: "ゼロから作るDeep Learning ❻ ―LLM編",
     status: "Finished",
     url: "https://www.oreilly.co.jp/books/9784814401611/",
-    imageUrl:
-      "https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0161-1.jpeg",
+    imageUrl: "https://learning.oreilly.com/library/cover/9784814401611/128w/",
   },
   {
     name: "エンジニアリングが好きな私たちのためのエンジニアリングマネジャー入門",

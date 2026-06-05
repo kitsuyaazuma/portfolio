@@ -82,11 +82,17 @@
         "url": "https://about.mercari.com/"
       },
       {
+        "title": "Platform Engineering Kaigi 2026",
+        "details": ["Jun 2026 - Present, Core Member"],
+        "skills": [],
+        "category": "Community",
+        "isCurrent": true
+      },
+      {
         "title": "CloudNative Kaigi",
-        "details": ["Dec 2025 - Mar 2026, Core Member (Website and CFP)"],
+        "details": ["Dec 2025 - May 2026, Core Member (Website and CFP)"],
         "skills": ["Astro", "Tailwind CSS", "GitHub Actions", "AWS"],
         "category": "Community",
-        "isCurrent": true,
         "url": "https://kaigi.cloudnativedays.jp/"
       },
       {
