@@ -2,6 +2,13 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "心理的安全性のつくりかた",
+    status: "Finished",
+    url: "https://pub.jmam.co.jp/smp/book/b517388.html",
+    imageUrl:
+      "https://books.google.com/books/content?vid=isbn:9784820728245&printsec=frontcover&img=1&zoom=1",
+  },
+  {
     name: "Aligned",
     status: "Reading",
     url: "https://www.oreilly.com/library/view/aligned/9781098134419/",
