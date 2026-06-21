@@ -2,6 +2,12 @@ import { ReadingListItem } from "@/types/data";
 
 export const readingList: ReadingListItem[] = [
   {
+    name: "Learning Git",
+    status: "Reading",
+    url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098133900/128w/",
+  },
+  {
     name: "心理的安全性のつくりかた",
     status: "Finished",
     url: "https://pub.jmam.co.jp/smp/book/b517388.html",
