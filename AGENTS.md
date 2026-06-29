@@ -12,6 +12,7 @@ pnpm run lint:fix     # ESLint with auto-fix
 pnpm run format       # Prettier (js, jsx, ts, tsx, json)
 pnpm run format:check # Check formatting without writing
 pnpm run update:ogp   # Fetch/update blog OGP metadata from Hatenablog
+pnpm run update:article-metadata # Fetch/update article OGP metadata
 ```
 
 CI runs: `lint` → `format:check` → `build` on push/PR to main.
@@ -34,21 +35,21 @@ CI runs: `lint` → `format:check` → `build` on push/PR to main.
 
 **Zod validation:** Translation JSON values are parsed with Zod schemas server-side (e.g., `AboutItemsSchema`, `ExperienceItemSchema` in section components) for type-safe structured data embedded in messages.
 
-**Prebuild:** `prebuild.mjs` scrapes the Hatena blog for post count and writes to `src/data/blog.ts` before each build.
+**Prebuild:** `prebuild.mjs` scrapes the Hatena blog for post count and writes to `src/data/blog.ts` before each build. `scripts/update-article-metadata.ts` fetches article OGP metadata and writes to `src/data/article-metadata.generated.ts`.
 
 ## Directory Structure
 
 ```
 src/
-├── app/[locale]/          # Pages: page.tsx, publications/, bookshelf/
+├── app/[locale]/          # Pages: page.tsx, publications/, reads/
 ├── components/
 │   ├── layout/            # RootLayout, Header, Footer, ThemeProvider
 │   ├── sections/          # Page-level sections (Hero, About, Skills, Experience, News…)
-│   └── ui/                # Reusable UI components (SkillsChart, ReadingListCard…)
+│   └── ui/                # Reusable UI components (SkillsChart, BookCard…)
 ├── i18n/                  # routing.ts, request.ts, navigation.ts
 ├── lib/                   # gtag.ts, GoogleAnalytics.tsx
 ├── types/                 # data.ts, messages.ts, gtag.d.ts
-└── data/                  # blog.ts (generated), reading.ts, social.ts
+└── data/                  # blog.ts (generated), books.ts, articles.ts, social.ts
 ```
 
 ## Adding Content
@@ -56,4 +57,4 @@ src/
 - **New page sections:** Create in `src/components/sections/`, add translations in both `messages/*.json`, parse with Zod if structured data is needed.
 - **New locale strings:** Add to both `messages/en.json` and `messages/ja.json`. Update `src/types/messages.ts` if the shape changes.
 - **New remote image domains:** Add to `remotePatterns` in `next.config.ts`.
-- **Reading list / social links:** Edit `src/data/reading.ts` / `src/data/social.ts`.
+- **Book list / article links / social links:** Edit `src/data/books.ts` / `src/data/articles.ts` / `src/data/social.ts`.

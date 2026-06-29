@@ -1,11 +1,11 @@
 "use client";
-// ReadingListCard is a Client Component: manages hover state for the overlay.
+// BookCard is a Client Component: manages hover state for the overlay.
 import Image from "next/image";
 import { TbExternalLink } from "react-icons/tb";
 import { useState } from "react";
-import type { ReadingListItem, ReadingListStatus } from "@/types/data";
+import type { BookItem, BookStatus } from "@/types/data";
 
-const getStatusBadgeClass = (status: ReadingListStatus) => {
+const getStatusBadgeClass = (status: BookStatus) => {
   switch (status) {
     case "Finished":
       return "badge-success";
@@ -20,7 +20,7 @@ const getStatusBadgeClass = (status: ReadingListStatus) => {
   }
 };
 
-export function ReadingListCard({ item }: { item: ReadingListItem }) {
+export function BookCard({ item }: { item: BookItem }) {
   const [focused, setFocused] = useState(false);
 
   return (

@@ -1,6 +1,6 @@
-import { ReadingListItem } from "@/types/data";
+import { BookItem } from "@/types/data";
 
-export const readingList: ReadingListItem[] = [
+export const bookList: BookItem[] = [
   {
     name: "Learning Git",
     status: "Reading",

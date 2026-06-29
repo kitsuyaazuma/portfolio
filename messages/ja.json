@@ -7,7 +7,7 @@
   "Navigation": {
     "home": "HOME",
     "publication": "PUBLICATION",
-    "bookshelf": "BOOKSHELF"
+    "reads": "READS"
   },
   "Hero": {
     "name": "Kitsuya Azuma",
@@ -321,8 +321,9 @@
       }
     ]
   },
-  "Bookshelf": {
-    "readingListTitle": "READING LIST"
+  "Reads": {
+    "bookListTitle": "BOOK LOG",
+    "articleListTitle": "ARTICLE LOG"
   },
   "Footer": {
     "name": "Kitsuya Azuma"

@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["/", "/publications", "/bookshelf"];
+  const pages = ["/", "/publications", "/reads"];
 
   return routing.locales.flatMap((locale) =>
     pages.map((page) => ({

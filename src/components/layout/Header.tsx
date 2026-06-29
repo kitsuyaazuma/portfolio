@@ -49,7 +49,7 @@ export function Header() {
   const navLinks = [
     { href: "/", label: t("home") },
     { href: "/publications", label: t("publication") },
-    { href: "/bookshelf", label: t("bookshelf") },
+    { href: "/reads", label: t("reads") },
   ];
 
   return (
