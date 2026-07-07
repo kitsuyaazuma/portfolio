@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import ogs from "open-graph-scraper";
+import prettier from "prettier";
 import { articleList } from "../src/data/articles";
 import type { ArticleMetadataItem } from "../src/types/data";
 
@@ -59,8 +60,8 @@ async function fetchArticleMetadata(
   }
 }
 
-function formatMetadata(metadata: ArticleMetadataItem[]) {
-  return `import type { ArticleMetadataItem } from "../types/data";
+async function formatMetadata(metadata: ArticleMetadataItem[]) {
+  const source = `import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = ${JSON.stringify(
     metadata,
@@ -68,11 +69,13 @@ export const articleMetadata: ArticleMetadataItem[] = ${JSON.stringify(
     2,
   )};
 `;
+
+  return prettier.format(source, { parser: "typescript" });
 }
 
 async function updateArticleMetadata() {
   const metadata = await Promise.all(articleList.map(fetchArticleMetadata));
-  await fs.writeFile(OUTPUT_PATH, formatMetadata(metadata));
+  await fs.writeFile(OUTPUT_PATH, await formatMetadata(metadata));
 }
 
 updateArticleMetadata().catch((error) => {
