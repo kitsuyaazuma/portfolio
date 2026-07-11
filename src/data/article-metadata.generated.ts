@@ -2,6 +2,15 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
+    title:
+      "How the Open Knowledge Format can improve data sharing | Google Cloud Blog",
+    description:
+      "Learn how the Open Knowledge Format helps secure data sharing and improves collaboration across teams with standardized documentation.",
+    imageUrl:
+      "https://storage.googleapis.com/gweb-cloudblog-publish/images/09_-_Data_Analytics_tFH57V6.max-2600x2600.jpg",
+  },
+  {
     url: "https://arxiv.org/abs/2410.07869",
     title: "Benchmarking Agentic Workflow Generation",
     description:

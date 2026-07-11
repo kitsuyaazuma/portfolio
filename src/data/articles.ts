@@ -2,6 +2,9 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
+  },
+  {
     url: "https://arxiv.org/abs/2410.07869",
   },
   {
