@@ -2,6 +2,13 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://arxiv.org/abs/2410.07869",
+    title: "Benchmarking Agentic Workflow Generation",
+    description:
+      "Large Language Models (LLMs), with their exceptional ability to handle a wide range of tasks, have driven significant advancements in tackling reasoning and planning tasks, wherein decomposing complex problems into executable workflows is a crucial step in this process. Existing workflow evaluation frameworks either focus solely on holistic performance or suffer from limitations such as restricted scenario coverage, simplistic workflow structures, and lax evaluation standards. To this end, we introduce WorfBench, a unified workflow generation benchmark with multi-faceted scenarios and intricate graph workflow structures. Additionally, we present WorfEval, a systemic evaluation protocol utilizing subsequence and subgraph matching algorithms to accurately quantify the LLM agent's workflow generation capabilities. Through comprehensive evaluations across different types of LLMs, we discover distinct gaps between the sequence planning capabilities and graph planning capabilities of LLM agents, with even GPT-4 exhibiting a gap of around 15%. We also train two open-source models and evaluate their generalization abilities on held-out tasks. Furthermore, we observe that the generated workflows can enhance downstream tasks, enabling them to achieve superior performance with less time during inference. Code and dataset are available at https://github.com/zjunlp/WorfBench.",
+    imageUrl: "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+  },
+  {
     url: "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
     title: "Understanding is the new bottleneck",
     description:
