@@ -2,6 +2,14 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    title: "llm-wiki",
+    description:
+      "llm-wiki. GitHub Gist: instantly share code, notes, and snippets.",
+    imageUrl:
+      "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png",
+  },
+  {
     url: "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
     title:
       "How the Open Knowledge Format can improve data sharing | Google Cloud Blog",
