@@ -2,6 +2,9 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://arxiv.org/abs/2406.12045",
+  },
+  {
     url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
   },
   {
