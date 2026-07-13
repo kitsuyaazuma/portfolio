@@ -35,7 +35,7 @@
     "autoprefixer": "^10.5.0",
     "babel-plugin-react-compiler": "^1.0.0",
     "depcheck": "^1.4.7",
-    "eslint": "^9.39.2",
+    "eslint": "^10.7.0",
     "eslint-config-next": "^16.2.9",
     "eslint-config-prettier": "^10.1.2",
     "open-graph-scraper": "^6.11.0",
