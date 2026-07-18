@@ -95,8 +95,9 @@ export function Header() {
           />
         </div>
 
-        <div className="dropdown dropdown-end sm:hidden">
+        <div className="relative sm:hidden">
           <button
+            type="button"
             onClick={() => setOpened(!opened)}
             className="btn btn-circle btn-ghost btn-sm text-neutral"
             aria-label="Toggle menu"
@@ -108,7 +109,7 @@ export function Header() {
           <AnimatePresence>
             {opened && (
               <motion.div
-                className="dropdown-content z-50 mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-lg"
+                className="absolute end-0 top-full z-50 mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-lg"
                 initial={{ opacity: 0, y: -8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
