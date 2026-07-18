@@ -19,7 +19,7 @@ export const HighlightText = ({ text, highlight }: HighlightTextProps) => {
         i % 2 !== 0 ? (
           <mark
             key={i}
-            className="bg-primary/10 text-base-content font-bold not-italic"
+            className="bg-primary/20 text-base-content font-bold not-italic"
           >
             {part}
           </mark>

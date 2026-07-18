@@ -22,7 +22,7 @@ function LocaleSwitcher({
         <button
           key={lang}
           onClick={() => onSelect(lang)}
-          className={`join-item btn ${size} ${locale === lang ? "btn-primary text-white" : "btn-ghost"}`}
+          className={`join-item btn ${size} ${locale === lang ? "btn-neutral" : "btn-ghost"}`}
         >
           {lang.toUpperCase()}
         </button>
@@ -53,102 +53,102 @@ export function Header() {
   ];
 
   return (
-    <>
-      <div className="max-w-6xl mx-auto px-4 h-[50px] flex justify-between items-center">
+    <div className="navbar mx-auto h-[50px] min-h-[50px] max-w-6xl px-4 py-0">
+      <div className="navbar-start">
         {pathname === "/" ? (
           <AnimatedHeaderLogo />
         ) : (
-          <Link href="/" className="text-primary text-lg">
+          <Link href="/" className="text-neutral text-lg">
             {tFooter("name")}
           </Link>
         )}
+      </div>
 
-        <div className="flex items-center gap-2">
-          {/* Desktop nav */}
-          <ul className="menu menu-horizontal px-0 hidden sm:flex text-sm">
-            {navLinks.map((link) => (
-              <li
-                key={link.href}
-                className={pathname === link.href ? "active" : ""}
+      <div className="navbar-end gap-2">
+        <ul className="menu menu-horizontal hidden px-0 text-sm sm:flex">
+          {navLinks.map((link) => (
+            <li
+              key={link.href}
+              className={pathname === link.href ? "active" : ""}
+            >
+              <Link
+                href={link.href}
+                className={
+                  pathname === link.href
+                    ? "bg-neutral font-medium text-neutral-content"
+                    : ""
+                }
               >
-                <Link
-                  href={link.href}
-                  className={
-                    pathname === link.href
-                      ? "font-medium bg-primary/10 text-primary"
-                      : ""
-                  }
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-          {/* Divider */}
-          <div className="hidden sm:block h-6 w-px bg-base-300" />
+        <div className="hidden h-6 w-px bg-base-300 sm:block" />
 
-          {/* Language switcher — desktop */}
-          <div className="hidden sm:flex">
-            <LocaleSwitcher
-              locale={locale}
-              onSelect={handleLocaleChange}
-              size="btn-xs"
-            />
-          </div>
+        <div className="hidden sm:flex">
+          <LocaleSwitcher
+            locale={locale}
+            onSelect={handleLocaleChange}
+            size="btn-xs"
+          />
+        </div>
 
-          {/* Burger */}
+        <div className="dropdown dropdown-end sm:hidden">
           <button
             onClick={() => setOpened(!opened)}
-            className="sm:hidden btn btn-circle btn-ghost btn-sm text-primary"
+            className="btn btn-circle btn-ghost btn-sm text-neutral"
             aria-label="Toggle menu"
+            aria-expanded={opened}
           >
             {opened ? <TbX size={18} /> : <TbMenu2 size={18} />}
           </button>
+
+          <AnimatePresence>
+            {opened && (
+              <motion.div
+                className="dropdown-content z-50 mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-lg"
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+              >
+                <ul className="menu w-full text-base">
+                  {navLinks.map((link) => (
+                    <li
+                      key={link.href}
+                      className={pathname === link.href ? "active" : ""}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={() => setOpened(false)}
+                        className={
+                          pathname === link.href
+                            ? "bg-neutral font-medium text-neutral-content"
+                            : ""
+                        }
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex justify-end border-t border-base-300 px-2 pt-2">
+                  <LocaleSwitcher
+                    locale={locale}
+                    onSelect={(lang) => {
+                      handleLocaleChange(lang);
+                      setOpened(false);
+                    }}
+                    size="btn-sm"
+                  />
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
-
-      {/* Mobile menu */}
-      <AnimatePresence>
-        {opened && (
-          <motion.div
-            className="sm:hidden fixed inset-0 top-[50px] z-40 bg-base-100 flex flex-col items-center justify-center gap-2"
-            initial={{ opacity: 0, y: -16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-          >
-            <ul className="menu text-xl w-full max-w-sm">
-              {navLinks.map((link) => (
-                <li
-                  key={link.href}
-                  className={pathname === link.href ? "active" : ""}
-                >
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpened(false)}
-                    className={
-                      pathname === link.href
-                        ? "font-medium bg-primary/10 text-primary"
-                        : ""
-                    }
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <LocaleSwitcher
-              locale={locale}
-              onSelect={(lang) => {
-                handleLocaleChange(lang);
-                setOpened(false);
-              }}
-              size="btn-sm"
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+    </div>
   );
 }

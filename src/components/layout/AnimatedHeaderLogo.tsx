@@ -28,7 +28,7 @@ const AnimatedCharacter = ({
   return (
     <motion.span
       style={{ x, y, rotate, opacity, display: "inline-block" }}
-      className="text-primary text-lg"
+      className="text-neutral text-lg"
     >
       {char}
     </motion.span>

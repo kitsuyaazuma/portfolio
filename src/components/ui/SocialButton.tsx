@@ -14,14 +14,18 @@ const iconMap: { [key: string]: IconType | React.FC } = {
   "Hatena Blog": HatenaSvgComponent,
 };
 
-export const SocialButton = (social: SocialItem) => {
+type SocialButtonProps = SocialItem & {
+  className?: string;
+};
+
+export const SocialButton = (social: SocialButtonProps) => {
   const Icon = iconMap[social.name];
   return (
     <a
       href={social.url}
       target="_blank"
       rel="noreferrer"
-      className="btn btn-ghost btn-sm text-primary px-2"
+      className={`btn btn-ghost btn-sm px-2 ${social.className ?? "text-neutral"}`}
       aria-label={social.name}
     >
       <Icon size={16} />

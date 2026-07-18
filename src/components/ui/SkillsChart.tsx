@@ -14,7 +14,7 @@ type ChartData = { skill: string; [key: string]: unknown };
 
 const skillsConfig: { series: ChartSeries[]; data: ChartData[] }[] = [
   {
-    series: [{ name: "Frontend", color: "var(--color-error)" }],
+    series: [{ name: "Frontend", color: "var(--color-primary)" }],
     data: [
       { skill: "HTML/CSS", Frontend: 3 },
       { skill: "JavaScript", Frontend: 3 },
@@ -25,7 +25,7 @@ const skillsConfig: { series: ChartSeries[]; data: ChartData[] }[] = [
     ],
   },
   {
-    series: [{ name: "Backend", color: "var(--color-info)" }],
+    series: [{ name: "Backend", color: "var(--color-secondary)" }],
     data: [
       { skill: "Python", Backend: 5 },
       { skill: "TypeScript", Backend: 4 },
@@ -36,7 +36,7 @@ const skillsConfig: { series: ChartSeries[]; data: ChartData[] }[] = [
     ],
   },
   {
-    series: [{ name: "DevOps", color: "var(--color-warning)" }],
+    series: [{ name: "DevOps", color: "var(--color-accent)" }],
     data: [
       { skill: "Linux", DevOps: 4 },
       { skill: "Kubernetes", DevOps: 4 },
@@ -86,7 +86,7 @@ export function SkillsChart() {
                   stroke={s.color}
                   strokeOpacity={1}
                   fill={s.color}
-                  fillOpacity={0.85}
+                  fillOpacity={0.25}
                   dot
                   isAnimationActive
                   animationDuration={1000}
