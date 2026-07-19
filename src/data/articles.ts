@@ -2,6 +2,9 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers",
+  },
+  {
     url: "https://docs.langchain.com/langsmith/observability-llm-tutorial",
   },
   {

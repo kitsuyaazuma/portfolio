@@ -2,6 +2,15 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers",
+    title:
+      "Extending Claude's capabilities with skills and MCP | Claude by Anthropic",
+    description:
+      "Learn how skills and MCP work together to build agents that follow your workflows and use external tools effectively. Best practices and real-world examples.",
+    imageUrl:
+      "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6945bdc80b691dfc0bf43f30_og_extending-claude-capabilities-with-skills-mcp-servers.jpg",
+  },
+  {
     url: "https://docs.langchain.com/langsmith/observability-llm-tutorial",
     title: "Trace an LLM application tutorial - Docs by LangChain",
     description:
