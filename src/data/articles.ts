@@ -2,6 +2,9 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://docs.langchain.com/langsmith/observability-llm-tutorial",
+  },
+  {
     url: "https://arxiv.org/abs/2406.12045",
   },
   {
