@@ -2,6 +2,14 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
+    title: "How to Write an Effective Software Design Document",
+    description:
+      "Best practices for writing a design doc based on my experience working as a developer at Google and Microsoft.",
+    imageUrl:
+      "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/og-cover.webp",
+  },
+  {
     url: "https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers",
     title:
       "Extending Claude's capabilities with skills and MCP | Claude by Anthropic",
