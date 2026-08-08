@@ -2,6 +2,12 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://medium.com/free-code-camp/how-to-write-a-good-software-design-document-66fcf019569c",
+  },
+  {
+    url: "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
+  },
+  {
     url: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
   },
   {

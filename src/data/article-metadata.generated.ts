@@ -2,6 +2,21 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://medium.com/free-code-camp/how-to-write-a-good-software-design-document-66fcf019569c",
+    title: "How to write a good software design doc",
+    description:
+      "As a software engineer, I spend a lot of time reading and writing design documents. After having gone through hundreds of these docs, I’ve…",
+    imageUrl:
+      "https://miro.medium.com/v2/resize:fit:1200/1*vy3gDPKB1kyhzIqI8DNUvQ.png",
+  },
+  {
+    url: "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
+    title:
+      "How the controller-runtime Cache Actually Works, and Why Your Controller Does Not Crash the API Server",
+    description:
+      "This article has been revised since it was first published, to correct several significant technical inaccuracies in the original text. Kubernetes has long been the default platform for distributed workloads, and writing your own controller for it is now a matter of a few hours. The common path — Golang, using kubebuilder on top of controller-runtime — gives you a project scaffold, types, and a reconciler. For typical scenarios that is more than enough. But as soon as load grows or the controller starts behaving in ways you did not expect, a whole class of edge cases shows up. Most of them trace back to the same root cause: a fuzzy mental model of how controller-runtime works inside. If you write Kubernetes controllers in Go, this article should help you build a coherent picture and avoid expensive surprises in production.",
+  },
+  {
     url: "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
     title: "How to Write an Effective Software Design Document",
     description:
