@@ -2,6 +2,14 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://blog.stephsmith.io/learning-to-write-with-confidence/",
+    title: "Writing is Thinking: Learning to Write with Confidence",
+    description:
+      "Learning to write is learning to think, because writing is thinking. They are two peas in a powerful pod. This article goes over my writing process, focused on minimizing the activation energy to get started.",
+    imageUrl:
+      "https://blog.stephsmith.io/content/images/2019/10/joanna-kosinska-1_CMoFsPfso-unsplash-2-1.jpg",
+  },
+  {
     url: "https://medium.com/free-code-camp/how-to-write-a-good-software-design-document-66fcf019569c",
     title: "How to write a good software design doc",
     description:
@@ -32,14 +40,6 @@ export const articleMetadata: ArticleMetadataItem[] = [
       "Learn how skills and MCP work together to build agents that follow your workflows and use external tools effectively. Best practices and real-world examples.",
     imageUrl:
       "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6945bdc80b691dfc0bf43f30_og_extending-claude-capabilities-with-skills-mcp-servers.jpg",
-  },
-  {
-    url: "https://docs.langchain.com/langsmith/observability-llm-tutorial",
-    title: "Trace an LLM application tutorial - Docs by LangChain",
-    description:
-      "Add LangSmith observability to an LLM application across prototyping, beta testing, and production.",
-    imageUrl:
-      "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DDocumentation%26appearance%3Dsystem%26title%3DTrace%2Ban%2BLLM%2Bapplication%2Btutorial%26description%3DAdd%2BLangSmith%2Bobservability%2Bto%2Ban%2BLLM%2Bapplication%2Bacross%2Bprototyping%252C%2Bbeta%2Btesting%252C%2Band%2Bproduction.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
   },
   {
     url: "https://arxiv.org/abs/2406.12045",

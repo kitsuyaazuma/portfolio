@@ -2,6 +2,12 @@ import { BookItem } from "@/types/data";
 
 export const bookList: BookItem[] = [
   {
+    name: "AI Agents with MCP",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/ai-agents-with/9798341639546/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9798341639546/128w/",
+  },
+  {
     name: "Learning Git",
     status: "Reading",
     url: "https://learning.oreilly.com/library/view/learning-git/9781098133900/",

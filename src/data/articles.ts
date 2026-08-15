@@ -2,6 +2,9 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://blog.stephsmith.io/learning-to-write-with-confidence/",
+  },
+  {
     url: "https://medium.com/free-code-camp/how-to-write-a-good-software-design-document-66fcf019569c",
   },
   {
@@ -12,9 +15,6 @@ export const articleList: ArticleItem[] = [
   },
   {
     url: "https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers",
-  },
-  {
-    url: "https://docs.langchain.com/langsmith/observability-llm-tutorial",
   },
   {
     url: "https://arxiv.org/abs/2406.12045",
