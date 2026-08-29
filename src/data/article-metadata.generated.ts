@@ -2,6 +2,21 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/",
+    title: "The MCP Abstraction Tax",
+    description:
+      "Every layer from App to API to MCP loses fidelity. An exploration of what gets lost and why it matters for enterprise APIs.",
+    imageUrl: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/og.png",
+  },
+  {
+    url: "https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/",
+    title: "You Need to Rewrite Your CLI for AI Agents",
+    description:
+      "Human DX optimizes for discoverability. Agent DX optimizes for predictability. What I learned building a CLI for agents first.",
+    imageUrl:
+      "https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/og.png",
+  },
+  {
     url: "https://blog.stephsmith.io/learning-to-write-with-confidence/",
     title: "Writing is Thinking: Learning to Write with Confidence",
     description:

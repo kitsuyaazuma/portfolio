@@ -2,6 +2,12 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/",
+  },
+  {
+    url: "https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/",
+  },
+  {
     url: "https://blog.stephsmith.io/learning-to-write-with-confidence/",
   },
   {

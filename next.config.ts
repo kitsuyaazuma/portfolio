@@ -25,6 +25,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "m.media-amazon.com",
+        port: "",
+        pathname: "/images/**",
+      },
+      {
+        protocol: "https",
         hostname: "arxiv.org",
         port: "",
         pathname: "/html/**",
