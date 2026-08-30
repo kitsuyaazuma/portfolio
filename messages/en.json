@@ -76,17 +76,33 @@
       {
         "title": "Mercari, Inc.",
         "details": ["Apr 2026 - Present, Platform Engineer"],
-        "skills": ["TypeScript", "Terraform", "Kubernetes"],
+        "skills": [
+          "Go",
+          "TypeScript",
+          "Terraform",
+          "Kubernetes",
+          "Google Cloud",
+          "GitHub Actions"
+        ],
         "category": "Job",
         "isCurrent": true,
         "url": "https://about.mercari.com/"
       },
       {
         "title": "Platform Engineering Kaigi 2026",
-        "details": ["Jun 2026 - Present, Core Member"],
-        "skills": [],
+        "details": [
+          "Jun 2026 - Present, Core Member (CFP, Keynote, and Catering)"
+        ],
+        "skills": ["Kubernetes", "AWS", "TypeScript", "Astro"],
         "category": "Community",
-        "isCurrent": true
+        "isCurrent": true,
+        "blogs": [
+          {
+            "title": "Kaspar von Grünberg Takes the Stage! Highlights of the PEK2026 Keynote",
+            "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+          }
+        ]
       },
       {
         "title": "CloudNative Kaigi",
@@ -119,7 +135,14 @@
         ],
         "skills": ["Astro", "Cloudflare"],
         "category": "Community",
-        "url": "https://www.cnia.io/pek2025/"
+        "url": "https://www.cnia.io/pek2025/",
+        "blogs": [
+          {
+            "title": "Meet Nicki Watt, Our PEK2025 Keynote Speaker",
+            "url": "https://www.cnia.io/pek2025/blog/keynote-introduction.md/",
+            "thumbnail": "https://www.cnia.io/pek2025/blog/keynote-introduction/ogp.png"
+          }
+        ]
       },
       {
         "title": "Mercari, Inc.",

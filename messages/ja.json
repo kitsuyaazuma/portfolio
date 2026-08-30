@@ -81,16 +81,32 @@
         "title": "株式会社メルカリ",
         "details": ["2026年4月 - 現在　プラットフォームエンジニア"],
         "category": "Job",
-        "skills": ["TypeScript", "Terraform", "Kubernetes"],
+        "skills": [
+          "Go",
+          "TypeScript",
+          "Terraform",
+          "Kubernetes",
+          "Google Cloud",
+          "GitHub Actions"
+        ],
         "isCurrent": true,
         "url": "https://about.mercari.com/"
       },
       {
         "title": "Platform Engineering Kaigi 2026",
-        "details": ["2026年6月 - 現在　コアスタッフ"],
-        "skills": [],
+        "details": [
+          "2026年6月 - 現在　コアスタッフ（CFP、キーノート、ケータリング）"
+        ],
+        "skills": ["Kubernetes", "AWS", "TypeScript", "Astro"],
         "category": "Community",
-        "isCurrent": true
+        "isCurrent": true,
+        "blogs": [
+          {
+            "title": "Kaspar von Grünberg氏登壇！PEK2026キーノートの注目ポイント",
+            "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+          }
+        ]
       },
       {
         "title": "CloudNative Kaigi",
@@ -125,7 +141,14 @@
         ],
         "skills": ["Astro", "Cloudflare"],
         "category": "Community",
-        "url": "https://www.cnia.io/pek2025/"
+        "url": "https://www.cnia.io/pek2025/",
+        "blogs": [
+          {
+            "title": "PEK2025のキーノートスピーカー、Nicki Wattさんってどんな人？",
+            "url": "https://www.cnia.io/pek2025/blog/keynote-introduction.md/",
+            "thumbnail": "https://www.cnia.io/pek2025/blog/keynote-introduction/ogp.png"
+          }
+        ]
       },
       {
         "title": "株式会社メルカリ",
