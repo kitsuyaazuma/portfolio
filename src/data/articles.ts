@@ -2,6 +2,12 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://arxiv.org/abs/2608.20614",
+  },
+  {
+    url: "https://martinfowler.com/rachels-ramblings/code-review.html",
+  },
+  {
     url: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/",
   },
   {

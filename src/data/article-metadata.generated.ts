@@ -2,15 +2,30 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://arxiv.org/abs/2608.20614",
+    title:
+      "Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills",
+    description:
+      "Enterprise agent programs are moving from prototypes into production, where reusable skills, tools, and workflow packages must be reviewed with evidence rather than prose. Current gates often scan these artifacts for structure, style, and security, but they do not answer the deployment question: does the capability package help a live agent complete enterprise tasks under the same model, sandbox, and grading policy? We present ACES (Agentic Continuous Evaluation of Skills), a repository-native framework for evaluating skills and product capability packages as executable agent artifacts. ACES runs paired live trials with and without a target skill, normalizes trajectories into the Agent Trajectory Interchange Format (ATIF), grades six default runtime metrics, and reports Skill Lift: the target skill's added value for a fixed task, harness, workspace, and scorer. The same protocol supports product-owned task suites that compare baseline, skill, bundle, team-skill, and plugin targets. On 145 real skills from internal enterprise repositories and public catalogs, scan-only gates surface useful authoring issues but measure complementary facets (structural versus LLM-judge Spearman $ρ= 0.14$). Across 947 scored paired cases from 58 of 64 production skills and four primary harnesses, mean composite Skill Lift is 0.2134 (95\\% paired-case CI [0.1967, 0.2301]); mean outcome-only lift, the average of accuracy and goal accuracy, is 0.1799. Composite lift is positive in 72.8\\% of paired cases. The largest process-metric gains appear in skill execution, behavior check, and skill efficiency---signals about discovery, routing, workflow following, and tool use that document scans cannot observe. An open-source implementation of the methodology is available in NVIDIA SkillEvaluator.",
+    imageUrl: "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+  },
+  {
+    url: "https://martinfowler.com/rachels-ramblings/code-review.html",
+    title: "Maybe We Shouldn't Be Reviewing All This Code",
+    description:
+      "Or, perhaps the problem isn't that AI has broken code review, maybe it’s that we've been using code review to solve the wrong problems",
+    imageUrl: "https://martinfowler.com/rachels-ramblings/card.png",
+  },
+  {
     url: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/",
-    title: "The MCP Abstraction Tax",
+    title: "The MCP Abstraction Tax | Justin Poehnelt",
     description:
       "Every layer from App to API to MCP loses fidelity. An exploration of what gets lost and why it matters for enterprise APIs.",
     imageUrl: "https://justin.poehnelt.com/posts/mcp-abstraction-tax/og.png",
   },
   {
     url: "https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/",
-    title: "You Need to Rewrite Your CLI for AI Agents",
+    title: "You Need to Rewrite Your CLI for AI Agents | Justin Poehnelt",
     description:
       "Human DX optimizes for discoverability. Agent DX optimizes for predictability. What I learned building a CLI for agents first.",
     imageUrl:
