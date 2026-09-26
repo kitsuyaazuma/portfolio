@@ -3,7 +3,7 @@ import { BookItem } from "@/types/data";
 export const bookList: BookItem[] = [
   {
     name: "Thinking in Platforms: Platform engineering as the operating model for work in the AI era",
-    status: "Reading",
+    status: "Finished",
     url: "https://weaveintelligence.io/thinking-in-platforms-book",
     imageUrl: "https://m.media-amazon.com/images/I/71fn6jAj3EL._SY522_.jpg",
   },

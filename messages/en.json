@@ -42,6 +42,10 @@
     "title": "NEWS",
     "items": [
       {
+        "date": "2026.09",
+        "text": "Participated in Platform Engineering Kaigi 2026 as an organizer."
+      },
+      {
         "date": "2026.05",
         "text": "Participated in CloudNative Kaigi as an organizer."
       },
@@ -101,6 +105,11 @@
             "title": "Kaspar von Grünberg Takes the Stage! Highlights of the PEK2026 Keynote",
             "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
             "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+          },
+          {
+            "title": "Thinking in Platforms Book Sale & Signing with PEK2026 Keynote Speaker Kaspar von Grünberg",
+            "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
           }
         ]
       },

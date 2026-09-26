@@ -46,6 +46,10 @@
     "title": "NEWS",
     "items": [
       {
+        "date": "2026.09",
+        "text": "実行委員としてPlatform Engineering Kaigi 2026に参加しました。"
+      },
+      {
         "date": "2026.05",
         "text": "実行委員としてクラウドネイティブ会議に参加しました。"
       },
@@ -105,6 +109,11 @@
             "title": "Kaspar von Grünberg氏登壇！PEK2026キーノートの注目ポイント",
             "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
             "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+          },
+          {
+            "title": "PEK2026キーノート登壇者 Kaspar氏の共著書『Thinking in Platforms』販売＆サイン会を開催！",
+            "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
           }
         ]
       },
