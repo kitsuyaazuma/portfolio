@@ -2,6 +2,31 @@ import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = [
   {
+    url: "https://blog.cloudflare.com/auto-router/",
+    title: "Cut your AI spend with AI Gateway's Auto Router",
+    description:
+      "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramatically cut AI spend while maintaining performance.",
+    imageUrl:
+      "https://blog.cloudflare.com/_emdash/api/media/file/01M3S7D452WW49MASEPJCPYHG4.01M3S7D4ZYP6HJW63MM0D51J78.png",
+  },
+  {
+    url: "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+    title: "We want you to build the next Git platform on Cloudflare",
+    description:
+      "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes.",
+    imageUrl:
+      "https://blog.cloudflare.com/_emdash/api/media/file/01M3VGEQ8Q6FVNPPSWW71YRRKT.01M3VGER1EC7W9TEZXNR3GGMK7.png",
+  },
+  {
+    url: "https://blog.cloudflare.com/clef-decision-models/",
+    title:
+      "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+    description:
+      "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
+    imageUrl:
+      "https://blog.cloudflare.com/_emdash/api/media/file/01M3TJV43SPQCPKJ6GBXFCDKNE.01M3TJV53VYDMVNCZDPH1FBFYN.png",
+  },
+  {
     url: "https://arxiv.org/abs/2608.20614",
     title:
       "Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills",
@@ -116,7 +141,7 @@ export const articleMetadata: ArticleMetadataItem[] = [
     title: "Demystifying evals for AI agents",
     description: "Demystifying evals for AI agents",
     imageUrl:
-      "https://cdn.sanity.io/images/4zrzovbb/website/412be842c5c6bae6b4bcd515c191b0aa5015e05f-2400x1260.png",
+      "https://www-cdn.anthropic.com/images/4zrzovbb/website/412be842c5c6bae6b4bcd515c191b0aa5015e05f-2400x1260.png",
   },
   {
     url: "https://www.romaglushko.com/blog/k8s-gateway-api/",

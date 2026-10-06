@@ -101,9 +101,8 @@
         "details": [
           "2026年6月 - 現在　コアスタッフ（CFP、キーノート、ケータリング）"
         ],
-        "skills": ["Kubernetes", "AWS", "TypeScript", "Astro"],
+        "skills": ["Hono", "TypeScript", "Cloudflare", "Kubernetes", "AWS"],
         "category": "Community",
-        "isCurrent": true,
         "blogs": [
           {
             "title": "Kaspar von Grünberg氏登壇！PEK2026キーノートの注目ポイント",
@@ -114,6 +113,11 @@
             "title": "PEK2026キーノート登壇者 Kaspar氏の共著書『Thinking in Platforms』販売＆サイン会を開催！",
             "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
             "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
+          },
+          {
+            "title": "PEK2026のライブQ&Aを支える技術 ― 言語の壁を越えるQ&A体験を設計する",
+            "url": "https://www.cnia.io/pek2026/blog/live-qa.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/live-qa/ogp.png"
           }
         ]
       },

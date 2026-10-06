@@ -97,9 +97,8 @@
         "details": [
           "Jun 2026 - Present, Core Member (CFP, Keynote, and Catering)"
         ],
-        "skills": ["Kubernetes", "AWS", "TypeScript", "Astro"],
+        "skills": ["Hono", "TypeScript", "Cloudflare", "Kubernetes", "AWS"],
         "category": "Community",
-        "isCurrent": true,
         "blogs": [
           {
             "title": "Kaspar von Grünberg Takes the Stage! Highlights of the PEK2026 Keynote",
@@ -110,6 +109,11 @@
             "title": "Thinking in Platforms Book Sale & Signing with PEK2026 Keynote Speaker Kaspar von Grünberg",
             "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
             "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
+          },
+          {
+            "title": "Behind PEK2026’s Live Q&A: Designing a Q&A Experience Beyond Language Barriers",
+            "url": "https://www.cnia.io/pek2026/blog/live-qa.md/",
+            "thumbnail": "https://www.cnia.io/pek2026/blog/live-qa/ogp.png"
           }
         ]
       },

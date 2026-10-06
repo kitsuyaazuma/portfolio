@@ -2,6 +2,15 @@ import type { ArticleItem } from "../types/data";
 
 export const articleList: ArticleItem[] = [
   {
+    url: "https://blog.cloudflare.com/auto-router/",
+  },
+  {
+    url: "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+  },
+  {
+    url: "https://blog.cloudflare.com/clef-decision-models/",
+  },
+  {
     url: "https://arxiv.org/abs/2608.20614",
   },
   {
