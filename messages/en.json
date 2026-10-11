@@ -103,17 +103,17 @@
           {
             "title": "Kaspar von Grünberg Takes the Stage! Highlights of the PEK2026 Keynote",
             "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+            "thumbnail": "/images/experience/pek2026-keynote.webp"
           },
           {
             "title": "Thinking in Platforms Book Sale & Signing with PEK2026 Keynote Speaker Kaspar von Grünberg",
             "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
+            "thumbnail": "/images/experience/pek2026-book-signing.webp"
           },
           {
             "title": "Behind PEK2026’s Live Q&A: Designing a Q&A Experience Beyond Language Barriers",
             "url": "https://www.cnia.io/pek2026/blog/live-qa.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/live-qa/ogp.png"
+            "thumbnail": "/images/experience/pek2026-live-qa.webp"
           }
         ]
       },
@@ -153,7 +153,7 @@
           {
             "title": "Meet Nicki Watt, Our PEK2025 Keynote Speaker",
             "url": "https://www.cnia.io/pek2025/blog/keynote-introduction.md/",
-            "thumbnail": "https://www.cnia.io/pek2025/blog/keynote-introduction/ogp.png"
+            "thumbnail": "/images/experience/pek2025-keynote.webp"
           }
         ]
       },
@@ -167,7 +167,7 @@
           {
             "title": "Turborepo Remote Cache: Accelerating CI to \"Move Fast\"",
             "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/",
-            "thumbnail": "https://storage.googleapis.com/prd-engineering-asset/2026/02/760bc731-remote-cache-featured-image.jpg"
+            "thumbnail": "/images/experience/turborepo-remote-cache.webp"
           }
         ]
       },
@@ -181,7 +181,7 @@
           {
             "title": "Migrating the Log Infrastructure from Fluentd to Fluent Bit and Implementing a Monitoring Tool",
             "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor",
-            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/b5e27700a548080f558161c103830c1c0b8f83f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Falvinvin%2F20240626%2F20240626190209.png"
+            "thumbnail": "/images/experience/fluent-bit-migration.webp"
           }
         ]
       },
@@ -195,7 +195,7 @@
           {
             "title": "Increasing the Memory Limit of OOMed CronJobs 'Just Right' to Reduce Unnecessary Billing and Incident Response",
             "url": "https://www.m3tech.blog/entry/2024/04/12/110000",
-            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/ea1a9653b097a4be977bd40626673853e20d17fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fm3tech%2F20240412%2F20240412110020.jpg"
+            "thumbnail": "/images/experience/cronjob-memory.webp"
           }
         ]
       },
@@ -233,7 +233,7 @@
           {
             "title": "Development of a Resource Label Monitoring Tool for Cost Management in the Cloud",
             "url": "https://developers.cyberagent.co.jp/blog/archives/43627/",
-            "thumbnail": "https://developers.cyberagent.co.jp/blog/wp-content/uploads/2023/08/azuma_KV.jpg"
+            "thumbnail": "/images/experience/resource-label-monitoring.webp"
           }
         ]
       },

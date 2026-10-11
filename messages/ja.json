@@ -107,17 +107,17 @@
           {
             "title": "Kaspar von Grünberg氏登壇！PEK2026キーノートの注目ポイント",
             "url": "https://www.cnia.io/pek2026/blog/keynote-introduction.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/keynote-introduction/ogp.png"
+            "thumbnail": "/images/experience/pek2026-keynote.webp"
           },
           {
             "title": "PEK2026キーノート登壇者 Kaspar氏の共著書『Thinking in Platforms』販売＆サイン会を開催！",
             "url": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/thinking-in-platforms-book-signing/ogp.png"
+            "thumbnail": "/images/experience/pek2026-book-signing.webp"
           },
           {
             "title": "PEK2026のライブQ&Aを支える技術 ― 言語の壁を越えるQ&A体験を設計する",
             "url": "https://www.cnia.io/pek2026/blog/live-qa.md/",
-            "thumbnail": "https://www.cnia.io/pek2026/blog/live-qa/ogp.png"
+            "thumbnail": "/images/experience/pek2026-live-qa.webp"
           }
         ]
       },
@@ -159,7 +159,7 @@
           {
             "title": "PEK2025のキーノートスピーカー、Nicki Wattさんってどんな人？",
             "url": "https://www.cnia.io/pek2025/blog/keynote-introduction.md/",
-            "thumbnail": "https://www.cnia.io/pek2025/blog/keynote-introduction/ogp.png"
+            "thumbnail": "/images/experience/pek2025-keynote.webp"
           }
         ]
       },
@@ -175,7 +175,7 @@
           {
             "title": "Turborepo Remote Cache: Accelerating CI to \"Move Fast\"",
             "url": "https://engineering.mercari.com/en/blog/entry/20260216-turborepo-remote-cache-accelerating-ci-to-move-fast/",
-            "thumbnail": "https://storage.googleapis.com/prd-engineering-asset/2026/02/760bc731-remote-cache-featured-image.jpg"
+            "thumbnail": "/images/experience/turborepo-remote-cache.webp"
           }
         ]
       },
@@ -189,7 +189,7 @@
           {
             "title": "ログ基盤のFluentdをFluent Bitに移行して監視ツールを実装した話",
             "url": "https://tech.mirrativ.stream/entry/log-fluent-bit-monitor",
-            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/b5e27700a548080f558161c103830c1c0b8f83f2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Falvinvin%2F20240626%2F20240626190209.png"
+            "thumbnail": "/images/experience/fluent-bit-migration.webp"
           }
         ]
       },
@@ -203,7 +203,7 @@
           {
             "title": "OOMしたCronJobのメモリ制限を「いい感じ」に増やし、不必要な課金・障害対応を減らす",
             "url": "https://www.m3tech.blog/entry/2024/04/12/110000",
-            "thumbnail": "https://cdn.image.st-hatena.com/image/scale/ea1a9653b097a4be977bd40626673853e20d17fb/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fm3tech%2F20240412%2F20240412110020.jpg"
+            "thumbnail": "/images/experience/cronjob-memory.webp"
           }
         ]
       },
@@ -241,7 +241,7 @@
           {
             "title": "クラウドにおけるコスト管理のためのリソースラベル監視ツールの開発",
             "url": "https://developers.cyberagent.co.jp/blog/archives/43627/",
-            "thumbnail": "https://developers.cyberagent.co.jp/blog/wp-content/uploads/2023/08/azuma_KV.jpg"
+            "thumbnail": "/images/experience/resource-label-monitoring.webp"
           }
         ]
       },

@@ -30,8 +30,8 @@ const currentMonth = new Intl.DateTimeFormat("en-CA", {
         <time
           datetime={item.date.replace(".", "-")}
           class:list={[
-            "badge badge-outline whitespace-nowrap",
-            item.date === currentMonth ? "badge-primary" : "badge-secondary",
+            "badge badge-outline whitespace-nowrap border-base-content/50 text-base-content",
+            item.date === currentMonth && "bg-primary/20",
           ]}
         >
           {item.date}
