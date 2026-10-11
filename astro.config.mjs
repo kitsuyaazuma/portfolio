@@ -1,4 +1,5 @@
 import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
@@ -12,8 +13,19 @@ const analyticsId =
 export default defineConfig({
   site: process.env.SITE_URL ?? "https://www.azu-kitsu.com",
   output: "static",
+  trailingSlash: "always",
   integrations: [
     icon(),
+    sitemap({
+      filter: (page) => {
+        const pathname = new URL(page).pathname;
+        return pathname !== "/" && pathname !== "/404.html";
+      },
+      i18n: {
+        defaultLocale: "en",
+        locales: { en: "en", ja: "ja" },
+      },
+    }),
     ...(analyticsId
       ? [partytown({ config: { forward: ["dataLayer.push"] } })]
       : []),

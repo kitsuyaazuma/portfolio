@@ -1,3 +1,4 @@
+import { getRelativeLocaleUrl } from "astro:i18n";
 import en from "../../messages/en.json";
 import ja from "../../messages/ja.json";
 
@@ -12,5 +13,5 @@ export function getMessages(locale: Locale) {
 }
 
 export function localizedPath(locale: Locale, page: PagePath = "") {
-  return `/${locale}${page}`;
+  return getRelativeLocaleUrl(locale, page.slice(1));
 }

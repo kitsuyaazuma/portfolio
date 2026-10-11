@@ -68,7 +68,7 @@ const name = footer.name;
       ))}
     </ul>
     <div class="hidden h-6 w-px bg-base-300 sm:block"></div>
-    <nav class="join hidden sm:flex" aria-label="Language">
+    <nav class="join hidden sm:flex" aria-label={navigation.languageLabel}>
       {locales.map((lang) => (
         <a
           href={localizedPath(lang, page)}
@@ -87,7 +87,7 @@ const name = footer.name;
     <details class="relative sm:hidden" id="mobile-menu">
       <summary
         class="btn btn-circle btn-ghost btn-sm text-neutral"
-        aria-label="Toggle menu"
+        aria-label={navigation.toggleMenuLabel}
       >
         <Icon name="tabler:menu-2" size={18} aria-hidden="true" />
       </summary>
@@ -111,7 +111,7 @@ const name = footer.name;
           ))}
         </ul>
         <div class="flex justify-end border-t border-base-300 px-2 pt-2">
-          <nav class="join" aria-label="Language">
+          <nav class="join" aria-label={navigation.languageLabel}>
             {locales.map((lang) => (
               <a
                 href={localizedPath(lang, page)}

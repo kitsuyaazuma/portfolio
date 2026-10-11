@@ -1,4 +1,12 @@
 ---
+import { getMessages, type Locale } from "../../i18n";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { chartLabel, scoreUnit } = getMessages(locale).Skills;
+
 type Skill = { skill: string; score: number };
 const charts: { name: string; color: string; data: Skill[] }[] = [
   {
@@ -64,7 +72,7 @@ function points(values: number[]) {
         height="250"
         viewBox="0 0 250 250"
         role="img"
-        aria-label={`${chart.name} skills radar chart: ${chart.data.map(({ skill, score }) => `${skill} ${score} of 5`).join(", ")}`}
+        aria-label={`${chart.name} ${chartLabel}: ${chart.data.map(({ skill, score }) => `${skill} ${score} ${scoreUnit}`).join(", ")}`}
       >
         {[1, 2, 3, 4, 5].map((level) => (
           <polygon

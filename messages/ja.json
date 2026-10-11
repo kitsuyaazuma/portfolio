@@ -7,7 +7,9 @@
   "Navigation": {
     "home": "HOME",
     "publication": "PUBLICATION",
-    "reads": "READS"
+    "reads": "READS",
+    "languageLabel": "言語",
+    "toggleMenuLabel": "メニューを開閉"
   },
   "Hero": {
     "name": "Kitsuya Azuma",
@@ -76,10 +78,13 @@
     ]
   },
   "Skills": {
-    "title": "SKILLS"
+    "title": "SKILLS",
+    "chartLabel": "スキルレーダーチャート",
+    "scoreUnit": "／5"
   },
   "Experience": {
     "title": "EXPERIENCE",
+    "websiteLabel": "ウェブサイト",
     "items": [
       {
         "title": "株式会社メルカリ",
@@ -292,7 +297,12 @@
     ]
   },
   "Publications": {
+    "metadata": {
+      "title": "発表・執筆 | 東桔也",
+      "description": "東桔也の論文、登壇資料、動画、技術ブログ記事。"
+    },
     "blogTitle": "TECH BLOG",
+    "blogPostLabel": "はてなブログ記事",
     "talkTitle": "TALKS",
     "videoTitle": "VIDEOS",
     "paperTitle": "PAPERS",
@@ -358,6 +368,10 @@
     ]
   },
   "Reads": {
+    "metadata": {
+      "title": "本と記事の記録 | 東桔也",
+      "description": "東桔也が読んだ本と記事の記録。"
+    },
     "bookListTitle": "BOOK LOG",
     "articleListTitle": "ARTICLE LOG"
   },

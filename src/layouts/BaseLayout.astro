@@ -18,9 +18,16 @@ interface Props {
 }
 
 const { locale, page, notFound = false } = Astro.props;
-const { Metadata: metadata } = getMessages(locale);
-const title = metadata.title;
-const description = metadata.description;
+const messages = getMessages(locale);
+const metadata = messages.Metadata;
+const pageMetadata =
+  page === "/publications"
+    ? messages.Publications.metadata
+    : page === "/reads"
+      ? messages.Reads.metadata
+      : metadata;
+const title = pageMetadata.title;
+const description = pageMetadata.description;
 const canonical = new URL(localizedPath(locale, page), SITE_URL).href;
 const imageUrl = new URL("/opengraph-image.png", SITE_URL).href;
 const gaId = import.meta.env.PUBLIC_GA_ID;
@@ -60,11 +67,11 @@ const person = {
       <link
         rel="alternate"
         hreflang="x-default"
-        href={new URL("/", SITE_URL).href}
+        href={new URL(localizedPath("en", page), SITE_URL).href}
       />
     )}
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content={title}>
+    <meta property="og:site_name" content={metadata.title}>
     <meta property="og:locale" content={locale === "ja" ? "ja_JP" : "en_US"}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>

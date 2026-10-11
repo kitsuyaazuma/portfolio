@@ -6,12 +6,13 @@ interface Props {
   locale: Locale;
 }
 const { locale } = Astro.props;
+const { blogTitle, blogPostLabel } = getMessages(locale).Publications;
 ---
 
 <section class="mx-auto max-w-5xl px-4 pt-8" id="tech-blog">
   <div class="my-6 flex justify-center">
     <h2 class="text-3xl font-bold">
-      {getMessages(locale).Publications.blogTitle}
+      {blogTitle}
     </h2>
   </div>
   <div
@@ -20,7 +21,7 @@ const { locale } = Astro.props;
     {Array.from({ length: blogCount }, (_, index) => (
       <a
         href={`https://alvinvin.hatenablog.jp/entry/${index + 1}`}
-        aria-label={`Hatena blog post ${index + 1}`}
+        aria-label={`${blogPostLabel} ${index + 1}`}
         target="_blank"
         rel="noreferrer"
         class="card aspect-square overflow-hidden shadow transition-transform hover:scale-[1.01]"

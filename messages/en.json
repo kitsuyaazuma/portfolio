@@ -7,7 +7,9 @@
   "Navigation": {
     "home": "HOME",
     "publication": "PUBLICATION",
-    "reads": "READS"
+    "reads": "READS",
+    "languageLabel": "Language",
+    "toggleMenuLabel": "Toggle menu"
   },
   "Hero": {
     "name": "Kitsuya Azuma",
@@ -72,10 +74,13 @@
     ]
   },
   "Skills": {
-    "title": "SKILLS"
+    "title": "SKILLS",
+    "chartLabel": "skills radar chart",
+    "scoreUnit": "of 5"
   },
   "Experience": {
     "title": "EXPERIENCE",
+    "websiteLabel": "website",
     "items": [
       {
         "title": "Mercari, Inc.",
@@ -284,7 +289,12 @@
     ]
   },
   "Publications": {
+    "metadata": {
+      "title": "Publications | Kitsuya Azuma",
+      "description": "Papers, talks, videos, and technical blog posts by Kitsuya Azuma."
+    },
     "blogTitle": "TECH BLOG",
+    "blogPostLabel": "Hatena blog post",
     "talkTitle": "TALKS",
     "videoTitle": "VIDEOS",
     "paperTitle": "PAPERS",
@@ -350,6 +360,10 @@
     ]
   },
   "Reads": {
+    "metadata": {
+      "title": "Reads | Kitsuya Azuma",
+      "description": "A record of books and articles read by Kitsuya Azuma."
+    },
     "bookListTitle": "BOOK LOG",
     "articleListTitle": "ARTICLE LOG"
   },

@@ -12,5 +12,5 @@ const { locale } = Astro.props;
   <div class="my-6 flex justify-center">
     <h2 class="text-3xl font-bold">{getMessages(locale).Skills.title}</h2>
   </div>
-  <SkillsChart />
+  <SkillsChart locale={locale} />
 </section>
