@@ -1,0 +1,15 @@
+---
+import ArticleList from "../../components/sections/ArticleList.astro";
+import BookList from "../../components/sections/BookList.astro";
+import { type Locale, locales } from "../../i18n";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const locale = Astro.params.locale as Locale;
+---
+
+<BaseLayout locale={locale} page="/reads">
+  <BookList locale={locale} />
+  <ArticleList locale={locale} />
+</BaseLayout>

@@ -1,7 +1,7 @@
-import fs from "fs/promises";
-import path from "path";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import ogs from "open-graph-scraper";
-import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,7 +15,7 @@ async function updateBlogOgp() {
     const content = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(content);
 
-    if (data.Experience && data.Experience.items) {
+    if (data.Experience?.items) {
       console.log(`Processing ${file}...`);
       for (const item of data.Experience.items) {
         if (item.blogs) {
@@ -42,7 +42,7 @@ async function updateBlogOgp() {
       }
     }
 
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2) + "\n");
+    await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`);
   }
 }
 

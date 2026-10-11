@@ -1,5 +1,4 @@
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kitsuya0828.github.io";
+export const SITE_URL = import.meta.env.SITE ?? "https://www.azu-kitsu.com";
 
 export const AUTHOR_NAME = "Kitsuya Azuma";
 

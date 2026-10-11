@@ -1,0 +1,193 @@
+---
+import { Icon } from "astro-icon/components";
+import { z } from "zod";
+import TechBlog from "../../components/sections/TechBlog.astro";
+import { getMessages, type Locale, locales } from "../../i18n";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  PublicationPaperSchema,
+  PublicationTalkSchema,
+  PublicationVideoSchema,
+} from "../../types/messages";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const locale = Astro.params.locale as Locale;
+const publication = getMessages(locale).Publications;
+const papers = z.array(PublicationPaperSchema).parse(publication.papers);
+const talks = z.array(PublicationTalkSchema).parse(publication.talks);
+const videos = z.array(PublicationVideoSchema).parse(publication.videos);
+---
+
+<BaseLayout locale={locale} page="/publications">
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://speakerdeck.com">
+    <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  </Fragment>
+  <TechBlog locale={locale} />
+  <section class="mx-auto max-w-5xl px-4 pt-8" id="papers">
+    <div class="my-6 flex justify-center">
+      <h2 class="text-3xl font-bold">{publication.paperTitle}</h2>
+    </div>
+    {papers.map((paper) => (
+      <a
+        href={paper.url}
+        target="_blank"
+        rel="noreferrer"
+        class="card card-border mb-4 overflow-hidden bg-base-100 shadow-sm transition-colors hover:bg-base-200 md:card-side"
+      >
+        <figure class="shrink-0 bg-base-200/40 md:w-72 lg:w-80">
+          <img
+            src={paper.imageUrl}
+            alt=""
+            width="1280"
+            height="720"
+            loading="lazy"
+            class="h-56 w-full object-cover md:h-full"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">{paper.title}</h2>
+          <div class="flex items-center gap-1 pb-4">
+            <Icon
+              name="tabler:book"
+              size={16}
+              class="opacity-40"
+              aria-hidden="true"
+            />
+            <span class="pr-2 text-sm opacity-60">{paper.conference}</span>
+            <span class="badge badge-sm badge-primary badge-soft">
+              {paper.year}
+            </span>
+          </div>
+          <p>{paper.text}</p>
+        </div>
+      </a>
+    ))}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pt-8" id="talks">
+    <div class="my-6 flex justify-center">
+      <h2 class="text-3xl font-bold">{publication.talkTitle}</h2>
+    </div>
+    {talks.map((talk, index) => (
+      <div>
+        <div class="mb-4">
+          <h2 class="text-2xl font-bold">{talk.title}</h2>
+          <div class="mt-2 mb-4 flex items-center gap-1">
+            <Icon
+              name="tabler:map-pin"
+              size={16}
+              class="opacity-40"
+              aria-hidden="true"
+            />
+            <a
+              href={talk.eventUrl}
+              target="_blank"
+              rel="noreferrer"
+              class="link link-hover pr-2 text-sm opacity-60"
+            >
+              {talk.event}
+            </a>
+            <span class="badge badge-primary badge-soft">{talk.talkType}</span>
+            <span class="badge badge-sm badge-primary badge-soft">
+              {talk.year}
+            </span>
+          </div>
+          <iframe
+            class="speakerdeck-iframe"
+            src={talk.slideUrl}
+            title={talk.title}
+            data-ratio="1.7777777777777777"
+            loading="lazy"
+          ></iframe>
+        </div>
+        {index < talks.length - 1 && (
+          <div class="divider mx-auto max-w-5xl px-4"></div>
+        )}
+      </div>
+    ))}
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 pt-8" id="videos">
+    <div class="my-6 flex justify-center">
+      <h2 class="text-3xl font-bold">{publication.videoTitle}</h2>
+    </div>
+    <div class="space-y-8">
+      {videos.map((video, index) => (
+        <div>
+          <div class="space-y-3">
+            <div>
+              <a
+                href={video.url}
+                target="_blank"
+                rel="noreferrer"
+                class="link link-hover text-2xl font-bold"
+              >
+                {video.title}
+              </a>
+              <div class="mt-2 flex items-center gap-1">
+                <Icon
+                  name="tabler:brand-youtube"
+                  size={16}
+                  class="opacity-40"
+                  aria-hidden="true"
+                />
+                <span class="pr-2 text-sm opacity-60">{video.channel}</span>
+                <span class="badge badge-sm badge-primary badge-soft">
+                  {video.year}
+                </span>
+              </div>
+            </div>
+            {video.embedUrl ? (
+              <iframe
+                class="aspect-video w-full rounded-box"
+                src={video.embedUrl}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            ) : (
+              video.thumbnailUrl && (
+                <a
+                  href={video.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  class="card card-border group cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]"
+                >
+                  <figure class="relative bg-base-200/40">
+                    <img
+                      src={video.thumbnailUrl}
+                      alt=""
+                      width="1280"
+                      height="720"
+                      loading="lazy"
+                      class="aspect-video w-full object-cover"
+                    />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/50 p-4 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
+                      <Icon
+                        name="tabler:external-link"
+                        size={24}
+                        color="white"
+                        aria-hidden="true"
+                      />
+                      <p class="text-center text-sm font-medium text-white">
+                        {video.title}
+                      </p>
+                    </div>
+                  </figure>
+                </a>
+              )
+            )}
+          </div>
+          {index < videos.length - 1 && (
+            <div class="divider mx-auto max-w-5xl px-4"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,8 +1,9 @@
-import fs from "fs/promises";
-import path from "path";
-import { fileURLToPath } from "url";
+import { execFileSync } from "node:child_process";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import ogs from "open-graph-scraper";
-import prettier from "prettier";
+import { articleMetadata as existingMetadata } from "../src/data/article-metadata.generated";
 import { articleList } from "../src/data/articles";
 import type { ArticleMetadataItem } from "../src/types/data";
 
@@ -60,16 +61,18 @@ async function fetchArticleMetadata(
       error,
     );
 
-    return {
-      url: article.url,
-      title: clean(article.title) ?? article.url,
-      imageUrl: resolveUrl(article.imageUrl, article.url),
-    };
+    return (
+      existingMetadata.find((item) => item.url === article.url) ?? {
+        url: article.url,
+        title: clean(article.title) ?? article.url,
+        imageUrl: resolveUrl(article.imageUrl, article.url),
+      }
+    );
   }
 }
 
-async function formatMetadata(metadata: ArticleMetadataItem[]) {
-  const source = `import type { ArticleMetadataItem } from "../types/data";
+function formatMetadata(metadata: ArticleMetadataItem[]) {
+  return `import type { ArticleMetadataItem } from "../types/data";
 
 export const articleMetadata: ArticleMetadataItem[] = ${JSON.stringify(
     metadata,
@@ -77,13 +80,21 @@ export const articleMetadata: ArticleMetadataItem[] = ${JSON.stringify(
     2,
   )};
 `;
-
-  return prettier.format(source, { parser: "typescript" });
 }
 
 async function updateArticleMetadata() {
   const metadata = await Promise.all(articleList.map(fetchArticleMetadata));
-  await fs.writeFile(OUTPUT_PATH, await formatMetadata(metadata));
+  await fs.writeFile(OUTPUT_PATH, formatMetadata(metadata));
+  execFileSync(
+    process.execPath,
+    [
+      path.resolve(__dirname, "../node_modules/@biomejs/biome/bin/biome"),
+      "format",
+      "--write",
+      OUTPUT_PATH,
+    ],
+    { stdio: "inherit" },
+  );
 }
 
 updateArticleMetadata().catch((error) => {

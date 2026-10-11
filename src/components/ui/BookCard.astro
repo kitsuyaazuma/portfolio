@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon/components";
+import type { BookItem, BookStatus } from "../../types/data";
+
+interface Props {
+  item: BookItem;
+}
+const { item } = Astro.props;
+const statusClass: Record<BookStatus, string> = {
+  Finished: "badge-success",
+  Reading: "badge-info",
+  "Almost Finished": "badge-warning",
+  "Partially Read": "badge-error",
+  "Not Started": "badge-ghost",
+};
+---
+
+<a
+  href={item.url}
+  target="_blank"
+  rel="noreferrer"
+  class="card group aspect-[1/1.4] cursor-pointer overflow-hidden transition-transform hover:scale-[1.01]"
+>
+  <figure class="relative h-full">
+    <img
+      src={item.imageUrl}
+      alt={item.name}
+      width="320"
+      height="448"
+      loading="lazy"
+      class="h-full w-full object-cover"
+    >
+  </figure>
+  <div
+    class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/50 p-4 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+  >
+    <Icon
+      name="tabler:external-link"
+      size={24}
+      color="white"
+      aria-hidden="true"
+    />
+    <p class="text-center text-sm font-medium text-white" aria-hidden="true">
+      {item.name}
+    </p>
+  </div>
+  <span
+    class:list={[
+      "badge badge-sm absolute bottom-2 left-2 z-10",
+      statusClass[item.status],
+    ]}
+  >
+    {item.status}
+  </span>
+</a>

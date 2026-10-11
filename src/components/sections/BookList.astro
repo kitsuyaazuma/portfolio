@@ -1,0 +1,23 @@
+---
+import { bookList } from "../../data/books";
+import { getMessages, type Locale } from "../../i18n";
+import BookCard from "../ui/BookCard.astro";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+
+<section class="mx-auto max-w-5xl px-4 pt-8" id="book-list">
+  <div class="my-6 flex justify-center">
+    <h2 class="text-3xl font-bold">
+      {getMessages(locale).Reads.bookListTitle}
+    </h2>
+  </div>
+  <div
+    class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+  >
+    {bookList.map((item) => <BookCard item={item} />)}
+  </div>
+</section>

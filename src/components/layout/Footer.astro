@@ -1,0 +1,26 @@
+---
+import { socials } from "../../data/social";
+import { getMessages, type Locale } from "../../i18n";
+import SocialButton from "../ui/SocialButton.astro";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { Footer: footer } = getMessages(locale);
+---
+
+<footer
+  class="footer mt-12 bg-neutral p-10 text-neutral-content sm:footer-horizontal"
+>
+  <aside>
+    <span class="font-medium">{footer.name}</span>
+  </aside>
+  <nav class="sm:justify-self-end">
+    <div class="grid grid-flow-col gap-1">
+      {socials.map((social) => (
+        <SocialButton {...social} className="text-neutral-content" />
+      ))}
+    </div>
+  </nav>
+</footer>

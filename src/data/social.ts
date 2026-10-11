@@ -1,4 +1,4 @@
-import { SocialItem } from "@/types/data";
+import type { SocialItem } from "@/types/data";
 
 export const socials: SocialItem[] = [
   {
