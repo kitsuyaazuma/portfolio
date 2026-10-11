@@ -1,0 +1,78 @@
+---
+import { Icon } from "astro-icon/components";
+import { articleMetadata } from "../../data/article-metadata.generated";
+import { getMessages, type Locale } from "../../i18n";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+function getHostname(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
+---
+
+{articleMetadata.length > 0 && (
+  <section class="mx-auto max-w-5xl px-4 py-12" id="article-list">
+    <div class="my-6 flex justify-center">
+      <h2 class="text-3xl font-bold">
+        {getMessages(locale).Reads.articleListTitle}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {articleMetadata.map((item) => (
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noreferrer"
+          class="card overflow-hidden border border-base-300 bg-base-100 transition-transform hover:scale-[1.01]"
+        >
+          <div class="aspect-video bg-base-200">
+            {item.imageUrl ? (
+              <img
+                src={item.imageUrl}
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+                class="h-full w-full object-cover"
+              />
+            ) : (
+              <div class="flex h-full w-full items-center justify-center bg-base-200">
+                <Icon
+                  name="tabler:external-link"
+                  size={32}
+                  class="text-base-content/40"
+                  aria-hidden="true"
+                />
+              </div>
+            )}
+          </div>
+          <div class="card-body gap-2 p-4">
+            <div class="flex items-center gap-2 text-xs text-base-content/60">
+              <span class="truncate">{getHostname(item.url)}</span>
+              <Icon
+                name="tabler:external-link"
+                size={14}
+                class="shrink-0"
+                aria-hidden="true"
+              />
+            </div>
+            <h3 class="line-clamp-2 text-base font-bold leading-snug">
+              {item.title}
+            </h3>
+            {item.description && (
+              <p class="line-clamp-3 text-sm text-base-content/70">
+                {item.description}
+              </p>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

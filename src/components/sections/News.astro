@@ -1,0 +1,43 @@
+---
+import { z } from "zod";
+import { getMessages, type Locale } from "../../i18n";
+import { NewsItemSchema } from "../../types/messages";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const news = getMessages(locale).News;
+const items = z.array(NewsItemSchema).parse(news.items);
+const currentMonth = new Intl.DateTimeFormat("en-CA", {
+  year: "numeric",
+  month: "2-digit",
+  timeZone: "Asia/Tokyo",
+})
+  .format(new Date())
+  .replace("-", ".");
+---
+
+<section class="mx-auto max-w-5xl px-4 pt-8" id="news">
+  <div class="my-6 flex justify-center">
+    <h2 class="text-3xl font-bold">{news.title}</h2>
+  </div>
+  <ul
+    class="mx-auto max-h-60 max-w-2xl divide-y divide-base-300 overflow-y-auto"
+  >
+    {items.map((item) => (
+      <li class="grid grid-cols-[auto_1fr] items-center gap-4 px-3 py-3">
+        <time
+          datetime={item.date.replace(".", "-")}
+          class:list={[
+            "badge badge-outline whitespace-nowrap",
+            item.date === currentMonth ? "badge-primary" : "badge-secondary",
+          ]}
+        >
+          {item.date}
+        </time>
+        <p class="text-sm text-base-content/90">{item.text}</p>
+      </li>
+    ))}
+  </ul>
+</section>

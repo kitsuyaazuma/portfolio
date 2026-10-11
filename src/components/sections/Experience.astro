@@ -1,0 +1,125 @@
+---
+import { Icon } from "astro-icon/components";
+import { z } from "zod";
+import { getMessages, type Locale } from "../../i18n";
+import {
+  type ExperienceCategory,
+  ExperienceItemSchema,
+} from "../../types/messages";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const experience = getMessages(locale).Experience;
+const items = z.array(ExperienceItemSchema).parse(experience.items);
+const icons: Record<ExperienceCategory, string> = {
+  Job: "tabler:buildings",
+  Internship: "tabler:devices-pc",
+  Education: "tabler:school",
+  Community: "tabler:heart-handshake",
+};
+---
+
+<section class="mx-auto max-w-5xl px-4 pt-8" id="experience">
+  <div class="my-6 flex justify-center">
+    <h2 class="text-3xl font-bold">{experience.title}</h2>
+  </div>
+  <ul class="timeline timeline-vertical timeline-compact mx-auto max-w-2xl">
+    {items.map((item, index) => (
+      <li>
+        {index > 0 && <hr class:list={[item.isCurrent && "bg-primary"]} />}
+        <div class:list={["timeline-middle", item.isCurrent && "text-primary"]}>
+          <Icon name={icons[item.category]} size={20} aria-hidden="true" />
+        </div>
+        <div
+          class:list={[
+            "timeline-end mb-6 w-full",
+            item.isCurrent && "aura text-primary",
+          ]}
+        >
+          <div class="timeline-box w-full bg-base-100 text-base-content shadow-sm">
+            <div class="mb-1 flex items-center gap-1">
+              <span
+                class:list={[
+                  "text-lg font-semibold",
+                  item.isCurrent && "text-primary",
+                ]}
+              >
+                {item.title}
+              </span>
+              {item.url && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  class="opacity-40 transition-opacity hover:opacity-70"
+                  aria-label={`${item.title} website`}
+                >
+                  <Icon
+                    name="tabler:external-link"
+                    size={14}
+                    aria-hidden="true"
+                  />
+                </a>
+              )}
+            </div>
+            {item.details.map((detail) => (
+              <p class="text-xs opacity-60">{detail}</p>
+            ))}
+            {item.skills.length > 0 && (
+              <div class="mt-2 flex flex-wrap gap-1">
+                {item.skills.map((skill) => (
+                  <span
+                    class:list={[
+                      "badge badge-sm",
+                      item.isCurrent
+                        ? "badge-soft badge-primary"
+                        : "badge-ghost",
+                    ]}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            )}
+            {item.blogs && (
+              <div class="mt-2 flex flex-col gap-2">
+                {item.blogs.map((blog) => (
+                  <a
+                    href={blog.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    class="card card-border card-compact transition-colors hover:bg-base-200"
+                  >
+                    <div class="card-body flex-row items-center gap-3">
+                      {blog.thumbnail && (
+                        <img
+                          src={blog.thumbnail}
+                          alt=""
+                          width="128"
+                          height="64"
+                          loading="lazy"
+                          class="h-16 w-auto rounded object-contain"
+                        />
+                      )}
+                      <div class="min-w-0">
+                        <p class="line-clamp-2 text-sm font-medium opacity-70">
+                          {blog.title}
+                        </p>
+                        <p class="hidden truncate text-xs text-base-content/85 sm:block">
+                          {blog.url}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+        <hr class:list={[item.isCurrent && "bg-primary"]} />
+      </li>
+    ))}
+  </ul>
+</section>

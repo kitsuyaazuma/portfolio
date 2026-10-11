@@ -1,0 +1,193 @@
+---
+import { Icon } from "astro-icon/components";
+import {
+  getMessages,
+  type Locale,
+  locales,
+  localizedPath,
+  type PagePath,
+} from "../../i18n";
+
+interface Props {
+  locale: Locale;
+  page: PagePath;
+}
+const { locale, page } = Astro.props;
+const { Navigation: navigation, Footer: footer } = getMessages(locale);
+const links: { page: PagePath; label: string }[] = [
+  { page: "", label: navigation.home },
+  { page: "/publications", label: navigation.publication },
+  { page: "/reads", label: navigation.reads },
+];
+const name = footer.name;
+---
+
+<div class="navbar mx-auto h-[50px] min-h-[50px] max-w-6xl px-4 py-0">
+  <div class="navbar-start">
+    {page === "" ? (
+      <a
+        href={localizedPath(locale)}
+        class="header-logo flex items-center justify-center whitespace-nowrap overflow-visible"
+        aria-label={name}
+      >
+        {[...name].map((char, index) =>
+          char === " " ? (
+            <span>&nbsp;</span>
+          ) : (
+            <span
+              class="logo-letter text-lg text-neutral"
+              aria-hidden="true"
+              style={`--dx:${Math.sin(index * 12.9898) * 100}px;--dy:${Math.cos(index * 78.233) * 30}px;--dr:${Math.sin(index * 4.123) * 90}deg`}
+            >
+              {char}
+            </span>
+          ),
+        )}
+      </a>
+    ) : (
+      <a href={localizedPath(locale)} class="text-lg text-neutral">
+        {name}
+      </a>
+    )}
+  </div>
+  <div class="navbar-end gap-2">
+    <ul class="menu menu-horizontal hidden px-0 text-sm sm:flex">
+      {links.map((link) => (
+        <li>
+          <a
+            href={localizedPath(locale, link.page)}
+            aria-current={page === link.page ? "page" : undefined}
+            class:list={[
+              page === link.page &&
+                "bg-neutral font-medium text-neutral-content",
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="hidden h-6 w-px bg-base-300 sm:block"></div>
+    <nav class="join hidden sm:flex" aria-label="Language">
+      {locales.map((lang) => (
+        <a
+          href={localizedPath(lang, page)}
+          hreflang={lang}
+          lang={lang}
+          class:list={[
+            "join-item btn btn-xs",
+            locale === lang ? "btn-neutral" : "btn-ghost",
+          ]}
+          aria-current={locale === lang ? "true" : undefined}
+        >
+          {lang.toUpperCase()}
+        </a>
+      ))}
+    </nav>
+    <details class="relative sm:hidden" id="mobile-menu">
+      <summary
+        class="btn btn-circle btn-ghost btn-sm text-neutral"
+        aria-label="Toggle menu"
+      >
+        <Icon name="tabler:menu-2" size={18} aria-hidden="true" />
+      </summary>
+      <div
+        class="mobile-panel absolute end-0 top-full z-50 mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-lg"
+      >
+        <ul class="menu w-full text-base">
+          {links.map((link) => (
+            <li>
+              <a
+                href={localizedPath(locale, link.page)}
+                aria-current={page === link.page ? "page" : undefined}
+                class:list={[
+                  page === link.page &&
+                    "bg-neutral font-medium text-neutral-content",
+                ]}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div class="flex justify-end border-t border-base-300 px-2 pt-2">
+          <nav class="join" aria-label="Language">
+            {locales.map((lang) => (
+              <a
+                href={localizedPath(lang, page)}
+                hreflang={lang}
+                lang={lang}
+                class:list={[
+                  "join-item btn btn-sm",
+                  locale === lang ? "btn-neutral" : "btn-ghost",
+                ]}
+                aria-current={locale === lang ? "true" : undefined}
+              >
+                {lang.toUpperCase()}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
+
+<script>
+const logo = document.querySelector<HTMLElement>(".header-logo");
+if (logo && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  let frame = 0;
+  const update = () => {
+    frame = 0;
+    logo.style.setProperty(
+      "--progress",
+      String(Math.min(window.scrollY / 300, 1)),
+    );
+  };
+  const onScroll = () => {
+    if (!frame) frame = requestAnimationFrame(update);
+  };
+  update();
+  addEventListener("scroll", onScroll, { passive: true });
+}
+</script>
+
+<style>
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.mobile-panel {
+  animation: menu-in 150ms ease-out;
+}
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo-letter {
+  display: inline-block;
+  transform: translate(
+      calc(var(--dx) * (1 - var(--progress, 0))),
+      calc(var(--dy) * (1 - var(--progress, 0)))
+    )
+    rotate(calc(var(--dr) * (1 - var(--progress, 0))));
+  opacity: var(--progress, 0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-letter {
+    transform: none;
+    opacity: 1;
+  }
+  .mobile-panel {
+    animation: none;
+  }
+}
+</style>

@@ -1,0 +1,52 @@
+---
+import { socials } from "../../data/social";
+import { getMessages, type Locale } from "../../i18n";
+import { AboutItemsSchema } from "../../types/messages";
+import HighlightText from "../ui/HighlightText.astro";
+import SocialButton from "../ui/SocialButton.astro";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { Hero: hero, About: about } = getMessages(locale);
+const items = AboutItemsSchema.parse(about.items);
+---
+
+<section class="hero py-12" id="about">
+  <div
+    class="hero-content grid w-full max-w-5xl grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-x-8 lg:gap-y-8"
+  >
+    <div class="text-center lg:col-span-2 lg:row-start-1">
+      <h1
+        class="text-[45px] font-bold leading-tight text-neutral sm:text-[60px]"
+      >
+        {hero.name}
+      </h1>
+      <p class="mt-2 text-base-content/60">{hero.description}</p>
+    </div>
+    <img
+      width="300"
+      height="300"
+      src="/images/home/profile.webp"
+      alt="Kitsuya Azuma"
+      fetchpriority="high"
+      decoding="async"
+      class="mt-8 justify-self-center rounded-[3%] lg:col-start-1 lg:row-start-2 lg:mt-0 lg:justify-self-start"
+    >
+    <div
+      class="mt-6 text-center lg:col-start-2 lg:row-start-2 lg:mt-0 lg:text-left"
+    >
+      <div class="flex flex-col gap-3">
+        {items.map((item) => (
+          <p>
+            <HighlightText text={item.text} highlight={item.searchWords} />
+          </p>
+        ))}
+      </div>
+      <div class="mt-4 flex flex-wrap justify-center gap-1 lg:justify-start">
+        {socials.map((social) => <SocialButton {...social} />)}
+      </div>
+    </div>
+  </div>
+</section>

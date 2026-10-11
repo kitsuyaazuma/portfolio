@@ -1,0 +1,20 @@
+---
+import Experience from "../../components/sections/Experience.astro";
+import Hero from "../../components/sections/Hero.astro";
+import News from "../../components/sections/News.astro";
+import Skills from "../../components/sections/Skills.astro";
+import { type Locale, locales } from "../../i18n";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+const locale = Astro.params.locale as Locale;
+---
+
+<BaseLayout locale={locale} page="">
+  <Hero locale={locale} />
+  <News locale={locale} />
+  <Skills locale={locale} />
+  <Experience locale={locale} />
+</BaseLayout>

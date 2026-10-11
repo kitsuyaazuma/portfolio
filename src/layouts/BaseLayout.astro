@@ -1,0 +1,117 @@
+---
+import "../styles/global.css";
+import Footer from "../components/layout/Footer.astro";
+import Header from "../components/layout/Header.astro";
+import {
+  getMessages,
+  type Locale,
+  locales,
+  localizedPath,
+  type PagePath,
+} from "../i18n";
+import { AUTHOR_NAME, SITE_URL, SOCIAL_URLS } from "../lib/seo";
+
+interface Props {
+  locale: Locale;
+  page: PagePath;
+  notFound?: boolean;
+}
+
+const { locale, page, notFound = false } = Astro.props;
+const { Metadata: metadata } = getMessages(locale);
+const title = metadata.title;
+const description = metadata.description;
+const canonical = new URL(localizedPath(locale, page), SITE_URL).href;
+const imageUrl = new URL("/opengraph-image.png", SITE_URL).href;
+const gaId = import.meta.env.PUBLIC_GA_ID;
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: AUTHOR_NAME,
+  url: SITE_URL,
+  sameAs: SOCIAL_URLS,
+};
+---
+
+<!doctype html>
+<html lang={locale} data-theme="lemonade">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content={Astro.generator}>
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="keywords" content={metadata.keywords}>
+    <meta name="author" content={AUTHOR_NAME}>
+    <meta
+      name="robots"
+      content={notFound ? "noindex, nofollow" : "index, follow"}
+    >
+    {!notFound && <link rel="canonical" href={canonical} />}
+    {!notFound &&
+      locales.map((lang) => (
+        <link
+          rel="alternate"
+          hreflang={lang}
+          href={new URL(localizedPath(lang, page), SITE_URL).href}
+        />
+      ))}
+    {!notFound && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={new URL("/", SITE_URL).href}
+      />
+    )}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content={title}>
+    <meta property="og:locale" content={locale === "ja" ? "ja_JP" : "en_US"}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:url" content={canonical}>
+    <meta property="og:image" content={imageUrl}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={imageUrl}>
+    <slot name="head" />
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-icon.jpg">
+    {page === "" && (
+      <link
+        rel="preload"
+        as="image"
+        href="/images/home/profile.webp"
+        fetchpriority="high"
+      />
+    )}
+    <script type="application/ld+json" set:html={JSON.stringify(person)} />
+    {gaId && (
+      <script
+        is:inline
+        type="text/partytown"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+      />
+    )}
+    {gaId && (
+      <script is:inline type="text/partytown" define:vars={{ gaId }}>
+        window.dataLayer = window.dataLayer || []; function gtag() {
+        dataLayer.push(arguments); } gtag("js", new Date()); gtag("config",
+        gaId, { page_path: location.pathname });
+      </script>
+    )}
+  </head>
+  <body>
+    <div class="flex min-h-screen flex-col bg-base-100 text-base-content">
+      <header
+        class="sticky top-0 z-50 h-[50px] border-b border-base-300 bg-base-100"
+      >
+        <Header locale={locale} page={page} />
+      </header>
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer locale={locale} />
+    </div>
+  </body>
+</html>

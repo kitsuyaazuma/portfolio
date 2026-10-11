@@ -1,0 +1,144 @@
+---
+type Skill = { skill: string; score: number };
+const charts: { name: string; color: string; data: Skill[] }[] = [
+  {
+    name: "Frontend",
+    color: "var(--color-primary)",
+    data: [
+      { skill: "HTML/CSS", score: 3 },
+      { skill: "JavaScript", score: 3 },
+      { skill: "TypeScript", score: 4 },
+      { skill: "React", score: 4 },
+      { skill: "Next.js", score: 4 },
+      { skill: "Astro", score: 3 },
+    ],
+  },
+  {
+    name: "Backend",
+    color: "var(--color-secondary)",
+    data: [
+      { skill: "Python", score: 5 },
+      { skill: "TypeScript", score: 4 },
+      { skill: "MySQL", score: 3 },
+      { skill: "Go", score: 4 },
+      { skill: "Rust", score: 2 },
+      { skill: "GraphQL", score: 3 },
+    ],
+  },
+  {
+    name: "DevOps",
+    color: "var(--color-accent)",
+    data: [
+      { skill: "Linux", score: 4 },
+      { skill: "Kubernetes", score: 4 },
+      { skill: "Docker", score: 4 },
+      { skill: "Google Cloud", score: 4 },
+      { skill: "Terraform", score: 4 },
+      { skill: "AWS", score: 4 },
+    ],
+  },
+];
+const center = 125;
+const radius = 85;
+function point(index: number, value: number, count: number) {
+  const angle = -Math.PI / 2 + (index * 2 * Math.PI) / count;
+  return [
+    center + (Math.cos(angle) * radius * value) / 5,
+    center + (Math.sin(angle) * radius * value) / 5,
+  ];
+}
+function points(values: number[]) {
+  return values
+    .map((value, index) => point(index, value, values.length).join(","))
+    .join(" ");
+}
+---
+
+<div class="flex flex-wrap justify-center gap-6">
+  {charts.map((chart) => (
+    <div class="flex flex-col items-center gap-2">
+      <span class="text-base">{chart.name}</span>
+      <svg
+        class="overflow-visible"
+        width="250"
+        height="250"
+        viewBox="0 0 250 250"
+        role="img"
+        aria-label={`${chart.name} skills radar chart: ${chart.data.map(({ skill, score }) => `${skill} ${score} of 5`).join(", ")}`}
+      >
+        {[1, 2, 3, 4, 5].map((level) => (
+          <polygon
+            points={points(chart.data.map(() => level))}
+            fill="none"
+            stroke="currentColor"
+            stroke-opacity="0.2"
+          />
+        ))}
+        {chart.data.map((_, index) => (
+          <line
+            x1={center}
+            y1={center}
+            x2={point(index, 5, chart.data.length)[0]}
+            y2={point(index, 5, chart.data.length)[1]}
+            stroke="currentColor"
+            stroke-opacity="0.2"
+          />
+        ))}
+        <polygon
+          class="skill-polygon"
+          points={points(chart.data.map(({ score }) => score))}
+          fill={chart.color}
+          fill-opacity="0.25"
+          stroke={chart.color}
+          stroke-width="2"
+        />
+        {chart.data.map(({ score }, index) => (
+          <circle
+            cx={point(index, score, chart.data.length)[0]}
+            cy={point(index, score, chart.data.length)[1]}
+            r="3"
+            fill={chart.color}
+          />
+        ))}
+        {chart.data.map(({ skill }, index) => {
+          const [x, y] = point(index, 5.45, chart.data.length);
+          return (
+            <text
+              x={x}
+              y={y}
+              text-anchor={x < 110 ? "end" : x > 140 ? "start" : "middle"}
+              dominant-baseline="middle"
+              fill="currentColor"
+              fill-opacity="0.9"
+              font-size="11"
+            >
+              {skill}
+            </text>
+          );
+        })}
+      </svg>
+    </div>
+  ))}
+</div>
+
+<style>
+.skill-polygon {
+  transform-origin: 125px 125px;
+  animation: radar-grow 1s ease-out both;
+}
+@keyframes radar-grow {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skill-polygon {
+    animation: none;
+  }
+}
+</style>

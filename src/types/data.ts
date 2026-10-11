@@ -1,5 +1,9 @@
 export type BookStatus =
-  "Finished" | "Reading" | "Partially Read" | "Almost Finished" | "Not Started";
+  | "Finished"
+  | "Reading"
+  | "Partially Read"
+  | "Almost Finished"
+  | "Not Started";
 
 export type BookItem = {
   name: string;
