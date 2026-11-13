@@ -20,8 +20,11 @@
   *,
   *::before,
   *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: Respect reduced motion over component and utility styles. */
     scroll-behavior: auto !important;
+    /* biome-ignore lint/complexity/noImportantStyles: Respect reduced motion over component and utility styles. */
     animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: Respect reduced motion over component and utility styles. */
     transition-duration: 0.01ms !important;
   }
 }

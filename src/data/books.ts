@@ -2,6 +2,25 @@ import type { BookItem } from "@/types/data";
 
 export const bookList: BookItem[] = [
   {
+    name: "Sidecar-less Istio Explained",
+    status: "Not Started",
+    url: "https://www.oreilly.com/library/view/sidecar-less-istio-explained/9781098178055/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781098178055/128w/",
+  },
+  {
+    name: "Istio in Action",
+    status: "Reading",
+    url: "https://www.oreilly.com/library/view/istio-in-action/9781617295829/",
+    imageUrl: "https://learning.oreilly.com/library/cover/9781617295829/128w/",
+  },
+  {
+    name: "絵で見てわかるWeb APIの仕組み",
+    status: "Reading",
+    url: "https://www.shoeisha.co.jp/book/detail/9784798190709",
+    imageUrl:
+      "https://books.google.com/books/content?vid=isbn:9784798190709&printsec=frontcover&img=1&zoom=1",
+  },
+  {
     name: "Thinking in Platforms: Platform engineering as the operating model for work in the AI era",
     status: "Finished",
     url: "https://weaveintelligence.io/thinking-in-platforms-book",
